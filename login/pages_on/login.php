@@ -389,7 +389,7 @@ document.getElementsByClassName("onclick_add_element")[x].className=liste_projet
 }
 }
 
-	 
+	 document.getElementById("pas_visible").className="" ; 
  }
 
  
@@ -688,7 +688,11 @@ document.getElementsByClassName("remove_projet")[x].className = obj_element_2_[x
 
 
 if(obj_element_2_[x].liste_projet_img!=""){
-document.getElementsByClassName("change_img1")[x].src="pages_on/download_img/uploads/"+obj_element_2_[x].liste_projet_img; 	; 
+document.getElementsByClassName("change_img1")[x].src="pages_on/download_img/uploads/"+obj_element_2_[x].liste_projet_img; 	
+
+}
+else {
+	document.getElementsByClassName("change_img1")[x].src="https://media.discordapp.net/attachments/1088954621541744790/1168238961089581156/ndengaluvumbu_logo_add_picture_7e4e1278-47cf-47b7-8558-68fcd740cacb.png?ex=65510a51&is=653e9551&hm=8ac9a4499310e64fa8ce357c3d15dd89290cfc9255f4ae2134c9436c4379e93f&=&width=671&height=671"; 	
 
 }
 

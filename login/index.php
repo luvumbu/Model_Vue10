@@ -125,4 +125,8 @@ include("class/php/php_off/verif.php");
 </body>
  
  <link rel="stylesheet" href="css.css">
+
+
+
+
  </html>

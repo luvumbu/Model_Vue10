@@ -62,13 +62,15 @@ $string = str_replace('"',"(1)",$string);
 
 for($i = 0 ; $i <strlen($string) ; $i ++ )  {
                     
-    if(ord($string[$i])>0 && ord($string[$i])<250 ){
+    if(ord($string[$i])>0 && ord($string[$i])<127 ){
         $valeur_final = $valeur_final.$string[$i] ; 
     }
 
 }
 
-echo  $valeur_final ; 
+ 
+
+
 ?> 
  
  

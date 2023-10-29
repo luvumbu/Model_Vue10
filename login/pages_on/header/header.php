@@ -1,7 +1,7 @@
  
 
 
-<div class="container mt-5 text-center">
+<div class="container mt-5 text-center" >
   <div class="row">
     <div class="col-sm-4" id="header_1" >    <img width="50" class="cursor_pointer" height="50" src="https://img.icons8.com/ios/50/add--v1.png" alt="add--v1"></div>
     <div class="col-sm-4" id="header_2">    <img width="50" class="cursor_pointer" height="50" src="https://img.icons8.com/ios/50/exit--v1.png" alt="exit--v1"></div>
@@ -344,7 +344,11 @@ var x_ = 0 ;
 
 
 </script>
-
+<style>
+  body{
+  background-color: #131b32;
+}
+ </style>
  
 
 </body>
