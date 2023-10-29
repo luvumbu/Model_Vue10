@@ -44,7 +44,7 @@ const img_2_1="https://img.icons8.com/ios/50/wifi--v1.png" ;
 
  const liste_projet_name_list_class =  "form-control liste_projet_name_" ;   
  const liste_projet_description1_list_class = "liste_projet_description1" ; 
- const change_img1_list_class = "change_img change_img1" ; 
+ const change_img1_list_class = "change_img change_img1 element_" ; 
  const liste_projet_img_list_class = "cursor_pointer space_right_20 onclick_update_all onclick_update_visibility" ; 
  const liste_projet_visibilite1_list_class = "cursor_pointer space_right_20 onclick_update_all onclick_update_web" ; 
  const liste_projet_visibilite2_list_class = "cursor_pointer space_right_20 onclick_update_all onclick_update_remove" ; 

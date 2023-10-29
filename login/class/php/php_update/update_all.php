@@ -20,8 +20,24 @@ $_SESSION["time2"] =  $_POST["recherche_elements"] ;
  $liste_projet_description1 =   $_POST["liste_projet_description1"] ; 
 
 
+ $string = $liste_projet_description1 ;
+ $valeur_final = "" ; 
 
- echo  $liste_projet_name ; 
+ for($i = 0 ; $i <strlen($string) ; $i ++ )  {
+                    
+      if(ord($string[$i])>13 && ord($string[$i])<255 ){
+          $valeur_final = $valeur_final.$string[$i] ; 
+      }
+  
+  }
+  
+
+
+
+  $liste_projet_description1 =$valeur_final ; 
+
+
+
  
 
 $apple = new Insertion_Bdd(
