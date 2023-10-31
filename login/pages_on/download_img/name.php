@@ -11,7 +11,7 @@ include("linkx.php") ;
  
  
  
-$_SESSION["name"] = sha1( rand(10,9999999999999999999999)) ;  
+$_SESSION["name"] = sha1( rand(0,99999999999999999999999999999999999999999)) ;  
 
  
  $_SESSION["recherche_elements"] =  $_POST["name"];  ; 
