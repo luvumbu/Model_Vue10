@@ -1,3 +1,9 @@
+<?php 
+
+session_start() ; 
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
- 
+<link rel="icon" href="https://pbs.twimg.com/profile_images/1244325575659061249/YjvhVutG_400x400.jpg" type="image/gif" sizes="16x16">
 
 <body>
     
@@ -21,7 +27,7 @@
 </div>
 
 
-<input type="file" name="" id="file-input"  class="class1"    /><br />
+<input type="file" name="" id="file-input"  class="class1"  onclick="name_file()" /><br />
  
 
 <div>
@@ -31,19 +37,36 @@
 
 <input class="class1" type="submit" value="Envoyer" id="submit-button" class="class3" onclick="disip()" />
 </form>
-<script src="../../class/js/js_on/js_cookie.js"></script>
-
-<script>
-    
- 
-</script>
 <script>
 function disip() 
 {
     document.getElementById("submit-button").style.display="none"; 
   
 }
+function name_file() {
 
+
+
+const d = new Date();
+ time = d.getTime();
+
+ var ok = new Information("name.php"); // création de la classe 
+ok.add("name", time); // ajout de l'information pour lenvoi 
+   
+console.log(ok.info()); // demande l'information dans le tableau
+ok.push(); // envoie l'information au code pkp 
+
+}
+function add_bdd(){
+
+ 
+
+var ok = new Information("add_bdd_info.php"); // création de la classe 
+ok.add("name", time); // ajout de l'information pour lenvoi 
+   
+console.log(ok.info()); // demande l'information dans le tableau
+ok.push(); // envoie l'information au code pkp 
+}
 
 </script>
 <div id="upload-progress" ></div>
@@ -55,7 +78,7 @@ function disip()
 
 
 
-<div id="bg_black" onclick="bg_black()"></div>
+<div id="bg_black"></div>
 <style>
     .class1{
         display:none ; 
@@ -94,12 +117,6 @@ z-index: 1;
         top:0 ; 
     }
 </style>
-
-<script>
-    function bg_black(){
-        window.location.replace("../../index.php");
-    }
-</script>
 <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
 </body>
 </html>

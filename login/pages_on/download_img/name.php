@@ -2,21 +2,18 @@
 
 session_start()  ; 
 header("Access-Control-Allow-Origin: *");
-
-include("linkx.php") ; 
-
+$servername = "localhost";
+$name =$_POST["name"] ;
  
 
 
- 
- 
- 
-$_SESSION["name"] = sha1( rand(0,99999999999999999999999999999999999999999)) ;  
 
- 
- $_SESSION["recherche_elements"] =  $_POST["name"];  ; 
 
+
+$_SESSION["name"] =  $name ; 
+include("add_bdd.php"); 
  
 
- 
+
+
 ?>
