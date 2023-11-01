@@ -100,7 +100,13 @@ function header_2_action() {
   Ajax("header_action","pages_on/header/header_action/session_destroy.php");
 
 
+ 
+
+  const myTimeout = setTimeout(header_2_action_reload, 300);
+
+function header_2_action_reload() {
   location.reload() ; 
+}
 
 }
 function header_3_action() {

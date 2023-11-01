@@ -41,6 +41,7 @@ const img_2_1="https://img.icons8.com/ios/50/wifi--v1.png" ;
  const change_img2_array = [] ; 
  const liste_projet_id_array = [] ; 
  const liste_projet_img_array_ = [] ;
+ const information_user_id_sha1_array =[] ; 
 
  const liste_projet_name_list_class =  "form-control liste_projet_name_" ;   
  const liste_projet_description1_list_class = "liste_projet_description1" ; 
@@ -113,6 +114,8 @@ var web_on="https://img.icons8.com/ios/50/wifi--v1.png" ;
 
 
 					  liste_projet_img_array_.push(myObj[x].liste_projet_img) ; 
+
+					  information_user_id_sha1_array.push(myObj[x].information_user_id_sha1) ; 
 
 
 					  console.log(myObj) ; 
@@ -210,6 +213,7 @@ myObj_ = myObj;
 					  liste_projet_visibilite2_array.push( myObj[x].liste_projet_visibilite2)  ;
 					  liste_projet_img_array_.push(myObj[x].liste_projet_img) ; 
 
+					  information_user_id_sha1_array.push(myObj[x].information_user_id_sha1) ; 
  
 
 
@@ -321,7 +325,7 @@ document.getElementsByClassName("onclick_update_remove")[x].className = liste_pr
   
 
 if(liste_projet_img_array_[x]!=""){
-	document.getElementsByClassName("change_img1")[x].src="pages_on/download_img/uploads/"+liste_projet_img_array_[x]; 	
+	document.getElementsByClassName("change_img1")[x].src="pages_on/download_img/uploads/"+ information_user_id_sha1_array[x]+"/"+liste_projet_img_array_[x]; 	
 }
 
 
@@ -373,7 +377,7 @@ liste_projet_img_array[x].className=liste_projet_id_array[x]+" "+change_img1_lis
 
 
 if(liste_projet_img_array_[x]!=""){
-	document.getElementsByClassName("change_img1")[x].src="pages_on/download_img/uploads/"+liste_projet_img_array_[x]; 
+	document.getElementsByClassName("change_img1")[x].src="pages_on/download_img/uploads/"+ information_user_id_sha1_array[x]+"/"+liste_projet_img_array_[x];
 }
  
 if(x>0){
