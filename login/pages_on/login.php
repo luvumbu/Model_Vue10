@@ -220,27 +220,19 @@ myObj_ = myObj;
 }
  
 const myTimeout = setTimeout(lancement_action_2, 300);
-
-     
+   
  
 
 }
 }; 
 xmlhttp.open("GET", "vlog_json_child.php", true);
 xmlhttp.send();	
-
-
 }
  
  
 
  function lancement_action_2(){
-	 
-
-	 
-
- 
-
+	
 var verif_element = false ; 
 if(myObj_[0]=="404"){
 	verif_element =true;
@@ -596,9 +588,10 @@ ok.push(); // envoie l'information au code pkp
  function onclick_update_remove (_this){
 
 	
-  console.log(recherche_elements(_this," ")) ; 
  
+	document.getElementById(recherche_elements(_this," ")).style.display="none";
 	
+ //_this.style.display = "none";
 var ok = new Information("class/php/php_update/onclick_update_remove.php"); // création de la classe 
 ok.add("onclick_update_visibility", recherche_elements(_this," ")); // ajout de l'information pour lenvoi 
 console.log(ok.info()); // demande l'information dans le tableau
@@ -606,7 +599,7 @@ ok.push(); // envoie l'information au code pkp
 
 
 
-location.reload() ; 
+ 
  }
 
 
@@ -681,7 +674,9 @@ console.log(obj_element_2_[x].information_user_id_sha1) ;
 
 
 
-document.getElementsByClassName("demo")[x].className = "col-sm-4 demo";
+document.getElementsByClassName("demo")[x].className = obj_element_2_[x].information_user_id_sha1+" col-sm-4 demo";
+document.getElementsByClassName("demo")[x].id =obj_element_2_[x].liste_projet_id_sha1;
+
 document.getElementsByClassName("liste_projet_name_")[x].className = obj_element_2_[x].liste_projet_id_sha1+" "+list2_liste_projet_name_class;
 document.getElementsByClassName("liste_projet_description1")[x].className = obj_element_2_[x].liste_projet_id_sha1+" "+list2_liste_projet_description1_class; 
 document.getElementsByClassName("voir_projet")[x].className = obj_element_2_[x].liste_projet_id_sha1+" "+list2_voir_projet_class;
