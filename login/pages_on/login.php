@@ -692,7 +692,7 @@ document.getElementsByClassName("remove_projet")[x].className = obj_element_2_[x
 
 
 if(obj_element_2_[x].liste_projet_img!=""){
-document.getElementsByClassName("change_img1")[x].src="pages_on/download_img/uploads/"+obj_element_2_[x].liste_projet_img; 	
+document.getElementsByClassName("change_img1")[x].src="pages_on/download_img/uploads/"+obj_element_2_[x].information_user_id_sha1+"/"+obj_element_2_[x].liste_projet_img; 	
 
 }
 else {
