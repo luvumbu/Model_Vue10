@@ -17,7 +17,9 @@
         transition :all 10s;
       }
        
-      
+      .cursor_pointer:hover{
+        cursor: pointer;
+      }
       /* Handle on hover */
       ::-webkit-scrollbar-thumb:hover {
         background: #3366ff; 
