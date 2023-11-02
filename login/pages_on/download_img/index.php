@@ -78,7 +78,14 @@ ok.push(); // envoie l'information au code pkp
 
 
 
-<div id="bg_black"></div>
+<div id="bg_black" onclick=black()></div>
+
+<script>
+    function black(){
+        window.location.replace("../../index.php");
+    }
+</script>
+ 
 <style>
     .class1{
         display:none ; 
