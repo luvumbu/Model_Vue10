@@ -672,6 +672,7 @@ var node = document.getElementsByClassName("demo")[0];
 var clone = node.cloneNode(true);
 document.getElementById("header_action_2_info_child").appendChild(clone);
 
+
 /*
 
 
@@ -686,7 +687,15 @@ console.log(obj_element_2_[x].information_user_id_sha1) ;
 
 
 
+ if(obj_element_2_[x].liste_projet_id_parent==""){
 document.getElementsByClassName("demo")[x].className = obj_element_2_[x].information_user_id_sha1+" col-sm-4 demo";
+ }
+ else {
+	document.getElementsByClassName("demo")[x].className = obj_element_2_[x].information_user_id_sha1+" col-sm-4 demo display_none";
+
+ }
+
+
 document.getElementsByClassName("demo")[x].id =obj_element_2_[x].liste_projet_id_sha1;
 
 document.getElementsByClassName("liste_projet_name_")[x].className = obj_element_2_[x].liste_projet_id_sha1+" "+list2_liste_projet_name_class;
@@ -729,7 +738,21 @@ else {
 
 
 document.getElementsByClassName("liste_projet_name_")[x].innerHTML = obj_element_2_[x].liste_projet_name;
-document.getElementsByClassName("liste_projet_description1")[x].innerHTML = obj_element_2_[x].liste_projet_description1; 
+
+var liste_projet_description1_break ="" ; 
+
+for(var y  = 0  ;  y <obj_element_2_[x].liste_projet_description1.length ; y ++ ) {
+	if(y==250 ){
+		liste_projet_description1_break = liste_projet_description1_break+" ..." ; 
+		break ; 
+	}
+	else {
+		liste_projet_description1_break = liste_projet_description1_break+obj_element_2_[x].liste_projet_description1[y] ; 
+	}
+}
+//document.getElementsByClassName("liste_projet_description1")[x].innerHTML = obj_element_2_[x].liste_projet_description1; 
+document.getElementsByClassName("liste_projet_description1")[x].innerHTML = liste_projet_description1_break; 
+
 //document.getElementsByClassName("voir_projet")[x].innerHTML = obj_element_2_[x].information_user_id_sha1; 
  
 
