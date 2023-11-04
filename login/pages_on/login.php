@@ -742,7 +742,7 @@ document.getElementsByClassName("liste_projet_name_")[x].innerHTML = obj_element
 var liste_projet_description1_break ="" ; 
 
 for(var y  = 0  ;  y <obj_element_2_[x].liste_projet_description1.length ; y ++ ) {
-	if(y==250 ){
+	if(y==150 ){
 		liste_projet_description1_break = liste_projet_description1_break+" ..." ; 
 		break ; 
 	}
@@ -751,7 +751,11 @@ for(var y  = 0  ;  y <obj_element_2_[x].liste_projet_description1.length ; y ++ 
 	}
 }
 //document.getElementsByClassName("liste_projet_description1")[x].innerHTML = obj_element_2_[x].liste_projet_description1; 
+
+
 document.getElementsByClassName("liste_projet_description1")[x].innerHTML = liste_projet_description1_break; 
+document.getElementsByClassName("voir_article")[x].title = obj_element_2_[x].liste_projet_id_sha1; 
+
 
 //document.getElementsByClassName("voir_projet")[x].innerHTML = obj_element_2_[x].information_user_id_sha1; 
  
@@ -791,6 +795,11 @@ console.log(time) ;
 
 function remove_projet_2(_this){
 	console.log(recherche_elements(_this," ")) ; 
+}
+
+
+function voir_article_page(_this){
+	console.log(_this.title) ; 
 }
 </script>
 
