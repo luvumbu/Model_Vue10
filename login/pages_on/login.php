@@ -724,6 +724,10 @@ if(obj_element_2_[x].liste_projet_img!=""){
 
 document.getElementsByClassName("background_img")[x].style.backgroundImage= "url('"+"pages_on/download_img/uploads/"+obj_element_2_[x].information_user_id_sha1+"/"+obj_element_2_[x].liste_projet_img+"')";
 
+
+
+document.getElementsByClassName("background_img")[x].title= obj_element_2_[x].information_user_id_sha1+"/"+obj_element_2_[x].liste_projet_img;
+
 }
 else {
 
@@ -800,6 +804,15 @@ function remove_projet_2(_this){
 
 function voir_article_page(_this){
 	console.log(_this.title) ; 
+}
+
+function background_img_redirection(_this){
+	  
+  
+ //window.location.href = "pages_on/download_img/uploads/"+_this+tittle;
+
+ //console.log(_this.title) ; 
+ window.location.href ="pages_on/download_img/uploads/"+_this.title ; 
 }
 </script>
 
