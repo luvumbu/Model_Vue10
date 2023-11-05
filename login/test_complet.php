@@ -2,6 +2,11 @@
 
  include("connexion.php") ; 
 
+
+ $servername="localhost" ; 
+$$username = "root" ; 
+$password = "root" ; 
+ $dbname = "root" ; 
  class Select_datas {
   public $servername;
   public $username;
@@ -52,51 +57,6 @@
       $conn->close();
   }
  
-
-
-  function add_array_element($number) {
-    $a=array();
-
-
-
- 
-
-for($i = 0 ; $i<count($this->list_row) ; $i++) {
-
-
- 
-if(fmod($i, count($this->row))==$number){
- 
-
-  array_push($a,$this->list_row[$i] );
-}
- 
-
-
-}
-
-
-
-return $a ; 
- 
-
-
-/*
-
-// Utilisation
-$b=array("x");
-// creation de la variable vide
-$number = 1 ; 
-// affectation valeur array 
-// execution et ajout des element dans la nouvelle table 
-
-$b =$apple->add_array_element($number);
-
-var_dump($b) ; 
-
-
-*/
-  }
   function all_data_json(){
     $a=array();
 
@@ -302,6 +262,43 @@ echo "[";
 */
 
 
+
+
+
+
+
+$apple = new Select_datas($servername,$username,$password,$dbname);
+
+  array_push(
+    $apple->row,
+
+    'liste_projet_id',
+    'liste_projet_id_sha1',
+    'liste_projet_id_parent',
+    'liste_projet_id_sha1_general',
+    'liste_projet_ip',
+    'liste_projet_img',
+    'liste_projet_name',
+    'liste_projet_description1',
+    'liste_projet_description2',
+    'liste_projet_visibilite1',
+    'liste_projet_visibilite2',
+    'liste_projet_type',
+    'information_user_id_sha1',
+    'liste_projet_new_file',
+    'liste_projet_reg_date'
+    
+
+    );
+ 
+    $id_information_user_sha1 =$_SESSION["information_user_id_sha1"] ; 
+    $apple->sql='SELECT * FROM `liste_projet` WHERE 1';
+    $apple->execution();
+    $myJSON = json_encode($apple->list_row); 
+
+    // echo   $myJSON ; 
+ 
+    $apple->all_data_json() ; 
     
  ?>
 
