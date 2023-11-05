@@ -601,7 +601,7 @@ ok.push(); // envoie l'information au code pkp
 
 	
  
-	document.getElementById(recherche_elements(_this," ")).style.display="none";
+	//document.getElementById(recherche_elements(_this," ")).style.display="none";
 	
  //_this.style.display = "none";
 var ok = new Information("class/php/php_update/onclick_update_remove.php"); // création de la classe 
