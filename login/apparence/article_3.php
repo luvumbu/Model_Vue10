@@ -1,0 +1,196 @@
+<?php
+ /*
+    $liste_projet_id_array=array();
+    $liste_projet_id_sha1_array=array();
+    $liste_projet_id_parent_array=array();
+    $liste_projet_id_sha1_general_array=array();
+    $liste_projet_ip_array=array();
+
+    $liste_projet_img_array=array();
+    $liste_projet_img_array_array=array();
+    $liste_projet_img_array_rediff=array();
+    $liste_projet_name_array=array();
+    $liste_projet_description1_array=array();
+    $liste_projet_description2_array=array();
+    $liste_projet_visibilite1_array=array();
+    
+    $liste_projet_visibilite2_array=array();
+    $liste_projet_type_array=array();
+    $information_user_id_sha1_array=array();
+    $liste_projet_new_file_array=array();
+    $liste_projet_reg_date_array=array();
+
+    //!!!!!!!!!!!!!
+
+    
+
+  $child_liste_projet_id_array = array() ; 
+  $child_liste_projet_id_sha1_array = array() ; 
+  $child_liste_projet_id_parent_array = array() ; 
+  $child_liste_projet_id_sha1_general_array = array() ; 
+  
+  
+  $child_liste_projet_ip_array = array() ; 
+  
+  $child_liste_projet_img_array = array() ; 
+  $child_liste_projet_img_array_array = array() ; 
+  $child_liste_projet_name_array = array() ; 
+  $child_liste_projet_description1_array = array() ; 
+  
+  $child_liste_projet_description2_array = array() ; 
+  $child_liste_projet_visibilite1_array = array() ; 
+  $child_liste_projet_visibilite2_array = array() ; 
+  $child_liste_projet_type_array = array() ; 
+  
+  $child_information_user_id_sha1_array = array() ; 
+  $child_liste_projet_new_file_array = array() ; 
+  
+  $child_liste_projet_reg_date_array = array() ; 
+
+*/
+include("test_complet2.php") ; 
+ 
+
+ 
+
+
+/*
+
+
+
+
+if(count($child_apple2->list_row)!=0){
+
+ 
+
+
+
+ 
+
+
+
+for($o = 0 ; $o< count($child_liste_projet_id_array) ; $o ++){
+
+ 
+
+?>
+<div class="child_liste_projet_id_array"><?php echo $child_liste_projet_id_array[$o] ?></div>
+<div class="child_liste_projet_id_sha1_array"><?php echo $child_liste_projet_id_sha1_array[$o] ?></div>
+<div class="child_liste_projet_id_parent_array"><?php echo $child_liste_projet_id_parent_array[$o] ?></div>
+<div class="child_liste_projet_id_sha1_general_array"><?php echo $child_liste_projet_id_sha1_general_array[$o] ?></div>
+<div class="child_liste_projet_ip_array"><?php echo $child_liste_projet_ip_array[$o] ?></div>
+
+<div class="child_liste_projet_img_array"><?php echo $child_liste_projet_img_array[$o] ?></div>
+<div class="child_liste_projet_name_array"><?php echo $child_liste_projet_name_array[$o] ?></div>
+<div class="child_liste_projet_description1_array"><?php echo $child_liste_projet_description1_array[$o] ?></div>
+<div class="child_liste_projet_description2_array"><?php echo $child_liste_projet_description2_array[$o] ?></div>
+
+<div class="child_liste_projet_visibilite1_array"><?php echo $child_liste_projet_visibilite1_array[$o] ?></div>
+<div class="child_liste_projet_visibilite2_array"><?php echo $child_liste_projet_visibilite2_array[$o] ?></div>
+<div class="child_liste_projet_type_array"><?php echo $child_liste_projet_type_array[$o] ?></div>
+<div class="child_information_user_id_sha1_array"><?php echo $child_information_user_id_sha1_array[$o] ?></div>
+<div class="child_liste_projet_new_file_array"><?php echo $child_liste_projet_new_file_array[$o] ?></div>
+
+<div class="child_liste_projet_reg_date_array"><?php echo $child_liste_projet_reg_date_array[$o] ?></div>
+
+<div>
+  <?php echo $liste_projet_img_array_rediff ?> 
+</div>
+ 
+<?php 
+
+}
+}
+
+
+*/
+
+
+ 
+
+ 
+
+if(count($apple->list_row)==0){
+  ?>
+
+
+<img src="https://www.shutterstock.com/image-vector/error-404-matrix-design-stream-260nw-475238002.jpg" alt="" srcset="" class="e404">
+<?php 
+}
+
+else {
+
+
+var_dump($liste_projet_id_array) ; 
+var_dump($liste_projet_id_sha1_array) ; 
+var_dump($liste_projet_id_parent_array) ; 
+var_dump($liste_projet_id_sha1_general_array) ; 
+var_dump($liste_projet_ip_array) ; 
+
+var_dump($liste_projet_img_array) ; 
+var_dump($liste_projet_img_array_array) ; 
+ 
+var_dump($liste_projet_name_array) ; 
+var_dump($liste_projet_description1_array) ; 
+
+var_dump($liste_projet_description2_array) ; 
+var_dump($liste_projet_visibilite1_array) ; 
+var_dump($liste_projet_visibilite2_array) ; 
+var_dump($liste_projet_type_array) ; 
+var_dump($information_user_id_sha1_array) ; 
+
+var_dump($liste_projet_new_file_array) ; 
+var_dump($liste_projet_reg_date_array) ; 
+
+ 
+
+ 
+
+
+
+ 
+
+if(count($child_apple2->list_row)!=0){
+  echo "Child <br/>" ; 
+
+ 
+var_dump($child_liste_projet_id_array) ; 
+var_dump($child_liste_projet_id_sha1_array) ; 
+var_dump($child_liste_projet_id_parent_array) ; 
+var_dump($child_liste_projet_id_sha1_general_array) ; 
+var_dump($child_liste_projet_ip_array) ; 
+ 
+var_dump($child_liste_projet_img_array_rediff ) ;  
+ 
+
+var_dump($child_liste_projet_name_array) ; 
+var_dump($child_liste_projet_description1_array) ; 
+var_dump($child_liste_projet_description2_array) ; 
+
+var_dump($child_liste_projet_visibilite1_array) ; 
+var_dump($child_liste_projet_visibilite2_array) ; 
+var_dump($child_liste_projet_type_array) ; 
+var_dump($child_information_user_id_sha1_array) ; 
+var_dump($child_liste_projet_new_file_array) ; 
+
+var_dump($child_liste_projet_reg_date_array) ; 
+ 
+}
+
+
+
+
+}
+?>
+
+<style>
+  .e404{
+    width:100% ; 
+  }
+  body {
+    margin:0;
+    padding : 0 ; 
+  }
+</style>
+
+ 

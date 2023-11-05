@@ -79,6 +79,9 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     $liste_projet_ip_array=array();
 
     $liste_projet_img_array=array();
+
+
+  
     $liste_projet_img_array_array=array();
     $liste_projet_img_array_rediff=array();
     $liste_projet_name_array=array();
@@ -91,7 +94,7 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     $information_user_id_sha1_array=array();
     $liste_projet_new_file_array=array();
     $liste_projet_reg_date_array=array();
-
+    $child_liste_projet_img_array_rediff = array() ; 
     
 
 
@@ -225,31 +228,6 @@ $liste_projet_reg_date_array =$apple->add_array_element($number);
 
 
 
-
-
-  $child_liste_projet_id_array = array() ; 
-  $child_liste_projet_id_sha1_array = array() ; 
-  $child_liste_projet_id_parent_array = array() ; 
-  $child_liste_projet_id_sha1_general_array = array() ; 
-  
-  
-  $child_liste_projet_ip_array = array() ; 
-  
-  $child_liste_projet_img_array = array() ; 
-  $child_liste_projet_img_array_array = array() ; 
-  $child_liste_projet_name_array = array() ; 
-  $child_liste_projet_description1_array = array() ; 
-  
-  $child_liste_projet_description2_array = array() ; 
-  $child_liste_projet_visibilite1_array = array() ; 
-  $child_liste_projet_visibilite2_array = array() ; 
-  $child_liste_projet_type_array = array() ; 
-  
-  $child_information_user_id_sha1_array = array() ; 
-  $child_liste_projet_new_file_array = array() ; 
-  
-  $child_liste_projet_reg_date_array = array() ; 
-
   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
@@ -281,13 +259,16 @@ $liste_projet_reg_date_array =$apple->add_array_element($number);
        if($name_img !=""){
           $img_ = "http://".$apple->list_row[4]."/Model_Vue9/login/pages_on/download_img/uploads/".$name_img ; 
  
-
-        array_push($child_liste_projet_img_array_array , $img_ );
+ 
+        array_push($child_liste_projet_img_array_rediff , $img_ );
        }
        else {
  
-        array_push($child_liste_projet_img_array_array , $img_ );
+        array_push($child_liste_projet_img_array_rediff , $img_ );
        }
+
+ 
+
 
    }
    else {
@@ -298,12 +279,14 @@ $liste_projet_reg_date_array =$apple->add_array_element($number);
       $img_ = "http://".$apple->list_row[4]."/login/pages_on/download_img/uploads/".$name_img ; 
  
 
-    array_push($child_liste_projet_img_array_array , $img_ );
+    array_push($child_liste_projet_img_array_rediff , $img_ );
    }
    else {
   
-    array_push($child_liste_projet_img_array_array , $img_ );
+    array_push($child_liste_projet_img_array_rediff , $img_ );
    }
+ 
+
    }
  
  
@@ -363,6 +346,64 @@ $child_liste_projet_reg_date_array =$child_apple2->add_array_element($child_numb
 
 
   
+
+
+
+
+
+
+
+
+
+  /*
+    $liste_projet_id_array=array();
+    $liste_projet_id_sha1_array=array();
+    $liste_projet_id_parent_array=array();
+    $liste_projet_id_sha1_general_array=array();
+    $liste_projet_ip_array=array();
+
+    $liste_projet_img_array=array();
+    $liste_projet_img_array_array=array();
+    $liste_projet_img_array_rediff=array();
+    $liste_projet_name_array=array();
+    $liste_projet_description1_array=array();
+    $liste_projet_description2_array=array();
+    $liste_projet_visibilite1_array=array();
+    
+    $liste_projet_visibilite2_array=array();
+    $liste_projet_type_array=array();
+    $information_user_id_sha1_array=array();
+    $liste_projet_new_file_array=array();
+    $liste_projet_reg_date_array=array();
+
+    //!!!!!!!!!!!!!
+
+    
+
+  $child_liste_projet_id_array = array() ; 
+  $child_liste_projet_id_sha1_array = array() ; 
+  $child_liste_projet_id_parent_array = array() ; 
+  $child_liste_projet_id_sha1_general_array = array() ; 
+  
+  
+  $child_liste_projet_ip_array = array() ; 
+  
+  $child_liste_projet_img_array = array() ; 
+  $liste_projet_img_array_rediff = array() ; 
+  $child_liste_projet_name_array = array() ; 
+  $child_liste_projet_description1_array = array() ; 
+  
+  $child_liste_projet_description2_array = array() ; 
+  $child_liste_projet_visibilite1_array = array() ; 
+  $child_liste_projet_visibilite2_array = array() ; 
+  $child_liste_projet_type_array = array() ; 
+  
+  $child_information_user_id_sha1_array = array() ; 
+  $child_liste_projet_new_file_array = array() ; 
+  
+  $child_liste_projet_reg_date_array = array() ; 
+
+*/
 ?>
 
 
