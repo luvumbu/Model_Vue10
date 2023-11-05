@@ -94,7 +94,9 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     $information_user_id_sha1_array=array();
     $liste_projet_new_file_array=array();
     $liste_projet_reg_date_array=array();
-    $child_liste_projet_img_array_rediff = array() ; 
+
+    $child_liste_projet_img_array_rediff  = array() ; 
+    
     
 
 
@@ -260,13 +262,13 @@ $liste_projet_reg_date_array =$apple->add_array_element($number);
           $img_ = "http://".$apple->list_row[4]."/Model_Vue9/login/pages_on/download_img/uploads/".$name_img ; 
  
  
-        array_push($child_liste_projet_img_array_rediff , $img_ );
+        array_push($liste_projet_img_array_rediff  , $img_ );
        }
        else {
+        $img_ = "" ; 
  
-        array_push($child_liste_projet_img_array_rediff , $img_ );
+        array_push($liste_projet_img_array_rediff  , $img_ );
        }
-
  
 
 
@@ -279,11 +281,12 @@ $liste_projet_reg_date_array =$apple->add_array_element($number);
       $img_ = "http://".$apple->list_row[4]."/login/pages_on/download_img/uploads/".$name_img ; 
  
 
-    array_push($child_liste_projet_img_array_rediff , $img_ );
+    array_push($child_liste_projet_img_array_rediff  , $img_ );
    }
    else {
+    $img_ = "" ; 
   
-    array_push($child_liste_projet_img_array_rediff , $img_ );
+    array_push($child_liste_projet_img_array_rediff  , $img_ );
    }
  
 

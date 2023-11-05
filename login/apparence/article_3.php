@@ -120,7 +120,43 @@ if(count($apple->list_row)==0){
 
 else {
 
+  //echo  count($liste_projet_id_array) ; 
 
+
+  for($i = 0 ; $i<count($liste_projet_id_array) ; $i ++) {
+
+
+?>
+
+ 
+<div class="information_user_id_sha1_array"><?php echo $information_user_id_sha1_array[$i] ?></div>
+ 
+
+<div class="liste_projet_id_array"><?php echo $liste_projet_id_array[$i] ?></div>
+<div class="liste_projet_id_sha1_array"><?php echo $liste_projet_id_sha1_array[$i] ?></div>
+<div class="liste_projet_id_parent_array"><?php echo $liste_projet_id_parent_array[$i] ?></div>
+<div class="liste_projet_id_sha1_general_array"><?php echo $liste_projet_id_sha1_general_array[$i] ?></div>
+<div class="liste_projet_ip_array"><?php echo $liste_projet_ip_array[$i] ?></div>
+
+<div class="liste_projet_img_array"><?php echo $liste_projet_img_array[$i] ?></div>
+<div class="liste_projet_img_array_array"><?php echo $liste_projet_img_array_array[$i] ?></div>
+<div class="liste_projet_name_array"><?php echo $liste_projet_name_array[$i] ?></div>
+<div class="liste_projet_description1_array"><?php echo $liste_projet_description1_array[$i] ?></div>
+<div class="liste_projet_description2_array"><?php echo $liste_projet_description2_array[$i] ?></div>
+
+<div class="liste_projet_visibilite1_array"><?php echo $liste_projet_visibilite1_array[$i] ?></div>
+<div class="liste_projet_visibilite2_array"><?php echo $liste_projet_visibilite2_array[$i] ?></div>
+<div class="liste_projet_type_array"><?php echo $liste_projet_type_array[$i] ?></div>
+
+<div class="liste_projet_new_file_array"><?php echo $liste_projet_new_file_array[$i] ?></div>
+
+<div class="liste_projet_reg_date_array"><?php echo $liste_projet_reg_date_array[$i] ?></div>
+ 
+
+
+<?php 
+  }
+  /*
 var_dump($liste_projet_id_array) ; 
 var_dump($liste_projet_id_sha1_array) ; 
 var_dump($liste_projet_id_parent_array) ; 
@@ -143,8 +179,7 @@ var_dump($liste_projet_new_file_array) ;
 var_dump($liste_projet_reg_date_array) ; 
 
  
-
- 
+ */
 
 
 
@@ -153,7 +188,7 @@ var_dump($liste_projet_reg_date_array) ;
 if(count($child_apple2->list_row)!=0){
   echo "Child <br/>" ; 
 
- 
+ /*
 var_dump($child_liste_projet_id_array) ; 
 var_dump($child_liste_projet_id_sha1_array) ; 
 var_dump($child_liste_projet_id_parent_array) ; 
@@ -174,6 +209,51 @@ var_dump($child_information_user_id_sha1_array) ;
 var_dump($child_liste_projet_new_file_array) ; 
 
 var_dump($child_liste_projet_reg_date_array) ; 
+
+
+*/
+
+ 
+  for($i = 0 ; $i<count($child_liste_projet_id_array) ; $i ++) {
+echo count($child_liste_projet_id_array) ; 
+ 
+
+?>
+ 
+<br/>
+<div class="child_information_user_id_sha1_array"><?php echo $child_information_user_id_sha1_array[$i] ?></div>
+<div class="child_liste_projet_id_array"><?php echo $child_liste_projet_id_array[$i] ?></div>
+<div class="child_liste_projet_id_sha1_array"><?php echo $child_liste_projet_id_sha1_array[$i] ?></div>
+<div class="child_liste_projet_id_parent_array"><?php echo $child_liste_projet_id_parent_array[$i] ?></div>
+<div class="child_liste_projet_id_sha1_general_array"><?php echo $child_liste_projet_id_sha1_general_array[$i] ?></div>
+<div class="child_liste_projet_ip_array"><?php echo $child_liste_projet_ip_array[$i] ?></div>
+ 
+<div class="child_liste_projet_name_array"><?php echo $child_liste_projet_name_array[$i] ?></div>
+<div class="child_liste_projet_description1_array"><?php echo $child_liste_projet_description1_array[$i] ?></div>
+<div class="child_liste_projet_description2_array"><?php echo $child_liste_projet_description2_array[$i] ?></div>
+<div class="child_liste_projet_visibilite1_array"><?php echo $child_liste_projet_visibilite1_array[$i] ?></div>
+<div class="child_liste_projet_visibilite2_array"><?php echo $child_liste_projet_visibilite2_array[$i] ?></div>
+
+
+<div class="child_liste_projet_type_array"><?php echo $child_liste_projet_type_array[$i] ?></div>
+<div class="child_liste_projet_new_file_array"><?php echo $child_liste_projet_new_file_array[$i] ?></div>
+
+<div class="child_liste_projet_img_array"><?php echo $child_liste_projet_img_array[$i] ?></div>
+
+ 
+<div class="child_liste_projet_reg_date_array"><?php echo $child_liste_projet_reg_date_array[$i] ?></div>
+
+ 
+ 
+ 
+
+
+<?php 
+  }
+
+
+
+ 
  
 }
 
