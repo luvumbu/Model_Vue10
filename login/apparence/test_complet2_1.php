@@ -367,47 +367,6 @@ $child_liste_projet_reg_date_array =$child_apple2->add_array_element($child_numb
 
 
 
-  $SERVER_NAME =  $_SERVER['SERVER_NAME']; 
-  $name_img =  $apple->list_row[12]."/".$apple->list_row[5] ;
-
-  if($apple->list_row[4]=="127.0.0.1" || $apple->list_row[4]=="localhost" ){
-      
-
-      if($name_img !=""){
-         $img_ = "http://".$apple->list_row[4]."/Model_Vue9/login/pages_on/download_img/uploads/".$name_img ; 
-
-
-       array_push($liste_projet_img_array_rediff  , $img_ );
-      }
-      else {
-       $img_ = "" ; 
-
-       array_push($liste_projet_img_array_rediff  , $img_ );
-      }
-
-
-
-  }
-  else {
-
-
-
-   if($name_img !=""){
-     $img_ = "http://".$apple->list_row[4]."/login/pages_on/download_img/uploads/".$name_img ; 
-
-
-   array_push($child_liste_projet_img_array_rediff  , $img_ );
-  }
-  else {
-   $img_ = "" ; 
- 
-   array_push($child_liste_projet_img_array_rediff  , $img_ );
-  }
-
-
-  }
-
-
 
   /*
     $liste_projet_id_array=array();

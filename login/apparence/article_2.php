@@ -67,6 +67,9 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     $apple->execution();
     $myJSON = json_encode($apple->list_row); 
 
+
+
+
     // echo   $myJSON ; 
  
    // $apple->all_data_json() ; 
@@ -168,3 +171,329 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
 </style>
 </body>
 </html>
+
+
+
+<?php 
+
+// Partie child 
+
+
+
+
+
+
+$apple_child = new Select_datas($servername,$username,$password,$dbname);
+
+  array_push(
+    $apple_child->row,
+
+    'liste_projet_id',
+    'liste_projet_id_sha1',
+  
+    'liste_projet_id_sha1_general',
+    'liste_projet_ip',
+
+    'liste_projet_img',
+    'liste_projet_name',
+    'liste_projet_description1',
+    
+    'liste_projet_visibilite1',
+
+    'liste_projet_visibilite2',
+    'liste_projet_type',
+    'information_user_id_sha1',
+    'liste_projet_new_file',
+    'liste_projet_reg_date'
+    
+
+    );
+ 
+  
+    //$apple_child->sql='SELECT * FROM `liste_projet` WHERE `information_user_id_sha1`="'.$id_information_user_sha1.'"ORDER BY `liste_projet_id` ';
+    $apple_child->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_parent`="'.$url_page.'"';
+
+    $apple_child->execution();
+
+
+
+    $myJSON = json_encode( $apple_child->list_row); 
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+// Utilisation
+$liste_projet_id=array("");
+$liste_projet_id_sha1=array("");
+ 
+ 
+$liste_projet_ip=array("");
+
+$liste_projet_img=array("");
+$liste_projet_name=array("");
+$liste_projet_description1=array("");
+$liste_projet_description2=array("");
+$liste_projet_visibilite1=array("");
+
+$liste_projet_visibilite2=array("");
+$liste_projet_type=array("");
+$information_user_id_sha1=array("");
+$liste_projet_new_file=array("");
+$liste_projet_reg_date=array("");
+
+// creation de la variable vide
+$number = 1 ; 
+// affectation valeur array 
+// execution et ajout des element dans la nouvelle table 
+
+$liste_projet_id =$apple_child->add_array_element($number);
+// ok  
+$number ++ ; 
+
+
+$liste_projet_id_sha1 =$apple_child->add_array_element($number);
+// ok  
+$number ++ ; 
+
+
+
+
+
+$liste_projet_ip =$apple_child->add_array_element($number);
+// ok  
+$number ++ ; 
+
+
+
+$liste_projet_img =$apple_child->add_array_element($number);
+// ok  
+$number ++ ; 
+ 
+
+
+
+$liste_projet_name =$apple_child->add_array_element($number);
+// ok  
+$number ++ ; 
+
+
+
+$liste_projet_description1 =$apple_child->add_array_element($number);
+// ok  
+$number ++ ; 
+
+
+
+$liste_projet_visibilite1 =$apple_child->add_array_element($number);
+// ok  
+$number ++ ; 
+
+
+$liste_projet_visibilite1 =$apple_child->add_array_element($number);
+// ok  
+$number ++ ; 
+
+
+$liste_projet_type =$apple_child->add_array_element($number);
+// ok  
+$number ++ ; 
+
+
+
+$information_user_id_sha1 =$apple_child->add_array_element($number);
+// ok  
+$number ++ ; 
+
+
+$liste_projet_new_file =$apple_child->add_array_element($number);
+// ok  
+$number ++ ; 
+
+
+$liste_projet_reg_date =$apple_child->add_array_element($number);
+// ok  
+$number ++ ; 
+
+
+
+
+ 
+ 
+
+ 
+
+
+ 
+
+
+ 
+
+/*
+ 
+ 
+
+liste_projet_reg_date
+*/
+
+
+
+
+/*
+$number ++ ; 
+$liste_projet_id =$apple_child->add_array_element($number);
+$number ++ ; 
+$liste_projet_id_sha1 =$apple_child->add_array_element($number);
+$number ++ ; 
+$liste_projet_id_parent =$apple_child->add_array_element($number);
+$number ++ ; 
+$liste_projet_id_sha1_general =$apple_child->add_array_element($number);
+$number ++ ; 
+
+$liste_projet_ip =$apple_child->add_array_element($number);
+$number ++ ; 
+$liste_projet_img =$apple_child->add_array_element($number);
+$number ++ ; 
+$liste_projet_name =$apple_child->add_array_element($number);
+$number ++ ; 
+$liste_projet_description1 =$apple_child->add_array_element($number);
+$number ++ ; 
+$liste_projet_description2 =$apple_child->add_array_element($number);
+$number ++ ; 
+
+$liste_projet_visibilite1 =$apple_child->add_array_element($number);
+$number ++ ; 
+$liste_projet_visibilite2 =$apple_child->add_array_element($number);
+$number ++ ; 
+$liste_projet_type =$apple_child->add_array_element($number);
+$number ++ ; 
+$information_user_id_sha1 =$apple_child->add_array_element($number);
+$number ++ ; 
+$liste_projet_new_file =$apple_child->add_array_element($number);
+$number ++ ; 
+$liste_projet_reg_date =$apple_child->add_array_element($number);
+$number ++ ; 
+
+*/
+
+
+
+
+
+
+/*
+var_dump($liste_projet_id) ; 
+var_dump($liste_projet_id_sha1) ; 
+var_dump($liste_projet_id_parent) ; 
+var_dump($liste_projet_id_sha1_general) ; 
+var_dump($liste_projet_ip) ; 
+
+var_dump($liste_projet_img) ; 
+var_dump($liste_projet_name) ; 
+var_dump($liste_projet_description1) ; 
+var_dump($liste_projet_description2) ; 
+var_dump($liste_projet_visibilite1) ; 
+
+var_dump($liste_projet_visibilite2) ; 
+var_dump($liste_projet_type) ; 
+var_dump($information_user_id_sha1) ; 
+var_dump($liste_projet_new_file) ; 
+var_dump($liste_projet_reg_date) ; 
+
+
+*/
+
+ 
+
+
+
+
+
+
+
+ 
+
+// Utilisation
+ 
+
+ 
+
+
+/*
+liste_projet_id
+liste_projet_id_sha1
+liste_projet_ip
+liste_projet_img
+liste_projet_name
+liste_projet_description1
+liste_projet_visibilite1
+liste_projet_visibilite1
+liste_projet_type
+information_user_id_sha1
+liste_projet_new_file
+liste_projet_reg_date
+
+*/
+
+
+
+
+/*
+        var_dump($liste_projet_id) ;
+        var_dump($liste_projet_id_sha1) ; 
+        var_dump($liste_projet_ip) ; 
+        var_dump($liste_projet_img) ; 
+        var_dump($liste_projet_name) ; 
+        var_dump($liste_projet_description1) ; 
+        var_dump($liste_projet_visibilite1) ; 
+        var_dump($liste_projet_visibilite1) ; 
+        var_dump($liste_projet_type) ; 
+        var_dump($information_user_id_sha1) ; 
+        var_dump($liste_projet_new_file) ; 
+        var_dump($liste_projet_reg_date) ; 
+*/
+
+ for ($a = 0 ; $a <count($liste_projet_id); $a ++) {
+?>
+
+ 
+
+<div class="liste_projet_id"> <?php echo $liste_projet_id[$a]?></div>
+<div class="liste_projet_id_sha1"> <?php echo $liste_projet_id_sha1[$a]?></div>
+<div class="liste_projet_ip"> <?php echo $liste_projet_ip[$a]?></div>
+<div class="liste_projet_img"> <?php echo $liste_projet_img[$a]?></div>
+<div class="liste_projet_name"> <?php echo $liste_projet_name[$a]?></div>
+
+<div class="liste_projet_description1"> <?php echo $liste_projet_description1[$a]?></div>
+<div class="liste_projet_visibilite1"> <?php echo $liste_projet_visibilite1[$a]?></div>
+<div class="liste_projet_visibilite1"> <?php echo $liste_projet_visibilite1[$a]?></div>
+<div class="liste_projet_type"> <?php echo $liste_projet_type[$a]?></div>
+<div class="information_user_id_sha1"> <?php echo $information_user_id_sha1[$a]?></div>
+
+<div class="liste_projet_new_file"> <?php echo $liste_projet_new_file[$a]?></div>
+<div class="liste_projet_reg_date"> <?php echo $liste_projet_reg_date[$a]?></div>
+ 
+ 
+
+ 
+
+
+<?php 
+ 
+ }
+
+
+
+?>
+
+ 

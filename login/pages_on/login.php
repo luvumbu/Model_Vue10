@@ -599,7 +599,7 @@ ok.push(); // envoie l'information au code pkp
  }
  function onclick_update_remove (_this){
 
-	
+	location.reload() ; 
  
 	//document.getElementById(recherche_elements(_this," ")).style.display="none";
 	

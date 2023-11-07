@@ -1,10 +1,13 @@
+<div id="articles">
+
+
 <?php
  
 include("test_complet2_1.php") ; 
 include("test_complet2_2.php") ; 
  
  ?>
-
+</div>
  <!DOCTYPE html>
  <html lang="en">
  <head>
@@ -13,9 +16,7 @@ include("test_complet2_2.php") ;
   <title>Document</title>
  </head>
  <body>
-  
- </body>
- </html>
+ 
  <a href="../../">Page précedente</a>
 
 

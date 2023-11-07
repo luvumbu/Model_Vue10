@@ -274,7 +274,7 @@ var_dump($child_liste_projet_reg_date_array) ;
     padding : 0 ; 
   }
   .no_visible{
-    display:none ; 
+ 
   }
 </style>
 

@@ -61,7 +61,7 @@
 
  
 
-for($i = 0 ; $i<count($this->list_row) ; $i++) {
+for($i = 0 ; $i<count($this->list_row); $i++) {
 
 
  
