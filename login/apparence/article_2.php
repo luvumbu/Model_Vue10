@@ -139,7 +139,7 @@ $app_location ="" ;
     
         
  
-      <p class="liste_projet_description1"><?php echo $apple->list_row[7] ?></p>
+      <p class="liste_projet_description1 b_for"><?php echo $apple->list_row[7] ?></p>
 
       <p class="liste_projet_description2"></p>
       <div class="child_image">
@@ -559,5 +559,8 @@ if($app_location!="web"){
   }
   .b_for{
     margin-top:250px;
+        text-align:justify ; 
+        padding:1pc;
+        margin-bottom:100px; 
   }
 </style>
