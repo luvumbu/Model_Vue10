@@ -80,15 +80,18 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
 
  
 
-  
 
+$app_location ="" ; 
  
    if($apple->list_row[4]=="127.0.0.1" || $apple->list_row[4]=="localhost" ){
-       $img_ = "http://".$apple->list_row[4]."/Model_Vue9/login/pages_on/download_img/uploads/".$name_img ; 
 
+ 
+       $img_ = "http://".$apple->list_row[4]."/Model_Vue9/login/pages_on/download_img/uploads/".$name_img ; 
+       $app_location = "localhost";
    }
    else {
     $img_ = "http://".$apple->list_row[4]."/login/pages_on/download_img/uploads/".$name_img ; 
+    $app_location = "web";
    }
  ?>
 
@@ -126,6 +129,8 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
 ?>
 
 <div class="all_img" style="background-image: url('<?php echo $img_ ; ?>')" >
+
+
                 
                 </div>
 <?php 
@@ -137,9 +142,13 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
       <p class="liste_projet_description1"><?php echo $apple->list_row[7] ?></p>
 
       <p class="liste_projet_description2"></p>
+      <div class="child_image">
+        <img src="<?php echo $img_?>" alt="" srcset="">
+      </div>
+      
       <p class="liste_projet_reg_date"><?php echo $apple->list_row[14] ?></p>
       <div>
-   <a href="../../"> Page précedente</a>
+
  </div>
 
       
@@ -148,8 +157,7 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     
  
   </div>
-</div>
-
+ 
 
 
 
@@ -463,31 +471,66 @@ liste_projet_reg_date
         var_dump($liste_projet_reg_date) ; 
 */
 
- for ($a = 0 ; $a <count($liste_projet_id); $a ++) {
-?>
 
  
 
+ for ($a = 0 ; $a <count($liste_projet_id); $a ++) {
+?>
+<div class="b_for">
+
+
+ 
+<?php 
+
+/*
 <div class="liste_projet_id"> <?php echo $liste_projet_id[$a]?></div>
 <div class="liste_projet_id_sha1"> <?php echo $liste_projet_id_sha1[$a]?></div>
 <div class="liste_projet_ip"> <?php echo $liste_projet_ip[$a]?></div>
-<div class="liste_projet_img"> <?php echo $liste_projet_img[$a]?></div>
+<div class="liste_projet_visibilite1"> <?php echo $liste_projet_visibilite1[$a]?></div>
+<div class="liste_projet_visibilite1"> <?php echo $liste_projet_visibilite1[$a]?></div>
+<div class="information_user_id_sha1"> <?php echo $information_user_id_sha1[$a]?></div>
+<div class="liste_projet_type"> <?php echo $liste_projet_type[$a]?></div>
+<div class="liste_projet_new_file"> <?php echo $liste_projet_new_file[$a]?></div>
+*/
+?>
+
+
+
 <div class="liste_projet_name"> <?php echo $liste_projet_name[$a]?></div>
 
-<div class="liste_projet_description1"> <?php echo $liste_projet_description1[$a]?></div>
-<div class="liste_projet_visibilite1"> <?php echo $liste_projet_visibilite1[$a]?></div>
-<div class="liste_projet_visibilite1"> <?php echo $liste_projet_visibilite1[$a]?></div>
-<div class="liste_projet_type"> <?php echo $liste_projet_type[$a]?></div>
-<div class="information_user_id_sha1"> <?php echo $information_user_id_sha1[$a]?></div>
 
-<div class="liste_projet_new_file"> <?php echo $liste_projet_new_file[$a]?></div>
+<?php 
+
+if($app_location!="web"){
+ 
+  if( $liste_projet_img[$a]!=""){
+?>
+ 
+<div class="child_image">
+<img   src='<?php  echo "http://".$apple->list_row[4]."/Model_Vue9/login/pages_on/download_img/uploads/".$information_user_id_sha1[$a]."/".$liste_projet_img[$a] ;  ?>' alt="" srcset="">
+
+</div>
+<?php 
+  }
+ 
+}
+
+?>
+<div class="liste_projet_description1"> <?php echo $liste_projet_description1[$a]?></div>
+
+<div class="liste_projet_ip"> <?php echo $liste_projet_ip[$a]?></div>
+
+
+
+
+
 <div class="liste_projet_reg_date"> <?php echo $liste_projet_reg_date[$a]?></div>
  
  
 
  
 
-
+</div>
 <?php 
  
  }
@@ -495,5 +538,26 @@ liste_projet_reg_date
 
 
 ?>
+   <a href="../../"> Page précedente</a>
+</div>
 
- 
+
+<style>
+  .child_image{
+    max-width:50%; 
+    text-align:center ; 
+    margin:auto ;
+  
+    padding:15px; 
+  }
+  .child_image img{
+    max-width:300px; 
+  
+  }
+  .img_parent{
+    max-width:300px; 
+  }
+  .b_for{
+    margin-top:250px;
+  }
+</style>
