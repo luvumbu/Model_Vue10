@@ -1,8 +1,5 @@
 <?php
-
  include("connexion.php") ; 
-
-
  $servername="localhost" ; 
 $$username = "root" ; 
 $password = "root" ; 
@@ -40,15 +37,10 @@ $password = "root" ;
         while($row = $result->fetch_assoc()) {
       
         //  echo "id: " . $row["id_liste_projet"];
-
-
         foreach ($this->row as $value) {
-     
-
           array_push($this->list_row,$row[$value]);
           $this->verif_info = "1" ; 
-        }
-    
+        }  
       
         }
       } else {
@@ -59,31 +51,11 @@ $password = "root" ;
  
   function all_data_json(){
     $a=array();
-
- 
-
-    
- 
-
     for($i = 0 ; $i<count($this->list_row) ; $i++){
      
       array_push($a,$this->list_row[$i]);
     }
-    
-
-
-
-
-
- 
-if(count($this->list_row)>0){
-
-
-
- 
-
-
-
+  if(count($this->list_row)>0){
      echo "[" ; 
      echo "{" ; 
     for($i = 0 ; $i<count($a) ; $i++){
@@ -92,11 +64,9 @@ if(count($this->list_row)>0){
       echo '"'.$a[$i].'"'  ; 
       if($i!=count($a)-1){
         echo "," ;
-          }
-    
+          }    
     if(fmod($i, count($this->row))==count($this->row)-1)
-    {
-    
+    {    
     if(count($this->row)!=$i){
         if($i==count($a)-1){
      echo "}" ;
@@ -112,25 +82,13 @@ if(count($this->list_row)>0){
     }
    }
     } 
-    echo "]" ; 
-
-
-    
+    echo "]" ;     
   }
   else {
     echo '["404"]' ; 
   }
 }
-
 }
-
-
-
-
- ?>
-
-
-<?php 
 // CODE exeMPLe 
 /*
  session_start() ; 
@@ -159,8 +117,6 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     'information_user_id_sha1',
     'liste_projet_new_file',
     'liste_projet_reg_date'
-    
-
     );
  
     $id_information_user_sha1 =$_SESSION["information_user_id_sha1"] ; 
@@ -253,25 +209,10 @@ echo "[";
     $apple2->all_data_json() ;
 
     echo "]";
-
-
-
-
-
-
 */
-
-
-
-
-
-
-
 $apple = new Select_datas($servername,$username,$password,$dbname);
-
   array_push(
     $apple->row,
-
     'liste_projet_id',
     'liste_projet_id_sha1',
     'liste_projet_id_parent',
@@ -287,24 +228,11 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     'information_user_id_sha1',
     'liste_projet_new_file',
     'liste_projet_reg_date'
-    
-
-    );
- 
+    ); 
     $id_information_user_sha1 =$_SESSION["information_user_id_sha1"] ; 
     $apple->sql='SELECT * FROM `liste_projet` WHERE 1';
     $apple->execution();
     $myJSON = json_encode($apple->list_row); 
-
-    // echo   $myJSON ; 
- 
-    $apple->all_data_json() ; 
-    
+    // echo   $myJSON ;  
+    $apple->all_data_json() ;    
  ?>
-
- 
-  
- 
- 
-  
- 

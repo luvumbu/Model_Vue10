@@ -1,18 +1,10 @@
 <?php  
 session_start() ; 
 header("Access-Control-Allow-Origin: *");
-
- 
 $dbname= $_POST["dbname"];
 $username= $_POST["username"];
 $password= $_POST["password"];
 $servername="localhost";
-
-
-
-
- 
- 
 // Si la connexion ne pas bonne avec la BDD on efface le fichier de connexion
 try {
     $_SESSION['remove'] = true;  
@@ -28,10 +20,7 @@ try {
 
  // si le programme trouve une erreur de connexion il efface le fichier de configuration
  // Connexion.php   
- $_SESSION['remove'] = false;
-
-
- 
+ $_SESSION['remove'] = false; 
   } 
  
 

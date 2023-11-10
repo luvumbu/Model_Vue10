@@ -91,6 +91,9 @@ console.log(child_liste_projet_description1_array[x].innerHTML) ;
 console.log(child_liste_projet_img_array[x].innerHTML) ; 
 console.log(child_liste_projet_reg_date_array[x].innerHTML) ; 
 
+
+
+
 }
 
 

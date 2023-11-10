@@ -143,7 +143,7 @@ $app_location ="" ;
 
       <p class="liste_projet_description2"></p>
       <div class="child_image">
-        <img src="<?php echo $img_?>" alt="" srcset="">
+        <img  class="src_img" src="<?php echo $img_?>" alt="" srcset="">
       </div>
       
       <p class="liste_projet_reg_date"><?php echo $apple->list_row[14] ?></p>
@@ -164,12 +164,7 @@ $app_location ="" ;
 <style>
     .all_img{
         width:100% ; 
-        height:200px; 
-
-        background-image:url("http://localhost/Model_Vue9/login/pages_on/download_img/uploads/c112c7a30173389dda190c15548adcfb5581ad23/1699078738741.png") ; 
-        
-        background-image:url("1698944862875.png") ; 
-        
+        height:200px;         
         background-size:100% ; 
        
     }
@@ -507,12 +502,21 @@ if($app_location!="web"){
 ?>
  
 <div class="child_image">
-<img   src='<?php  echo "http://".$apple->list_row[4]."/Model_Vue9/login/pages_on/download_img/uploads/".$information_user_id_sha1[$a]."/".$liste_projet_img[$a] ;  ?>' alt="" srcset="">
+<img  class="src_img2" src='<?php  echo "http://".$apple->list_row[4]."/Model_Vue9/login/pages_on/download_img/uploads/".$information_user_id_sha1[$a]."/".$liste_projet_img[$a] ;  ?>' alt="" srcset="">
 
 </div>
 <?php 
   }
  
+}
+else {
+  ?>
+ 
+<div class="child_image">
+<img  class="src_img2" src='<?php  echo "http://".$apple->list_row[4]."/login/pages_on/download_img/uploads/".$information_user_id_sha1[$a]."/".$liste_projet_img[$a] ;  ?>' alt="" srcset="">
+
+</div>
+<?php 
 }
 
 ?>
@@ -550,10 +554,7 @@ if($app_location!="web"){
   
     padding:15px; 
   }
-  .child_image img{
-    max-width:300px; 
-  
-  }
+ 
   .img_parent{
     max-width:300px; 
   }
@@ -563,4 +564,8 @@ if($app_location!="web"){
         padding:1pc;
         margin-bottom:100px; 
   }
+ 
 </style>
+
+ 
+ 

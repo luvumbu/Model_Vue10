@@ -71,12 +71,7 @@ if(fmod($i, count($this->row))==$number){
   array_push($a,$this->list_row[$i] );
 }
  
-
-
 }
-
-
-
 return $a ; 
  
 

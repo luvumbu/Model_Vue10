@@ -1,46 +1,23 @@
 <?php 
 session_start() ; 
 header("Access-Control-Allow-Origin: *");
-
 include("../model/class/php/Select_datas.php") ;  
-include("../model/class/php/connexion.php") ;  
-
-
- 
-
+include("../model/class/php/connexion.php") ;
 $PHP_SELF = strrev($_SERVER['PHP_SELF']) ; 
-
-$url_page = "" ; 
- 
+$url_page = "" ;  
 for($i = 0  ; $i <strlen($_SERVER['PHP_SELF']) ; $i ++) {
-
 //echo strrev($_SERVER['PHP_SELF'][$i]) ; 
- 
- 
 if($PHP_SELF[$i]=="/"){
     break ; 
 }
 else {
- 
-
     $url_page = $url_page.$PHP_SELF[$i] ; 
 }
-
 }
-
-
- 
- 
-
-
-
 $url_page = strrev($url_page) ;
-
 $apple = new Select_datas($servername,$username,$password,$dbname);
-
   array_push(
     $apple->row,
-
     'liste_projet_id',
     'liste_projet_id_sha1',
     'liste_projet_id_parent',
@@ -56,19 +33,11 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     'information_user_id_sha1',
     'liste_projet_new_file',
     'liste_projet_reg_date'
-    
-
-    );
- 
-  
+    );  
     //$apple->sql='SELECT * FROM `liste_projet` WHERE `information_user_id_sha1`="'.$id_information_user_sha1.'"ORDER BY `liste_projet_id` ';
     $apple->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_sha1`="'.$url_page.'"';
-
     $apple->execution();
     $myJSON = json_encode($apple->list_row); 
-
-    // echo   $myJSON ; 
- 
-    $apple->all_data_json() ; 
-   
+    // echo   $myJSON ;  
+    $apple->all_data_json() ;   
  ?>
