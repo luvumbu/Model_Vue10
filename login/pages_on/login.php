@@ -54,16 +54,32 @@ include("class/php/php_select_data/give_url.php") ;
 if(isset($_SESSION["time"])){
 
     if($_SESSION["time"]!=""){
+   
+        include("class/php/php_select_data/select_list_projet_1.php") ; 
+         include("apparence/a_2.php"); 
 
-         include("class/php/php_select_data/select_list_projet_1.php") ; 
+         if($nombre_total_element==1){
+        include("class/php/php_select_data/select_list_projet_3.php") ; 
+          
+        }
     }
     else{
-         include("class/php/php_select_data/select_list_projet_2.php") ; 
+        include("class/php/php_select_data/select_list_projet_2.php") ; 
+          include("apparence/a_2.php"); 
+          if($nombre_total_element==1){
+               echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!2" ; 
+             }
+
     }
     }
     else {
-     
-     include("class/php/php_select_data/select_list_projet_2.php") ; 
+    
+   include("class/php/php_select_data/select_list_projet_2.php") ; 
+     include("apparence/a_2.php"); 
+
+     if($nombre_total_element==1){
+          echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!3" ; 
+        }
      
 
     }

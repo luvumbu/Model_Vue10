@@ -141,5 +141,5 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     ?>
 
  <?php 
- include("apparence/a_1_1.php"); 
+
  ?>

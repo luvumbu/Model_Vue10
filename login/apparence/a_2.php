@@ -127,7 +127,7 @@ for($a = 0 ; $a< $nombre_total_element; $a ++) {
         <img class="format_toogle" title="<?php echo $liste_projet_id_sha1[$a] ?>"   width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/link--v1.png" alt="link--v1"/>
       <?php 
 
-            if($a<1){
+            if($nombre_total_element==1){
 ?>
 
 <img class="format_toogle"  width="50" height="50" onclick="add_element(this)" title="<?php echo $liste_projet_id_sha1[$a] ?>"  src="https://img.icons8.com/ios-glyphs/30/filled-plus-2-math.png" alt="filled-plus-2-math"/>
@@ -136,10 +136,16 @@ for($a = 0 ; $a< $nombre_total_element; $a ++) {
             }
       ?>
           <img class="format_toogle" onclick="remove_all(this)" title="<?php echo $liste_projet_id_sha1[$a] ?>"   width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/delete-forever.png" alt="delete-forever"/>
-      </div>
+     
+     
+     
+          </div>
     
 <?php 
 }
+
+
+
 
  ?>
 
