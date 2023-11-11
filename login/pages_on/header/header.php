@@ -6,7 +6,8 @@
     <div class="col-sm-4" id="header_1" >    <img width="50" class="cursor_pointer" height="50" src="https://img.icons8.com/ios/50/add--v1.png" alt="add--v1"></div>
     <div class="col-sm-4" id="header_2">    <img width="50" class="cursor_pointer" height="50" src="https://img.icons8.com/ios/50/exit--v1.png" alt="exit--v1"></div>
     <div class="col-sm-4" id="header_3"> <img width="50" class="cursor_pointer" height="50" src="https://img.icons8.com/glyph-neue/50/folder-invoices--v1.png" alt="folder-invoices--v1"></div>
-</div>
+
+  </div>
  
 </div>
 
@@ -126,9 +127,9 @@ let time = "";
 
 function add_blog() {
   
+ 
 
-
-
+ this.style.display="none"; 
  
 
 
@@ -137,23 +138,13 @@ function add_blog() {
  time = d.getTime();
  
 
-console.log(time) ;
-  Ajax("header_action","pages_on/header/header_action/header_action_2.html");
-
-const x = setTimeout(oui_ok, 50);
-function oui_ok() {
+ 
  
 
-  
-  document.getElementById("header_action_2_info").title=time ; 
+ const x = setTimeout(oui_ok, 50);
 
-
-
-
-  
-
-
-  document.cookie = "username="+time;
+ 
+ document.cookie = "username="+time;
 var ok = new Information("class/php/php_on/header_action_add.php"); // création de la classe 
 ok.add("time", time); // ajout de l'information pour lenvoi 
 //ok.add("password", "root"); // ajout d'une deuxieme information denvoi  
@@ -161,12 +152,25 @@ console.log(ok.info()); // demande l'information dans le tableau
 ok.push(); // envoie l'information au code pkp 
 
 
+function oui_ok() {
+ 
+
   
+
+
+
+
+
+  
+
+
+
+
+ 
 
 location.reload() ; 
 }
-
-
+ 
 
 }
 

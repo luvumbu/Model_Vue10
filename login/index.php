@@ -1,6 +1,8 @@
 <?php 
 session_start(); 
  //echo $_SESSION["name"] ; 
+
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -34,6 +36,9 @@ session_start();
   else {
     include("link_page/link_on.html") ; 
     include("pages_on/login.php") ;
+
+
+    
    //include("index_imgs.php");
 //   Ajax("header_action","header/header_action/header_action_1.html");
    ?> 

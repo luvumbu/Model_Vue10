@@ -6,7 +6,7 @@ include("header/header.php") ;
 <html>
 <body>
 <!-- -->
-<script src="class/js/js_on/login.js"></script>
+ 
 <script src="class/js/js_on/lancement_action_1.js"></script>
 <script src="class/js/js_on/lancement_action_2.js"></script> 
 <script src="class/js/js_on/recherche_elements.js"></script>
@@ -45,6 +45,40 @@ include("header/header.php") ;
 <!-- -->
 <script src="class/js/js_on/voir_projet_2.js"></script>
 <!-- -->
+
+<?php 
+
+include("class/php/php_select_data/give_url.php") ; 
+
+
+if(isset($_SESSION["time"])){
+
+    if($_SESSION["time"]!=""){
+
+         include("class/php/php_select_data/select_list_projet_1.php") ; 
+    }
+    else{
+         include("class/php/php_select_data/select_list_projet_2.php") ; 
+    }
+    }
+    else {
+     
+     include("class/php/php_select_data/select_list_projet_2.php") ; 
+     
+
+    }
+
+
+?>
+
+
+<script>
+
+
+
+
+     
+</script>
 </body>
 </html>
 </script>
