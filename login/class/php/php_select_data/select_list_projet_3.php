@@ -52,37 +52,37 @@ $number = 0 ;
 // affectation valeur array 
 // execution et ajout des element dans la nouvelle table 
 
-$liste_projet_id =$apple->add_array_element($number);
+$liste_projet_id =$apple_2->add_array_element($number);
 $number ++ ; 
-$liste_projet_id_sha1 =$apple->add_array_element($number);
+$liste_projet_id_sha1 =$apple_2->add_array_element($number);
 $number ++ ; 
-$liste_projet_id_parent =$apple->add_array_element($number);
+$liste_projet_id_parent =$apple_2->add_array_element($number);
 $number ++ ; 
-$liste_projet_id_sha1_general =$apple->add_array_element($number);
+$liste_projet_id_sha1_general =$apple_2->add_array_element($number);
 $number ++ ; 
-$liste_projet_ip =$apple->add_array_element($number);
-$number ++ ; 
-
-$liste_projet_img =$apple->add_array_element($number);
-$number ++ ; 
-$liste_projet_name =$apple->add_array_element($number);
-$number ++ ; 
-$liste_projet_description1 =$apple->add_array_element($number);
-$number ++ ; 
-$liste_projet_description2 =$apple->add_array_element($number);
-$number ++ ; 
-$liste_projet_visibilite1 =$apple->add_array_element($number);
+$liste_projet_ip =$apple_2->add_array_element($number);
 $number ++ ; 
 
-$liste_projet_visibilite2 =$apple->add_array_element($number);
+$liste_projet_img =$apple_2->add_array_element($number);
 $number ++ ; 
-$liste_projet_type =$apple->add_array_element($number);
+$liste_projet_name =$apple_2->add_array_element($number);
 $number ++ ; 
-$information_user_id_sha1 =$apple->add_array_element($number);
+$liste_projet_description1 =$apple_2->add_array_element($number);
 $number ++ ; 
-$liste_projet_new_file =$apple->add_array_element($number);
+$liste_projet_description2 =$apple_2->add_array_element($number);
 $number ++ ; 
-$liste_projet_reg_date =$apple->add_array_element($number);
+$liste_projet_visibilite1 =$apple_2->add_array_element($number);
+$number ++ ; 
+
+$liste_projet_visibilite2 =$apple_2->add_array_element($number);
+$number ++ ; 
+$liste_projet_type =$apple_2->add_array_element($number);
+$number ++ ; 
+$information_user_id_sha1 =$apple_2->add_array_element($number);
+$number ++ ; 
+$liste_projet_new_file =$apple_2->add_array_element($number);
+$number ++ ; 
+$liste_projet_reg_date =$apple_2->add_array_element($number);
 $number ++ ; 
 
 
@@ -111,7 +111,10 @@ var_dump($liste_projet_reg_date) ;
  
 
 
-
+for($a= 0 ; $a < count($liste_projet_id) ; $a ++) {
+     echo $liste_projet_id[$a]; 
+     echo "<br/>" ; 
+}
 
 
  
