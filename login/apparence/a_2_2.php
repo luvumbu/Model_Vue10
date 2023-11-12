@@ -402,6 +402,10 @@ function myGreeting() {
 
 <style>
   .space_display_1{
-   
+   display:flex; 
+   justify:space-around ; 
+   flex-wrap : wrap ; 
+   width:80%;
+   margin:auto ; 
   }
 </style>
