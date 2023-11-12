@@ -112,7 +112,10 @@ for($a = 0 ; $a< $nombre_total_element; $a ++) {
 
             </div>
      </div>
+
         <br/>
+        
+        <img width="50" class="format_toogle" height="50" title="<?php echo $liste_projet_id_sha1[$a] ?>" src="https://img.icons8.com/material-outlined/50/picture.png" alt="picture"/>
  
         <?php 
               if($liste_projet_visibilite1[$a]==""){
@@ -160,6 +163,7 @@ for($a = 0 ; $a< $nombre_total_element; $a ++) {
           </div>
     
 <?php 
+ 
 }
 
 

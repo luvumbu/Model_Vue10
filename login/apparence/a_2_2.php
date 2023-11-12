@@ -112,7 +112,7 @@ for($a = 0 ; $a< $nombre_total_element; $a ++) {
               if($liste_projet_visibilite1[$a]==""){
                        ?>
                        
-                       
+                   
                        <img class="format_toogle" title="<?php echo $liste_projet_id_sha1[$a] ?>"  onclick="visibility(this)" title="<?php echo $liste_projet_id_sha1[$a] ; ?>" width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/invisible.png" alt="invisible"/>
                        <?php 
               }

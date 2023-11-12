@@ -59,37 +59,35 @@ if(isset($_SESSION["time"])){
         include("class/php/php_select_data/select_list_projet_1.php") ; 
          include("apparence/a_2.php"); 
          if($nombre_total_element==1){
-          /*
-
-Lors que le menu est en individuel 
-
-          */
+ 
         include("class/php/php_select_data/select_list_projet_3.php") ; 
         include("apparence/a_3.php"); 
           
         }
+ 
     }
     else{
       $element_edit =true ; 
 
         include("class/php/php_select_data/select_list_projet_2.php") ; 
-          include("apparence/a_2_2.php"); 
+       
+        include("apparence/a_2_2.php"); 
           if($nombre_total_element==1){
         
              }
-
+ 
     }
     }
     else {
       $element_edit =true ; 
     
    include("class/php/php_select_data/select_list_projet_2.php") ; 
-      include("apparence/a_2.php"); 
+  include("apparence/a_2.php"); 
 
      if($nombre_total_element==1){
         
         }
-     
+ 
 
     }
 
