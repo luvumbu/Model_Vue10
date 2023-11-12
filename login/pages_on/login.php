@@ -49,36 +49,45 @@ include("header/header.php") ;
 <?php 
 
 include("class/php/php_select_data/give_url.php") ; 
-
+$element_edit =false;
 
 if(isset($_SESSION["time"])){
 
     if($_SESSION["time"]!=""){
-   
+ 
+    
         include("class/php/php_select_data/select_list_projet_1.php") ; 
          include("apparence/a_2.php"); 
-
          if($nombre_total_element==1){
+          /*
+
+Lors que le menu est en individuel 
+
+          */
         include("class/php/php_select_data/select_list_projet_3.php") ; 
+        include("apparence/a_3.php"); 
           
         }
     }
     else{
+      $element_edit =true ; 
+
         include("class/php/php_select_data/select_list_projet_2.php") ; 
-          include("apparence/a_2.php"); 
+          include("apparence/a_2_2.php"); 
           if($nombre_total_element==1){
-               echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!2" ; 
+        
              }
 
     }
     }
     else {
+      $element_edit =true ; 
     
    include("class/php/php_select_data/select_list_projet_2.php") ; 
-     include("apparence/a_2.php"); 
+      include("apparence/a_2.php"); 
 
      if($nombre_total_element==1){
-          echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!3" ; 
+        
         }
      
 
@@ -86,7 +95,17 @@ if(isset($_SESSION["time"])){
 
 
 ?>
+<img class="format_toogle position_absolute_1"  onclick="terminer()" width="50" height="50" src="https://img.icons8.com/cotton/50/completed-task--v1.png" alt="completed-task--v1"/>
 
+
+  <style>
+    .position_absolute_1{
+position:fixed ; 
+top:50%; 
+right: 5% ; 
+
+    }
+  </style>
 
 <script>
 

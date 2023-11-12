@@ -1,12 +1,9 @@
 <?php
-$filename = '/path/to/foo.txt';
+ session_start() ; 
+ header("Access-Control-Allow-Origin: *");
 
-if (file_exists($filename)) {
-    echo "Le fichier $filename existe.";
-} else {
-    echo "Le fichier $filename n'existe pas.";
-}
+ $_SERVER['time'] ="1699775589061";
 
-echo "<br/>" ; 
+ 
 ?>
 
