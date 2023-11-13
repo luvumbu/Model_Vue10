@@ -451,6 +451,23 @@ function myGreeting() {
 
     window.location.href = "pages_on/download_img/index.php";
   }
+
+  function selection(_this){
+  
+
+    var ok = new Information("class/php/php_update/selection.php"); // création de la classe 
+ 
+ok.add("selection", _this.value); // ajout de l'information pour lenvoi 
+ok.add("value", _this.title); // ajout de l'information pour lenvoi 
+
+ 
+console.log(ok.info()); // demande l'information dans le tableau
+ok.push(); // envoie l'information au code pkp 
+
+
+
+
+  }
 </script>
 
 <style>

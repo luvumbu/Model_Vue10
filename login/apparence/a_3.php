@@ -23,7 +23,7 @@ for($a = 0 ; $a< count($liste_projet_id_sha1_2); $a ++) {
         <img class="format_toogle" width="50" height="50" onclick="element_edit(this)" src="https://img.icons8.com/windows/50/edit--v1.png" title="<?php echo $liste_projet_id_sha1_2[$a] ?>" alt="edit--v1"/>
 
         <img width="50" class="format_toogle" height="50" title="<?php echo $liste_projet_id_sha1_2[$a] ?>" src="https://img.icons8.com/material-outlined/50/picture.png" alt="picture"/>
-        <select class="form-select format_toogle" aria-label="Default select example">
+        <select class="form-select format_toogle" title="<?php echo $liste_projet_id_sha1_2[$a] ?>" aria-label="Default select example" onchange="selection(this)">
   <option selected>Type</option>
   <option value="1">Titre</option>
   <option value="2">paragraphe</option>
