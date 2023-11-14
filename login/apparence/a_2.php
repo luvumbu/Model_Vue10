@@ -115,7 +115,7 @@ for($a = 0 ; $a< $nombre_total_element; $a ++) {
 
         <br/>
         
-        <img width="50" class="format_toogle" height="50" title="<?php echo $liste_projet_id_sha1[$a] ?>" src="https://img.icons8.com/material-outlined/50/picture.png" alt="picture"/>
+        <img width="50" onclick="redirection_dowload_img(this)" class="format_toogle" height="50" title="<?php echo $liste_projet_id_sha1[$a] ?>" src="https://img.icons8.com/material-outlined/50/picture.png" alt="picture"/>
  
         <?php 
               if($liste_projet_visibilite1[$a]==""){
@@ -467,6 +467,23 @@ ok.push(); // envoie l'information au code pkp
 
 
 
+  }
+
+  function redirection_dowload_img(_this){
+    console.log(_this.title) ; 
+
+    var ok = new Information("class/php/php_update/redirection_dowload_img.php"); // création de la classe 
+ 
+ ok.add("redirection_dowload_img", _this.title); // ajout de l'information pour lenvoi 
+ 
+  
+ console.log(ok.info()); // demande l'information dans le tableau
+ ok.push(); // envoie l'information au code pkp 
+
+
+
+
+ window.location.href = "redirection_dowload_img/index.php";
   }
 </script>
 

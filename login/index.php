@@ -2,7 +2,7 @@
 session_start(); 
  //echo $_SESSION["name"] ; 
 
-
+ 
 ?>
 <!DOCTYPE html>
 <html lang="fr">
