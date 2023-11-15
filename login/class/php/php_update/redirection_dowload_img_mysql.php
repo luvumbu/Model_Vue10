@@ -17,7 +17,7 @@ $liste_projet_visibilite1 = "1699822531400" ;
  
 $redirection_dowload_img =$_SESSION["redirection_dowload_img"]  ; 
 
-$name = $_SESSION["name"]  ; 
+$name = $_SESSION["name2"]  ; 
 
 $apple = new Insertion_Bdd(
       $servername,
