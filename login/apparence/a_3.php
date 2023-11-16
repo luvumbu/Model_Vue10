@@ -22,7 +22,26 @@ for($a = 0 ; $a< count($liste_projet_id_sha1_2); $a ++) {
         <br/>
         <img class="format_toogle" width="50" height="50" onclick="element_edit(this)" src="https://img.icons8.com/windows/50/edit--v1.png" title="<?php echo $liste_projet_id_sha1_2[$a] ?>" alt="edit--v1"/>
 
-        <img width="50" class="format_toogle" onclick="redirection_dowload_img(_this)" height="50" title="<?php echo $liste_projet_id_sha1_2[$a] ?>" src="https://img.icons8.com/material-outlined/50/picture.png" alt="picture"/>
+
+          <?php
+
+
+if($liste_projet_img[$a]!=""){
+  $src_img__="redirection_dowload_img/".$liste_projet_img_2[$a] ; 
+  
+                                    ?>
+                  <div class="div_images_2" onclick="redirection_dowload_img(this)" style="background-image: url('<?php echo $src_img__ ; ?>')" title="<?php echo $liste_projet_id_sha1_2[$a] ?>"></div>  
+  
+  
+                                    <?php 
+                                  }
+ 
+                ?>
+
+
+
+
+        <img width="50" class="format_toogle" onclick="redirection_dowload_img(this)" height="50" title="<?php echo $liste_projet_id_sha1_2[$a] ?>" src="https://img.icons8.com/material-outlined/50/picture.png" alt="picture"/>
         <select class="form-select format_toogle" title="<?php echo $liste_projet_id_sha1_2[$a] ?>" aria-label="Default select example" onchange="selection(this)">
   <option selected>Type</option>
   <option value="1">Titre</option>
@@ -68,3 +87,20 @@ for($a = 0 ; $a< count($liste_projet_id_sha1_2); $a ++) {
 </div>
 
 
+
+
+<style>
+  .div_images_2{
+width:100px;
+height:100px; 
+background-size:100%;
+
+margin-left:10%;
+ 
+}
+
+
+.div_images_2:hover{
+cursor:pointer ; 
+}
+</style>

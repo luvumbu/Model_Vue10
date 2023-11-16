@@ -105,7 +105,26 @@ for($a = 0 ; $a< $nombre_total_element; $a ++) {
         </h4>       
      <div class="block_1">
             <div class="block_1_1">
-                <div class="div_images" onclick="add_image(this)" title="<?php echo $liste_projet_id_sha1[$a] ?>"></div>  
+
+            <?php
+
+ 
+                                if($liste_projet_img[$a]!=""){
+$src_img__="redirection_dowload_img/".$liste_projet_img[$a] ; 
+
+                                  ?>
+                <div class="div_images" onclick="redirection_dowload_img(this)" style="background-image: url('<?php echo $src_img__ ; ?>')" title="<?php echo $liste_projet_id_sha1[$a] ?>"></div>  
+
+
+                                  <?php 
+                                }
+                                else {
+                                    ?>
+                                    <div class="div_images" onclick="redirection_dowload_img(this)" title="<?php echo $liste_projet_id_sha1[$a] ?>"></div>  
+
+                                    <?php 
+                                }
+              ?>
             </div>
             <div class="block_1_2">
                 <textarea onkeyup="update_all_php(this)" id="<?php echo "textarea_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" class="liste_projet_description1_textarea"><?php echo $liste_projet_description1[$a] ?></textarea>
@@ -342,149 +361,7 @@ ok.push(); // envoie l'information au code pkp
 </style>
 
 <script>
-  function terminer(){
-    var ok = new Information("class/php/php_select_data/terminer.php"); // création de la classe 
- 
-    console.log(ok.info()); // demande l'information dans le tableau
-    ok.push(); // envoie l'information au code pkp 
-
-    location.reload() ; 
-
-
-  }
-  function remove_all(_this){
-    var ok = new Information("class/php/php_remove/remove_all.php"); // création de la classe 
-    ok.add("liste_projet_id_sha1", _this.title); // ajout de l'information pour lenvoi  
-    console.log(ok.info()); // demande l'information dans le tableau
-    ok.push(); // envoie l'information au code pkp 
-
-    document.getElementById("parent_"+_this.title).style.display="none";
-    
-  }
-
-
-  function add_element(_this){
-   
- 
- 
- 
-
-var liste_projet_id_parent =  _this.title ; 
-
- const d = new Date();
-time = d.getTime();
-
-
-
-
-
-const x = setTimeout(oui_ok, 50);
-
-
-document.cookie = "username="+time;
-var ok = new Information("class/php/php_on/header_action_add2.php"); // création de la classe 
-ok.add("time", time); // ajout de l'information pour lenvoi 
-ok.add("liste_projet_id_parent", liste_projet_id_parent); // ajout de l'information pour lenvoi 
-
- 
-console.log(ok.info()); // demande l'information dans le tableau
-ok.push(); // envoie l'information au code pkp 
-
-
-function oui_ok() {
-
-
- 
-
-
-
-
-
- 
-
-
-
-
-
-
-location.reload() ; 
-}
-
-
-
-
-  }
-
-
-  function element_edit(_this){
-   
-
-
-var ok = new Information("class/php/cookie_table/element_edit.php"); // création de la classe 
- 
-ok.add("time", _this.title); // ajout de l'information pour lenvoi 
- 
-console.log(ok.info()); // demande l'information dans le tableau
-ok.push(); // envoie l'information au code pkp 
-
- 
-
-
-const myTimeout = setTimeout(myGreeting, 100);
-
-function myGreeting() {
-  location.reload() ; 
-}
-
-
-  }
-
-
-  function add_image(_this){
-    var ok = new Information("class/php/cookie_table/add_image.php"); // création de la classe 
-    ok.add("add_image",_this.title); // ajout de l'information pour lenvoi 
- 
-    console.log(ok.info()); // demande l'information dans le tableau
-    ok.push(); // envoie l'information au code pkp 
-
-
-
-    window.location.href = "pages_on/download_img/index.php";
-  }
-
-  function selection(_this){
   
-
-    var ok = new Information("class/php/php_update/selection.php"); // création de la classe 
- 
-ok.add("selection", _this.value); // ajout de l'information pour lenvoi 
-ok.add("value", _this.title); // ajout de l'information pour lenvoi 
-
- 
-console.log(ok.info()); // demande l'information dans le tableau
-ok.push(); // envoie l'information au code pkp 
-
-
-
-
-  }
-
-  function redirection_dowload_img(_this){
-    console.log(_this.title) ; 
-
-    var ok = new Information("class/php/php_update/redirection_dowload_img.php"); // création de la classe 
- 
- ok.add("redirection_dowload_img", _this.title); // ajout de l'information pour lenvoi 
- 
-  
- console.log(ok.info()); // demande l'information dans le tableau
- ok.push(); // envoie l'information au code pkp 
-
-
-
-
- window.location.href = "redirection_dowload_img/index.php";
-  }
 </script>
 
 <style>

@@ -99,7 +99,28 @@ for($a = 0 ; $a< $nombre_total_element; $a ++) {
   ?>
 
 <div class="class_1" id="<?php echo "parent_".$liste_projet_id_sha1[$a] ?>">
-        <div class="div_images"></div>  
+
+ 
+<?php
+
+ 
+if($liste_projet_img[$a]!=""){
+$src_img__="redirection_dowload_img/".$liste_projet_img[$a] ; 
+
+  ?>
+<div class="div_images cursor_pointer" onclick="redirection_dowload_img(this)" style="background-image: url('<?php echo $src_img__ ; ?>')" title="<?php echo $liste_projet_id_sha1[$a] ?>"></div>  
+
+
+  <?php 
+}
+else {
+    ?>
+    <div class="div_images" onclick="redirection_dowload_img(this)" title="<?php echo $liste_projet_id_sha1[$a] ?>"></div>  
+
+    <?php 
+}
+?>
+   
         <h4 class="liste_projet_name">
           
       <input type="text" onkeyup="update_all_php(this)" id="<?php echo "input_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" value="<?php echo $liste_projet_name[$a] ?>"  class="liste_projet_name_input">
