@@ -256,12 +256,34 @@ ok.push(); // envoie l'information au code pkp
 
  
 
-     function liste_projet_color_2(_this){
+     function liste_projet_color_1(_this){
 
  
 
 
 console.log(_this.title);
+
+document.getElementById("input_"+_this.title).style.color = _this.value;  
+ 
+
+
+var ok = new Information("class/php/php_update/liste_projet_color_x.php"); // création de la classe 
+ok.add("liste_projet_color_x",_this.value); // ajout de l'information pour lenvoi   
+ok.add("liste_projet_id_sha1", _this.title); // ajout de l'information pour lenvoi   
+ok.add("name","liste_projet_color_1"); // ajout de l'information pour lenvoi   
+
+ 
+console.log(ok.info()); // demande l'information dans le tableau
+ok.push(); // envoie l'information au code pkp 
+ 
+}
+function liste_projet_color_2(_this){
+
+ 
+  
+
+
+ 
 
 document.getElementById("textarea_"+_this.title).style.color = _this.value;  
  
@@ -271,27 +293,6 @@ var ok = new Information("class/php/php_update/liste_projet_color_x.php"); // cr
 ok.add("liste_projet_color_x",_this.value); // ajout de l'information pour lenvoi   
 ok.add("liste_projet_id_sha1", _this.title); // ajout de l'information pour lenvoi   
 ok.add("name","liste_projet_color_2"); // ajout de l'information pour lenvoi   
-
- 
-console.log(ok.info()); // demande l'information dans le tableau
-ok.push(); // envoie l'information au code pkp 
- 
-}
-function liste_projet_color_1(_this){
-
- 
-
-
-console.log(_this.title);
-
-document.getElementById("textarea_"+_this.title).style.color = _this.value;  
- 
-
-
-var ok = new Information("class/php/php_update/liste_projet_color_x.php"); // création de la classe 
-ok.add("liste_projet_color_x",_this.value); // ajout de l'information pour lenvoi   
-ok.add("liste_projet_id_sha1", _this.title); // ajout de l'information pour lenvoi   
-ok.add("name","liste_projet_color_1"); // ajout de l'information pour lenvoi   
 
  
 console.log(ok.info()); // demande l'information dans le tableau

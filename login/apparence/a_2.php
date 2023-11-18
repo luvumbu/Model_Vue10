@@ -127,7 +127,7 @@ $src_img__="redirection_dowload_img/".$liste_projet_img[$a] ;
               ?>
             </div>
             <div class="block_1_2">
-                <textarea onkeyup="update_all_php(this)" id="<?php echo "textarea_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" class="liste_projet_description1_textarea"><?php echo $liste_projet_description1[$a] ?></textarea>
+                <textarea onkeyup="update_all_php(this)" style="" id="<?php echo "textarea_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" class="liste_projet_description1_textarea"><?php echo $liste_projet_description1[$a] ?></textarea>
 
             </div>
      </div>
