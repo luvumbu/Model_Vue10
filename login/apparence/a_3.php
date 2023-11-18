@@ -19,19 +19,13 @@ for($a = 0 ; $a< count($liste_projet_id_sha1_2); $a ++) {
 
 
 
-
-
-
-
-
-
-
+ 
         <h4 class="liste_projet_name">
           
-      <input type="text" onkeyup="update_all_php(this)" id="<?php echo "input_".$liste_projet_id_sha1_2[$a] ?>" title="<?php echo $liste_projet_id_sha1_2[$a] ?>" value="<?php echo $liste_projet_name_2[$a] ?>"  class="liste_projet_name_input">
+      <input type="text"  style="color:<?php echo $liste_projet_color_1[$a] ?>" onkeyup="update_all_php(this)" id="<?php echo "input_".$liste_projet_id_sha1_2[$a] ?>" title="<?php echo $liste_projet_id_sha1_2[$a] ?>" value="<?php echo $liste_projet_name_2[$a] ?>"  class="liste_projet_name_input">
         </h4>       
      
-        <textarea onkeyup="update_all_php(this)" id="<?php echo "textarea_".$liste_projet_id_sha1_2[$a] ?>" title="<?php echo $liste_projet_id_sha1_2[$a] ?>" class="liste_projet_description1_textarea"><?php echo $liste_projet_description1_2[$a] ?></textarea>
+        <textarea onkeyup="update_all_php(this)" style="color:<?php echo $liste_projet_color_2[$a] ?>" id="<?php echo "textarea_".$liste_projet_id_sha1_2[$a] ?>" title="<?php echo $liste_projet_id_sha1_2[$a] ?>" class="liste_projet_description1_textarea"><?php echo $liste_projet_description1_2[$a] ?></textarea>
         <br/>
         <img class="format_toogle" width="50" height="50" onclick="element_edit(this)" src="https://img.icons8.com/windows/50/edit--v1.png" title="<?php echo $liste_projet_id_sha1_2[$a] ?>" alt="edit--v1"/>
 

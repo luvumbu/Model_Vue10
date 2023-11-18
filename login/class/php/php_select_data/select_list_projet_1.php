@@ -22,7 +22,9 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     'liste_projet_type',
     'information_user_id_sha1',
     'liste_projet_new_file',
-    'liste_projet_reg_date'
+    'liste_projet_reg_date',
+    'liste_projet_color_1',
+    'liste_projet_color_2'
     
 
     );
@@ -65,6 +67,10 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
      $information_user_id_sha1 = array() ; 
      $liste_projet_new_file = array() ; 
      $liste_projet_reg_date = array() ; 
+
+
+     $liste_projet_color_1 = array() ; 
+     $liste_projet_color_1 = array() ; 
 
 
 
@@ -116,6 +122,15 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
      $liste_projet_new_file =$apple->add_array_element($number);
      $number ++ ; 
      $liste_projet_reg_date =$apple->add_array_element($number);
+     $number ++ ;
+
+
+
+     $liste_projet_color_1 =$apple->add_array_element($number);
+     $number ++ ;
+
+
+     $liste_projet_color_2 =$apple->add_array_element($number);
      $number ++ ;
 
 /*
