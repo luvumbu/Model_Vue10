@@ -82,7 +82,7 @@ if(isset($_SESSION["time"])){
       $element_edit =true ; 
     
    include("class/php/php_select_data/select_list_projet_2.php") ; 
- // include("apparence/a_2.php"); 
+ include("apparence/a_2.php"); 
 
      if($nombre_total_element==1){
         
