@@ -17,12 +17,6 @@ for($a = 0 ; $a< count($liste_projet_id_sha1_2); $a ++) {
 
 
 
-            <?php 
-$src_img__="redirection_dowload_img/".$liste_projet_img[$a] ; 
-            
-            
-            ?>
-                <div class="div_images" onclick="redirection_dowload_img(this)" style="background-image: url('<?php echo $src_img__ ; ?>')" title="<?php echo $liste_projet_id_sha1[$a] ?>"></div>  
 
 
 
@@ -58,7 +52,16 @@ if($liste_projet_img_2[$a]!=""){
                 ?>
 
 
+ 
 
+
+              
+<label for="<?php echo "liste_projet_color_1_".$liste_projet_id_sha1_2[$a] ?>">
+  <img width="50" height="50" src="https://img.icons8.com/offices/50/rgb-circle-2.png" alt="rgb-circle-2"/>
+</label>
+<label for="<?php echo "liste_projet_color_2_".$liste_projet_id_sha1_2[$a] ?>">
+  <img width="50" height="50" src="https://img.icons8.com/color/50/color-palette.png" alt="color-palette"/>
+</label>  
 
         <img width="50" class="format_toogle" onclick="redirection_dowload_img(this)" height="50" title="<?php echo $liste_projet_id_sha1_2[$a] ?>" src="https://img.icons8.com/material-outlined/50/picture.png" alt="picture"/>
         <select class="form-select format_toogle" title="<?php echo $liste_projet_id_sha1_2[$a] ?>" aria-label="Default select example" onchange="selection(this)">
@@ -80,12 +83,12 @@ if($liste_projet_img_2[$a]!=""){
                        ?>
                        
                        
-                       <img class="format_toogle" title="<?php echo $liste_projet_id_sha1_2[$a] ?>"  onclick="visibility(this)" title="<?php echo $liste_projet_id_sha1_2[$a] ; ?>" width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/invisible.png" alt="invisible"/>
+                       <img class="format_toogle" title="<?php echo $liste_projet_id_sha1_2[$a] ?>"  onclick="visibility(this)"   width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/invisible.png" alt="invisible"/>
                        <?php 
               }
               else {
 ?>
- <img class="format_toogle" title="<?php echo $liste_projet_id_sha1_2[$a] ?>"  onclick="visibility(this)" title="<?php echo $liste_projet_id_sha1_2[$a] ; ?>" width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/visible--v1.png" alt="invisible"/>
+ <img class="format_toogle" title="<?php echo $liste_projet_id_sha1_2[$a] ?>"  onclick="visibility(this)"   width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/visible--v1.png" alt="invisible"/>
 
 <?php
               }
@@ -93,9 +96,10 @@ if($liste_projet_img_2[$a]!=""){
        
         <img class="format_toogle" title="<?php echo $liste_projet_id_sha1_2[$a] ?>"   width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/link--v1.png" alt="link--v1"/>
  
-          <img class="format_toogle" onclick="remove_all(this)" title="<?php echo $liste_projet_id_sha1_2[$a] ?>"   width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/delete-forever.png" alt="delete-forever"/>
+          <img class="format_toogle" onclick="remove_all(this)"   width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/delete-forever.png" alt="delete-forever"/>
      
-     
+            <input type="color"    style="opacity:0;position:relative"           title="<?php echo $liste_projet_id_sha1_2[$a] ?>" id="<?php echo "liste_projet_color_1_".$liste_projet_id_sha1_2[$a] ?>" onchange="liste_projet_color_1(this)">
+            <input type="color"    style="opacity:0;position:relative"           title="<?php echo $liste_projet_id_sha1_2[$a] ?>" id="<?php echo "liste_projet_color_2_".$liste_projet_id_sha1_2[$a] ?>" onchange="liste_projet_color_2(this)">
      
           </div>
     
