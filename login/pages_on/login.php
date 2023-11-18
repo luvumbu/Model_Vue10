@@ -120,13 +120,17 @@ function terminer(){
 
   }
   function remove_all(_this){
+    console.log("remove ok ") ; 
+
+    console.log(_this.title)  ; 
+ 
     var ok = new Information("class/php/php_remove/remove_all.php"); // création de la classe 
     ok.add("liste_projet_id_sha1", _this.title); // ajout de l'information pour lenvoi  
     console.log(ok.info()); // demande l'information dans le tableau
     ok.push(); // envoie l'information au code pkp 
 
     document.getElementById("parent_"+_this.title).style.display="none";
-    
+ 
   }
 
 
