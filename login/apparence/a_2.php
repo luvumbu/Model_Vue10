@@ -101,10 +101,19 @@ for($a = 0 ; $a< $nombre_total_element; $a ++) {
 <div class="class_1" id="<?php echo "parent_".$liste_projet_id_sha1[$a] ?>">
         <h4 class="liste_projet_name">
           
-      <input type="text" onkeyup="update_all_php(this)" id="<?php echo "input_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" value="<?php echo $liste_projet_name[$a] ?>"  class="liste_projet_name_input">
+      <input type="text" onkeyup="update_all_php(this)" style="color:<?php echo  $liste_projet_color_1[$a] ; ?>" id="<?php echo "input_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" value="<?php echo $liste_projet_name[$a] ?>"  class="liste_projet_name_input">
         </h4>       
      <div class="block_1">
             <div class="block_1_1">
+            <label for="<?php echo "liste_projet_color_1_0_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>">
+  <img width="50" height="50" src="https://img.icons8.com/offices/50/rgb-circle-2.png" alt="rgb-circle-2"/>
+</label>
+<label for="<?php echo "liste_projet_color_2_0_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>">
+  <img width="50" height="50" src="https://img.icons8.com/color/50/color-palette.png" alt="color-palette"/>
+</label>  
+<input type="color"    style="opacity:0;position:relative"           title="<?php echo $liste_projet_id_sha1[$a] ?>" id="<?php echo "liste_projet_color_1_0_".$liste_projet_id_sha1[$a] ?>" onchange="liste_projet_color_1(this)">
+<input type="color"    style="opacity:0;position:relative"           title="<?php echo $liste_projet_id_sha1[$a] ?>" id="<?php echo "liste_projet_color_2_0_".$liste_projet_id_sha1[$a] ?>" onchange="liste_projet_color_2(this)">
+     
 
             <?php
 
@@ -127,7 +136,7 @@ $src_img__="redirection_dowload_img/".$liste_projet_img[$a] ;
               ?>
             </div>
             <div class="block_1_2">
-                <textarea onkeyup="update_all_php(this)" style="" id="<?php echo "textarea_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" class="liste_projet_description1_textarea"><?php echo $liste_projet_description1[$a] ?></textarea>
+                <textarea onkeyup="update_all_php(this)" style="color:<?php echo  $liste_projet_color_2[$a] ; ?>" id="<?php echo "textarea_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" class="liste_projet_description1_textarea"><?php echo $liste_projet_description1[$a] ?></textarea>
 
             </div>
      </div>
@@ -153,14 +162,13 @@ $src_img__="redirection_dowload_img/".$liste_projet_img[$a] ;
         ?>
        
         <img class="format_toogle" title="<?php echo $liste_projet_id_sha1[$a] ?>"   width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/link--v1.png" alt="link--v1"/>
-    
-    <?php 
+       <?php 
 
             if($nombre_total_element==1){
 ?>
 
 <img class="format_toogle"  width="50" height="50" onclick="add_element(this)" title="<?php echo $liste_projet_id_sha1[$a] ?>"  src="https://img.icons8.com/ios-glyphs/30/filled-plus-2-math.png" alt="filled-plus-2-math"/>
-
+ 
 <?php 
             }
 

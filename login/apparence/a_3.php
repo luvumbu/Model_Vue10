@@ -18,7 +18,6 @@ for($a = 0 ; $a< count($liste_projet_id_sha1_2); $a ++) {
 
 
 
-
  
         <h4 class="liste_projet_name">
           
@@ -87,6 +86,8 @@ if($liste_projet_img_2[$a]!=""){
 <?php
               }
         ?>
+       
+
        
         <img class="format_toogle" title="<?php echo $liste_projet_id_sha1_2[$a] ?>"   width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/link--v1.png" alt="link--v1"/>
  
