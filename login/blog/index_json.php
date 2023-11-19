@@ -34,7 +34,7 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
 
     );
  
-    $id_information_user_sha1 =$_SESSION["information_user_id_sha1"] ; 
+ 
     $apple->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_parent` ="" ';
     $apple->execution();
     $myJSON = json_encode($apple->list_row); 

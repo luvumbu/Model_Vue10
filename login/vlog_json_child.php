@@ -36,7 +36,7 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     $apple->execution();
     $myJSON = json_encode($apple->list_row); 
 
-    // echo   $myJSON ; 
+    echo   $myJSON ; 
  
     $apple->all_data_json() ; 
    

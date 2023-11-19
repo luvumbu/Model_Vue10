@@ -37,5 +37,17 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     // echo   $myJSON ; 
  
     $apple->all_data_json() ; 
+
+
+
+
+
+
+
+
+
+
+
+    
    
  ?>
