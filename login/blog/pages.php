@@ -32,7 +32,7 @@ liste_projet_color_2
 */
 
 
-
+ 
 
 ?>
 <!DOCTYPE html>
@@ -71,12 +71,12 @@ $src_img = "../../redirection_dowload_img/".$liste_projet_img[0] ;
 ?> 
 <div class="presentation_"  style='background-image:url("<?php echo $src_img ; ?>")'>
             <div class="text-center padding_1">
-            <h1>
+            <h1 style="color:<?php echo $liste_projet_color_1[0];?>">
             <?php echo $liste_projet_name[0] ; ?>
             </h1>
         </div>
         <div>
-        <h2 class="text-center padding_1">
+        <h2 class="text-center padding_1"  style="color:<?php echo $liste_projet_color_2[0];?>">
             <?php echo $liste_projet_description1[0] ; ?>
             </h2>
         </div>

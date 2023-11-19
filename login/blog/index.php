@@ -73,11 +73,11 @@ if($liste_projet_visibilite1[$a]!="")
   ?>
 
 
-<div class="container-fluid p-5 text-center  padding_1">
+<div class="container-fluid p-5 text-center  padding_1" style="color:<?php echo $liste_projet_color_1[$a]?>">
   <h1>
     <?php echo $liste_projet_name[$a]  ?>
 </h1>
-<p class="padding_1">
+<p class="padding_1" style="color:<?php echo $liste_projet_color_1[$a]?>" style="color:<?php echo $liste_projet_color_2[$a]?>">
 <?php echo $liste_projet_description1[$a]  ?>
 </p>
 
@@ -113,7 +113,7 @@ else {
 <?php echo $liste_projet_reg_date[$a]  ?>
 </p>
  <a href="pages.php/<?php echo $liste_projet_id_sha1[$a] ?>">
-    <h1 class="color_link">
+    <h1 class="color_link" >
       Voir article
     </h1></a>
 </div>
