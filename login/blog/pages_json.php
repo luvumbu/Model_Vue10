@@ -40,7 +40,7 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     );
  
     $liste_projet_id_sha1 = give_url() ; 
-    $apple->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_sha1` ="'.$liste_projet_id_sha1.'" ';
+    $apple->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_sha1` ="'.$liste_projet_id_sha1.'"  ORDER BY liste_projet_id';
     $apple->execution();
     $myJSON = json_encode($apple->list_row); 
 
@@ -83,27 +83,48 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
       );
    
       
-      $apple_2->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_parent` ="'.$liste_projet_id_sha1.'" ';
+      $apple_2->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_parent` ="'.$liste_projet_id_sha1.'"  ORDER BY liste_projet_id';
       $apple_2->execution();
+
+
+
+
+
+
+
+      $apple_3 = new Select_datas($servername,$username,$password,$dbname);
+
+      array_push(
+        $apple_3->row,
+    
+        'liste_projet_id',
+        'liste_projet_id_sha1',
+        'liste_projet_id_parent',
+        'liste_projet_id_sha1_general',
+        'liste_projet_ip',
+    
+        'liste_projet_img',
+        'liste_projet_name',
+        'liste_projet_description1',
+        'liste_projet_description2',
+        'liste_projet_visibilite1',
+    
+        'liste_projet_visibilite2',
+        'liste_projet_type',
+        'information_user_id_sha1',
+        'liste_projet_new_file',
+        'liste_projet_reg_date',
+    
+        'liste_projet_color_1',
+        'liste_projet_color_2'
+        
+    
+        );
      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
+        $apple_3->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_parent` ="'.$liste_projet_id_sha1.'"  ORDER BY liste_projet_id';
+        $apple_3->execution();
+     
 
 
 
@@ -253,6 +274,249 @@ $number ++ ;
  
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+$a_=array();
+$b_=array();
+
+
+ for($a = 0 ; $a < count($liste_projet_id_sha1_2) ; $a ++) {
+  $apple_4 = new Select_datas($servername,$username,$password,$dbname);
+
+  array_push(
+    $apple_4->row,
+  
+    'liste_projet_id',
+    'liste_projet_id_sha1',
+    'liste_projet_id_parent',
+    'liste_projet_id_sha1_general',
+    'liste_projet_ip',
+  
+    'liste_projet_img',
+    'liste_projet_name',
+    'liste_projet_description1',
+    'liste_projet_description2',
+    'liste_projet_visibilite1',
+  
+    'liste_projet_visibilite2',
+    'liste_projet_type',
+    'information_user_id_sha1',
+    'liste_projet_new_file',
+    'liste_projet_reg_date',
+  
+    'liste_projet_color_1',
+    'liste_projet_color_2'
+    
+  
+    );
+  
+    
+    $apple_4->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_sha1` ="'.$liste_projet_id_sha1_2[$a].'" ORDER BY liste_projet_id ';
+    $apple_4->execution();
+  
+  
+    $number = 0 ; 
+    // affectation valeur array 
+    // execution et ajout des element dans la nouvelle table 
+    
+    
+    
+    
+ 
+if($apple_4->list_row>0){
+   array_push($a_,$apple_4->list_row);
+
+
+ 
+
+ 
+}
+
+
+   
+ 
+  
+   
+  
+
+ 
+ }
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ if($a_>0){
+
+for($a_2_0 = 0 ; $a_2_0 < count($a_) ; $a_2_0 ++ )
+
+
+ 
+
+
+
+
+
+for($o = 0 ; $o<count($a_[0]) ; $o++) {
+
+
+
+
+
+
+  if($o==1){
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    $apple_5 = new Select_datas($servername,$username,$password,$dbname);
+
+    array_push(
+      $apple_5->row,
+    
+      'liste_projet_id',
+      'liste_projet_id_sha1',
+      'liste_projet_id_parent',
+      'liste_projet_id_sha1_general',
+      'liste_projet_ip',
+    
+      'liste_projet_img',
+      'liste_projet_name',
+      'liste_projet_description1',
+      'liste_projet_description2',
+      'liste_projet_visibilite1',
+    
+      'liste_projet_visibilite2',
+      'liste_projet_type',
+      'information_user_id_sha1',
+      'liste_projet_new_file',
+      'liste_projet_reg_date',
+    
+      'liste_projet_color_1',
+      'liste_projet_color_2'
+      
+    
+      );
+    
+      
+      $apple_5->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_parent` ="'.$a_[$a_2_0][$o].'"  ORDER BY liste_projet_id';
+      $apple_5->execution();
+
+
+
+
+
+ 
+ 
+
+array_push($b_,$apple_5->list_row);
+
+
+
+
+
+
+
+
+
+
+  }
+}
+
+ 
+
+ 
+ 
+
+ }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+ 
+  
+ 
+
+ 
+
+ 
+ 
  
  ?>
 

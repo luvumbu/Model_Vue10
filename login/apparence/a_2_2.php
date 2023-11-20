@@ -128,7 +128,7 @@ else {
      
         <textarea onkeyup="update_all_php(this)" id="<?php echo "textarea_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" class="liste_projet_description1_textarea"><?php echo $liste_projet_description1[$a] ?></textarea>
         <br/>
- 
+
         <?php 
               if($liste_projet_visibilite1[$a]==""){
                        ?>
@@ -144,8 +144,12 @@ else {
 <?php
               }
         ?>
-       
+
+        <a  href="<?php echo "blog/pages.php/".$liste_projet_id_sha1[$a] ?>">
         <img class="format_toogle" title="<?php echo $liste_projet_id_sha1[$a] ?>"   width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/link--v1.png" alt="link--v1"/>
+
+        </a>
+      
       <?php 
 
             if($nombre_total_element==1){
