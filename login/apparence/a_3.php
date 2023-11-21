@@ -88,10 +88,10 @@ if($liste_projet_img_2[$a]!=""){
         ?>
       
       
-
+      <a  href="<?php echo "blog/pages.php/".$liste_projet_id_sha1_2[$a] ?>">
        
         <img class="format_toogle" title="<?php echo $liste_projet_id_sha1_2[$a] ?>"   width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/link--v1.png" alt="link--v1"/>
- 
+        </a>
           <img class="format_toogle" onclick="remove_all(this)"  title="<?php echo $liste_projet_id_sha1_2[$a] ?>"  width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/delete-forever.png" alt="delete-forever"/>
      
             <input type="color"    style="opacity:0;position:relative"           title="<?php echo $liste_projet_id_sha1_2[$a] ?>" id="<?php echo "liste_projet_color_1_".$liste_projet_id_sha1_2[$a] ?>" onchange="liste_projet_color_1(this)">

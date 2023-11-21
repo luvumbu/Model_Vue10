@@ -47,10 +47,17 @@ liste_projet_color_2
     
 
 <div class="display_flex_1">
+    <b>
+
+  
     <div>
             <?php echo $liste_projet_name[0] ; ?>
-    </div>
-    <div class="display_flex_2">
+    </div>  </b>
+
+    <b>
+
+ 
+    <div class="display_flex_2 pages_1">
             <?php 
                         for($a = 0 ; $a<count($liste_projet_id_2) ; $a++){
                             echo "<div>".$liste_projet_name_2[$a]."</div>";
@@ -58,7 +65,7 @@ liste_projet_color_2
 
 
             ?>
-    </div>
+    </div>   </b>
 </div>
 
 <?php 
@@ -227,7 +234,9 @@ for($z = 0 ; $z<count($a_); $z ++) {
     .bold_child{
         padding:25px ; 
     }
- 
+ .pages_1{
+    color:rgba(0,0,0,0.3) ; 
+ }
 </style>
 
 
