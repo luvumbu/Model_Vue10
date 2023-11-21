@@ -178,12 +178,44 @@ echo "<div class='i_array'>" ;
            
     
                   //  echo(fmod($i_array,16 ) . "<br>");
-
+                 
                     if(fmod($i_array,17 )==6){
-                        echo $b_[$z][$i_array]."?";
+ echo "<div class='i_array2'>" ; 
+
+
+
+ if($b_[$z][$i_array-1]==""){
+
+ }
+ else {
+ 
+
+$img_src_ = "../../redirection_dowload_img/".$b_[$z][$i_array-1] ;
+
+
+
+    ?>
+
+ <div>
+ <img class="taille_img" src="<?php echo  $img_src_ ?>" alt="" srcset="">
+
+ </div>
+
+    
+    <?php 
+ }
+                        echo $b_[$z][$i_array]."";
+
                         echo "<br/>" ; 
+
+                        echo "<div class='description_el'>" ; 
+                             echo $b_[$z][$i_array+1]."";
+                        echo "</div>" ; 
+
+                        echo "<br/>" ; echo "</div>" ;
                     }
          
+ 
  
 
        }
@@ -263,7 +295,38 @@ echo "</div>" ;
  }
  .i_array{
     margin:15px; 
-    border:15px solid black ; 
+ 
+
+    display:flex; 
+    justify-content:space-around ; 
+    flex-wrap:wrap;
+    
+ }
+ .i_array2{
+ 
+    margin:5px; 
+    border-bottom:5px solid red; 
+
+border-top:5px solid #2acbd2 ; 
+border-radius:15px 15px 0 0 ; 
+
+display:block ; 
+    padding-top:25px; 
+    padding:25px; 
+
+   
+
+ }
+ .description_el{
+ 
+    margin-top:20px ; 
+    color:rgba(0,0,0,0.3) ; 
+ }
+ .taille_img{
+    width:100px;
+    border-radius : 100%; 
+    height:100px ; 
+    margin-bottom:20px ; 
  }
 </style>
 
