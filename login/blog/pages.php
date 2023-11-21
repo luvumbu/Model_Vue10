@@ -166,7 +166,31 @@ for($z = 0 ; $z<count($a_); $z ++) {
         echo $b_[$z][7] ; 
 
 */
-        var_dump($b_[$z]) ; 
+     //   var_dump($b_[$z]) ; 
+
+      
+
+echo "<div class='i_array'>" ; 
+       for($i_array = 0 ; $i_array< count($b_[$z]) ; $i_array ++) {
+
+
+
+           
+    
+                  //  echo(fmod($i_array,16 ) . "<br>");
+
+                    if(fmod($i_array,17 )==6){
+                        echo $b_[$z][$i_array]."?";
+                        echo "<br/>" ; 
+                    }
+         
+ 
+
+       }
+
+
+echo "</div>" ; 
+
     }
    
  
@@ -236,6 +260,10 @@ for($z = 0 ; $z<count($a_); $z ++) {
     }
  .pages_1{
     color:rgba(0,0,0,0.3) ; 
+ }
+ .i_array{
+    margin:15px; 
+    border:15px solid black ; 
  }
 </style>
 

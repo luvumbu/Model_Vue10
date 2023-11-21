@@ -1,12 +1,8 @@
 <?php 
 session_start() ; 
 header("Access-Control-Allow-Origin: *");
-
 include("../../model/class/php/Select_datas.php") ;  
-include("../../model/class/php/connexion.php") ;  
-
-
- 
+include("../../model/class/php/connexion.php") ;   
 
 //echo give_url() ; 
  
@@ -43,15 +39,6 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     $apple->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_sha1` ="'.$liste_projet_id_sha1.'"  ORDER BY liste_projet_id';
     $apple->execution();
     $myJSON = json_encode($apple->list_row); 
-
-
-
-
-
-
-
-
-
 
     $apple_2 = new Select_datas($servername,$username,$password,$dbname);
 
@@ -131,14 +118,6 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     // echo   $myJSON ; 
  
  
-
-
-
-
-
-
- 
-
 // Utilisation
  
 // creation de la variable vide
@@ -191,36 +170,6 @@ $number ++ ;
 $liste_projet_color_2 =$apple->add_array_element($number);
 $number ++ ; 
  
-
-
-
- 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $number = 0 ; 
 // affectation valeur array 
 // execution et ajout des element dans la nouvelle table 
@@ -270,46 +219,6 @@ $number ++ ;
 $liste_projet_color_2_2 =$apple_2->add_array_element($number);
 $number ++ ; 
    
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
- 
-
-
-
- 
-
 
 $a_=array();
 $b_=array();
@@ -401,12 +310,6 @@ if($apple_4->list_row>0){
 for($a_2_0 = 0 ; $a_2_0 < count($a_) ; $a_2_0 ++ )
 
 
- 
-
-
-
-
-
 for($o = 0 ; $o<count($a_[0]) ; $o++) {
 
 
@@ -416,20 +319,6 @@ for($o = 0 ; $o<count($a_[0]) ; $o++) {
 
   if($o==1){
    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     $apple_5 = new Select_datas($servername,$username,$password,$dbname);
 
     array_push(
@@ -462,61 +351,9 @@ for($o = 0 ; $o<count($a_[0]) ; $o++) {
       
       $apple_5->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_parent` ="'.$a_[$a_2_0][$o].'"  ORDER BY liste_projet_id';
       $apple_5->execution();
-
-
-
-
-
- 
- 
-
 array_push($b_,$apple_5->list_row);
-
-
-
-
-
-
-
-
-
-
   }
 }
 
- 
-
- 
- 
-
  }
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-  
-
- 
-  
- 
-
- 
-
- 
- 
- 
  ?>
-

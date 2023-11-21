@@ -32,7 +32,10 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
 
     );
  
-
+    $liste_projet_id_sha1 = give_url() ; 
+    $apple->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_sha1` ="'.$liste_projet_id_sha1.'" ';
+    $apple->execution();
+    $myJSON = json_encode($apple->list_row); 
 
 
 
