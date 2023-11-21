@@ -52,6 +52,7 @@ liste_projet_color_2
   
     <div>
             <?php echo $liste_projet_name[0] ; ?>
+ 
     </div>  </b>
 
     <b>
@@ -79,11 +80,13 @@ $src_img = "../../redirection_dowload_img/".$liste_projet_img[0] ;
             <div class="text-center padding_1">
             <h1 style="color:<?php echo $liste_projet_color_1[0];?>">
             <?php echo $liste_projet_name[0] ; ?>
+         
             </h1>
         </div>
         <div>
         <h2 class="text-center padding_1"  style="color:<?php echo $liste_projet_color_2[0];?>">
             <?php echo $liste_projet_description1[0] ; ?>
+            
             </h2>
         </div>
 </div>
@@ -109,7 +112,12 @@ for($z = 0 ; $z<count($a_); $z ++) {
 
         if($z_==6){
                     echo "<div class='text-center'>
-                    <b class='text-center'>".$a_[$z][$z_]."</b>
+                    <b class='text-center'>".$a_[$z][$z_]."</b> <br/>
+
+                    <div class='description'>
+                    <b class='text-center'>".$a_[$z][$z_+1]."</b>
+</div>
+                     
                     </div>";
 ?>
 
@@ -305,7 +313,7 @@ echo "</div>" ;
  .i_array2{
  
     margin:5px; 
-    border-bottom:5px solid red; 
+    border-bottom:5px solid rgba(100,0,0,0.2); 
 
 border-top:5px solid #2acbd2 ; 
 border-radius:15px 15px 0 0 ; 
@@ -328,6 +336,11 @@ display:block ;
     height:100px ; 
     margin-bottom:20px ; 
  }
+ .description{
+    color:rgba(0,0,0,0.4) ; 
+margin-top:25px; 
+ }
+ 
 </style>
 
 
