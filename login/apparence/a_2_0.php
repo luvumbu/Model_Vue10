@@ -297,9 +297,7 @@ margin-top:150px;
  
     
     }
-    .green{
-      background-color:green ; 
-    }
+ 
     .test_1{
       display:flex;
       justify-content:space-around ; 

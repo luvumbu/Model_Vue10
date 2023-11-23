@@ -85,7 +85,6 @@ liste_projet_color_1_2
 liste_projet_color_2_2
 */
  ?>
-
  <label for=""></label>     <div class="display_flex_2 pages_1">
             <?php 
                         for($a = 0 ; $a<count($liste_projet_id_2) ; $a++){
@@ -109,6 +108,7 @@ $src_img = "../../redirection_dowload_img/".$liste_projet_img[0] ;
 
  
 ?> 
+
 
 <div class="presentation_"  style='background-image:url("<?php echo $src_img ; ?>")'>
             <div class="text-center padding_1">
@@ -143,12 +143,32 @@ for($z = 0 ; $z<count($a_); $z ++) {
 
          //echo $a_[$z][$z_];
        
+?>
+
+
+
+<?php 
+
 
         if($z_==6){
+ 
+            
                     echo "<div class='text-center' id='l".$a_[$z][$z_-5]."'>
-                    <b class='text-center'>".$a_[$z][$z_]."</b> <br/>
+                    <b class='text-center'>".$a_[$z][$z_]."</b> <br/>";
+                  $lien_element=  $a_[$z][$z_-5] ; 
 
-                    <div class='description'>
+
+                 
+?>
+<a href="<?php echo $lien_element ; ?>">
+<div class="alert alert-info lien">
+   link
+</div>
+</a>
+
+<?php 
+
+                   echo "<div class='description'>
                     <b class='text-center'>".$a_[$z][$z_+1]."</b>
 </div>
                      
@@ -448,6 +468,14 @@ border-bottom:1px solid rgba(0,0,0,0) ;
 }
 .m_princ{
     width:200px; 
+}
+.lien {
+    width:100px; 
+    margin:auto ; 
+    text-align:center ; 
+    margin-top:60px; 
+    margin-bottom:60px; 
+
 }
 </style>
 
