@@ -199,10 +199,11 @@ $src_img__="redirection_dowload_img/".$liste_projet_img[$a] ;
       ?>
 
           <img class="format_toogle" onclick="remove_all(this)" title="<?php echo $liste_projet_id_sha1[$a] ?>"   width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/delete-forever.png" alt="delete-forever"/>
-            <img class="format_toogle" onclick="annulation_all(this)" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="50" height="50" src="https://img.icons8.com/windows/50/undo.png" alt="undo"/>
-     
-     
-          </div>
+          <img class="format_toogle" onclick="annulation_all(this)" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="50" height="50" src="https://img.icons8.com/windows/50/undo.png" alt="undo"/>
+           <br/>
+          <input type="color">
+
+            </div>
     
 <?php 
  

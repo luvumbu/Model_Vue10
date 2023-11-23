@@ -384,14 +384,51 @@ ok.push(); // envoie l'information au code pkp
    }
 
    function annulation_all(_this) {
-   console.log(_this.title) ; 
+ 
 
 
          document.getElementById("input_"+_this.title).style.fontSize = "1em";
          document.getElementById("textarea_"+_this.title).style.fontSize = "1em";
 
          document.getElementById("input_"+_this.title).style.color = "black";
-         document.getElementById("textarea_"+_this.title).style.color = "black";      
+         document.getElementById("textarea_"+_this.title).style.color = "black";     
+         
+         
+
+
+
+
+
+
+
+         var ok = new Information("class/php/php_update/annulation_all.php"); // création de la classe 
+
+ 
+
+ 
+ 
+
+
+
+
+
+ok.add("liste_projet_id_sha1",_this.title); // ajout de l'information pour lenvoi 
+
+
+
+ 
+ 
+ 
+  
+
+ 
+console.log(ok.info()); // demande l'information dans le tableau
+ok.push(); // envoie l'information au code pkp 
+
+
+
+
+
  }
 </script>
 </body>
