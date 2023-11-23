@@ -22,7 +22,9 @@ $apple_2 = new Select_datas($servername,$username,$password,$dbname);
     'liste_projet_new_file',
     'liste_projet_reg_date',
     'liste_projet_color_1',
-    'liste_projet_color_2'
+    'liste_projet_color_2',
+    'liste_projet_name_font_size',
+    'liste_projet_description1_font_size'
     
 
     );
@@ -112,9 +114,29 @@ $number ++ ;
 $liste_projet_color_2 =$apple_2->add_array_element($number);
 //var_dump($liste_projet_reg_date_2) ; 
 $number ++ ; 
+
+
+
+
+
+
+$liste_projet_name_font_size_2 =$apple_2->add_array_element($number);
+//var_dump($liste_projet_reg_date_2) ; 
+$number ++ ; 
+$liste_projet_description1_font_size_2 =$apple_2->add_array_element($number);
+//var_dump($liste_projet_reg_date_2) ; 
+$number ++ ; 
  
 
  
+
+
+
+
+
+
+
+
  
  
  

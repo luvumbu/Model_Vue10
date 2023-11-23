@@ -46,6 +46,7 @@ include("header/header.php") ;
 <script src="class/js/js_on/voir_projet_2.js"></script>
 <!-- -->
 
+
 <?php 
 
 include("class/php/php_select_data/give_url.php") ; 
@@ -53,9 +54,11 @@ $element_edit =false;
 
 if(isset($_SESSION["time"])){
 
+
+
     if($_SESSION["time"]!=""){
  
-    
+  
         include("class/php/php_select_data/select_list_projet_1.php") ; 
          include("apparence/a_2.php"); 
          if($nombre_total_element==1){
@@ -307,6 +310,89 @@ console.log(ok.info()); // demande l'information dans le tableau
 ok.push(); // envoie l'information au code pkp 
  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+function changeFONT(_this){
+ 
+
+ 
+
+    
+
+ 
+
+
+
+ var ok = new Information("class/php/php_update/changeFONT.php"); // création de la classe 
+
+ if(_this.name==1){
+   document.getElementById("input_"+_this.title).style.fontSize = _this.value+"px";
+
+  
+ }
+ else {
+         document.getElementById("textarea_"+_this.title).style.fontSize = _this.value+"px";
+  
+ }
+
+
+
+ var input_ =    document.getElementById("input_"+_this.title).style.fontSize ;
+var textarea_ =          document.getElementById("textarea_"+_this.title).style.fontSize ;
+ 
+
+document.getElementById("input_"+_this.title).style.color = _this.value;  
+ 
+
+
+
+
+
+ok.add("liste_projet_id_sha1",_this.title); // ajout de l'information pour lenvoi 
+
+
+ok.add("_this_name",_this.name); // ajout de l'information pour lenvoi 
+ok.add("input_",input_); // ajout de l'information pour lenvoi 
+ok.add("textarea_",textarea_); // ajout de l'information pour lenvoi 
+
+ 
+  
+
+ 
+console.log(ok.info()); // demande l'information dans le tableau
+ok.push(); // envoie l'information au code pkp 
+
+
+
+
+
+
+
+
+
+
+   }
+
+   function annulation_all(_this) {
+   console.log(_this.title) ; 
+
+
+         document.getElementById("input_"+_this.title).style.fontSize = "1em";
+         document.getElementById("textarea_"+_this.title).style.fontSize = "1em";
+
+         document.getElementById("input_"+_this.title).style.color = "black";
+         document.getElementById("textarea_"+_this.title).style.color = "black";      
+ }
 </script>
 </body>
 </html>

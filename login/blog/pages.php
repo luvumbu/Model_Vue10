@@ -162,7 +162,7 @@ for($z = 0 ; $z<count($a_); $z ++) {
 ?>
 <a href="<?php echo $lien_element ; ?>">
 <div class="alert alert-info lien">
-   link
+   lien  <?php echo $a_[$z][$z_] ;?>
 </div>
 </a>
 
@@ -470,7 +470,7 @@ border-bottom:1px solid rgba(0,0,0,0) ;
     width:200px; 
 }
 .lien {
-    width:100px; 
+    width:30%; 
     margin:auto ; 
     text-align:center ; 
     margin-top:60px; 

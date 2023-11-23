@@ -80,7 +80,9 @@ $execution_formulaire_php->set_action ("CREATE TABLE liste_projet (
   liste_projet_type VARCHAR(200) NOT NULL,   
   information_user_id_sha1 VARCHAR(200) NOT NULL, 
   liste_projet_new_file  VARCHAR(200) NOT NULL, 
-  liste_projet_remove  VARCHAR(200) NOT NULL, 
+  liste_projet_remove  VARCHAR(200) NOT NULL,  
+  liste_projet_name_font_size  VARCHAR(200) NOT NULL,
+  liste_projet_description1_font_size  VARCHAR(200) NOT NULL,
   liste_projet_reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
   )");
 
