@@ -97,6 +97,10 @@ if(isset($_SESSION["time"])){
 
 
   <style>
+
+    body {
+      font-family: 'Big Shoulders Text', cursive;
+    }
     .position_absolute_1{
 position:fixed ; 
 top:50%; 
