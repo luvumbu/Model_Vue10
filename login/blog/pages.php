@@ -66,7 +66,6 @@ liste_projet_color_2
 
  <?php
 
- 
 /*
 liste_projet_id_2
 liste_projet_id_sha1_2
@@ -115,14 +114,14 @@ $src_img = "../../redirection_dowload_img/".$liste_projet_img[0] ;
 
 
 <div class="presentation_"  style='background-image:url("<?php echo $src_img ; ?>")'>
-            <div class="text-center padding_1">
-            <h1 style="color:<?php echo $liste_projet_color_1[0]."; font-size:".$liste_projet_name_font_size[0];?>">
+            <div class="text-center">
+            <h1 style="color:<?php echo $liste_projet_color_1[0]."; font-size:".$liste_projet_name_font_size[0].'; background-color:'.$liste_projet_background_color[0];?>">
             <?php echo $liste_projet_name[0] ; ?>
          
             </h1>
         </div>
         <div>
-        <h2 class="text-justify padding_1"    style="color:<?php echo $liste_projet_color_2[0]."; font-size:".$liste_projet_description1_font_size[0];?>">
+        <h2 class="text-justify padding_1"    style="color:<?php echo $liste_projet_color_2[0]."; font-size:".$liste_projet_description1_font_size[0].';background-color:'.$liste_projet_background_color[0];?>">
             <?php echo $liste_projet_description1[0] ; ?>
             
             </h2>

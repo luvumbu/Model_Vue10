@@ -18,6 +18,6 @@ $apple = new Insertion_Bdd(
       $apple->set_msg_valudation("up ok") ;  
 
  
-      $apple->set_sql('UPDATE `liste_projet` SET `liste_projet_name_font_size` = "" ,`liste_projet_description1_font_size`="",`liste_projet_color_1`="",`liste_projet_color_2`="" WHERE  `liste_projet_id_sha1` = "'.$liste_projet_id_sha1.'"') ; 
+      $apple->set_sql('UPDATE `liste_projet` SET `liste_projet_name_font_size` = "" ,`liste_projet_description1_font_size`="",`liste_projet_color_1`="",`liste_projet_color_2`="",`liste_projet_background_color`="" WHERE  `liste_projet_id_sha1` = "'.$liste_projet_id_sha1.'"') ; 
       $apple->execution() ;
 ?>

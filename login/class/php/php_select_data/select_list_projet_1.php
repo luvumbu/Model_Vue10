@@ -27,7 +27,8 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     'liste_projet_color_2',
 
     'liste_projet_name_font_size',
-    'liste_projet_description1_font_size'
+    'liste_projet_description1_font_size',
+    'liste_projet_background_color'
 
     
 
@@ -142,6 +143,10 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
      $number ++ ;
      
      $liste_projet_description1_font_size =$apple->add_array_element($number);
+     $number ++ ;
+
+
+     $liste_projet_background_color =$apple->add_array_element($number);
      $number ++ ;
 
 

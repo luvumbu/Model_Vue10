@@ -34,7 +34,8 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     'liste_projet_color_2', 
 
     'liste_projet_name_font_size', 
-    'liste_projet_description1_font_size'
+    'liste_projet_description1_font_size',
+    'liste_projet_background_color'
 
     
 
@@ -72,7 +73,9 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
       'liste_projet_color_2', 
 
     'liste_projet_name_font_size', 
-    'liste_projet_description1_font_size'
+    'liste_projet_description1_font_size',
+    'liste_projet_background_color'
+
       
   
       );
@@ -114,7 +117,9 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
         'liste_projet_color_2', 
 
         'liste_projet_name_font_size', 
-        'liste_projet_description1_font_size'
+        'liste_projet_description1_font_size',
+        'liste_projet_background_color'
+
         
         
     
@@ -187,6 +192,13 @@ $liste_projet_name_font_size =$apple->add_array_element($number);
 $number ++ ; 
 $liste_projet_description1_font_size =$apple->add_array_element($number);
 $number ++ ; 
+
+$liste_projet_background_color =$apple->add_array_element($number);
+$number ++ ; 
+
+
+ 
+
  
 $number = 0 ; 
 // affectation valeur array 
@@ -241,6 +253,12 @@ $liste_projet_name_font_size_2 =$apple_2->add_array_element($number);
 $number ++ ; 
 $liste_projet_description1_font_size_2 =$apple_2->add_array_element($number);
 $number ++ ; 
+
+$liste_projet_background_color_2 =$apple_2->add_array_element($number);
+$number ++ ; 
+
+
+
    
 
 $a_=array();
@@ -274,7 +292,9 @@ $b_=array();
     'liste_projet_color_1',
     'liste_projet_color_2', 
     'liste_projet_name_font_size', 
-    'liste_projet_description1_font_size'
+    'liste_projet_description1_font_size',
+    'liste_projet_background_color' 
+
     
   
     );
@@ -368,7 +388,9 @@ for($o = 0 ; $o<count($a_[0]) ; $o++) {
       'liste_projet_reg_date',
     
       'liste_projet_color_1',
-      'liste_projet_color_2'
+      'liste_projet_color_2',
+      'liste_projet_background_color'
+
       
     
       );
