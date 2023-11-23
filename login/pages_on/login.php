@@ -430,6 +430,40 @@ ok.push(); // envoie l'information au code pkp
 
 
  }
+
+
+ function change_background(_this){
+   
+
+
+  var ok = new Information("class/php/php_update/change_background.php"); // création de la classe 
+
+ 
+
+ 
+ 
+
+
+
+
+
+ok.add("_this_value",_this.value); // ajout de l'information pour lenvoi 
+ok.add("liste_projet_id_sha1",_this.title); // ajout de l'information pour lenvoi 
+
+
+
+
+ 
+ console.log(_this.value) ; 
+ console.log(_this.title) ; 
+
+ 
+  
+
+ 
+console.log(ok.info()); // demande l'information dans le tableau
+ok.push(); // envoie l'information au code pkp 
+ }
 </script>
 </body>
 </html>
