@@ -327,7 +327,7 @@ ok.push(); // envoie l'information au code pkp
     text-align:center ; 
     margin:200px; 
     margin-bottom:50px ; 
-      background-color:rgba(0,100,0,0.1) ;
+  
     width:80%; 
   }
   .space_display{
