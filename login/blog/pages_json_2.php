@@ -1,8 +1,6 @@
 <?php 
  
 
- 
- 
 $apple = new Select_datas($servername,$username,$password,$dbname);
 
   array_push(

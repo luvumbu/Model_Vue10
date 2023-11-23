@@ -1,3 +1,4 @@
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,20 +21,47 @@
 
 </head>
 <body>
+<a href="../index.php">
 
- 
 
- 
-  
+<div class="log_">
+     
+     <div>
+       Connexion
+     </div>
+     <div>
+       Inscription 
+     </div>
+   </div>
+  </a>
+<h1 class="text-center liste_projet">
+  Liste de réalisé
+</h1>
+
  
 <?php 
 
 include("index_json.php") ; 
 
 
+
+
+if(isset($_SESSION["welcom_index"])){
+ 
+ $_SESSION["welcom_index"] = $_SESSION["welcom_index"]+1; 
+}
+else {
+ 
+  $_SESSION["welcom_index"] = 0 ; 
+}
 /*
 
+
+
+ include("index_apparence.php") ; 
+
 var_dump($liste_projet_id) ; 
+ 
 var_dump($liste_projet_id_sha1) ; 
 var_dump($liste_projet_id_parent) ; 
 var_dump($liste_projet_id_sha1_general) ; 
@@ -54,110 +82,132 @@ var_dump($liste_projet_new_file) ;
 var_dump($liste_projet_reg_date) ; 
 
 var_dump($liste_projet_color_1) ; 
- 
-
-*/
-
-
-
-
-for($a = 0 ; $a< count($liste_projet_id) ; $a++){
-
-
-if($liste_projet_visibilite1[$a]!="")
-{
+ */
 
 
 
  
-  ?>
 
+echo '<div class="general__">' ; 
+ for($i = 0 ; $i < count($liste_projet_id) ; $i ++ ) {
+  echo '<div class="element_1">  ' ;
+   
 
-<div class="container-fluid p-5 text-center  padding_1" style="color:<?php echo $liste_projet_color_1[$a]?>">
-  <h1>
-    <?php echo $liste_projet_name[$a]  ?>
-</h1>
-<p class="padding_1" style="color:<?php echo $liste_projet_color_1[$a]?>" style="color:<?php echo $liste_projet_color_2[$a]?>">
-<?php echo $liste_projet_description1[$a]  ?>
-</p>
+   $src_img = "../redirection_dowload_img/".$liste_projet_img[$i] ; 
+   ?>
+        <div class="mon_img" style="background-image:url('<?php echo $src_img ; ?>') "></div> 
+      
+  <?php 
+    echo '<h2>'.$liste_projet_name[$i].'</h2>' ; 
+    echo "<p>" ; 
+    echo $liste_projet_description1[$i] ; 
+    echo "</p>" ; 
 
-<?php 
-
- 
-if($liste_projet_img[$a]==""){
-
-    $redirection_dowload_img_ ="../../src/img/future (2).png" ;  
-?>
-
-<img class="img_class padding_1" onclick="img_reload(this)" title="<?php echo $liste_projet_id_sha1[$a] ?>" src="<?php echo $redirection_dowload_img_?>" alt="">
-
-<?php 
-}
-else {
-
-
-    $redirection_dowload_img_ ="../redirection_dowload_img/".$liste_projet_img[$a] ;  
-  
     ?>
-
-    <img class="img_class padding_1" onclick="img_reload(this)" title="<?php echo $liste_projet_id_sha1[$a] ?>" src="<?php echo $redirection_dowload_img_?>" alt="">
-    
-
-
-
+<a href="<?php echo "pages.php/".$liste_projet_id_sha1[$i]?>"> 
     <?php 
-}
+    echo '<p class="alert alert-secondary" role="alert"> ';
+    echo 'Voir l\'article';
+    echo '</p>';
+echo '</a>' ;
 
-?>
-<p class="gris_">
-<?php echo $liste_projet_reg_date[$a]  ?>
-</p>
- <a href="pages.php/<?php echo $liste_projet_id_sha1[$a] ?>">
-    <h1 class="color_link" >
-      Voir article
-    </h1></a>
-</div>
+  echo '</div>' ;
+   
+ }
+ echo '</div>' ; 
+ ?>
 
-<?php 
-}
-}
+ 
 
-?>
-<a href="../../">
-  <div class="alert alert-secondary" role="alert">
- Menu principal
-</div>
-</a>
-
-</body>
-</html>
+ 
 
 
 
+
+
+
+<!--
+<div class="general__">!
+ 
+          <div class="element_1">   ! 
+                <div class= "mon_img"></div>!
+                    <h2>Titre 1 </h2>!
+                      <p>!
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Numquam quisquam doloribus quaerat? Dignissimos, sint, commodi 
+                      rerum animi recusandae aut a beatae cumque deleniti veritatis ex cum? Voluptate adipisci velit amet?
+                      </p> 
+
+                      <div class="alert alert-secondary" role="alert"> Voir l'article  </div>    !
+          </div>!
+
+</div>!
+-->
 <style>
-    .img_class{
-        max-width: 300px; 
-    }
-    .padding_1 {
-        padding:35px; 
-    }
-    .color_link{
-      background-color:#9ec5fe ; 
-      padding:15px; 
-      width: 40%; 
-      margin:auto ; 
-    }
-    a {
-      text-decoration:none ; 
-      color:white ; 
-    }
-    .gris_{
-      color:rgba(0,0,0,0.3) ; 
-    }
-</style>
 
-<script>
-    function img_reload(_this){
-        console.log(_this.title) ; 
-    }
-</script>
+.general__{
+
+  display:flex ; 
+  justify-content:space-around ; 
+  width:80%; 
+  margin:auto  ;   
+    flex-wrap:wrap ;  
+}
+.element_1{
+  width:300px; 
+
+  border-radius:15px  ; 
+  text-align:center ; 
+
+
+  margin : 10px; 
+}
+.element_1 h2{
+
+  text-align:center ; 
+}
+.element_1 p{
+
+text-align:justify ; 
+}
+.mon_img{
+width:100% ; 
+
+height:100px;
+  border-radius:15px  15px 0 0  ;  
+  background-size:100% ; 
+
+}
+.liste_projet{
+  padding:15px; 
+  margin-bottom : 105px ; 
+}
+a {
+  text-decoration:none ; 
+}
+.log_{
+  display:flex ; 
+  justify-content:space-around ; 
+  padding : 10px; 
+
+}
+.log_ div {
+ 
+  width : 50%; 
+  text-align:center ;  padding:10px ; 
+ 
+}
+
+
+.log_ div:hover {
+ background-color:rgba(0,0,0,0.1);
+ cursor:pointer ; 
+
+
+}
+
+
+ 
+
+ 
+</style>

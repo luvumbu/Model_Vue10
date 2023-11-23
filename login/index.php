@@ -2,6 +2,18 @@
 session_start(); 
  //echo $_SESSION["name"] ; 
  
+
+ 
+
+ if(!isset($_SESSION["welcom_index"])){
+  ?>
+
+<meta http-equiv="Refresh" content="0; url='blog/index.php'" />
+<?php 
+ }
+ else {
+
+
  
 ?>
 <!DOCTYPE html>
@@ -77,6 +89,8 @@ toutes les focti
     if(isset($_SESSION["information_user_id"])){
   }
   include("class/php/php_off/verif.php");
+
+}
   ?>
   </div> 
   </body> 
