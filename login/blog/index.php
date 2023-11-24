@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap 5 Example</title>
+  <title>Ndenga Luvumbu</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
@@ -41,7 +41,7 @@
    </div>
   </a>
 <h1 class="text-center liste_projet">
-  Liste de réalisé
+Projet
 </h1>
 
  
@@ -112,7 +112,7 @@ echo '<div class="general__">' ;
     ?>
 <a href="<?php echo "pages.php/".$liste_projet_id_sha1[$i]?>"> 
     <?php 
-    echo '<p class="alert alert-secondary" role="alert"> ';
+    echo '<p class="alert text-center alert-secondary" role="alert"> ';
     echo 'Voir l\'article';
     echo '</p>';
 echo '</a>' ;
@@ -157,6 +157,7 @@ echo '</a>' ;
   justify-content:space-around ; 
   width:80%; 
   margin:auto  ;   
+ 
     flex-wrap:wrap ;  
 }
 .element_1{
