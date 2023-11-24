@@ -1,4 +1,10 @@
+ <?php
+ session_start() ; 
  
+ include("index_json.php") ; 
+
+ include("add_log_0.php") ; 
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +47,7 @@
  
 <?php 
 
-include("index_json.php") ; 
+
 
 
 

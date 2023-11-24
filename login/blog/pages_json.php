@@ -1,7 +1,5 @@
 <?php 
- 
-
- 
+include("../../model/class/php/Insertion_Bdd.php") ;  
 include("../../model/class/php/Select_datas.php") ;  
 include("../../model/class/php/connexion.php") ;   
 
@@ -26,7 +24,7 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
 
     'liste_projet_visibilite2',
     'liste_projet_type',
-    'information_user_id_sha1',
+    'information_user_id_sha1',  
     'liste_projet_new_file',
     'liste_projet_reg_date',
 
@@ -35,7 +33,7 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
 
     'liste_projet_name_font_size', 
     'liste_projet_description1_font_size',
-    'liste_projet_background_color'
+    'liste_projet_background_color' 
 
     
 

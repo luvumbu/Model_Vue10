@@ -1,4 +1,5 @@
 <?php
+session_start() ; 
 include("../class/php/php_select_data/give_url.php") ; 
 
 include("pages_json.php") ; 
@@ -8,7 +9,10 @@ include("pages_json.php") ;
 
 
 
+  
+include("add_log.php") ; 
 
+ 
 
 /*
 liste_projet_id

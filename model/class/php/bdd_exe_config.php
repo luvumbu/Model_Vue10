@@ -89,6 +89,31 @@ $execution_formulaire_php->set_action ("CREATE TABLE liste_projet (
   )");
 
 
+
+$execution_formulaire_php->set_action ("CREATE TABLE liste_log (
+  liste_log_id	 INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,  
+  liste_log_ip TEXT(2000) NOT NULL,
+  liste_projet_id_sha1 TEXT(2000) NOT NULL,
+  liste_projet_id_parent TEXT(2000) NOT NULL,  
+  information_user_id_sha1 TEXT(2000) NOT NULL,  
+
+  
+  liste_reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  )");
+
+
+$execution_formulaire_php->set_action ("CREATE TABLE liste_log2 (
+  liste_log_id	 INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,  
+  liste_log_ip TEXT(2000) NOT NULL,
+  liste_projet_id_sha1 TEXT(2000) NOT NULL,
+  liste_projet_id_parent TEXT(2000) NOT NULL,  
+  information_user_id_sha1 TEXT(2000) NOT NULL,  
+
+  
+  liste_reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  )");
+
+
 $execution_formulaire_php->set_action ("CREATE TABLE liste_visite_page (
 
   liste_visite_page_id	 INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
