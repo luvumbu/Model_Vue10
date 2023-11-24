@@ -532,13 +532,13 @@ text-shadow:1px 1px black;
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: red; 
+  background: rgba(0,0,0,0.8); 
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
+  background: rgba(0,0,0,0.9); 
 }
 </style>
 
