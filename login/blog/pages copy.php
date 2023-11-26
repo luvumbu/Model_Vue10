@@ -56,7 +56,7 @@ liste_projet_color_2
     <b>
 
   
-    <div class="hreff_el_0" id="debut">
+    <div class="hreff_el_0">
             
     <?php echo $liste_projet_name[0] ; ?>
     </div>  </b>
@@ -95,7 +95,7 @@ liste_projet_description1_font_size
  <label for=""></label>     <div class="display_flex_2 pages_1">
             <?php 
                         for($a = 0 ; $a<count($liste_projet_id_2) ; $a++){
-                            echo ' <a class="hreff_el_0 hreff_el" href="#l'.$liste_projet_id_sha1_2[$a].'">';
+                            echo ' <a class="hreff_el" href="#l'.$liste_projet_id_sha1_2[$a].'">';
                             
                             echo $liste_projet_name_2[$a];
 
@@ -119,13 +119,13 @@ $src_img = "../../redirection_dowload_img/".$liste_projet_img[0] ;
 
 <div class="presentation_"  style='background-image:url("<?php echo $src_img ; ?>")'>
             <div class="text-center">
-            <h1  class="space_el" style="color:<?php echo $liste_projet_color_1[0]."; font-size:".$liste_projet_name_font_size[0].'; background-color:'.$liste_projet_background_color[0];?>">
+            <h1 style="color:<?php echo $liste_projet_color_1[0]."; font-size:".$liste_projet_name_font_size[0].'; background-color:'.$liste_projet_background_color[0];?>">
             <?php echo $liste_projet_name[0] ; ?>
          
             </h1>
         </div>
         <div>
-        <h2 class="text-justify padding_1 space_el"    style="color:<?php echo $liste_projet_color_2[0]."; font-size:".$liste_projet_description1_font_size[0].';background-color:'.$liste_projet_background_color[0];?>">
+        <h2 class="text-justify padding_1"    style="color:<?php echo $liste_projet_color_2[0]."; font-size:".$liste_projet_description1_font_size[0].';background-color:'.$liste_projet_background_color[0];?>">
             <?php echo $liste_projet_description1[0] ; ?>
             
             </h2>
@@ -160,38 +160,17 @@ for($z = 0 ; $z<count($a_); $z ++) {
         if($z_==6){
  
             
-                    echo "<div class='space_el text-center' id='l".$a_[$z][$z_-5]."'>
+                    echo "<div class='text-center' id='l".$a_[$z][$z_-5]."'>
                     <b class='text-center'>".$a_[$z][$z_]."</b> <br/>";
                   $lien_element=  $a_[$z][$z_-5] ; 
 
 
                  
 ?>
-     <?php  $src_img_s ="../../redirection_dowload_img/".$a_[$z][$z_-1] ;?>
-
-<?php
-$r = $a_[$z][$z_-1] ; 
-if($r!=""){
- 
-?>
- 
-<img class="taille_img" src="<?php echo $src_img_s?>" alt="" srcset="">
-<?php 
-}
-?>
- 
-
 <a href="<?php echo $lien_element ; ?>">
-<b>
-    <div class="lien">
-  
-
-Voir lien  <?php echo $a_[$z][$z_] ;?>
-
-
+<div class="alert alert-info lien">
+   lien  <?php echo $a_[$z][$z_] ;?>
 </div>
-</b>
-
 </a>
 
 <?php 
@@ -269,7 +248,7 @@ echo "<div class='i_array'>" ;
     
                   //  echo(fmod($i_array,16 ) . "<br>");
                  
-                    if(fmod($i_array,18 )==6){
+                    if(fmod($i_array,17 )==6){
  echo "<div class='i_array2'>" ; 
 
 
@@ -310,7 +289,7 @@ $img_src_ = "../../redirection_dowload_img/".$b_[$z][$i_array-1] ;
  
                  }
 
-                        echo "<br/>" ; 
+                        echo "<br/> TI" ; 
 
                         echo "<div class='description_el'>" ; 
                      
@@ -390,13 +369,8 @@ echo "</div>" ;
         display:flex;
         justify-content:space-between ; 
       
- 
+    
 
-
-
-    }
-    .space_el{
-       margin:50px; 
     }
     a {
         text-decoration:none ; 
@@ -422,12 +396,6 @@ echo "</div>" ;
     .presentation_{
       
        background-size:100% ; 
-       padding-bottom:200px;
-       padding-top:200px;
-
-text-shadow:1px 1px white; 
-background-attachment:fixed ; 
-background-size:100%; 
 
     }
     .bold_child{
@@ -489,7 +457,6 @@ border-radius: 15px 15px 0 0 ;
     border-radius : 100%; 
     height:100px ; 
     margin-bottom:20px ; 
-    margin-top:25px; 
  }
  .description{
     color:rgba(0,0,0,0.4) ; 
@@ -505,8 +472,6 @@ margin-top:25px;
  .hreff_el_0  {
  
 border-bottom:1px solid rgba(0,0,0,0) ; 
-
-text-shadow:1px 1px black; 
 }
 .m_princ{
     width:200px; 
@@ -518,27 +483,6 @@ text-shadow:1px 1px black;
     margin-top:60px; 
     margin-bottom:60px; 
 
-}
-
-::-webkit-scrollbar {
-  width: 20px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgba(0,0,20,0.8); 
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(0,0,20,0.9); 
 }
 </style>
 
@@ -576,27 +520,10 @@ else {
 <div class="alert alert-warning m_princ" role="alert">
                 Menu principal 
 </div>
-
-
-<a href="#debut">
-    <div class="debut_page alert alert-secondary" role="alert">
-    <img width="20" height="20" src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/20/external-up-arrows-dreamstale-lineal-dreamstale-9.png" alt="external-up-arrows-dreamstale-lineal-dreamstale-9"/>
-</div>
-</a>
-
 </a>
 
 
-<style>
-    .debut_page{
- 
-        width:50px ;
-        text-align:center ;  
-        color:white ; 
-        text-shadow:1px 1px black ; 
-        float:right ; 
-    }
-</style>
+
  
 </body>
 </html>
