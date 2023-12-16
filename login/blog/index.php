@@ -105,8 +105,23 @@ echo '<div class="general__">' ;
   <?php 
     echo '<h2>'.$liste_projet_name[$i].'</h2>' ; 
     echo "<p>" ; 
-    echo $liste_projet_description1[$i] ; 
+    //echo $liste_projet_description1[$i] ; 
+
+    for($p = 0 ; $p<strlen($liste_projet_description1[$i]); $p ++){
+     
+      if($p==120){
+        echo $liste_projet_description1[$i][$p]."...";
+        break ; 
+      }
+      else {
+        echo $liste_projet_description1[$i][$p];
+      }
+    }
+    echo "<br/>" ; 
+
+ 
     echo "</p>" ; 
+    
 
     ?>
 <a href="<?php echo "pages.php/".$liste_projet_id_sha1[$i]?>"> 
@@ -179,7 +194,7 @@ text-align:justify ;
 .mon_img{
 width:100% ; 
 
-height:100px;
+height:250px;
   border-radius:15px  15px 0 0  ;  
   background-size:100% ; 
 

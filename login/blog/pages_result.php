@@ -330,8 +330,8 @@ echo "</div>" ;
   }
   .hreff_el_00{
     text-decoration:none ; 
-    padding-left:30%;
-    padding-right:30%;
+    padding-left:20%;
+    padding-right:20%;
     padding-top:5px ; 
     padding-bottom:5px ; 
 
