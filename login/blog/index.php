@@ -51,7 +51,6 @@ Projet
 
 
 
-
 if(isset($_SESSION["welcom_index"])){
  
  $_SESSION["welcom_index"] = $_SESSION["welcom_index"]+1; 
