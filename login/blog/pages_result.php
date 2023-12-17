@@ -18,17 +18,19 @@
 <div id="hreff_el_0" class="visibility_menue_1">
 <?php 
        for($a = 0 ; $a<count($liste_projet_id_2) ; $a++){
-                echo ' <div class="hreff_el_0" href="#l'.$liste_projet_id_sha1_2[$a].'">';
+                
                 
     
 
 
-                echo ' <a class="hreff_el_00" href="#l'.$liste_projet_id_sha1_2[$a].'">';
+                echo ' <a class="hreff_el_00 deux_em" href="#l'.$liste_projet_id_sha1_2[$a].'">';
                 
-                echo $liste_projet_name_2[$a];
+              
+                echo "<div class='hreff_el_01'>".$liste_projet_name_2[$a]."</div>";
+
 
                 echo  '</a>' ;
-                echo  '</div>' ;
+          
             
             }
 
@@ -330,8 +332,7 @@ echo "</div>" ;
   }
   .hreff_el_00{
     text-decoration:none ; 
-    padding-left:20%;
-    padding-right:20%;
+ 
     padding-top:5px ; 
     padding-bottom:5px ; 
 
@@ -343,20 +344,40 @@ echo "</div>" ;
   }
   .visibility_menue_1{
     display:none ; 
+    
   }
   #img_visibility_x:hover{
     cursor:pointer;
   }
   
   .hreff_el_00:hover{
-    background-color:rgba(0,0,0,0.5) ; 
+ 
     transition:1s all ; 
+    background-color:red; 
   }
 
   .hreff_el_00:hover{
    
     transition:0.5s all ; 
-    color:white;
+
+  }
+  .hreff_el_01:hover{
+
+    color:white ; 
+    transition:0.5s all ; 
+    background-color:rgba(0,0,0,0.6) ; 
+
+  }
+
+  .hreff_el_01{
+ padding:5px;
+    transition:0.5s all ; 
+    background-color:black ; 
+
+
+  }
+  .deux_em{
+    font-size:1.5em; 
   }
      </style>
 

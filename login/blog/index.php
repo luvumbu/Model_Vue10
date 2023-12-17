@@ -210,7 +210,9 @@ a {
   display:flex ; 
   justify-content:space-around ; 
   padding : 10px; 
-
+background-color:#007bff ; 
+color:white ; 
+font-size:2em; 
 }
 .log_ div {
  
