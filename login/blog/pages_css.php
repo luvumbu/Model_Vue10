@@ -106,7 +106,7 @@ margin-top:25px;
  }
  .hreff_el_0  {
  
-border-bottom:1px solid rgba(0,0,0,0) ; 
+border-bottom:1px solid <?php echo $liste_projet_color_1[0] ; ?> ; 
 
 text-shadow:1px 1px black; 
 }
