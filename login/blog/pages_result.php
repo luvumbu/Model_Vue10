@@ -25,6 +25,9 @@
 
                 echo ' <a class="hreff_el_00 deux_em" href="#l'.$liste_projet_id_sha1_2[$a].'">';
                 
+
+
+                
               
                 echo "<div class='hreff_el_01'>".$liste_projet_name_2[$a]."</div>";
 
@@ -58,7 +61,15 @@ $src_img = "../../redirection_dowload_img/".$liste_projet_img[0] ;
         </div>
         <div>
         <h2 class="text-justify padding_1 space_el"    style="color:<?php echo $liste_projet_color_2[0]."; font-size:".$liste_projet_description1_font_size[0].';background-color:'.$liste_projet_background_color[0];?>">
-            <?php echo $liste_projet_description1[0] ; ?>
+            <?php
+            
+         
+         $liste_projet_description1[0] =  str_replace("#34#",'"',$liste_projet_description1[0]);
+         $liste_projet_description1[0] =  str_replace("#92#","\'",$liste_projet_description1[0]);
+         echo $liste_projet_description1[0] ;
+
+            
+            ?>
             
             </h2>
         </div>
@@ -202,7 +213,7 @@ echo "<div class='i_array'>" ;
                   //  echo(fmod($i_array,16 ) . "<br>");
                  
                     if(fmod($i_array,18 )==6){
- echo "<div class='i_array2'>" ; 
+ echo "<div class='i_array2 border_colors'>" ; 
 
 
 
@@ -314,85 +325,37 @@ echo "</div>" ;
 
      }
 
+
+     
+ 
+
+include("pages_result.html") ; 
+
+
+ 
+ 
+
+if($liste_projet_color_1[0]!=""){
+?>
+<style>
+   .border_colors{
+    border-top:5px solid <?php echo $liste_projet_color_1[0]  ?> ; 
+     }
+</style>
+
+<?php 
+}
+else {
 ?>
 
- 
+<style>
+   .border_colors{
+    border-top:5px solid black   ; 
+     }
+</style>
+
+<?php 
+}
 
 
-
-
-
-     <style>
-  .hreff_el_0{
- text-align:center ; 
- 
-
- padding:5px ; 
- width:100%; 
-  }
-  .hreff_el_00{
-    text-decoration:none ; 
- 
-    padding-top:5px ; 
-    padding-bottom:5px ; 
-
-    text-align:center;
-    margin-bottom:3px; 
-  }
-  #hreff_el_0{
-    
-  }
-  .visibility_menue_1{
-    display:none ; 
-    
-  }
-  #img_visibility_x:hover{
-    cursor:pointer;
-  }
-  
-  .hreff_el_00:hover{
- 
-    transition:1s all ; 
-    background-color:red; 
-  }
-
-  .hreff_el_00:hover{
-   
-    transition:0.5s all ; 
-
-  }
-  .hreff_el_01:hover{
-
-    color:white ; 
-    transition:0.5s all ; 
-    background-color:rgba(0,0,0,0.6) ; 
-
-  }
-
-  .hreff_el_01{
- padding:5px;
-    transition:0.5s all ; 
-    background-color:black ; 
-
-
-  }
-  .deux_em{
-    font-size:1.5em; 
-  }
-     </style>
-
-     <script>
-        function img_visibility_x(_this){
-            console.log(_this.className) ; 
-            if(_this.className=="img_visibility_x"){
-                _this.className ="";
-                document.getElementById("hreff_el_0").className="" ; 
-            }
-            else {
-                _this.className ="img_visibility_x";
-               
-                document.getElementById("hreff_el_0").className="visibility_menue_1" ; 
-            }
-          
-        }
-     </script>
+?>

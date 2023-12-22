@@ -42,8 +42,8 @@ $_SESSION["invitation"] = give_url();
 
 ?>
 
+ 
 
-<meta http-equiv="Refresh" content="0; url='../'" />
 
 
 
@@ -73,5 +73,48 @@ $apple = new Insertion_Bdd(
 
     $apple->execution() ;
 
+echo give_url();
+
+
+switch (give_url()) {
+    case "2023":
+      ?>
+      <meta http-equiv="Refresh" content="0; url='https://bokonzi.com/login/blog/pages.php/1703003958387" />
+      <?php 
+      break;
+    case "hr_consulting":
+        echo give_url()."2";
+
+      break;
+    case "2021":
+         
+        ?>
+        <meta http-equiv="Refresh" content="0; url='https://whimsical.com/level-tek-v4-CCAx7PcCgZxrhqCCeDP6gU" />
+        <?php 
+        
+      break;
+
+      case "eleec_btp":
+        
+?>
+<meta http-equiv="Refresh" content="0; url='https://bokonzi.com/login/blog/pages.php/1702647321460" />
+<?php 
+      break;
+
+      
+    default:
+     
+  }
+
+
+
+
 
     ?>
+
+<!-- 
+
+
+-->
+
+

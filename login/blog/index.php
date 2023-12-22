@@ -108,19 +108,34 @@ echo '<div class="general__">' ;
     echo "<p>" ; 
     //echo $liste_projet_description1[$i] ; 
 
+
+    $result_ = "" ; 
     for($p = 0 ; $p<strlen($liste_projet_description1[$i]); $p ++){
      
-      if($p==120){
+      if($p==500){
         echo $liste_projet_description1[$i][$p]."...";
         break ; 
       }
       else {
-        echo $liste_projet_description1[$i][$p];
+        $result_ = $result_.$liste_projet_description1[$i][$p] ; 
+
+        
       }
     }
     echo "<br/>" ; 
 
+
+
  
+
+   $result_ =  str_replace("#34#",'"',$result_);
+   $result_ =  str_replace("#92#","\'",$result_);
+  
+
+ 
+ 
+
+ echo  $result_ ; 
     echo "</p>" ; 
     
 
@@ -162,76 +177,8 @@ echo '</a>' ;
                       <div class="alert alert-secondary" role="alert"> Voir l'article  </div>    !
           </div>!
 
-</div>!
--->
-<style>
-
-.general__{
-
-  display:flex ; 
-  justify-content:space-around ; 
-  width:80%; 
-  margin:auto  ;   
- 
-    flex-wrap:wrap ;  
-}
-.element_1{
-  width:300px; 
-
-  border-radius:15px  ; 
-  text-align:center ; 
+</div>!--> 
 
 
-  margin : 10px; 
-}
-.element_1 h2{
 
-  text-align:center ; 
-}
-.element_1 p{
-
-text-align:justify ; 
-}
-.mon_img{
-width:100% ; 
-
-height:250px;
-  border-radius:15px  15px 0 0  ;  
-  background-size:100% ; 
-
-}
-.liste_projet{
-  padding:15px; 
-  margin-bottom : 105px ; 
-}
-a {
-  text-decoration:none ; 
-}
-.log_{
-  display:flex ; 
-  justify-content:space-around ; 
-  padding : 10px; 
-background-color:#007bff ; 
-color:white ; 
-font-size:2em; 
-}
-.log_ div {
- 
-  width : 50%; 
-  text-align:center ;  padding:10px ; 
- 
-}
-
-
-.log_ div:hover {
- background-color:rgba(0,0,0,0.1);
- cursor:pointer ; 
-
-
-}
-
-
- 
-
- 
-</style>
+<link rel="stylesheet" href="index.css">

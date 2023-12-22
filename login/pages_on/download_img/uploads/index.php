@@ -1,5 +1,5 @@
 
-
+<link rel="stylesheet" href="index.css">
 <div class="display">
     <?php
     $dir_nom = '.'; // dossier listé (pour lister le répertoir courant : $dir_nom = '.'  --> ('point')
@@ -47,14 +47,5 @@
 
 </div>
 <style>
-    img {
-        width: 300px;
-        padding: 15px;
-    }
 
-    .display {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
 </style>

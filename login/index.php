@@ -1,7 +1,7 @@
+ 
 <?php 
 session_start(); 
- //echo $_SESSION["name"] ;  
-
+ //echo $_SESSION["name"] ; 
  if(!isset($_SESSION["welcom_index"])){
   ?>
 
@@ -93,3 +93,5 @@ toutes les focti
   </body> 
   <link rel="stylesheet" href="css.css">
   </html>
+
+  

@@ -90,24 +90,9 @@ else {
          echo "<h1>L'utilisateur donne pas l'accès a cette page</h1>";
     }
 }
-?>
 
-
-
-
-
-
- 
-
- 
-<?php
-
- 
 
 if($liste_projet_id_parent[0]==0){
-?>
-
-<?php 
 }
 else {
 
@@ -118,12 +103,27 @@ else {
                 Voir l'article Parent
 </div>
 </a>
- 
-    <?php 
+ <?php 
 }
  
 
 ?>
+<?php 
+if($liste_projet_img[0]!=""){
+    ?>
+<div class="rangement_img">
+    <img src="<?php echo '../../redirection_dowload_img/'.$liste_projet_img[0] ; ?>" class="element_img">
+</div>
+
+<?php 
+}
+
+
+?>
+
+
+
+
 <a href="../index.php">
 <div class="alert alert-warning m_princ" role="alert">
                 Menu principal 
@@ -138,6 +138,19 @@ else {
 
 </a>
  
+
  
+
+<style>
+    .element_img{
+       width:100%; 
+    }
+    .rangement_img{
+width:60%; 
+margin:auto ; 
+margin-bottom:250px; 
+margin-top:250px; 
+    }
+</style>
 </body>
 </html>

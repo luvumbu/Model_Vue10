@@ -28,20 +28,13 @@ $liste_projet_name = $_POST["liste_projet_name"] ;
                     
       if(ord($string[$i])>13 && ord($string[$i])<255 ){
          
- 
 
-          switch (ord($string[$i])) {
-            case 34:
-            case 92:
-                $valeur_final = $valeur_final."#".ord($string[$i])."#" ; 
-              break;
-       
-  
-            default:
-                     $valeur_final = $valeur_final.$string[$i] ; 
-          }
-
-
+          if(ord($string[$i])!=92){
+            $valeur_final = $valeur_final.$string[$i] ; 
+         }
+         else {
+            $valeur_final = $valeur_final."[92]" ; 
+         }
       }
   
   }
@@ -54,25 +47,15 @@ $liste_projet_name = $_POST["liste_projet_name"] ;
 
   $string = $liste_projet_name ;
   $valeur_final = "" ; 
-
-$nombre_max=array();
-
  
   for($i = 0 ; $i <strlen($string) ; $i ++ )  {
                      
        if(ord($string[$i])>13 && ord($string[$i])<255 ){
-        
-        switch (ord($string[$i])) {
-            case 34:
-            case 92:
-                $valeur_final = $valeur_final."#".ord($string[$i])."#" ; 
-               
-              break;
-       
-  
-            default:
-                     $valeur_final = $valeur_final.$string[$i] ; 
-          }
+         
+
+           if(ord($string[$i])!=92){
+              $valeur_final = $valeur_final.$string[$i] ; 
+           }
        }
    
    }
@@ -84,15 +67,7 @@ $nombre_max=array();
 
 
  
-$diesse_veri = 0 ; 
 
-
-
- 
-
-
-
- 
 $apple = new Insertion_Bdd(
       $servername,
       $username,
