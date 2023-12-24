@@ -30,14 +30,6 @@ $name="";
  
 }
 
-
-
- 
- 
-  
-
-
-
 $apple = new Select_datas($servername,$username,$password,$dbname);
 
   array_push(
@@ -69,17 +61,7 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
 
     // echo   $myJSON ; 
 
-
-
-
-
-
-
-
-
-
-
-    $apple2 = new Select_datas($servername,$username,$password,$dbname);
+   $apple2 = new Select_datas($servername,$username,$password,$dbname);
 
   array_push(
     $apple2->row,
@@ -109,11 +91,6 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     $myJSON = json_encode($apple2->list_row); 
 
     // echo   $myJSON ; 
-
-
-
-
-
  echo "[";
   echo $apple->all_data_json() ; 
   echo ",";

@@ -113,16 +113,32 @@ if($liste_projet_img[0]!=""){
     ?>
 <div class="rangement_img">
     <img src="<?php echo '../../redirection_dowload_img/'.$liste_projet_img[0] ; ?>" class="element_img">
-</div>
+
+<div class="Get_anne">
 
 <?php 
+
+
+$apple = new Get_anne($liste_projet_reg_date[0]);
+echo $apple->get_jour();
+echo "/" ; 
+echo $apple->get_mois();
+echo "/" ; 
+
+echo $apple->get_anne();
+echo "<br>";
+ 
 }
 
 
+
+
+
 ?>
+</div>
 
 
-
+</div>
 
 <a href="../index.php">
 <div class="alert alert-warning m_princ" role="alert">
@@ -151,6 +167,15 @@ margin:auto ;
 margin-bottom:250px; 
 margin-top:250px; 
     }
+    .Get_anne{
+        margin-top:50px; 
+    }
 </style>
 </body>
 </html>
+
+<?php
+
+
+ 
+?>
