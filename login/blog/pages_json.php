@@ -34,7 +34,8 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
 
     'liste_projet_name_font_size', 
     'liste_projet_description1_font_size',
-    'liste_projet_background_color' 
+    'liste_projet_background_color',
+    'liste_projet_description1_tittle' 
 
     
 
@@ -73,7 +74,8 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
 
     'liste_projet_name_font_size', 
     'liste_projet_description1_font_size',
-    'liste_projet_background_color'
+    'liste_projet_background_color',
+    'liste_projet_description1_tittle'
 
       
   
@@ -117,7 +119,8 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
 
         'liste_projet_name_font_size', 
         'liste_projet_description1_font_size',
-        'liste_projet_background_color'
+        'liste_projet_background_color',
+        'liste_projet_description1_tittle'
 
         
         
@@ -195,9 +198,9 @@ $number ++ ;
 $liste_projet_background_color =$apple->add_array_element($number);
 $number ++ ; 
 
-
+$liste_projet_description1_tittle =$apple->add_array_element($number);
  
-
+$number ++ ; 
  
 $number = 0 ; 
 // affectation valeur array 
@@ -256,7 +259,7 @@ $number ++ ;
 $liste_projet_background_color_2 =$apple_2->add_array_element($number);
 $number ++ ; 
 
-
+$liste_projet_description1_tittle_2 =$apple_2->add_array_element($number);
 
    
 

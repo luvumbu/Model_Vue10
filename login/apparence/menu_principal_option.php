@@ -19,6 +19,7 @@
      var_dump($liste_projet_reg_date) ; 
 */
 
+
 ?>
  
  
@@ -34,9 +35,6 @@
 
 
 
-
- 
- 
  
   
 
@@ -102,7 +100,9 @@ for($a = 0 ; $a< $nombre_total_element; $a ++) {
         <h4 class="liste_projet_name">
           
       <input type="text" onkeyup="update_all_php(this)" style="color:<?php echo  $liste_projet_color_1[$a].";font-size:".$liste_projet_name_font_size[$a] ; ?>" id="<?php echo "input_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" value="<?php echo $liste_projet_name[$a] ?>"  class="liste_projet_name_input">
-        </h4>       
+      <input type="text" onkeyup="update_all_php(this)" style="color:<?php echo  $liste_projet_color_1[$a].";font-size:".$liste_projet_name_font_size[$a] ; ?>" id="<?php echo "input_title".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"  value="<?php echo $liste_projet_name_tittle[$a] ?>"   class="liste_projet_name_input titles_" placeholder="tittle referencement">
+     
+    </h4>       
      <div class="block_1">
             <div class="block_1_1">
             
@@ -137,6 +137,8 @@ $src_img__="redirection_dowload_img/".$liste_projet_img[$a] ;
             </div>
             <div class="block_1_2">
                 <textarea onkeyup="update_all_php(this)"  style="color:<?php echo  $liste_projet_color_2[$a].";font-size:".$liste_projet_description1_font_size[$a] ; ?>" id="<?php echo "textarea_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" class="liste_projet_description1_textarea"><?php echo $liste_projet_description1[$a] ?></textarea>
+                <br/>
+                <input   value="<?php echo $liste_projet_description1_tittle[$a]?>" placeholder="tittle referencement" onkeyup="update_all_php(this)"  style="color:<?php echo  $liste_projet_color_2[$a].";font-size:".$liste_projet_description1_font_size[$a] ; ?>" id="<?php echo "textarea_title".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" class="liste_projet_description1_textarea titles_">
 
             </div>
             <label for="<?php echo "liste_projet_color_1_0_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>">
@@ -204,8 +206,7 @@ $src_img__="redirection_dowload_img/".$liste_projet_img[$a] ;
 }
 
 
-
-
+ 
  ?>
 
 
@@ -221,13 +222,27 @@ $src_img__="redirection_dowload_img/".$liste_projet_img[$a] ;
 
 
     var input_ = document.getElementById("input_"+_this.title);
+
+
+    var input_title = document.getElementById("input_title"+_this.title);
+
+    
+  
     var textarea_ = document.getElementById("textarea_"+_this.title);
+    var textarea_title = document.getElementById("textarea_title"+_this.title);
+
+
+    
  
  
 var ok = new Information("class/php/php_update/update_all.php"); // création de la classe 
 ok.add("liste_projet_id_sha1", _this.title); // ajout de l'information pour lenvoi 
 ok.add("liste_projet_name", input_.value); // ajout de l'information pour lenvoi 
+
+ok.add("liste_projet_name_tittle", input_title.value); // ajout de l'information pour lenvoi 
+
 ok.add("liste_projet_description1", textarea_.value); // ajout de l'information pour lenvoi 
+ok.add("liste_projet_description1_tittle", textarea_title.value); // ajout de l'information pour lenvoi 
 
  
 console.log(ok.info()); // demande l'information dans le tableau
@@ -385,6 +400,10 @@ ok.push(); // envoie l'information au code pkp
 <style>
   .space_display_1{
     display:none ; 
+  }
+  .titles_{
+    margin-top:25px; 
+    opacity:0.4; 
   }
 </style>
 
