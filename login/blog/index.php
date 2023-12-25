@@ -95,9 +95,14 @@ var_dump($liste_projet_color_1) ;
  
 
 echo '<div class="general__">' ; 
+
+
+ 
  for($i = 0 ; $i < count($liste_projet_id) ; $i ++ ) {
   echo '<div class="element_1">  ' ;
-   
+   if($liste_projet_visibilite1[$i]!=""){
+
+
 
    $src_img = "../redirection_dowload_img/".$liste_projet_img[$i] ; 
    ?>
@@ -150,6 +155,7 @@ echo '</a>' ;
   echo '</div>' ;
    
  }
+}
  echo '</div>' ; 
  ?>
 

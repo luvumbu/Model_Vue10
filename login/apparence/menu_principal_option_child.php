@@ -10,7 +10,6 @@ for($a = 0 ; $a< count($liste_projet_id_sha1_2); $a ++) {
 
  
   ?>
-
 <div class="class_1" id="<?php echo "parent_".$liste_projet_id_sha1_2[$a] ?>">
 
 

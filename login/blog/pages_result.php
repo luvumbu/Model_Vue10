@@ -358,3 +358,65 @@ else {
 }
  
 ?>
+
+<div class="rangement_img">
+
+<?php 
+
+if($liste_projet_img[0]!=""){
+    ?>
+    <img src="<?php echo '../../redirection_dowload_img/'.$liste_projet_img[0] ; ?>" class="element_img">
+
+
+<?php 
+}
+
+?>
+
+</div>
+<div class="Get_anne">
+
+<?php 
+
+
+$apple = new Get_anne($liste_projet_reg_date[0]);
+echo $apple->get_jour();
+echo "/" ; 
+echo $apple->get_mois();
+echo "/" ; 
+
+echo $apple->get_anne();
+echo "<br>";
+
+?>
+
+
+
+
+<style>
+    .element_img{
+       width:100%; 
+       margin:auto ; 
+    
+    }
+    .rangement_img{
+width:20%; 
+margin:auto ; 
+ 
+background-color:black ; 
+    }
+    .Get_anne{
+   
+
+        background-color:rgba(0,0,0,0.3) ; 
+        width: 300px; 
+        text-align:center ; 
+        margin:auto ; 
+        margin-top:200px; 
+        margin-bottom:200px; 
+        color:white ; 
+        padding:5px ; 
+        border-radius:5px; 
+
+    }
+</style>

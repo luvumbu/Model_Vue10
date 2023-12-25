@@ -74,10 +74,14 @@ $liste_projet_name_font_size
 liste_projet_description1_font_size
 */
 
+
+
+
 if($liste_projet_visibilite1[0]!="") 
 {
  include("pages_result.php") ; 
 
+ 
 }
 else {
    
@@ -108,33 +112,7 @@ else {
  
 
 ?>
-<?php 
-if($liste_projet_img[0]!=""){
-    ?>
-<div class="rangement_img">
-    <img src="<?php echo '../../redirection_dowload_img/'.$liste_projet_img[0] ; ?>" class="element_img">
-
-<div class="Get_anne">
-
-<?php 
-
-
-$apple = new Get_anne($liste_projet_reg_date[0]);
-echo $apple->get_jour();
-echo "/" ; 
-echo $apple->get_mois();
-echo "/" ; 
-
-echo $apple->get_anne();
-echo "<br>";
  
-}
-
-
-
-
-
-?>
 </div>
 
 
@@ -157,20 +135,7 @@ echo "<br>";
 
  
 
-<style>
-    .element_img{
-       width:100%; 
-    }
-    .rangement_img{
-width:60%; 
-margin:auto ; 
-margin-bottom:250px; 
-margin-top:250px; 
-    }
-    .Get_anne{
-        margin-top:50px; 
-    }
-</style>
+
 </body>
 </html>
 
