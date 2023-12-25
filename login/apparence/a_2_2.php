@@ -89,6 +89,7 @@ $nombre_total_element = count($apple->list_row)/ count($apple->row) ;
 
 
 
+
  echo '<div class="space_display_1">' ;
 
  
