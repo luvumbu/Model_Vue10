@@ -207,7 +207,8 @@ ok.push(); // envoie l'information au code pkp
         margin:auto ; 
     }
   .liste_projet_name,.liste_projet_description1{
-    margin:20px; 
+  
+     
     padding:25px; 
   }
   .terminer{
@@ -220,24 +221,19 @@ ok.push(); // envoie l'information au code pkp
   }
  
   .class_1{
-    border:1px solid rgba(0,0,0,0.3) ; 
+    border:1px solid rgba(0,0,0,0.1) ; 
  
     width:400px; 
     text-align:center ; 
-    margin:200px; 
-    margin-bottom:50px ; 
+    margin-left:20px; 
+    margin-bottom:150px ; 
+    margin-top:150px ; 
+padding:10px; 
   
-    width:80%; 
+    width:90%; 
   }
   .space_display{
  
- display:flex; 
- justify-content:center ; 
- flex-wrap:wrap ;  
- margin-top:150px; 
- width:80%; 
-
- margin:auto ; 
  
      }
      .block_1_1{
@@ -248,9 +244,7 @@ ok.push(); // envoie l'information au code pkp
 
      .block_1_2 textarea{
   
-     height : 300px; 
-     width:300px; 
-     margin:auto  ; 
+    
   
      }
      .block_1{
