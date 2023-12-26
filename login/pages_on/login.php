@@ -72,12 +72,11 @@ if(isset($_SESSION["time"])){
     if($_SESSION["time"]!=""){
  
  
-        include("class/php/php_select_data/select_list_projet_1.php") ; 
-         include("apparence/menu_principal_option.php"); 
-         if($nombre_total_element==1){
- 
-        include("class/php/php_select_data/select_list_projet_3.php") ; 
-        include("apparence/menu_principal_option_child.php"); 
+        include("class/php/php_select_data/select_menu_principal_option.php") ; 
+        include("apparence/menu_principal_option.php"); 
+         if($nombre_total_element==1){ 
+            include("class/php/php_select_data/select_menu_principal_option_child.php") ; 
+    include("apparence/menu_principal_option_child.php"); 
           
         }
  

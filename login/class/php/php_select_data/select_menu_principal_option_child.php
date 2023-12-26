@@ -1,8 +1,8 @@
 <?php 
 
 
-include("../model/class/php/Select_datas.php") ;  
-include("../model/class/php/connexion.php") ;  
+
+ 
 $apple = new Select_datas($servername,$username,$password,$dbname);
 
   array_push(
@@ -58,10 +58,10 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
 
     );
  
-    $liste_projet_id_sha1 =$_SESSION["time"]  ; 
+    $liste_projet_id_sha1 =$liste_projet_id_sha1[0]  ; 
  
  
-    $apple->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_sha1` ="'.$liste_projet_id_sha1.'"  ORDER BY `liste_projet_id` ';
+    $apple->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_parent` ="'.$liste_projet_id_sha1.'"  ORDER BY `liste_projet_id` ';
 
  
 
@@ -130,6 +130,80 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
      $liste_projet_background_color_1 = array() ; 
      //45
      $liste_projet_background_color_ = array() ; 
+
+ 
+      
+      
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+ 
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
      // creation de la variable vide
      $number = 0 ; 
@@ -263,11 +337,11 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
 
 
      
-
+      
+ 
 
      
     ?>
+ 
 
- <?php 
-
- ?>
+ 

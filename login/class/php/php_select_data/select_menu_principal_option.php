@@ -131,6 +131,82 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
      //45
      $liste_projet_background_color_ = array() ; 
 
+ 
+      
+      
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+ 
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
      // creation de la variable vide
      $number = 0 ; 
      // affectation valeur array 
@@ -263,7 +339,10 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
 
 
      
+      
+ 
 
+      
 
      
     ?>
