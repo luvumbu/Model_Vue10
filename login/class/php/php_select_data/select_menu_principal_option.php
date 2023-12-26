@@ -346,7 +346,6 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
 
      
     ?>
+ 
 
- <?php 
-
- ?>
+ 

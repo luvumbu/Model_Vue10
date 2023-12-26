@@ -61,7 +61,7 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     $liste_projet_id_sha1 =$_SESSION["time"]  ; 
  
  
-    $apple->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_sha1` ="'.$liste_projet_id_sha1.'"  ORDER BY `liste_projet_id` ';
+    $apple->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_parent`=""';
 
  
 
@@ -130,6 +130,82 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
      $liste_projet_background_color_1 = array() ; 
      //45
      $liste_projet_background_color_ = array() ; 
+
+ 
+      
+      
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+ 
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
      // creation de la variable vide
      $number = 0 ; 
@@ -263,11 +339,13 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
 
 
      
+      
+ 
 
+      
 
      
     ?>
+ 
 
- <?php 
-
- ?>
+ 

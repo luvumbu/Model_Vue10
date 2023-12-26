@@ -84,19 +84,19 @@ if(isset($_SESSION["time"])){
     else{
       $element_edit =true ; 
 
-        include("class/php/php_select_data/select_list_projet_2.php") ; 
+        include("class/php/php_select_data/select_menu_principal.php") ; 
        
         include("apparence/menu_principal.php"); 
-          if($nombre_total_element==1){
+       /*   if($nombre_total_element==1){
         
              }
- 
+     */
     }
     }
     else {
       $element_edit =true ; 
 
-        include("class/php/php_select_data/select_list_projet_2.php") ; 
+        include("class/php/php_select_data/select_menu_principal.php") ; 
        
         include("apparence/menu_principal.php"); 
           if($nombre_total_element==1){
