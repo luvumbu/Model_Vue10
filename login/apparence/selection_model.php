@@ -24,10 +24,18 @@
 
 
  
-<img class="width_25_style" width="40" height="40" onclick="element_edit(this)" src="https://img.icons8.com/windows/40/edit--v1.png" title="<?php echo $liste_projet_id_sha1[$a] ?>" alt="edit--v1">
 
  
+<?php
+if($boucle2!=""){
+    ?>
+<img class="width_25_style" width="40" height="40" onclick="element_edit(this)" src="https://img.icons8.com/windows/40/edit--v1.png" title="<?php echo $liste_projet_id_sha1[$a] ?>" alt="edit--v1">
 
+
+<?php 
+}
+
+?>
  
 
 
@@ -184,3 +192,5 @@ $src_img__="redirection_dowload_img/".$liste_projet_img[$a] ;
             </div>
     
 <?php 
+$boucle2=true;
+?>

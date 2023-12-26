@@ -61,7 +61,7 @@ inventore asperiores aliquid nemo." ;
 
 <?php 
 
-
+$boucle2 = ""; 
 
 include("class/php/php_select_data/give_url.php") ; 
 $element_edit =false;
