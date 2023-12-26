@@ -394,4 +394,7 @@ function myGreeting() {
    width:80%;
    margin:auto ; 
   }
+  .position_absolute_1{
+    display:none ; 
+  }
 </style>

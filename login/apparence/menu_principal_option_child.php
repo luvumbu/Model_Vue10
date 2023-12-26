@@ -48,26 +48,10 @@ if($liste_projet_img_2[$a]!=""){
 
 
               
-<label for="<?php echo "liste_projet_color_1_".$liste_projet_id_sha1_2[$a] ?>">
-  <img width="50" height="50" src="https://img.icons8.com/offices/50/rgb-circle-2.png" alt="rgb-circle-2"/>
-</label>
-<label for="<?php echo "liste_projet_color_2_".$liste_projet_id_sha1_2[$a] ?>">
-  <img width="50" height="50" src="https://img.icons8.com/color/50/color-palette.png" alt="color-palette"/>
-</label>  
+ 
+  
 
-        <img width="50" class="format_toogle" onclick="redirection_dowload_img(this)" height="50" title="<?php echo $liste_projet_id_sha1_2[$a] ?>" src="https://img.icons8.com/material-outlined/50/picture.png" alt="picture"/>
-        <select class="form-select format_toogle" title="<?php echo $liste_projet_id_sha1_2[$a] ?>" aria-label="Default select example" onchange="selection(this)">
-  <option selected>Type</option>
-  <option value="1">01</option>
-  <option value="2">02</option>
-  <option value="3">03</option>
-  <option value="4">04</option>
-  <option value="5">05</option>
-  <option value="6">06</option>
-  <option value="7">07</option>
-  <option value="8">08</option>
-</select>
-
+ 
         <?php 
 
         

@@ -5,6 +5,16 @@ include("header/header.php") ;
 <!DOCTYPE html>
 <html>
 <body>
+
+
+<?php 
+
+$lorem ="Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+ipsa aperiam ipsam tempore cupiditate pariatur temporibus 
+ipsum id sunt est dicta libero rem suscipit non quam 
+inventore asperiores aliquid nemo." ; 
+
+?>
 <!-- -->
  
 <script src="class/js/js_on/lancement_action_1.js"></script>
@@ -47,18 +57,21 @@ include("header/header.php") ;
 <!-- -->
 
 
+
+
 <?php 
+
+
 
 include("class/php/php_select_data/give_url.php") ; 
 $element_edit =false;
 
 if(isset($_SESSION["time"])){
 
-
-
+ 
     if($_SESSION["time"]!=""){
  
-  
+ 
         include("class/php/php_select_data/select_list_projet_1.php") ; 
          include("apparence/menu_principal_option.php"); 
          if($nombre_total_element==1){
@@ -83,14 +96,13 @@ if(isset($_SESSION["time"])){
     }
     else {
       $element_edit =true ; 
-    
-   include("class/php/php_select_data/select_list_projet_2.php") ; 
- include("apparence/menu_principal_option.php"); 
 
-     if($nombre_total_element==1){
+        include("class/php/php_select_data/select_list_projet_2.php") ; 
+       
+        include("apparence/menu_principal.php"); 
+          if($nombre_total_element==1){
         
-        }
- 
+             }
 
     }
 
