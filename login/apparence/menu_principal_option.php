@@ -101,26 +101,31 @@ for($a = 0 ; $a< $nombre_total_element; $a ++) {
           
       <input type="text" onkeyup="update_all_php(this)" style="color:<?php echo  $liste_projet_color_1[$a].";font-size:".$liste_projet_name_font_size[$a] ; ?>" id="<?php echo "input_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" value="<?php echo $liste_projet_name[$a] ?>"  class="liste_projet_name_input">
       <div class="parent_width_25_style">
-
-     
-      <img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/ios/25/align-justify.png" alt="align-justify"/>
-
- <img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/ios/25/align-left.png" alt="align-left"/>
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/ios/25/align-right.png" alt="align-right"/>
+  <img  class="width_25_style" onclick="liste_projet_text_align_f1(this)"  id="<?php echo "liste_projet_text_align_1_1_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/align-justify.png" alt="align-justify"/>
+<img  class="width_25_style" onclick="liste_projet_text_align_f1(this)"  id="<?php echo "liste_projet_text_align_1_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/align-left.png" alt="align-left"/>
+<img  class="width_25_style" onclick="liste_projet_text_align_f1(this)"  id="<?php echo "liste_projet_text_align_1_3_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/align-right.png" alt="align-right"/>
+<img class="width_25_style"  onclick="liste_projet_text_align_f1(this)"  id="<?php echo "liste_projet_text_align_1_4_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"  width="40" height="40" src="https://img.icons8.com/ios/40/mix-words.png" alt="mix-words"/>
+<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_1_00_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/carbon-copy/25/border-none.png" alt="border-none"/>
  
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/ios/25/text-width.png" alt="text-width"/>
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/ios/25/text-height.png" alt="text-height"/>
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/carbon-copy/25/border-none.png" alt="border-none"/>
- 
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/external-those-icons-lineal-those-icons/25/external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7.png" alt="external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7"/>
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/ios/25/border-top.png" alt="border-top"/>
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/ios/25/border-left.png" alt="border-left"/>
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/ios/25/border-right.png" alt="border-right"/>
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/ios/25/border-bottom.png" alt="border-bottom"/>
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/office/25/text-color.png" alt="text-color"/>
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/officel/25/fill-color.png" alt="fill-color"/>
+<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_1_11_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/external-those-icons-lineal-those-icons/25/external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7.png" alt="external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7"/>
+<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_1_1_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-top.png" alt="border-top"/>
+<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_1_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-left.png" alt="border-left"/>
+<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_1_3_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-right.png" alt="border-right"/>
+<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_1_4_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-bottom.png" alt="border-bottom"/>
+<img  class="width_25_style" id="<?php echo "liste_projet_color_1_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/office/25/text-color.png" alt="text-color"/>
+<img  class="width_25_style" id="<?php echo "liste_projet_background_color_1_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/officel/25/fill-color.png" alt="fill-color"/>
+
+<select id="<?php echo "liste_projet_css_1_".$liste_projet_id_sha1[$a] ?>"  class="form-select width_25_style" aria-label="Default select example">
+  <option value="0">css1</option>
+  <option value="1">css2</option>
+  <option value="2">css3</option>
+  <option value="3">css4</option>
+</select>
 <br/>
+<br/>
+<!--
 <input type="range" id="progressInput" value="0" max="100" step="10" onclick="updateProgress()">
+-->
 </div>
 <br/>
 
@@ -136,7 +141,8 @@ for($a = 0 ; $a< $nombre_total_element; $a ++) {
              
  
   
-</label>
+
+         
 
  
  
@@ -169,31 +175,39 @@ $src_img__="redirection_dowload_img/".$liste_projet_img[$a] ;
               <div class="parent_width_25_style">
 
           
-      <img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/ios/25/align-justify.png" alt="align-justify"/>
+<img  class="width_25_style" onclick="liste_projet_text_align_f2(this)" id="<?php echo "liste_projet_text_align_2_1_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/align-justify.png" alt="align-justify"/>
+<img  class="width_25_style"  onclick="liste_projet_text_align_f2(this)" id="<?php echo "liste_projet_text_align_2_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/align-left.png" alt="align-left"/>
+<img  class="width_25_style"  onclick="liste_projet_text_align_f2(this)" id="<?php echo "liste_projet_text_align_2_3_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/align-right.png" alt="align-right"/>
+<img class="width_25_style"   onclick="liste_projet_text_align_f2(this)" id="<?php echo "liste_projet_text_align_2_4_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"  width="40" height="40" src="https://img.icons8.com/ios/40/mix-words.png" alt="mix-words"/>
+<img  class="width_25_style"    id="<?php echo "liste_projet_text_margin_top_2_00_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/carbon-copy/25/border-none.png" alt="border-none"/>
+ 
+<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_2_11_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/external-those-icons-lineal-those-icons/25/external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7.png" alt="external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7"/>
+<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_2_1_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-top.png" alt="border-top"/>
+<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_2_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-left.png" alt="border-left"/>
+<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_2_3_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-right.png" alt="border-right"/>
+<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_2_4_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-bottom.png" alt="border-bottom"/>
+<img  class="width_25_style" id="<?php echo "liste_projet_color_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/office/25/text-color.png" alt="text-color"/>
+<img  class="width_25_style" id="<?php echo "liste_projet_background_color_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/officel/25/fill-color.png" alt="fill-color"/>
 
- <img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/ios/25/align-left.png" alt="align-left"/>
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/ios/25/align-right.png" alt="align-right"/>
- 
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/ios/25/text-width.png" alt="text-width"/>
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/ios/25/text-height.png" alt="text-height"/>
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/carbon-copy/25/border-none.png" alt="border-none"/>
- 
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/external-those-icons-lineal-those-icons/25/external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7.png" alt="external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7"/>
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/ios/25/border-top.png" alt="border-top"/>
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/ios/25/border-left.png" alt="border-left"/>
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/ios/25/border-right.png" alt="border-right"/>
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/ios/25/border-bottom.png" alt="border-bottom"/>
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/office/25/text-color.png" alt="text-color"/>
-<img  class="width_25_style" width="40" height="40" src="https://img.icons8.com/officel/25/fill-color.png" alt="fill-color"/>
+<select id="<?php echo "liste_projet_css_2_".$liste_projet_id_sha1[$a] ?>"  class="form-select width_25_style" aria-label="Default select example">
+  <option value="0">css1</option>
+  <option value="1">css2</option>
+  <option value="2">css3</option>
+  <option value="3">css4</option>
+</select>
 <br/>
+<!--
 <input type="range" id="progressInput" value="0" max="100" step="10" onclick="updateProgress()">
-</div>
+
+                              -->
+                            </div>
 <br/>
                 <br/>
                 <input   value="<?php echo $liste_projet_description1_tittle[$a]?>" placeholder="tittle referencement" onkeyup="update_all_php(this)"  style="color:<?php echo  $liste_projet_color_2[$a].";font-size:".$liste_projet_description1_font_size[$a] ; ?>" id="<?php echo "textarea_title".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" class="liste_projet_description1_textarea titles_">
 
             </div>
-            <label for="<?php echo "liste_projet_color_1_0_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>">
+       
+            
          <!--  volume_element  -->  
  
 
@@ -515,7 +529,8 @@ cursor:pointer ;
     cursor:pointer ; 
  
     background-color: rgba(0,0,0,0.2) ; 
-    transition : 1s all;
+    transition : 0.3s all;
+    padding:2px ; 
 
   }
   .width_25_style {
@@ -528,3 +543,81 @@ cursor:pointer ;
     
   }
  </style>
+
+ <script>
+var el1 = "https://img.icons8.com/ios/25/align-justify.png" ; 
+var el2 = "https://img.icons8.com/ios/25/align-left.png" ; 
+var el3 = "https://img.icons8.com/ios/25/align-right.png" ; 
+var el4 = "https://img.icons8.com/ios/40/mix-words.png" ; 
+  function  liste_projet_text_align_f1(_this){
+ 
+ 
+   
+    
+
+
+    var ok = new Information("class/php/php_update/liste_projet_text_align_f1.php"); // création de la classe 
+ok.add("liste_projet_id_sha1",_this.title); // ajout de l'information pour lenvoi 
+
+var textAlign_ ="" ; 
+
+    switch (_this.src) {
+  case el1:
+    
+var textAlign_ ="justify" ; 
+    
+    break;
+  case el2:
+var textAlign_ ="start" ; 
+    
+    break;
+    case el3:
+var textAlign_ ="end" ; 
+      
+    break;
+    case el4:
+var textAlign_ ="center" ; 
+      
+    break;
+ 
+}
+
+
+ok.add("liste_projet_text_align_1_1", textAlign_); // ajout d'une deuxieme information denvoi  
+
+
+console.log(ok.info()); // demande l'information dans le tableau
+ok.push(); // envoie l'information au code pkp 
+document.getElementById("input_"+_this.title).style.textAlign = textAlign_;
+
+  }
+
+  function  liste_projet_text_align_f2(_this){
+ 
+ 
+
+ var ok = new Information("class/php/php_update/liste_projet_text_align_f2.php"); // création de la classe 
+ok.add("liste_projet_id_sha1",_this.title); // ajout de l'information pour lenvoi 
+
+
+
+ switch (_this.src) {
+case el1:
+ ok.add("liste_projet_text_align_1_1", "justify"); // ajout d'une deuxieme information denvoi  
+ break;
+case el2:
+ ok.add("liste_projet_text_align_1_1", "start"); // ajout d'une deuxieme information denvoi  
+ break;
+ case el3:
+   ok.add("liste_projet_text_align_1_1", "end"); // ajout d'une deuxieme information denvoi  
+ break;
+ case el4:
+   ok.add("liste_projet_text_align_1_1", "center"); // ajout d'une deuxieme information denvoi  
+ break;
+
+}
+console.log(ok.info()); // demande l'information dans le tableau
+ok.push(); // envoie l'information au code pkp 
+
+}
+ </script>
