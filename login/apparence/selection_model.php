@@ -22,6 +22,15 @@
 <img  class="width_25_style" id="<?php echo "liste_projet_color_1_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/office/25/text-color.png" alt="text-color"/>
 <img  class="width_25_style" id="<?php echo "liste_projet_background_color_1_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/officel/25/fill-color.png" alt="fill-color"/>
 
+
+ 
+<img class="width_25_style" width="40" height="40" onclick="element_edit(this)" src="https://img.icons8.com/windows/40/edit--v1.png" title="<?php echo $liste_projet_id_sha1[$a] ?>" alt="edit--v1">
+
+ 
+
+ 
+
+
 <select id="<?php echo "liste_projet_css_1_".$liste_projet_id_sha1[$a] ?>"  class="form-select width_25_style" aria-label="Default select example">
   <option value="0">css1</option>
   <option value="1">css2</option>
