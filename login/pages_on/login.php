@@ -108,6 +108,7 @@ if(isset($_SESSION["time"])){
 
 
 ?>
+locale_get_region
 <img class="format_toogle position_absolute_1"  onclick="terminer()" width="50" height="50" src="https://img.icons8.com/cotton/50/completed-task--v1.png" alt="completed-task--v1"/>
 
 

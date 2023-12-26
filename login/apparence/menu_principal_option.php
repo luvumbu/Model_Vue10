@@ -100,7 +100,29 @@ for($a = 0 ; $a< $nombre_total_element; $a ++) {
         <h4 class="liste_projet_name">
           
       <input type="text" onkeyup="update_all_php(this)" style="color:<?php echo  $liste_projet_color_1[$a].";font-size:".$liste_projet_name_font_size[$a] ; ?>" id="<?php echo "input_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" value="<?php echo $liste_projet_name[$a] ?>"  class="liste_projet_name_input">
-      <input type="text" onkeyup="update_all_php(this)" style="color:<?php echo  $liste_projet_color_1[$a].";font-size:".$liste_projet_name_font_size[$a] ; ?>" id="<?php echo "input_title".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"  value="<?php echo $liste_projet_name_tittle[$a] ?>"   class="liste_projet_name_input titles_" placeholder="tittle referencement">
+      <img width="25" height="25" src="https://img.icons8.com/ios/25/align-justify.png" alt="align-justify"/>
+
+ <img width="25" height="25" src="https://img.icons8.com/ios/25/align-left.png" alt="align-left"/>
+<img width="25" height="25" src="https://img.icons8.com/ios/25/align-right.png" alt="align-right"/>
+ 
+<img width="25" height="25" src="https://img.icons8.com/ios/25/text-width.png" alt="text-width"/>
+<img width="25" height="25" src="https://img.icons8.com/ios/25/text-height.png" alt="text-height"/>
+<img width="25" height="25" src="https://img.icons8.com/carbon-copy/25/border-none.png" alt="border-none"/>
+ 
+<img width="25" height="25" src="https://img.icons8.com/external-those-icons-lineal-those-icons/25/external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7.png" alt="external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7"/>
+<img width="25" height="25" src="https://img.icons8.com/ios/25/border-top.png" alt="border-top"/>
+<img width="25" height="25" src="https://img.icons8.com/ios/25/border-left.png" alt="border-left"/>
+<img width="25" height="25" src="https://img.icons8.com/ios/25/border-right.png" alt="border-right"/>
+<img width="25" height="25" src="https://img.icons8.com/ios/25/border-bottom.png" alt="border-bottom"/>
+<img width="25" height="25" src="https://img.icons8.com/office/25/text-color.png" alt="text-color"/>
+<img width="25" height="25" src="https://img.icons8.com/officel/25/fill-color.png" alt="fill-color"/>
+<br/>
+<input type="range" id="progressInput" value="0" max="100" step="10" onclick="updateProgress()">
+
+<br/>
+
+   
+<input type="text" onkeyup="update_all_php(this)" style="color:<?php echo  $liste_projet_color_1[$a].";font-size:".$liste_projet_name_font_size[$a] ; ?>" id="<?php echo "input_title".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"  value="<?php echo $liste_projet_name_tittle[$a] ?>"   class="liste_projet_name_input titles_" placeholder="tittle referencement">
      
     </h4>       
      <div class="block_1">
@@ -137,6 +159,27 @@ $src_img__="redirection_dowload_img/".$liste_projet_img[$a] ;
             </div>
             <div class="block_1_2">
                 <textarea onkeyup="update_all_php(this)"  style="color:<?php echo  $liste_projet_color_2[$a].";font-size:".$liste_projet_description1_font_size[$a] ; ?>" id="<?php echo "textarea_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" class="liste_projet_description1_textarea"><?php echo $liste_projet_description1[$a] ?></textarea>
+              <br/>
+      <img width="25" height="25" src="https://img.icons8.com/ios/25/align-justify.png" alt="align-justify"/>
+
+ <img width="25" height="25" src="https://img.icons8.com/ios/25/align-left.png" alt="align-left"/>
+<img width="25" height="25" src="https://img.icons8.com/ios/25/align-right.png" alt="align-right"/>
+ 
+<img width="25" height="25" src="https://img.icons8.com/ios/25/text-width.png" alt="text-width"/>
+<img width="25" height="25" src="https://img.icons8.com/ios/25/text-height.png" alt="text-height"/>
+<img width="25" height="25" src="https://img.icons8.com/carbon-copy/25/border-none.png" alt="border-none"/>
+ 
+<img width="25" height="25" src="https://img.icons8.com/external-those-icons-lineal-those-icons/25/external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7.png" alt="external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7"/>
+<img width="25" height="25" src="https://img.icons8.com/ios/25/border-top.png" alt="border-top"/>
+<img width="25" height="25" src="https://img.icons8.com/ios/25/border-left.png" alt="border-left"/>
+<img width="25" height="25" src="https://img.icons8.com/ios/25/border-right.png" alt="border-right"/>
+<img width="25" height="25" src="https://img.icons8.com/ios/25/border-bottom.png" alt="border-bottom"/>
+<img width="25" height="25" src="https://img.icons8.com/office/25/text-color.png" alt="text-color"/>
+<img width="25" height="25" src="https://img.icons8.com/officel/25/fill-color.png" alt="fill-color"/>
+<br/>
+<input type="range" id="progressInput" value="0" max="100" step="10" onclick="updateProgress()">
+
+<br/>
                 <br/>
                 <input   value="<?php echo $liste_projet_description1_tittle[$a]?>" placeholder="tittle referencement" onkeyup="update_all_php(this)"  style="color:<?php echo  $liste_projet_color_2[$a].";font-size:".$liste_projet_description1_font_size[$a] ; ?>" id="<?php echo "textarea_title".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" class="liste_projet_description1_textarea titles_">
 
@@ -196,7 +239,7 @@ $src_img__="redirection_dowload_img/".$liste_projet_img[$a] ;
 
           <img class="format_toogle" onclick="remove_all(this)" title="<?php echo $liste_projet_id_sha1[$a] ?>"   width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/delete-forever.png" alt="delete-forever"/>
           <img class="format_toogle" onclick="annulation_all(this)" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="50" height="50" src="https://img.icons8.com/windows/50/undo.png" alt="undo"/>
-           <br/>
+            <br/>
       <?php /*    <input type="color" title="<?php echo $liste_projet_id_sha1[$a] ?>" onchange="change_background(this)" > */ ?>
 
             </div>
@@ -405,7 +448,55 @@ ok.push(); // envoie l'information au code pkp
     margin-top:25px; 
     opacity:0.4; 
   }
+  .sitting{
+    margin-top:25px;
+  }
+  .sitting:hover{
+cursor:pointer ; 
+  }
 </style>
 
-
+<!--
+<div class="all_black">
+  <div class="all_black_child">
  
+
+  <br/>
+  <img width="50" height="50" src="https://img.icons8.com/ios/50/align-justify.png" alt="align-justify"/>
+
+  <img width="50" height="50" src="https://img.icons8.com/ios/50/align-left.png" alt="align-left"/>
+  <img width="50" height="50" src="https://img.icons8.com/ios/50/align-right.png" alt="align-right"/>
+  <br/>
+  <img width="50" height="50" src="https://img.icons8.com/ios/50/text-width.png" alt="text-width"/>
+  <img width="50" height="50" src="https://img.icons8.com/ios/50/text-height.png" alt="text-height"/>
+
+  <br/>
+ 
+  <img width="50" height="50" src="https://img.icons8.com/ios/50/border-top.png" alt="border-top"/>
+  <img width="50" height="50" src="https://img.icons8.com/ios/50/border-left.png" alt="border-left"/>
+  <img width="50" height="50" src="https://img.icons8.com/ios/50/border-right.png" alt="border-right"/>
+  <img width="50" height="50" src="https://img.icons8.com/ios/50/border-bottom.png" alt="border-bottom"/>
+  <br/>
+  <img width="50" height="50" src="https://img.icons8.com/office/50/text-color.png" alt="text-color"/>
+  <img width="50" height="50" src="https://img.icons8.com/officel/50/fill-color.png" alt="fill-color"/>
+  </div>
+</div>
+-->
+
+ <style>
+  .all_black{
+    width:100%;
+    height:500%;
+    background-color:black;
+    position:absolute ; 
+    top:0;
+  }
+  .all_black_child{
+    width:80%;
+    margin:auto;
+    background-color:white ; 
+    width:300px; 
+    height : 300px; 
+    margin-top:20%;
+  }
+ </style>
