@@ -1,6 +1,6 @@
  
 <?php 
-
+ 
 /*
      var_dump($liste_projet_id) ; 
      var_dump($liste_projet_id_sha1) ; 
@@ -119,13 +119,10 @@ else {
 
 
 
-            if($element_edit){
-?>
-
+ ?>
 <img class="format_toogle" width="50" height="50" onclick="element_edit(this)" src="https://img.icons8.com/windows/50/edit--v1.png" title="<?php echo $liste_projet_id_sha1[$a] ?>" alt="edit--v1"/>
-
 <?php 
-            }
+ 
       ?>
 
           <img class="format_toogle" onclick="remove_all(this)" title="<?php echo $liste_projet_id_sha1[$a] ?>"   width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/delete-forever.png" alt="delete-forever"/>

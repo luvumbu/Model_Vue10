@@ -68,9 +68,9 @@ $element_edit =false;
 
 if(isset($_SESSION["time"])){
 
- 
+
     if($_SESSION["time"]!=""){
- 
+
  
         include("class/php/php_select_data/select_menu_principal_option.php") ; 
         include("apparence/menu_principal_option.php"); 
@@ -83,7 +83,7 @@ if(isset($_SESSION["time"])){
     }
     else{
       $element_edit =true ; 
-
+       
         include("class/php/php_select_data/select_menu_principal.php") ; 
        
         include("apparence/menu_principal.php"); 
@@ -93,16 +93,15 @@ if(isset($_SESSION["time"])){
      */
     }
     }
+    
     else {
-      $element_edit =true ; 
+      
+    //  $element_edit =true ; 
 
         include("class/php/php_select_data/select_menu_principal.php") ; 
        
         include("apparence/menu_principal.php"); 
-          if($nombre_total_element==1){
-        
-             }
-
+ 
     }
 
 
