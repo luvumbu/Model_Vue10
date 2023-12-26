@@ -392,20 +392,21 @@ echo "<br>";
 
 ?>
 
-
+</div>
 
 
 <style>
     .element_img{
        width:100%; 
        margin:auto ; 
+       margin-top:150px; 
     
     }
     .rangement_img{
 width:20%; 
 margin:auto ; 
  
-background-color:black ; 
+ 
     }
     .Get_anne{
    

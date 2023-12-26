@@ -27,11 +27,17 @@ for($a = 0 ; $a< count($liste_projet_id_sha1_2); $a ++) {
         <br/>
         <img class="format_toogle" width="50" height="50" onclick="element_edit(this)" src="https://img.icons8.com/windows/50/edit--v1.png" title="<?php echo $liste_projet_id_sha1_2[$a] ?>" alt="edit--v1"/>
 
+          <img title="<?php echo $liste_projet_id_sha1_2[$a] ?>" width="50" onclick="redirection_dowload_img(this)" class="format_toogle" height="50" title="1703569778134" src="https://img.icons8.com/material-outlined/50/picture.png" alt="picture">
 
           <?php
 
 
 if($liste_projet_img_2[$a]!=""){
+ 
+  ?>
+
+<?php 
+ 
   $src_img__="redirection_dowload_img/".$liste_projet_img_2[$a] ; 
   
                                     ?>
@@ -39,6 +45,8 @@ if($liste_projet_img_2[$a]!=""){
   
   
                                     <?php 
+
+                                  
                                   }
  
                 ?>
