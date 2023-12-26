@@ -6,7 +6,7 @@
 <div class="class_1" id="<?php echo "parent_".$liste_projet_id_sha1[$a] ?>">
         <h4 class="liste_projet_name">
           
-      <input type="text" onkeyup="update_all_php(this)" style="color:<?php echo  $liste_projet_color_1[$a].";font-size:".$liste_projet_name_font_size[$a] ; ?>" id="<?php echo "input_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" value="<?php echo $liste_projet_name[$a] ?>"  class="liste_projet_name_input">
+      <input type="text" onkeyup="update_all_php(this)"  style="text-align:<?php echo $liste_projet_text_align_1_1[$a] ?>" id="<?php echo "input_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" value="<?php echo $liste_projet_name[$a] ?>"  class="liste_projet_name_input">
       <div class="parent_width_25_style">
   <img  class="width_25_style" onclick="liste_projet_text_align_f1(this)"  id="<?php echo "liste_projet_text_align_1_1_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/align-justify.png" alt="align-justify"/>
 <img  class="width_25_style" onclick="liste_projet_text_align_f1(this)"  id="<?php echo "liste_projet_text_align_1_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/align-left.png" alt="align-left"/>
@@ -93,7 +93,7 @@ $src_img__="redirection_dowload_img/".$liste_projet_img[$a] ;
             <br/>
             <br/>
             <div class="block_1_2">
-                <textarea onkeyup="update_all_php(this)"  style="color:<?php echo  $liste_projet_color_2[$a].";font-size:".$liste_projet_description1_font_size[$a] ; ?>" id="<?php echo "textarea_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" class="liste_projet_description1_textarea"><?php echo $liste_projet_description1[$a] ?></textarea>
+                <textarea onkeyup="update_all_php(this)"  style="text-align:<?php echo $liste_projet_text_align_2_1[$a] ?>" id="<?php echo "textarea_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" class="liste_projet_description1_textarea"><?php echo $liste_projet_description1[$a] ?></textarea>
               <br/>
 
               <div class="parent_width_25_style">

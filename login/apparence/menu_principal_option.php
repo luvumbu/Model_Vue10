@@ -19,7 +19,6 @@
      var_dump($liste_projet_reg_date) ; 
 */
 
-
 ?>
  
  
@@ -416,32 +415,77 @@ document.getElementById("input_"+_this.title).style.textAlign = textAlign_;
 
   }
 
+ 
+
   function  liste_projet_text_align_f2(_this){
  
  
 
+ ///
+ 
+ 
  var ok = new Information("class/php/php_update/liste_projet_text_align_f2.php"); // création de la classe 
-ok.add("liste_projet_id_sha1",_this.title); // ajout de l'information pour lenvoi 
-
-
-
- switch (_this.src) {
-case el1:
- ok.add("liste_projet_text_align_1_1", "justify"); // ajout d'une deuxieme information denvoi  
- break;
-case el2:
- ok.add("liste_projet_text_align_1_1", "start"); // ajout d'une deuxieme information denvoi  
- break;
- case el3:
-   ok.add("liste_projet_text_align_1_1", "end"); // ajout d'une deuxieme information denvoi  
- break;
- case el4:
-   ok.add("liste_projet_text_align_1_1", "center"); // ajout d'une deuxieme information denvoi  
- break;
-
+ ok.add("liste_projet_id_sha1",_this.title); // ajout de l'information pour lenvoi 
+ 
+ var textAlign_ ="" ; 
+ 
+     switch (_this.src) {
+   case el1:
+     
+ var textAlign_ ="justify" ; 
+     
+     break;
+   case el2:
+ var textAlign_ ="start" ; 
+     
+     break;
+     case el3:
+ var textAlign_ ="end" ; 
+       
+     break;
+     case el4:
+ var textAlign_ ="center" ; 
+       
+     break;
+  
+ }
+ 
+ 
+ ok.add("liste_projet_text_align_1_1", textAlign_); // ajout d'une deuxieme information denvoi  
+ 
+ 
+ console.log(ok.info()); // demande l'information dans le tableau
+ ok.push(); // envoie l'information au code pkp 
+ document.getElementById("textarea_"+_this.title).style.textAlign = textAlign_;
+ 
 }
-console.log(ok.info()); // demande l'information dans le tableau
-ok.push(); // envoie l'information au code pkp 
-
-}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  </script>
+
+
+ 

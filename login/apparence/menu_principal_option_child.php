@@ -40,7 +40,7 @@ $nombre_total_element = count($liste_projet_id_sha1) ;
  
 for($a = 0 ; $a< $nombre_total_element; $a ++) {
   
-include("selection_model.php") ; 
+ include("selection_model.php") ; 
  
 }
 
