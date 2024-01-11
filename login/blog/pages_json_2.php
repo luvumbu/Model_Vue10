@@ -135,7 +135,7 @@ $number_x0 = 0 ;
   <?php   
   
   
-  echo "_".$liste_projet_id_sha1_x0[$x0]."<br/>"; 
+  echo "2_".$liste_projet_id_sha1_x0[$x0]."<br/>"; 
 
 
 
@@ -173,9 +173,4 @@ $number_x0 = 0 ;
  
  
 
-
- <style>
-.js2{
-  background-color:red ; 
-}
- </style>
+ 

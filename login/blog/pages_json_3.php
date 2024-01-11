@@ -1,6 +1,6 @@
 <?php 
 
-echo "__".$liste_projet_id_sha1_x0[$x0]."<br/>" ; 
+echo "<br/>3_".$liste_projet_id_sha1_x0[$x0]."<br/>" ; 
 
   // 
 
@@ -139,7 +139,7 @@ echo "__".$liste_projet_id_sha1_x0[$x0]."<br/>" ;
 
       <?php 
             for($x2 = 0 ; $x2 <count($liste_projet_id_sha1_x1) ;$x2 ++ ) {
-        echo $liste_projet_id_sha1_x1[$x2] ; 
+        echo "<br/>4_".$liste_projet_id_sha1_x1[$x2] ; 
 
 
 include("pages_json_4.php") ; 
@@ -162,8 +162,4 @@ include("pages_json_4.php") ;
 
 
 ?>
-<style>
-  .js3{
-    background-color:blue ; 
-  }
-</style>
+ 
