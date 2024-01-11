@@ -16,8 +16,7 @@
                                     $information_user_id_sha1__ ="user_visit" ;                        
                                     $insertion_->set_sql("INSERT INTO liste_log (liste_log_ip,liste_projet_id_sha1,information_user_id_sha1)
                     
-            VALUES ('$REMOTE_ADDR','menu_principal','$information_user_id_sha1__')") ; 
-                    }
+            VALUES ('$REMOTE_ADDR','menu_principal','$information_user_id_sha1__')") ;                    }
 
             $insertion_->execution() ;
 ?>
