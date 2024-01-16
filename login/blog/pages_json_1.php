@@ -1,5 +1,7 @@
 <?php 
 //echo give_url() ; 
+
+ 
 $liste_projet_id_sha1 = give_url() ;  
 $apple = new Select_datas($servername,$username,$password,$dbname);
 
@@ -47,7 +49,8 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
  
 
 
-
+ 
+ 
  
 
 
@@ -126,18 +129,19 @@ $number = 0 ;
 
 
  
-
  
  
-
-
-
+ 
+ 
 
 ?>
 
+<div class="pages_json_1">
+
 
 <?php 
-
+// ok
+ $x1_2 = 0 ; 
 echo $liste_projet_id[0] ; 
 echo "<br/>"; 
 echo $liste_projet_id_sha1[0] ; 
@@ -182,6 +186,44 @@ echo $liste_projet_description1_tittle[0] ;
 echo "<br/>"; 
 echo $liste_projet_name_tittle[0] ; 
 echo "<br/>"; 
+
+ 
+
+
 ?>
 
+<?php
+ 
 
+ 
+ 
+
+
+ if(count($liste_projet_id_parent)!=0){
+  include("pages_json_2.php"); 
+ }
+
+ 
+?>
+ 
+ 
+
+
+
+<style>
+  .pages_json_1,
+  .pages_json_2,
+  .pages_json_3,
+  .pages_json_4,
+  .pages_json_5,
+  .pages_json_6,
+  .pages_json_7,
+  .pages_json_8{
+
+  }  
+
+
+
+ 
+ 
+</style>
