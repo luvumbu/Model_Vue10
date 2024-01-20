@@ -1,3 +1,8 @@
+
+
+ 
+    
+      </div>
 <div class="pages_json_4" id="<?php echo 'id_'.$liste_projet_id_sha1_x1_3[$x1_3] ;  ?>">
 
 
@@ -221,7 +226,7 @@ if(count( $apple_x1_4->list_row) !=0){
 
 
      for($x1_4 = 0 ; $x1_4<count($liste_projet_id_sha1_x1_4) ; $x1_4 ++ ) {   
-       //  include("pages_json_5.php") ; 
+     include("pages_json_5.php") ; 
      }
 
      

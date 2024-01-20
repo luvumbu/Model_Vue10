@@ -215,7 +215,7 @@ if(count( $apple_x1_3->list_row) !=0){
 ?>
 
 
-<ul class="navbar-nav">
+<ul class="navbar-nav" style="margin:20px;padding:20px">
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle"   role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <?php 
@@ -255,7 +255,7 @@ else {
 
 
   ?>
-<a style="color:white" href="#<?php echo "id_".$liste_projet_id_sha1_x1_2[$x1_2] ?>" >
+<a style="color:white;margin:25px;" href="#<?php echo "id_".$liste_projet_id_sha1_x1_2[$x1_2] ?>" >
 <?php 
 
 
