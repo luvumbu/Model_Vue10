@@ -212,7 +212,7 @@ if(count( $apple_x1_3->list_row) !=0){
 
      for($x1_3 = 0 ; $x1_3<count($liste_projet_id_sha1_x1_3) ; $x1_3 ++ ) {
         echo $liste_projet_id_sha1_x1_3[$x1_3]."<br/>" ; 
-     //  include("pages_json_4.php") ; 
+      include("pages_json_4.php") ; 
      }
 
      

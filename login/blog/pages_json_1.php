@@ -277,7 +277,7 @@ include("pages_json_2_menu.php") ;
 
 
  .r13 {
-  margin-bottom:500px; 
+  margin-bottom:1500px; 
  }
  
 </style>
