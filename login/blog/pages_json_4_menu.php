@@ -1,4 +1,4 @@
-<li><a class="dropdown-item" href="#">Action 2</a></li>
+<li><a class="dropdown-item text-center" href="#"><?php echo $liste_projet_name_x1_3[$x1_3] ; ?></a></li>
 
 
 <?php 
@@ -6,7 +6,7 @@
 
  
 
-echo $liste_projet_name_x1_3[$x1_3] ;
+
  
 
 
@@ -159,7 +159,5 @@ if(count( $apple_x1_4->list_row) !=0){
 }
 
 ?>
- </div>
-
-
+ 
  
