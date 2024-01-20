@@ -1,9 +1,18 @@
-<div class="pages_json_6">
-pages_json_6
+ 
+ <h1 title="<?php echo   $liste_projet_description1_tittle_x1_5[$x1_5] ; ?>"  id="<?php echo   "id_".$liste_projet_id_sha1_x1_5[$x1_5] ; ?>" >
+      <?php echo $liste_projet_name_x1_5[$x1_5] ; ?>
+ </h1>
+
+ <p title="<?php echo   $liste_projet_description1_tittle_x1_5[$x1_5] ; ?>"  id="<?php echo   "id_p_".$liste_projet_id_sha1_x1_5[$x1_5] ; ?>"  >
+<?php 
+
+echo $liste_projet_description1_x1_5[$x1_5] ;
+?>
+ </p>
 
 <?php 
 
-
+/*
 echo $liste_projet_id_x1_5[$x1_5] ;
 echo "<br/>" ; 
 
@@ -77,7 +86,7 @@ echo "<br/>" ;
 
 
 
-
+*/
 
 
 
@@ -231,7 +240,6 @@ if(count( $apple_x1_6->list_row) !=0){
 
 
  
- </div>
-
+ 
 
  

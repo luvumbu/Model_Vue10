@@ -246,4 +246,20 @@ if(count( $apple_x1_4->list_row) !=0){
 
  
 
- 
+
+ <script>
+  var ok = "<?php echo   "id_p_".$liste_projet_id_sha1_x1_3[$x1_3] ; ?>" ;   
+  var deplus = "" ; 
+  for(var r = 0 ; r<   document.getElementById(ok).innerHTML.length; r++ ) {  
+
+    if(r!=1){
+     
+
+      deplus = deplus+document.getElementById(ok).innerHTML[r].toLowerCase() ; 
+    }
+    else {
+      deplus = "<b style='font-size:3em;color:red;margin:10px;text-shadow:1px 1px black'>"+deplus+document.getElementById(ok).innerHTML[r].toUpperCase()+"</b>" ; 
+    }
+  }
+  document.getElementById(ok).innerHTML=deplus; 
+ </script>

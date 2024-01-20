@@ -1,9 +1,19 @@
-<div class="pages_json_7">
-pages_json_8
+ 
+ <h1 title="<?php echo   $liste_projet_description1_tittle_x1_6[$x1_6] ; ?>"  id="<?php echo   "id_".$liste_projet_id_sha1_x1_6[$x1_6] ; ?>" >
+      <?php echo $liste_projet_name_x1_6[$x1_6] ; ?>
+ </h1>
+
+ <p title="<?php echo   $liste_projet_description1_tittle_x1_6[$x1_6] ; ?>"  id="<?php echo   "id_p_".$liste_projet_id_sha1_x1_6[$x1_6] ; ?>"  >
+<?php 
+
+echo $liste_projet_description1_x1_6[$x1_6] ;
+?>
+ </p>
+
 
 <?php 
 
-
+/*
 echo $liste_projet_id_x1_6[$x1_6] ;
 echo "<br/>" ; 
 
@@ -78,7 +88,7 @@ echo "<br/>" ;
 echo "FIN" ; 
 
 
-
+*/
 
 
 
@@ -226,7 +236,7 @@ $apple_x1_7 = new Select_datas($servername,$username,$password,$dbname);
 ?>
 
 
-</div>
+ 
 
  
 

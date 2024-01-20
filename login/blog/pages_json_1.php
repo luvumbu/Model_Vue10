@@ -212,7 +212,7 @@ echo "<br/>";
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown" >
  
  <?php 
 
@@ -227,28 +227,19 @@ include("pages_json_2_menu.php") ;
 
 
 
-      <div class="container-fluid p-5  text-center r13">
-        <h1><?php  echo $liste_projet_name[0] ; ?></h1>
-        <p><?php  echo $liste_projet_description1[0] ; ?></p> 
-      </div>
-        
- 
- 
-
-
- 
- 
-    </div>
+      <div class="text-center" style="padding:20px" >
+        <h1 title="<?php echo  $liste_projet_name_tittle[0] ; ?>"><?php  echo $liste_projet_name[0] ; ?></h1>
 
       
-</body>
-</html>
 
-<?php
- 
-
- 
- 
+<p style="text-align:center">
+    <?php  echo $liste_projet_description1[0] ; ?>
+</p>
+       
+      </div>
+     
+<div>
+  <?php
 
 
  if(count($liste_projet_id_parent)!=0){
@@ -258,6 +249,9 @@ include("pages_json_2_menu.php") ;
  
 ?>
  
+</div>
+
+
  
 
 
@@ -276,6 +270,11 @@ include("pages_json_2_menu.php") ;
 
 
 
- 
+ p{
+  color:grey ; 
+  text-align:justify ; 
+ }
  
 </style>
+</body>
+</html>

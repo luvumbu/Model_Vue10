@@ -1,8 +1,17 @@
-<div class="pages_json_8">
-pages_json_8
+ 
+ <h1 title="<?php echo   $liste_projet_description1_tittle_x1_7[$x1_7] ; ?>"  id="<?php echo   "id_".$liste_projet_id_sha1_x1_7[$x1_7] ; ?>" >
+      <?php echo $liste_projet_name_x1_7[$x1_7] ; ?>
+ </h1>
 
+ <p title="<?php echo   $liste_projet_description1_tittle_x1_7[$x1_7] ; ?>"  id="<?php echo   "id_p_".$liste_projet_id_sha1_x1_7[$x1_7] ; ?>"  >
 <?php 
 
+echo $liste_projet_description1_x1_7[$x1_7] ;
+?>
+ </p>
+
+<?php 
+/*
 
 echo $liste_projet_id_x1_7[$x1_7] ;
 echo "<br/>" ; 
@@ -75,7 +84,7 @@ echo $liste_projet_background_color_x1_7[$x1_7] ;
 echo "<br/>" ; 
 
 
- 
+ */
 
 
 

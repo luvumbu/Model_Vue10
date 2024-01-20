@@ -1,4 +1,4 @@
-<div class="pages_json_2"> 
+<div class="pages_json_2 container" > 
 <?php 
 
 $apple_x1_2 = new Select_datas($servername,$username,$password,$dbname);
@@ -118,8 +118,7 @@ if(count($liste_projet_id_sha1_x1_2)!=0){
  
 
     ?>
- </div>
-    </div>
+  
  </div>
 
  
