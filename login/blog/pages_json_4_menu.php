@@ -1,4 +1,4 @@
-<li><a class="dropdown-item text-center" href="#"><?php echo $liste_projet_name_x1_3[$x1_3] ; ?></a></li>
+<li><a class="dropdown-item text-center" href="#<?php echo "id_".$liste_projet_id_sha1_x1_3[$x1_3] ; ?>"><?php echo $liste_projet_name_x1_3[$x1_3] ; ?></a></li>
 
 
 <?php 

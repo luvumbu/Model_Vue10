@@ -24,7 +24,7 @@ echo "<br/>" ;
 echo $liste_projet_img_x1_2[$x1_2] ;
 echo "<br/>" ; 
 */
-echo "<div id='x02'>".$liste_projet_name_x1_2[$x1_2] ;
+echo "<div id='id_".$liste_projet_id_sha1_x1_2[$x1_2] ."'>".$liste_projet_name_x1_2[$x1_2] ;
  
 /*
 echo $liste_projet_visibilite1_x1_2[$x1_2] ;
@@ -212,7 +212,7 @@ if(count( $apple_x1_3->list_row) !=0){
 
      for($x1_3 = 0 ; $x1_3<count($liste_projet_id_sha1_x1_3) ; $x1_3 ++ ) {
         echo $liste_projet_id_sha1_x1_3[$x1_3]."<br/>" ; 
-       include("pages_json_4.php") ; 
+     //  include("pages_json_4.php") ; 
      }
 
      
@@ -220,26 +220,8 @@ if(count( $apple_x1_3->list_row) !=0){
 
 ?>
 
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
  </div>
 
 
 
-
-
-
- 
  
