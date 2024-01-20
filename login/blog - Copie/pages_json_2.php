@@ -1,4 +1,4 @@
-<div class="pages_json_2"> 
+ 
 <?php 
 
 $apple_x1_2 = new Select_datas($servername,$username,$password,$dbname);
@@ -41,7 +41,7 @@ array_push(
 
 
 
-  $apple_x1_2->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_parent` ="'.$liste_projet_id_sha1[0].'"  ORDER BY liste_projet_id';
+  $apple_x1_2->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_parent` ="'.$liste_projet_id_sha1[$x1_2].'"  ORDER BY liste_projet_id';
   $apple_x1_2->execution();
   $myJSON = json_encode($apple_x1_2->list_row); 
 
@@ -118,4 +118,4 @@ if(count($liste_projet_id_sha1_x1_2)!=0){
 
     ?>
 
- </div>
+ 

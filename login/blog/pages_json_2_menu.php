@@ -1,4 +1,4 @@
-<div class="pages_json_2"> 
+ 
 <?php 
 
 $apple_x1_2 = new Select_datas($servername,$username,$password,$dbname);
@@ -110,7 +110,7 @@ array_push(
 if(count($liste_projet_id_sha1_x1_2)!=0){
 
       for($x1_2 = 0 ; $x1_2<count($liste_projet_id_sha1_x1_2) ;$x1_2 ++ ) {
-           include("pages_json_3.php"); 
+           include("pages_json_3_menu.php"); 
       }
 }
 
@@ -118,4 +118,4 @@ if(count($liste_projet_id_sha1_x1_2)!=0){
 
     ?>
 
- </div>
+ 

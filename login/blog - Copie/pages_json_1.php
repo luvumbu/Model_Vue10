@@ -213,13 +213,22 @@ echo "<br/>";
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+
  
  <?php 
-
-include("pages_json_2_menu.php") ; 
-
-?>
  
+
+ 
+ 
+
+
+ if(count($liste_projet_id_parent)!=0){
+  include("pages_json_2.php"); 
+ }
+
+ 
+ 
+ ?>
           </div>
         </div>
       </nav>
@@ -244,19 +253,7 @@ include("pages_json_2_menu.php") ;
 </body>
 </html>
 
-<?php
- 
 
- 
- 
-
-
- if(count($liste_projet_id_parent)!=0){
-  include("pages_json_2.php"); 
- }
-
- 
-?>
  
  
 

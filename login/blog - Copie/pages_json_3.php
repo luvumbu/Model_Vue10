@@ -1,5 +1,24 @@
-<div class="pages_json_3">
+ 
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="<?php echo "id_".$liste_projet_id_sha1_x1_2[$x1_2] ; ?>" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <?php 
 
+echo $liste_projet_name_x1_2[$x1_2] ;
+?>
+                </a>
+                
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="<?php echo "id_".$liste_projet_id_sha1_x1_2[$x1_2] ; ?>">
+                  <li><a class="dropdown-item" href="#">Action 1</a></li>
+                  <li><a class="dropdown-item" href="#">Action 1</a></li>
+                  <li><a class="dropdown-item" href="#">Action 1</a></li>
+                  <li><a class="dropdown-item" href="#">Action 1</a></li>
+                  <li><a class="dropdown-item" href="#">Action 1</a></li>
+                  <li><a class="dropdown-item" href="#">Action 1</a></li>
+ 
+                </ul>
+              </li>
+            </ul>
 
 <?php 
 
@@ -24,8 +43,15 @@ echo "<br/>" ;
 echo $liste_projet_img_x1_2[$x1_2] ;
 echo "<br/>" ; 
 */
-echo "<div id='x02'>".$liste_projet_name_x1_2[$x1_2] ;
- 
+
+/*
+echo "<br/>" ; 
+
+echo $liste_projet_description1_x1_2[$x1_2] ;
+echo "<br/>" ; 
+
+echo $liste_projet_description2_x1_2[$x1_2] ;
+echo "<br/>" ; 
 /*
 echo $liste_projet_visibilite1_x1_2[$x1_2] ;
 echo "<br/>" ; 
@@ -219,27 +245,4 @@ if(count( $apple_x1_3->list_row) !=0){
 }
 
 ?>
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
- </div>
-
-
-
-
-
-
- 
  
