@@ -1,34 +1,27 @@
- 
 
-
-
-  <h2  style="margin-top:100px" title="<?php echo  $liste_projet_name_tittle_x1_2[$x1_2]; ?>"  id="<?php  echo "id_".$liste_projet_id_sha1_x1_2[$x1_2] ;?>"><?php  echo $liste_projet_name_x1_2[$x1_2] ;?></h2>
-  <p title="<?php echo  $liste_projet_description1_tittle_x1_2[$x1_2]; ?>"><?php echo $liste_projet_description1_x1_2[$x1_2] ;?></p> 
- 
- 
-       
- 
 <?php 
-
- 
- 
 $img ="../../redirection_dowload_img/".$liste_projet_img_x1_2[$x1_2] ; 
-
-
 if($liste_projet_img_x1_2[$x1_2]!=""){
-  ?>
 
-  <img src="<?php echo $img  ; ?> " class="float-end" alt="Paris" width="304" height="236" style="margin:30px;text-center"> 
-  
+ 
+  ?>
+  <img src="<?php echo $img  ; ?> " class="float-end" alt="Paris" width="30%"  style="margin:30px;text-center"> 
   <?php 
 }
 else {
+ 
 ?>
 
-<img src="http://localhost/Model_Vue10/src/img/bokonzi.png" class="float-end" alt="Paris" width="304" height="236" style="margin:30px;text-center"> 
+<img src="http://localhost/Model_Vue10/src/img/bokonzi.png" class="float-end" alt="Paris" width="30%"  style="margin:30px;text-center"> 
 
 <?php 
 }
+
+?>
+
+<h1  style="margin-top:100px" title="<?php echo  $liste_projet_name_tittle_x1_2[$x1_2]; ?>"  id="<?php  echo "id_".$liste_projet_id_sha1_x1_2[$x1_2] ;?>"><?php  echo $liste_projet_name_x1_2[$x1_2] ;?></h1>
+ <p title="<?php echo  $liste_projet_description1_tittle_x1_2[$x1_2]; ?>"><?php echo $liste_projet_description1_x1_2[$x1_2] ;?></p> 
+<?php 
 
  
 /*

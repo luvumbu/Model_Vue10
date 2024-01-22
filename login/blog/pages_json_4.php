@@ -7,15 +7,15 @@
       <?php echo $liste_projet_name_x1_3[$x1_3] ; ?>
  </h1>
 
+
+
  <p title="<?php echo   $liste_projet_description1_tittle_x1_3[$x1_3] ; ?>"  id="<?php echo   "id_p_".$liste_projet_id_sha1_x1_3[$x1_3] ; ?>"  >
-<?php 
-
-echo $liste_projet_description1_x1_3[$x1_3] ;
-?>
- </p>
 
 
-<?php
+
+ <?php 
+
+ 
  
  
  /*
@@ -232,12 +232,35 @@ if(count( $apple_x1_4->list_row) !=0){
      $liste_projet_name_tittle_x1_4 = $apple_x1_4->add_array_element($number_x1_4);
 
 
+ 
 
+     echo $liste_projet_description1_x1_3[$x1_3] ;
+     ?>
+      </p>
+     <?php 
+     $img ="../../redirection_dowload_img/".$liste_projet_img_x1_3[$x1_3] ; 
+     if($liste_projet_img_x1_3[$x1_3]!=""){
+     
+      
+       ?>
+       <img src="<?php echo $img  ; ?> " alt="Paris" width="20%"  style="margin:30px;text-center"> 
+       <?php 
+     }
+     else {
+      
+     ?>
+     
+     <img src="http://localhost/Model_Vue10/src/img/bokonzi.png" alt="Paris" width="20%"   style="margin:30px;text-center"> 
+     
+     <?php 
+     }
 
      for($x1_4 = 0 ; $x1_4<count($liste_projet_id_sha1_x1_4) ; $x1_4 ++ ) {   
             include("pages_json_5.php") ; 
      }
 
+
+     
      
 }
 

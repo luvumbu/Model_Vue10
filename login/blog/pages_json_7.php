@@ -13,6 +13,17 @@ echo $liste_projet_description1_x1_6[$x1_6] ;
 
 <?php 
 
+
+
+$img ="../../redirection_dowload_img/".$liste_projet_img_x1_6[$x1_6] ; 
+if($liste_projet_img_x1_6[$x1_6]!=""){
+
+ 
+  ?>
+  <img src="<?php echo $img  ; ?> " alt="Paris" width="20%"  style="margin:30px;text-center"> 
+  <?php 
+}
+
 /*
 echo $liste_projet_id_x1_6[$x1_6] ;
 echo "<br/>" ; 

@@ -10,7 +10,20 @@ echo $liste_projet_description1_x1_7[$x1_7] ;
 ?>
  </p>
 
-<?php 
+
+ <?php 
+
+
+
+$img ="../../redirection_dowload_img/".$liste_projet_img_x1_7[$x1_7] ; 
+if($liste_projet_img_x1_7[$x1_7]!=""){
+
+ 
+  ?>
+  <img src="<?php echo $img  ; ?> " alt="Paris" width="20%"  style="margin:30px;text-center"> 
+  <?php 
+}
+
 /*
 
 echo $liste_projet_id_x1_7[$x1_7] ;

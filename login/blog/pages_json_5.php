@@ -96,6 +96,15 @@ echo "<br/>" ;
 
 
  
+ 
+$img ="../../redirection_dowload_img/".$liste_projet_img_x1_4[$x1_4] ; 
+if($liste_projet_img_x1_4[$x1_4]!=""){
+
+ 
+  ?>
+  <img src="<?php echo $img  ; ?> " alt="Paris" width="20%"  style="margin:30px;text-center"> 
+  <?php 
+}
 
 
 

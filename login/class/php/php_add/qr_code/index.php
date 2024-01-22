@@ -8,6 +8,8 @@ $servername = "localhost";
 $qr_code = $_POST["qr_code"] ;
 
 
+$name_qr_code = $_POST["name_qr_code"] ; 
+
 
 /*
  * PHP QR Code encoder

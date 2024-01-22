@@ -105,6 +105,14 @@ array_push(
  
    
 
+
+
+
+
+
+
+
+   
   
 
 if(count($liste_projet_id_sha1_x1_2)!=0){
@@ -114,6 +122,9 @@ if(count($liste_projet_id_sha1_x1_2)!=0){
 
       }
 }
+
+
+
 
  
 

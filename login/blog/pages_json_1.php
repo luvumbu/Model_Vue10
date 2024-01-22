@@ -192,6 +192,13 @@ echo "<br/>";
  
 */
 
+ 
+ 
+
+if(count($apple->list_row)!=0){
+  
+
+
 ?>
 
 
@@ -276,5 +283,18 @@ include("pages_json_2_menu.php") ;
  }
  
 </style>
+
+
+<?php 
+
+}
+else {
+  ?>
+
+
+<img style="width:100%" src="https://static.vecteezy.com/system/resources/thumbnails/024/679/375/original/skiing-down-404-error-animation-ski-lifestyle-winter-sports-empty-state-4k-concept-footage-with-alpha-channel-transparency-outline-colour-page-not-found-flash-message-for-ui-ux-web-design-video.jpg" alt="">
+<?php 
+}
+?>
 </body>
 </html>
