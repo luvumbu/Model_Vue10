@@ -14,7 +14,6 @@
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/564x/33/8a/ad/338aadfc695f8082f95b83ce9860e3de.jpg">
   <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
@@ -52,6 +51,7 @@ Projet
 
 
 
+
 if(isset($_SESSION["welcom_index"])){
  
  $_SESSION["welcom_index"] = $_SESSION["welcom_index"]+1; 
@@ -60,16 +60,44 @@ else {
  
   $_SESSION["welcom_index"] = 0 ; 
 }
+/*
 
-echo '<div class="general__">' ; 
+
+
+ include("index_apparence.php") ; 
+
+var_dump($liste_projet_id) ; 
+ 
+var_dump($liste_projet_id_sha1) ; 
+var_dump($liste_projet_id_parent) ; 
+var_dump($liste_projet_id_sha1_general) ; 
+var_dump($liste_projet_ip) ; 
+
+var_dump($liste_projet_img) ; 
+ 
+var_dump($liste_projet_name) ; 
+ 
+var_dump($liste_projet_description1) ; 
+var_dump($liste_projet_description2) ; 
+var_dump($liste_projet_visibilite1) ; 
+
+var_dump($liste_projet_visibilite2) ; 
+var_dump($liste_projet_type) ; 
+var_dump($information_user_id_sha1) ; 
+var_dump($liste_projet_new_file) ; 
+var_dump($liste_projet_reg_date) ; 
+
+var_dump($liste_projet_color_1) ; 
+ */
+
 
 
  
+
+echo '<div class="general__">' ; 
  for($i = 0 ; $i < count($liste_projet_id) ; $i ++ ) {
   echo '<div class="element_1">  ' ;
-   if($liste_projet_visibilite1[$i]!=""){
-
-
+   
 
    $src_img = "../redirection_dowload_img/".$liste_projet_img[$i] ; 
    ?>
@@ -78,38 +106,8 @@ echo '<div class="general__">' ;
   <?php 
     echo '<h2>'.$liste_projet_name[$i].'</h2>' ; 
     echo "<p>" ; 
-    //echo $liste_projet_description1[$i] ; 
-
-
-    $result_ = "" ; 
-    for($p = 0 ; $p<strlen($liste_projet_description1[$i]); $p ++){
-     
-      if($p==500){
-        echo $liste_projet_description1[$i][$p]."...";
-        break ; 
-      }
-      else {
-        $result_ = $result_.$liste_projet_description1[$i][$p] ; 
-
-        
-      }
-    }
-    echo "<br/>" ; 
-
-
-
- 
-
-   $result_ =  str_replace("#34#",'"',$result_);
-   $result_ =  str_replace("#92#","\'",$result_);
-  
-
- 
- 
-
- echo  $result_ ; 
+    echo $liste_projet_description1[$i] ; 
     echo "</p>" ; 
-    
 
     ?>
 <a href="<?php echo "pages.php/".$liste_projet_id_sha1[$i]?>"> 
@@ -122,7 +120,6 @@ echo '</a>' ;
   echo '</div>' ;
    
  }
-}
  echo '</div>' ; 
  ?>
 
@@ -150,8 +147,74 @@ echo '</a>' ;
                       <div class="alert alert-secondary" role="alert"> Voir l'article  </div>    !
           </div>!
 
-</div>!--> 
+</div>!
+-->
+<style>
+
+.general__{
+
+  display:flex ; 
+  justify-content:space-around ; 
+  width:80%; 
+  margin:auto  ;   
+ 
+    flex-wrap:wrap ;  
+}
+.element_1{
+  width:300px; 
+
+  border-radius:15px  ; 
+  text-align:center ; 
 
 
+  margin : 10px; 
+}
+.element_1 h2{
 
-<link rel="stylesheet" href="index.css">
+  text-align:center ; 
+}
+.element_1 p{
+
+text-align:justify ; 
+}
+.mon_img{
+width:100% ; 
+
+height:100px;
+  border-radius:15px  15px 0 0  ;  
+  background-size:100% ; 
+
+}
+.liste_projet{
+  padding:15px; 
+  margin-bottom : 105px ; 
+}
+a {
+  text-decoration:none ; 
+}
+.log_{
+  display:flex ; 
+  justify-content:space-around ; 
+  padding : 10px; 
+
+}
+.log_ div {
+ 
+  width : 50%; 
+  text-align:center ;  padding:10px ; 
+ 
+}
+
+
+.log_ div:hover {
+ background-color:rgba(0,0,0,0.1);
+ cursor:pointer ; 
+
+
+}
+
+
+ 
+
+ 
+</style>

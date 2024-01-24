@@ -168,7 +168,10 @@ function oui_ok() {
 
  
 
-location.reload() ; 
+ 
+
+
+window.location.replace("class/php/php_add/qr_code/index.php");
 }
  
 
@@ -359,7 +362,8 @@ var x_ = 0 ;
   background-color: #131b32;
 }
  </style>
- 
+
+  
 
 </body>
 </html>

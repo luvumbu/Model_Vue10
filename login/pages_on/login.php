@@ -153,7 +153,28 @@ function terminer(){
 
 
   function add_element(_this){
-   
+
+ 
+
+ 
+
+ 
+  qr_code = _this.title ; 
+
+ 
+
+    
+    //const myElement = document.getElementById("qr").value;
+    var ok = new Information("class/php/php_add/qr_code/index.php"); // création de la classe 
+ok.add("qr_code",qr_code); // ajout de l'information pour lenvoi 
+
+ok.add("qr_name", _this.title); // ajout de l'information pour lenvoi 
+
+ 
+console.log(ok.info()); // demande l'information dans le tableau
+ok.push(); // envoie l'information au code pkp 
+     
+ 
  
  
  
@@ -196,11 +217,12 @@ function oui_ok() {
 
 
 
-location.reload() ; 
+window.location.replace("class/php/php_add/qr_code/index.php");
+ 
 }
 
 
-
+ 
 
   }
 
@@ -476,6 +498,11 @@ console.log(ok.info()); // demande l'information dans le tableau
 ok.push(); // envoie l'information au code pkp 
  }
 </script>
+
+<?php 
+
+$_SESSION["add_liste_projet"] ="Xxxx" ; 
+?>
 </body>
 </html>
 </script>

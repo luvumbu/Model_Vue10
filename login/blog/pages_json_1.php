@@ -80,8 +80,11 @@ $liste_projet_ip =$apple->add_array_element($number);
 $number ++ ; 
 
 
+
+
 $liste_projet_img =$apple->add_array_element($number);
 $number ++ ; 
+
 $liste_projet_name =$apple->add_array_element($number);
 $number ++ ; 
 $liste_projet_description1 =$apple->add_array_element($number);
@@ -138,7 +141,7 @@ $number = 0 ;
 
 <div class="pages_json_1">
 
-
+ 
 <?php 
 // ok
  $x1_2 = 0 ; 
@@ -213,6 +216,9 @@ if(count($apple->list_row)!=0){
 </head>
 <body>
 
+
+<img src="" alt="" srcset="">
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><?php  echo $liste_projet_name[0] ; ?></a>
@@ -236,8 +242,23 @@ include("pages_json_2_menu.php") ;
 
       <div class="text-center" style="padding:20px" >
         <h1 title="<?php echo  $liste_projet_name_tittle[0] ; ?>"><?php  echo $liste_projet_name[0] ; ?></h1>
+<?php 
 
-      
+
+ 
+
+
+if($liste_projet_img[0]!=""){
+  $src_  ="../../redirection_dowload_img/".$liste_projet_img[0]  ; 
+  ?>
+
+
+<img width="30%" style="margin-top:100px;margin-bottom:100px" src="<?php echo $src_  ?>" alt="" srcset="">
+<?php 
+}
+?>
+ 
+
 
 <p style="text-align:center">
     <?php  echo $liste_projet_description1[0] ; ?>
@@ -287,14 +308,26 @@ include("pages_json_2_menu.php") ;
 
 <?php 
 
+
+
+ 
+
 }
+
+
 else {
   ?>
 
 
-<img style="width:100%" src="https://static.vecteezy.com/system/resources/thumbnails/024/679/375/original/skiing-down-404-error-animation-ski-lifestyle-winter-sports-empty-state-4k-concept-footage-with-alpha-channel-transparency-outline-colour-page-not-found-flash-message-for-ui-ux-web-design-video.jpg" alt="">
+
+
+
+<img style="width:50%" src="https://static.vecteezy.com/system/resources/thumbnails/024/679/375/original/skiing-down-404-error-animation-ski-lifestyle-winter-sports-empty-state-4k-concept-footage-with-alpha-channel-transparency-outline-colour-page-not-found-flash-message-for-ui-ux-web-design-video.jpg" alt="">
 <?php 
 }
 ?>
+
+
+
 </body>
 </html>

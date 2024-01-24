@@ -1,3 +1,7 @@
+<?php 
+session_start() ;
+
+?>
 <script>
 class Information {
 	constructor(link) {
@@ -32,8 +36,6 @@ function envoyer(){
     const myElement = document.getElementById("qr").value;
     var ok = new Information("index.php"); // création de la classe 
 ok.add("qr_code", myElement); // ajout de l'information pour lenvoi 
-
-ok.add("name_qr_code", "my_name"); // ajout de l'information pour lenvoi 
  
 console.log(ok.info()); // demande l'information dans le tableau
 ok.push(); // envoie l'information au code pkp 
@@ -42,6 +44,11 @@ ok.push(); // envoie l'information au code pkp
 </script>
 
 
+<?php 
+
+
+$_SESSION["add_liste_projet"] ="123" ; 
+?>
 
 
 <input type="text" id="qr">

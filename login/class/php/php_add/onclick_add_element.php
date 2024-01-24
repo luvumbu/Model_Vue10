@@ -13,6 +13,8 @@ include("link.php") ;
 
   
 
+ $_SESSION["time"] = $time ; 
+
 
 
         $apple = new Insertion_Bdd(
@@ -29,5 +31,10 @@ include("link.php") ;
                   
           VALUES ('$time','$liste_projet_id_parent','$SERVER_NAME')") ; 
           $apple->execution() ;
+
+
+        
+
+
         
 ?>

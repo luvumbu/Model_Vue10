@@ -1,14 +1,16 @@
 <?php    
 
 session_start() ; 
-header("Access-Control-Allow-Origin: *");
+ 
 
 $servername = "localhost";
 
-$qr_code = $_POST["qr_code"] ;
 
+ 
+//$qr_code = $_POST["qr_code"] ;
+$qr_code =  $_SERVER['HTTP_REFERER']."path_qr.php/".$_SESSION["time"];
+$qr_name= $_SESSION["time"] ; 
 
-$name_qr_code = $_POST["name_qr_code"] ; 
 
 
 /*
@@ -49,7 +51,7 @@ $name_qr_code = $_POST["name_qr_code"] ;
         mkdir($PNG_TEMP_DIR);
     
     
-    $filename = "../../../../src/img/all/qr_code/".$_SESSION["add_liste_projet"].'.png';
+    $filename = "../../../../src/img/all/qr_code/".$qr_name.'.png';
     
     //processing form input
     //remember to sanitize user input in real-life solution !!!
@@ -87,7 +89,12 @@ $name_qr_code = $_POST["name_qr_code"] ;
         
     // benchmark
     QRtools::timeBenchmark();    
+  
 
-    ?>
-
-    
+ 
+ header("Location: ../../../../");
+ 
+ 
+ 
+ 
+?>
