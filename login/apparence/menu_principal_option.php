@@ -107,23 +107,36 @@ include("selection_model.php") ;
  
 
  <script>
+  var nombre = 0  ;  
   function update_all_php(_this){
 
-
-    var input_ = document.getElementById("input_"+_this.title);
-
-
-    var input_title = document.getElementById("input_title"+_this.title);
-
-    
-  
-    var textarea_ = document.getElementById("textarea_"+_this.title);
-    var textarea_title = document.getElementById("textarea_title"+_this.title);
+ console.log(nombre) ; 
+ nombre ++ ; 
 
 
-    
- 
- 
+
+
+ const myTimeout = setTimeout(exe_cution, 5000);
+
+function exe_cution() {
+
+  if(nombre!=0){
+
+
+  var input_ = document.getElementById("input_"+_this.title);
+
+
+var input_title = document.getElementById("input_title"+_this.title);
+
+
+
+var textarea_ = document.getElementById("textarea_"+_this.title);
+var textarea_title = document.getElementById("textarea_title"+_this.title);
+
+
+
+
+
 var ok = new Information("class/php/php_update/update_all.php"); // création de la classe 
 ok.add("liste_projet_id_sha1", _this.title); // ajout de l'information pour lenvoi 
 ok.add("liste_projet_name", input_.value); // ajout de l'information pour lenvoi 
@@ -133,10 +146,30 @@ ok.add("liste_projet_name_tittle", input_title.value); // ajout de l'information
 ok.add("liste_projet_description1", textarea_.value); // ajout de l'information pour lenvoi 
 ok.add("liste_projet_description1_tittle", textarea_title.value); // ajout de l'information pour lenvoi 
 
- 
+
 console.log(ok.info()); // demande l'information dans le tableau
 ok.push(); // envoie l'information au code pkp 
+
+nombre = 0 ; 
+}
+}
+
  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

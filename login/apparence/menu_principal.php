@@ -148,22 +148,51 @@ else {
 
  
  <script>
+
+
+var nombre = 0 ; 
   function update_all_php(_this){
+ 
+
+    console.log("ACTION "+nombre) ; 
+
+    nombre ++ ; 
+
+    const myTimeout = setTimeout(exe, 1000);
 
 
-    var input_ = document.getElementById("input_"+_this.title);
-    var textarea_ = document.getElementById("textarea_"+_this.title);
- 
- 
-var ok = new Information("class/php/php_update/update_all.php"); // création de la classe 
-ok.add("liste_projet_id_sha1", _this.title); // ajout de l'information pour lenvoi 
-ok.add("liste_projet_name", input_.value); // ajout de l'information pour lenvoi 
-ok.add("liste_projet_description1", textarea_.value); // ajout de l'information pour lenvoi 
+    
 
+
+
+    function exe() {
+
+
+
+      if(nombre!=0){
+
+
+
+                var input_ = document.getElementById("input_"+_this.title);
+            var textarea_ = document.getElementById("textarea_"+_this.title);
+        
+        
+        var ok = new Information("class/php/php_update/update_all.php"); // création de la classe 
+        ok.add("liste_projet_id_sha1", _this.title); // ajout de l'information pour lenvoi 
+        ok.add("liste_projet_name", input_.value); // ajout de l'information pour lenvoi 
+        ok.add("liste_projet_description1", textarea_.value); // ajout de l'information pour lenvoi 
+
+        
+        console.log(ok.info()); // demande l'information dans le tableau
+        ok.push(); // envoie l'information au code pkp 
+
+        nombre = 0;
  
-console.log(ok.info()); // demande l'information dans le tableau
-ok.push(); // envoie l'information au code pkp 
- 
+      }
+
+
+
+}
 
 
 

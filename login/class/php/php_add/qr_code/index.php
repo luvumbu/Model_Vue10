@@ -1,14 +1,12 @@
 <?php    
 
 session_start() ; 
- 
-
 $servername = "localhost";
 
 
  
 //$qr_code = $_POST["qr_code"] ;
-$qr_code =  $_SERVER['HTTP_REFERER']."path_qr.php/".$_SESSION["time"];
+$qr_code =  $_SERVER['SERVER_NAME']."/"."path_qr.php/".$_SESSION["time"];
 $qr_name= $_SESSION["time"] ; 
 
 
@@ -92,9 +90,22 @@ $qr_name= $_SESSION["time"] ;
   
 
  
- header("Location: ../../../../");
+ //header("Location: ../../../../");
  
  
  
  
+?>
+
+<?php
+ 
+echo $_SERVER['SERVER_NAME'];
+echo "<br>";
+echo $_SERVER['HTTP_HOST'];
+echo "<br>";
+echo $_SERVER['HTTP_REFERER'];
+echo "<br>";
+echo $_SERVER['HTTP_USER_AGENT'];
+echo "<br>";
+echo $_SERVER['SCRIPT_NAME'];
 ?>
