@@ -93,7 +93,7 @@ $liste_projet_description2 =$apple->add_array_element($number);
 $number ++ ; 
 $liste_projet_visibilite1 =$apple->add_array_element($number);
 $number ++ ; 
-
+ 
 
 $liste_projet_visibilite2 =$apple->add_array_element($number);
 $number ++ ; 
@@ -198,7 +198,7 @@ echo "<br/>";
  
  
 
-if(count($apple->list_row)!=0){
+if(count($apple->list_row)!=0 && $liste_projet_visibilite1[0]=="(OO)"){
   
 
 

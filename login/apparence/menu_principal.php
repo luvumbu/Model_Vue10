@@ -173,7 +173,7 @@ var nombre = 0 ;
         nombre = 0;
 
 
-                var input_ = document.getElementById("input_"+_this.title);
+            var input_ = document.getElementById("input_"+_this.title);
             var textarea_ = document.getElementById("textarea_"+_this.title);
         
         
