@@ -170,7 +170,7 @@ var nombre = 0 ;
 
 
       if(nombre!=0){
-
+        nombre = 0;
 
 
                 var input_ = document.getElementById("input_"+_this.title);
@@ -186,7 +186,7 @@ var nombre = 0 ;
         console.log(ok.info()); // demande l'information dans le tableau
         ok.push(); // envoie l'information au code pkp 
 
-        nombre = 0;
+   
  
       }
 
