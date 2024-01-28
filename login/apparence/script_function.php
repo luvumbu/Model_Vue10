@@ -3,7 +3,6 @@
 <script>
   function update_all_php(_this){
 
-
     var input_ = document.getElementById("input_"+_this.title);
 
 

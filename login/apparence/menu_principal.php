@@ -338,54 +338,87 @@ margin-top:150px;
   function add_element(_this){
    
  
- 
- 
-
-var liste_projet_id_parent =  _this.title ; 
-
- const d = new Date();
-time = d.getTime();
-
-
-
-
-
-const x = setTimeout(oui_ok, 50);
-
-
-document.cookie = "username="+time;
-var ok = new Information("class/php/php_on/header_action_add2.php"); // création de la classe 
-ok.add("time", time); // ajout de l'information pour lenvoi 
-ok.add("liste_projet_id_parent", liste_projet_id_parent); // ajout de l'information pour lenvoi 
-
- 
-console.log(ok.info()); // demande l'information dans le tableau
-ok.push(); // envoie l'information au code pkp 
-
-
-function oui_ok() {
-
-
+ alert(_this.title) ; 
  
 
 
-
-
-
- 
-
-
-
-
-
-
-location.reload() ; 
-}
-
-
-
-
-  }
+   var liste_projet_id_parent =  _this.title ;
+   
+   
+    const d = new Date();
+   time = d.getTime();
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   const x = setTimeout(oui_ok, 50);
+   
+   
+   
+   
+   document.cookie = "username="+time;
+   var ok = new Information("class/php/php_on/header_action_add2.php"); // création de la classe
+   ok.add("time", time); // ajout de l'information pour lenvoi
+   ok.add("liste_projet_id_parent", liste_projet_id_parent); // ajout de l'information pour lenvoi
+   
+   
+    
+   console.log(ok.info()); // demande l'information dans le tableau
+   ok.push(); // envoie l'information au code pkp
+   
+   
+   
+   
+   function oui_ok() {
+   
+   
+   
+   
+    
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   location.reload() ;
+   }
+   
+   
+   
+   
+   
+   
+   
+   
+     }
+   
+   
+   
+   
 
 
   function element_edit(_this){

@@ -52,7 +52,7 @@ include("link.php") ;
  $information_user_ip = $_SERVER['SERVER_NAME'] ;
 
  $_SESSION["time"] = $time  ; 
-
+ $_SESSION["qr_code"] = $time  ; 
  
       
       $apple = new Insertion_Bdd(

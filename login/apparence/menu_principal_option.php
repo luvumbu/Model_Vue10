@@ -90,7 +90,7 @@ $nombre_total_element = count($apple->list_row)/ count($apple->row) ;
 
  
 for($a = 0 ; $a< $nombre_total_element; $a ++) {
-include("selection_model.php") ; 
+     include("selection_model.php") ; 
  
 }
 
@@ -110,6 +110,7 @@ include("selection_model.php") ;
   var nombre = 0  ;  
   function update_all_php(_this){
 
+  
  console.log(nombre) ; 
  nombre ++ ; 
 

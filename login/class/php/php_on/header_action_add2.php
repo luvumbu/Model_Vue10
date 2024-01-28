@@ -12,7 +12,7 @@ include("link.php") ;
  $liste_projet_id_parent = $_POST["liste_projet_id_parent"] ; 
  $time = $_POST["time"] ; 
 
- $_SESSION["time"] =  $time ; 
+ $_SESSION["qr_code"] =  $time ; 
   $information_user_id_sha1 = $_SESSION["information_user_id_sha1"] ; 
 
 

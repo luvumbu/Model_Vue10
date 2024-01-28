@@ -6,8 +6,8 @@ $servername = "localhost";
 
  
 //$qr_code = $_POST["qr_code"] ;
-$qr_code =  $_SERVER['SERVER_NAME']."/"."path_qr.php/".$_SESSION["time"];
-$qr_name= $_SESSION["time"] ; 
+$qr_code =  $_SERVER['SERVER_NAME']."/"."path_qr.php/".$_SESSION["qr_code"];
+$qr_name= $_SESSION["qr_code"] ; 
 
 
 
@@ -90,7 +90,7 @@ $qr_name= $_SESSION["time"] ;
   
 
  
- //header("Location: ../../../../");
+ header("Location: ../../../../");
  
  
  
