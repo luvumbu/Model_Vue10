@@ -1,30 +1,7 @@
+ 
 
 <?php 
-$img ="../../redirection_dowload_img/".$liste_projet_img_x1_2[$x1_2] ; 
-if($liste_projet_img_x1_2[$x1_2]!=""){
 
- 
-  ?>
- 
-  <img src="<?php echo $img  ; ?> " class="float-end" alt="Paris" width="<?php echo  $width."%" ?>"  style="margin:100px;text-center"> 
-  <?php 
-}
-else {
- 
-?>
- 
-<img src="http://localhost/Model_Vue10/src/img/bokonzi.png" class="float-end" alt="Paris" width="<?php echo  $width."%" ?>"  style="margin:70px;text-center"> 
-
-<?php 
-}
-
-?>
-
-<h1   title="<?php echo  $liste_projet_name_tittle_x1_2[$x1_2]; ?>"  id="<?php  echo "id_".$liste_projet_id_sha1_x1_2[$x1_2] ;?>"><?php  echo $liste_projet_name_x1_2[$x1_2] ;?></h1>
- <p title="<?php echo  $liste_projet_description1_tittle_x1_2[$x1_2]; ?>"><?php echo $liste_projet_description1_x1_2[$x1_2] ;?></p> 
-<?php 
-
- 
 /*
 echo $liste_projet_id_x1_2[$x1_2] ;
 echo "<br/>" ; 
@@ -46,11 +23,7 @@ echo "<br/>" ;
 echo $liste_projet_img_x1_2[$x1_2] ;
 echo "<br/>" ; 
 */
-
-
-
-
- 
+;
  
 /*
 echo $liste_projet_visibilite1_x1_2[$x1_2] ;
@@ -236,18 +209,67 @@ if(count( $apple_x1_3->list_row) !=0){
 
 
 
-     for($x1_3 = 0 ; $x1_3<count($liste_projet_id_sha1_x1_3) ; $x1_3 ++ ) {
-    
-         include("pages_json_4.php") ; 
-     }
 
-     
-}
+
 
 ?>
 
- 
 
+<ul class="navbar-nav"  >
+                <li class="nav-item dropdown" >
+                  <a class="nav-link dropdown-toggle"   style="color:white" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <?php 
+                  echo $liste_projet_name_x1_2[$x1_2]  ; 
+                  ?>
+                  </a>
+
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="<?php echo ""?>">
+
+
+
+
+                
+
+
+
+              <?php
+     
+
+     for($x1_3 = 0 ; $x1_3<count($liste_projet_id_sha1_x1_3) ; $x1_3 ++ ) {
+      //  echo $liste_projet_id_sha1_x1_3[$x1_3]."<br/>" ; 
+     include("pages_json_4_menu.php") ; 
+     }
+
+
+     ?>
+ 
+   
+                  </ul>
+                </li>
+              </ul>
+
+     <?php 
+     
+}
+else {
+
+
+  ?>
+<a style="color:white;padding:15px;" href="#<?php echo "id_".$liste_projet_id_sha1_x1_2[$x1_2] ?>" >
+<?php 
+
+
+echo $liste_projet_name_x1_2[$x1_2] ;
+?>
+</a>
+ 
+<?php 
+
+
+}
+
+?>
+ 
 
 
  

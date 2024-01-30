@@ -5,22 +5,22 @@ if($liste_projet_img_x1_2[$x1_2]!=""){
 
  
   ?>
- 
-  <img src="<?php echo $img  ; ?> " class="float-end" alt="Paris" width="<?php echo  $width."%" ?>"  style="margin:100px;text-center"> 
+  <br/>
+  <img src="<?php echo $img  ; ?> " class="float-end" alt="Paris" width="70%"  style="margin:70px;text-center"> 
   <?php 
 }
 else {
  
 ?>
- 
-<img src="http://localhost/Model_Vue10/src/img/bokonzi.png" class="float-end" alt="Paris" width="<?php echo  $width."%" ?>"  style="margin:70px;text-center"> 
+<br/>
+<img src="http://localhost/Model_Vue10/src/img/bokonzi.png" class="float-end" alt="Paris" width="70%"  style="margin:70px;text-center"> 
 
 <?php 
 }
 
 ?>
 
-<h1   title="<?php echo  $liste_projet_name_tittle_x1_2[$x1_2]; ?>"  id="<?php  echo "id_".$liste_projet_id_sha1_x1_2[$x1_2] ;?>"><?php  echo $liste_projet_name_x1_2[$x1_2] ;?></h1>
+<h1  style="margin-top:70px" title="<?php echo  $liste_projet_name_tittle_x1_2[$x1_2]; ?>"  id="<?php  echo "id_".$liste_projet_id_sha1_x1_2[$x1_2] ;?>"><?php  echo $liste_projet_name_x1_2[$x1_2] ;?></h1>
  <p title="<?php echo  $liste_projet_description1_tittle_x1_2[$x1_2]; ?>"><?php echo $liste_projet_description1_x1_2[$x1_2] ;?></p> 
 <?php 
 
