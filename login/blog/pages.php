@@ -40,7 +40,7 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
 
 
 
-    $apple->sql='SELECT * FROM `liste_log2` WHERE 1';
+    $apple->sql='SELECT * FROM `liste_log2` WHERE `liste_projet_id_sha1`="'.give_url().'"';
     $apple->execution();
     $myJSON = json_encode($apple->list_row); 
  
@@ -91,7 +91,7 @@ array_push(
 
 
 
-  $apple_my_ip->sql='SELECT * FROM `liste_log2` WHERE `liste_log_ip` ="'.$REMOTE_ADDR.'"';
+  $apple_my_ip->sql='SELECT * FROM `liste_log2` WHERE `liste_log_ip` ="'.$REMOTE_ADDR.'" AND `liste_projet_id_sha1`="'.give_url().'"';
   $apple_my_ip->execution();
   $myJSON = json_encode($apple_my_ip->list_row); 
 

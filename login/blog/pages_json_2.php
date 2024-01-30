@@ -119,7 +119,7 @@ if(count($liste_projet_id_sha1_x1_2)!=0){
 
       for($x1_2 = 0 ; $x1_2<count($liste_projet_id_sha1_x1_2) ;$x1_2 ++ ) {
          include("pages_json_3.php"); 
-
+  
       }
 }
 
