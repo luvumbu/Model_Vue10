@@ -6,7 +6,11 @@ include("pages_css.php") ;
 if(count($apple->list_row)!=0){
 include("add_log.php") ; 
 $src = "../../src/img/all/qr_code/".give_url().".png" ; ?>
+
+<div class="div_img_2">
  <img src="<?php echo $src ; ?>" alt="" srcset="">
+
+</div>
 <?php 
 }
 ?>
@@ -120,7 +124,7 @@ $mes_visites = count($apple_my_ip->list_row)/6 ;
 
   ?>
 
-
+<!--
 <p>
     Nombre total de visite  <?php echo  $total_visit ?> <img width="20" height="20" src="https://img.icons8.com/sf-regular/20/visible.png" alt="visible"/>
 </p>
@@ -132,4 +136,26 @@ $mes_visites = count($apple_my_ip->list_row)/6 ;
    Nombre de visite sans votre passage <?php echo  $total_visit-$mes_visites ?> fois  <img width="20" height="20" src="https://img.icons8.com/sf-regular/20/visible.png" alt="visible"/>
 </p>
 
- 
+-->
+
+
+<div class="background_bl">
+<a href="<?php echo $replace_el  ?>" > Template  2 </a>
+</div>
+<br/>
+
+<div class="background_bl">
+    <a href="../" class="background_bl">Menu principal </a>
+</div>
+
+
+<br/>
+<style>
+    .background_bl{
+        background-color:black ; 
+        color:white ; 
+        padding:15px; 
+        text-align:center ; 
+         
+    }
+</style>

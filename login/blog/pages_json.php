@@ -10,4 +10,6 @@ $replace_el = str_replace("blog","blog1", $_SERVER['PHP_SELF']);
 ?>
 
 <br/>
-<a href="<?php echo $replace_el  ?>"> Template  2 </a>
+
+
+
