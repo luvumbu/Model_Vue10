@@ -37,6 +37,7 @@ session_start();
 <?php 
   if(!isset($_SESSION["information_user_id_sha1"])){    
     include("pages_off/acceuil1.html") ;
+    
     // si lutilisateur n'est pas connexion
    ?>
 <script>
