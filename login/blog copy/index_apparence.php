@@ -1,4 +1,8 @@
- <div class="general__">
+ 
+
+
+
+<div class="general__">
  
           <div class="element_1">    
                 <div class="mon_img"></div>

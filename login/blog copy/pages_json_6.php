@@ -5,11 +5,18 @@ if($liste_projet_img_x1_5[$x1_5]!=""){
 
  
   ?>
-   <div class="b_black"></div>
+ 
   <img src="<?php echo $img  ; ?> " class="float-end" alt="Paris" width="<?php echo  $width."%" ?>"  style="margin:100px;text-center"> 
   <?php 
 }
+else {
  
+?>
+ 
+<img src="http://localhost/Model_Vue10/src/img/bokonzi.png" class="float-end" alt="Paris" width="<?php echo  $width."%" ?>"  style="margin:70px;text-center"> 
+
+<?php 
+}
 
 ?>
 

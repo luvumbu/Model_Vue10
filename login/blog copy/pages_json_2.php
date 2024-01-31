@@ -1,4 +1,4 @@
-
+<div class="pages_json_2 container" > 
 <?php 
 
 $apple_x1_2 = new Select_datas($servername,$username,$password,$dbname);

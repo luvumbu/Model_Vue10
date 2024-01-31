@@ -139,7 +139,7 @@ $number = 0 ;
 
 ?>
 
- 
+<div class="pages_json_1">
 
  
 <?php 
@@ -239,9 +239,9 @@ include("pages_json_2_menu.php") ;
       </nav>
  
 
-      <div class="pages_json_2 container" > 
 
-    
+
+      <div class="text-center" style="padding:20px" >
         <h1 title="<?php echo  $liste_projet_name_tittle[0] ; ?>"><?php  echo $liste_projet_name[0] ; ?></h1>
 <?php 
 
@@ -252,35 +252,22 @@ include("pages_json_2_menu.php") ;
 if($liste_projet_img[0]!=""){
   $src_  ="../../redirection_dowload_img/".$liste_projet_img[0]  ; 
   ?>
-<style>
-  .div_img{
-    width:50%; 
-   
-    padding:20px; 
-    margin:auto ; 
-  }
-  .div_img img{
-    width:100%; 
-    
-  }
-</style>
-<div class="div_img">
-  <img width="<?php echo  "100%" ?>"   src="<?php echo $src_  ?>" alt="" srcset="">
-</div>
 
+
+<img width="70%" style="margin-top:70px;margin-bottom:70px" src="<?php echo $src_  ?>" alt="" srcset="">
 <?php 
 }
 ?>
  
 
-<br/>
- 
+
+<p style="text-align:center">
     <?php  echo $liste_projet_description1[0] ; ?>
- 
+</p>
        
-      
+      </div>
      
- 
+<div>
   <?php
 
 
@@ -291,13 +278,33 @@ if($liste_projet_img[0]!=""){
  
 ?>
  
- 
+</div>
 
 
  
 
 
+
+<style>
+  .pages_json_1,
+  .pages_json_2,
+  .pages_json_3,
+  .pages_json_4,
+  .pages_json_5,
+  .pages_json_6,
+  .pages_json_7,
+  .pages_json_8{
+
+  }  
+
+
+
+ p{
+  color:grey ; 
+  text-align:justify ; 
+ }
  
+</style>
 
 
 <?php 
@@ -309,22 +316,19 @@ if($liste_projet_img[0]!=""){
 }
 
 
+else {
+  ?>
 
+
+
+
+
+<img style="width:50%" src="https://static.vecteezy.com/system/resources/thumbnails/024/679/375/original/skiing-down-404-error-animation-ski-lifestyle-winter-sports-empty-state-4k-concept-footage-with-alpha-channel-transparency-outline-colour-page-not-found-flash-message-for-ui-ux-web-design-video.jpg" alt="">
+<?php 
+}
 ?>
 
 
-
-
-<style>
-  .pages_json_2{
-    text-align:justify ; 
-  }
-
-  .pages_json_2 h1{
-    text-align:center ; 
-    padding:15px; 
-  }
-</style>
 
 </body>
 </html>

@@ -5,24 +5,18 @@ if($liste_projet_img_x1_2[$x1_2]!=""){
 
  
   ?>
-   <div class="b_black"></div>
-
-
-   <style>
-    .div_img_2{
-     
-      padding:15px; 
-      text-align:center ; 
-    }
-   </style>
-<div class="div_img_2">
-<img src="<?php echo $img  ; ?> "  width="<?php echo  $width."%" ?>"  style="margin:100px;text-center"> 
-</div>
-
-
+ 
+  <img src="<?php echo $img  ; ?> " class="float-end" alt="Paris" width="<?php echo  $width."%" ?>"  style="margin:100px;text-center"> 
   <?php 
 }
+else {
  
+?>
+ 
+<img src="http://localhost/Model_Vue10/src/img/bokonzi.png" class="float-end" alt="Paris" width="<?php echo  $width."%" ?>"  style="margin:70px;text-center"> 
+
+<?php 
+}
 
 ?>
 
@@ -256,15 +250,6 @@ if(count( $apple_x1_3->list_row) !=0){
 
 ?>
 
-
-
-<style>
-  .b_black{
-    height:5px; 
-    width:100%;
-    margin-top:50px; 
-  }
-</style>
  
 
 

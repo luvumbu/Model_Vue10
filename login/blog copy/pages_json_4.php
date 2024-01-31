@@ -6,11 +6,18 @@ if($liste_projet_img_x1_3[$x1_3]!=""){
 
  
   ?>
-   <div class="b_black"></div>
+ 
   <img src="<?php echo $img  ; ?> " class="float-end" alt="Paris" width="<?php echo  $width."%" ?>"  style="margin:100px;text-center"> 
   <?php 
 }
+else {
  
+?>
+ 
+<img src="http://localhost/Model_Vue10/src/img/bokonzi.png" class="float-end" alt="Paris" width="<?php echo  $width."%" ?>"  style="margin:70px;text-center"> 
+
+<?php 
+}
 
 ?>
     
@@ -260,13 +267,17 @@ if(count( $apple_x1_4->list_row) !=0){
      
       
        ?>
-       <div class="div_img_2">
        <img src="<?php echo $img  ; ?> " alt="Paris" width="<?php echo $width."%" ?>"  style="margin:70px;text-center"> 
-
-     </div>
        <?php 
      }
-  
+     else {
+      
+     ?>
+     
+     <img src="http://localhost/Model_Vue10/src/img/bokonzi.png" alt="Paris" width="<?php echo $width."%" ?>"   style="margin:70px;text-center"> 
+     
+     <?php 
+     }
 
      for($x1_4 = 0 ; $x1_4<count($liste_projet_id_sha1_x1_4) ; $x1_4 ++ ) {   
             include("pages_json_5.php") ; 

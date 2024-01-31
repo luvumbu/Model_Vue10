@@ -12,7 +12,8 @@ else {
  
 ?>
  
- 
+<img src="http://localhost/Model_Vue10/src/img/bokonzi.png" class="float-end" alt="Paris" width="<?php echo  $width."%" ?>"  style="margin:70px;text-center"> 
+
 <?php 
 }
 

@@ -1,38 +1,21 @@
 
 
-<?php 
-$img ="../../redirection_dowload_img/".$liste_projet_img_x1_3[$x1_3] ; 
-if($liste_projet_img_x1_3[$x1_3]!=""){
-
  
-  ?>
-   <div class="b_black"></div>
-  <img src="<?php echo $img  ; ?> " class="float-end" alt="Paris" width="<?php echo  $width."%" ?>"  style="margin:100px;text-center"> 
-  <?php 
-}
- 
-
-?>
     
  
  <h1 title="<?php echo   $liste_projet_description1_tittle_x1_3[$x1_3] ; ?>"  id="<?php echo   "id_".$liste_projet_id_sha1_x1_3[$x1_3] ; ?>" >
       <?php echo $liste_projet_name_x1_3[$x1_3] ; ?>
  </h1>
 
- 
-
  <p title="<?php echo   $liste_projet_description1_tittle_x1_3[$x1_3] ; ?>"  id="<?php echo   "id_p_".$liste_projet_id_sha1_x1_3[$x1_3] ; ?>"  >
-
 <?php 
 
-echo $liste_projet_description1_x1_3[$x1_3] ?>
-</p>
+echo $liste_projet_description1_x1_3[$x1_3] ;
+?>
+ </p>
 
 
-
- <?php 
-
-  
+<?php
  
  
  /*
@@ -55,7 +38,7 @@ echo "<br/>" ;
 
 
 
-
+echo $liste_projet_img_x1_3[$x1_3] ;
 echo "<br/>" ; 
 
 echo $liste_projet_name_x1_3[$x1_3] ;
@@ -249,31 +232,12 @@ if(count( $apple_x1_4->list_row) !=0){
      $liste_projet_name_tittle_x1_4 = $apple_x1_4->add_array_element($number_x1_4);
 
 
- 
 
-     echo $liste_projet_description1_x1_3[$x1_3] ;
-     ?>
-      </p>
-     <?php 
-     $img ="../../redirection_dowload_img/".$liste_projet_img_x1_3[$x1_3] ; 
-     if($liste_projet_img_x1_3[$x1_3]!=""){
-     
-      
-       ?>
-       <div class="div_img_2">
-       <img src="<?php echo $img  ; ?> " alt="Paris" width="<?php echo $width."%" ?>"  style="margin:70px;text-center"> 
-
-     </div>
-       <?php 
-     }
-  
 
      for($x1_4 = 0 ; $x1_4<count($liste_projet_id_sha1_x1_4) ; $x1_4 ++ ) {   
             include("pages_json_5.php") ; 
      }
 
-
-     
      
 }
 
@@ -282,4 +246,20 @@ if(count( $apple_x1_4->list_row) !=0){
 
  
 
- 
+
+ <script>
+  var ok = "<?php echo   "id_p_".$liste_projet_id_sha1_x1_3[$x1_3] ; ?>" ;   
+  var deplus = "" ; 
+  for(var r = 0 ; r<   document.getElementById(ok).innerHTML.length; r++ ) {  
+
+    if(r!=1){
+     
+
+      deplus = deplus+document.getElementById(ok).innerHTML[r].toLowerCase() ; 
+    }
+    else {
+      deplus = "<b style='font-size:3em;color:red;margin:10px;text-shadow:1px 1px black'>"+deplus+document.getElementById(ok).innerHTML[r].toUpperCase()+"</b>" ; 
+    }
+  }
+  document.getElementById(ok).innerHTML=deplus; 
+ </script>

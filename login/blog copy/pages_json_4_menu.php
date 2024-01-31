@@ -1,118 +1,18 @@
+<li><a class="dropdown-item text-center" href="#<?php echo "id_".$liste_projet_id_sha1_x1_3[$x1_3] ; ?>"><?php echo $liste_projet_name_x1_3[$x1_3] ; ?></a></li>
 
 
 <?php 
-$img ="../../redirection_dowload_img/".$liste_projet_img_x1_3[$x1_3] ; 
-if($liste_projet_img_x1_3[$x1_3]!=""){
 
- 
-  ?>
-   <div class="b_black"></div>
-  <img src="<?php echo $img  ; ?> " class="float-end" alt="Paris" width="<?php echo  $width."%" ?>"  style="margin:100px;text-center"> 
-  <?php 
-}
- 
-
-?>
-    
- 
- <h1 title="<?php echo   $liste_projet_description1_tittle_x1_3[$x1_3] ; ?>"  id="<?php echo   "id_".$liste_projet_id_sha1_x1_3[$x1_3] ; ?>" >
-      <?php echo $liste_projet_name_x1_3[$x1_3] ; ?>
- </h1>
 
  
 
- <p title="<?php echo   $liste_projet_description1_tittle_x1_3[$x1_3] ; ?>"  id="<?php echo   "id_p_".$liste_projet_id_sha1_x1_3[$x1_3] ; ?>"  >
 
-<?php 
-
-echo $liste_projet_description1_x1_3[$x1_3] ?>
-</p>
-
-
-
- <?php 
-
-  
  
- 
- /*
-
-
-echo $liste_projet_id_x1_3[$x1_3] ;
-echo "<br/>" ; 
-
-echo $liste_projet_id_sha1_x1_3[$x1_3] ;
-echo "<br/>" ; 
-
-echo $liste_projet_id_parent_x1_3[$x1_3] ;
-echo "<br/>" ; 
-
-echo $liste_projet_id_sha1_general_x1_3[$x1_3] ;
-echo "<br/>" ; 
-
-echo $liste_projet_ip_x1_3[$x1_3] ;
-echo "<br/>" ; 
-
-
-
-
-echo "<br/>" ; 
-
-echo $liste_projet_name_x1_3[$x1_3] ;
-echo "<br/>" ; 
-
-echo $liste_projet_description1_x1_3[$x1_3] ;
-echo "<br/>" ; 
-
-echo $liste_projet_description2_x1_3[$x1_3] ;
-echo "<br/>" ; 
-
-echo $liste_projet_visibilite1_x1_3[$x1_3] ;
-echo "<br/>" ; 
-
-
-
-echo $liste_projet_visibilite2_x1_3[$x1_3] ;
-echo "<br/>" ; 
-
-echo $liste_projet_type_x1_3[$x1_3] ;
-echo "<br/>" ; 
-
-echo $information_user_id_sha1_x1_3[$x1_3] ;
-echo "<br/>" ; 
-
-echo $liste_projet_new_file_x1_3[$x1_3] ;
-echo "<br/>" ; 
-
-echo $liste_projet_reg_date_x1_3[$x1_3] ;
-echo "<br/>" ; 
-
-
-
-echo $liste_projet_color_1_x1_3[$x1_3] ;
-echo "<br/>" ; 
-
-
-echo $liste_projet_color_2_x1_3[$x1_3] ;
-echo "<br/>" ; 
-
-
-
-echo $liste_projet_name_font_size_x1_3[$x1_3] ;
-echo "<br/>" ; 
-
-echo $liste_projet_description1_font_size_x1_3[$x1_3] ;
-echo "<br/>" ; 
-
-
-echo $liste_projet_background_color_x1_3[$x1_3] ;
-echo "<br/>" ; 
 
 
 
 
 
-*/
 
 
 
@@ -249,37 +149,15 @@ if(count( $apple_x1_4->list_row) !=0){
      $liste_projet_name_tittle_x1_4 = $apple_x1_4->add_array_element($number_x1_4);
 
 
- 
 
-     echo $liste_projet_description1_x1_3[$x1_3] ;
-     ?>
-      </p>
-     <?php 
-     $img ="../../redirection_dowload_img/".$liste_projet_img_x1_3[$x1_3] ; 
-     if($liste_projet_img_x1_3[$x1_3]!=""){
-     
-      
-       ?>
-       <div class="div_img_2">
-       <img src="<?php echo $img  ; ?> " alt="Paris" width="<?php echo $width."%" ?>"  style="margin:70px;text-center"> 
-
-     </div>
-       <?php 
-     }
-  
 
      for($x1_4 = 0 ; $x1_4<count($liste_projet_id_sha1_x1_4) ; $x1_4 ++ ) {   
-            include("pages_json_5.php") ; 
+       //  include("pages_json_5.php") ; 
      }
 
-
-     
      
 }
 
 ?>
  
-
- 
-
  
