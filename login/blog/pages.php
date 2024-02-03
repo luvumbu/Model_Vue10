@@ -182,7 +182,7 @@ $mes_visites = count($apple_my_ip->list_row)/6 ;
 
 
 <div class="dark_mode_style" onclick="dark_mode(this)" id="dark_mode" title="not">
-    <img width="50" height="50" src="https://img.icons8.com/external-anggara-basic-outline-anggara-putra/50/external-nightmode-communication-anggara-basic-outline-anggara-putra.png" alt="external-nightmode-communication-anggara-basic-outline-anggara-putra"/>
+    <img width="50" height="50" src="https://img.icons8.com/office/50/light-on--v1.png"/>
 </div>
 
 
@@ -237,13 +237,14 @@ else {
   .dark_mode_style{
 
     position:fixed;
-    top:0;
+    top:60px;
     right:0 ; 
   }
   .dark_mode_style:hover{
     background-color:rgba(100,100,0,0.6);
     border-radius:100%; 
     cursor:pointer ; 
+    transition:1s all ; 
   }
 </style>
 
