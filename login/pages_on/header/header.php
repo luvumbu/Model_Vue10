@@ -357,12 +357,7 @@ var x_ = 0 ;
 
 
 </script>
-<style>
-  body{
-  background-color: #131b32;
-}
- </style>
-
+ 
   
 
 </body>
