@@ -121,9 +121,8 @@ array_push(
 $mes_visites = count($apple_my_ip->list_row)/6 ; 
 //  echo $total_visit -count($apple_my_ip->list_row)/6;
 
-
-  ?>
-
+ 
+/*
 <!--
 <p>
     Nombre total de visite  <?php echo  $total_visit ?> <img width="20" height="20" src="https://img.icons8.com/sf-regular/20/visible.png" alt="visible"/>
@@ -137,7 +136,8 @@ $mes_visites = count($apple_my_ip->list_row)/6 ;
 </p>
 
 -->
-
+ 
+ 
 
 <div class="background_bl">
 <a href="<?php echo $replace_el  ?>" > Template  2 </a>
@@ -159,3 +159,91 @@ $mes_visites = count($apple_my_ip->list_row)/6 ;
          
     }
 </style>
+
+*/
+?>
+ 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active"  href="<?php echo $replace_el  ?>">Template 02</a>
+      </li>
+      
+   <!--   <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>-->
+ 
+    </ul>
+  </div>
+
+
+<div class="dark_mode_style" onclick="dark_mode(this)" id="dark_mode" title="not">
+    <img width="50" height="50" src="https://img.icons8.com/external-anggara-basic-outline-anggara-putra/50/external-nightmode-communication-anggara-basic-outline-anggara-putra.png" alt="external-nightmode-communication-anggara-basic-outline-anggara-putra"/>
+</div>
+
+
+
+<div    id="dark_mode_style">
+</div>
+
+
+
+
+<script>
+
+
+function Ajax(id,source){
+	var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById(id).innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", source, true);
+  xhttp.send();
+}
+
+// exemple de code 
+
+/* 
+Ajax(nomId,document/source.txt);
+*/
+
+
+
+  function dark_mode(_this){
+ 
+
+if(_this.title=="not"){
+  Ajax("dark_mode_style","../dark_mode.html");
+  _this.title ="dark_mode" ; 
+
+}
+else {
+  Ajax("dark_mode_style","../not.html");
+  _this.title ="not";
+}
+
+                       
+  }
+
+</script>
+<style>
+  .dark_mode_style{
+
+    position:fixed;
+    top:0;
+    right:0 ; 
+  }
+  .dark_mode_style:hover{
+    background-color:rgba(100,100,0,0.6);
+    border-radius:100%; 
+    cursor:pointer ; 
+  }
+</style>
+

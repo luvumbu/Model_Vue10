@@ -34,7 +34,9 @@ session_start();
 -->    
 <div id="ip_info_cookie_cool_cook" title="<?php echo $_SERVER["REMOTE_ADDR"] ; ?>"></div>
 <div id="info"></div>
+
 <?php 
+
   if(!isset($_SESSION["information_user_id_sha1"])){    
     include("pages_off/acceuil1.html") ;
     
@@ -48,6 +50,7 @@ session_start();
    <?php
   }
   else {
+    
     include("link_page/link_on.html") ; 
     include("pages_on/login.php") ;
 
@@ -59,7 +62,6 @@ session_start();
 <script src="class/js/js_on/session_destroy.js"></script>
 <?php 
   }
- include("link_page/link_off.html") ; 
    ?>
   <!--
 <script src="class/js/js_off/select_info1.js"></script> 
