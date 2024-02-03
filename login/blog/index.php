@@ -4,6 +4,7 @@
  include("index_json.php") ; 
 
  include("add_log_0.php") ; 
+
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,24 +29,146 @@
 
 </head>
 <body>
-<a href="../index.php">
+ 
+ 
 
-
-<div class="log_">
-     
-     <div>
-       Connexion
-     </div>
-     <div>
-       Inscription 
-     </div>
-   </div>
-  </a>
-<h1 class="text-center liste_projet">
-Projet
-</h1>
+ <!--    𝕨𝕨𝕨.𝔹𝕠𝕜𝕠𝕟𝕫𝕚.𝕔𝕠𝕞  𝖞𝖉𝖊𝖓𝖌𝖆 𝕿𝖚𝖛𝖚𝖒𝖇𝖚   ★☆♨♫✈❤   
+    //  ★   =   début de l'information
+    //  ☆   =   fin de l'information
+    //  ♨   =   Code de l'information premier letre du fichier et dernier lettre du fichier suivi du numéro du commentaire.
+    //  ♫   = connexion css all suivi du nom du fichier 
+    //  ✈  = ♨=ap007    provenence du fichier total /!\ ... app.php ...    /!\ racine du fichier ♨=ap007 
+    //  ❥ = le fichier ne pas au même emplacement que l'appelant /!\
+    //
+    𝕨𝕨𝕨.𝔹𝕠𝕜𝕠𝕟𝕫𝕚.𝕔𝕠𝕞  𝖞𝖉𝖊𝖓𝖌𝖆 𝕿𝖚𝖛𝖚𝖒𝖇𝖚   ★☆♨♫✈❤  -->
+<div id="header">
+    <div>
+          <b>Ndenga Luvumbu</b>  
+    </div>
+    <div>
+ 
+        <a class="contact-header" href="../../index.php">Connexion / Inscription</a>  
+        <a> <i class='fas fa-phone'></i></a>   
+        <a><i class="fa fa-location-arrow"></i></a>       
+    </div>
+</div>
 
  
+
+<div class="slogan">
+          <h1>
+          Ndenga Luvumbu
+          </h1>
+          <h2>
+          Creative solutions, creative results.
+          </h2>
+</div>
+
+ 
+<div class="margin_100px"></div>
+
+<h2 class="text-center">
+À PROPOS
+</h2>
+<div class="margin_100px"></div>
+
+
+<div class="apropos">
+  <p>
+ Voici où vous permettez aux clients de savoir de quoi parle votre site Web. Vous pouvez éditer tout ce texte et le remplacer par ce que vous voulez écrire. Par exemple, vous pouvez leur indiquer depuis combien de temps vous travaillez, ce qui rend votre entreprise spéciale, quelles sont ses valeurs fondamentales et bien plus encore.
+ Modifiez votre page À propos de l'onglet Pages en cliquant sur le bouton Modifier.
+</p>
+</div>
+<div class="margin_100px"></div>
+
+
+    <style>
+      .apropos p {
+/*
+        border:1px solid rgba(0,0,0,0.2) ; 
+*/
+      }
+      .apropos {
+border:1px solid rgba(0,0,0,0.2) ; 
+margin:auto ; 
+padding:25px ; 
+width:80% ; 
+
+      }
+      .margin_100px{
+        margin-top:100px; 
+      }
+        .slogan {
+          background-image:url("../../src/img/123346.gif") ; 
+          height:450px; 
+          width:100%; 
+          background-size:100%; 
+        
+        }
+        .slogan h1, .slogan h2  {
+text-align:center ; 
+margin-top:100px; 
+font-size:3em ; 
+
+color:white ; 
+        }
+
+        .slogan h2  {
+          font-size:2.5em ; 
+
+
+        }
+ 
+        a 
+        {
+            text-decoration: none ; 
+        }
+    #header,  #header2
+    {
+        display: flex  ; 
+        justify-content: space-between ; 
+ 
+     
+      
+        background-color:white;   
+        border-bottom: 1px solid #e1e1e1 ;  
+/*      position: fixed ; 
+
+        width: 100%; 
+*/
+    }
+ 
+    body 
+    {
+        overflow-x: hidden;
+    }
+    .titre 
+    {
+        font-size: 16px; 
+    }
+    div 
+    {
+        padding: 20px; 
+    }
+    div a 
+    {
+        color : #b3b3b3 ; 
+        padding: 15px; 
+    }
+    .fa, .fas
+    {
+        color : #252525 ; 
+    }
+    p 
+    {
+       
+    }
+        
+    </style>
+
+
+      
+
 <?php 
 
 
@@ -114,7 +237,7 @@ echo '<div class="general__">' ;
     ?>
 <a href="<?php echo "pages.php/".$liste_projet_id_sha1[$i]?>"> 
     <?php 
-    echo '<p class="alert text-center alert-secondary" role="alert"> ';
+    echo '<p class="alert text-center alert-secondary" role="alert" style="background-color:black;color:white"> ';
     echo 'Voir l\'article';
     echo '</p>';
 echo '</a>' ;
@@ -155,4 +278,16 @@ echo '</a>' ;
 
 
  
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="../blog_index.css">
+
+<div id="header2">
+    <div>
+          <b>Ndenga Luvumbu</b>  
+    </div>
+    <div>
+ 
+        <a class="contact-header" href="../../index.php">Connexion / Inscription</a>  
+        <a> <i class='fas fa-phone'></i></a>   
+        <a><i class="fa fa-location-arrow"></i></a>       
+    </div>
+</div>
