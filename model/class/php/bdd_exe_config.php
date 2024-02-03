@@ -77,8 +77,12 @@ $execution_formulaire_php->set_action ("CREATE TABLE liste_projet (
   liste_projet_description3 TEXT(2000) NOT NULL,
   liste_projet_visibilite1 TEXT(200) NOT NULL,
   liste_projet_visibilite2 TEXT(200) NOT NULL,
+
   liste_projet_text_align_1_1 TEXT(200) NOT NULL,
   liste_projet_text_align_2_1 TEXT(200) NOT NULL,
+  liste_projet_text_margin_all_1 TEXT(200) NOT NULL,
+  liste_projet_text_margin_all_2 TEXT(200) NOT NULL,
+
   liste_projet_text_margin_top_1 TEXT(200) NOT NULL,
   liste_projet_text_margin_left_1 TEXT(200) NOT NULL,
   liste_projet_text_margin_right_1 TEXT(200) NOT NULL,
@@ -87,6 +91,9 @@ $execution_formulaire_php->set_action ("CREATE TABLE liste_projet (
   liste_projet_text_margin_left_2 TEXT(200) NOT NULL,
   liste_projet_text_margin_right_2 TEXT(200) NOT NULL,
   liste_projet_text_margin_bottom_2 TEXT(200) NOT NULL,
+
+  liste_projet_text_padding_all_1 TEXT(200) NOT NULL,
+  liste_projet_text_padding_all_2 TEXT(200) NOT NULL,
   liste_projet_text_padding_top_1 TEXT(200) NOT NULL,
   liste_projet_text_padding_left_1 TEXT(200) NOT NULL,
   liste_projet_text_padding_right_1 TEXT(200) NOT NULL,

@@ -497,6 +497,97 @@ ok.add("liste_projet_id_sha1",_this.title); // ajout de l'information pour lenvo
 console.log(ok.info()); // demande l'information dans le tableau
 ok.push(); // envoie l'information au code pkp 
  }
+
+
+
+
+
+
+
+
+
+ function liste_projet_margin(a) {
+
+document.getElementById(a.className+a.title+"_b").innerHTML=a.value+"%" ;  
+
+
+
+
+
+var liste_projet_text_margin_1_11_ = document.getElementById("liste_projet_text_margin_1_11_"+a.title).value ; 
+ 
+var liste_projet_text_margin_1_1_ = document.getElementById("liste_projet_text_margin_1_1_"+a.title).value ; 
+
+var liste_projet_text_margin_1_2_ = document.getElementById("liste_projet_text_margin_1_2_"+a.title).value ; 
+
+var liste_projet_text_margin_1_3_ = document.getElementById("liste_projet_text_margin_1_3_"+a.title).value ; 
+
+var liste_projet_text_margin_1_4_ = document.getElementById("liste_projet_text_margin_1_4_"+a.title).value ; 
+ 
+  
+ var ok = new Information("class/php/php_update/change_margin.php"); // création de la classe 
+ 
+ok.add("liste_projet_text_margin_1_11_",liste_projet_text_margin_1_11_); // ajout de l'information pour lenvoi 
+ok.add("liste_projet_text_margin_1_1_",liste_projet_text_margin_1_1_); // ajout de l'information pour lenvoi 
+ok.add("liste_projet_text_margin_1_2_",liste_projet_text_margin_1_2_); // ajout de l'information pour lenvoi 
+ok.add("liste_projet_text_margin_1_3_",liste_projet_text_margin_1_3_); // ajout de l'information pour lenvoi 
+ok.add("liste_projet_text_margin_1_4_",liste_projet_text_margin_1_4_); // ajout de l'information pour lenvoi 
+
+ok.add("liste_projet_id_sha1",a.title); // ajout de l'information pour lenvoi 
+  
+console.log(ok.info()); // demande l'information dans le tableau
+ok.push(); // envoie l'information au code pkp 
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+function liste_projet_padding(a) {
+
+document.getElementById(a.className+a.title+"_b").innerHTML=a.value+"%" ;  
+
+
+
+
+
+var liste_projet_text_padding_1_11_ = document.getElementById("liste_projet_text_padding_1_11_"+a.title).value ; 
+ 
+var liste_projet_text_padding_1_1_ = document.getElementById("liste_projet_text_padding_1_1_"+a.title).value ; 
+
+var liste_projet_text_padding_1_2_ = document.getElementById("liste_projet_text_padding_1_2_"+a.title).value ; 
+
+var liste_projet_text_padding_1_3_ = document.getElementById("liste_projet_text_padding_1_3_"+a.title).value ; 
+
+var liste_projet_text_padding_1_4_ = document.getElementById("liste_projet_text_padding_1_4_"+a.title).value ; 
+ 
+  
+ var ok = new Information("class/php/php_update/change_padding.php"); // création de la classe 
+ 
+ok.add("liste_projet_text_padding_1_11_",liste_projet_text_padding_1_11_); // ajout de l'information pour lenvoi 
+ok.add("liste_projet_text_padding_1_1_",liste_projet_text_padding_1_1_); // ajout de l'information pour lenvoi 
+ok.add("liste_projet_text_padding_1_2_",liste_projet_text_padding_1_2_); // ajout de l'information pour lenvoi 
+ok.add("liste_projet_text_padding_1_3_",liste_projet_text_padding_1_3_); // ajout de l'information pour lenvoi 
+ok.add("liste_projet_text_padding_1_4_",liste_projet_text_padding_1_4_); // ajout de l'information pour lenvoi 
+
+ok.add("liste_projet_id_sha1",a.title); // ajout de l'information pour lenvoi 
+  
+console.log(ok.info()); // demande l'information dans le tableau
+ok.push(); // envoie l'information au code pkp 
+ 
+
+}
+
+
+
+ 
 </script>
 
 <?php 
