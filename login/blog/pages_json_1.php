@@ -217,22 +217,21 @@ if(count($apple->list_row)!=0 && $liste_projet_visibilite1[0]=="(OO)"){
 <body>
 
  
-<img src="" alt="" srcset="">
-
+ 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><?php  echo $liste_projet_name[0] ; ?></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown" >
- 
-          
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown" >         
  <?php 
 
 include("pages_json_2_menu.php") ; 
 
 ?>
+ 
+
  
           </div>
         </div>

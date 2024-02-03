@@ -19,92 +19,30 @@ include("class/php/php_select_data/give_url.php") ;
  
 
 switch (give_url()) {
-  case "Misgroup":
-    ?>
-<div class="container-fluid p-5 bg-primary text-white text-center">
-  <h1>Bonjour <?php echo give_url() ;  ?></h1>
-  
-</div>
-  
-<div class="container mt-5">
-
-<h1>
-Bienvenue sur BOKONZI !
-
-</h1>
 
 
-
-
-<script>
-    var nombre = 20 ; 
-
-   
-
-
-
-    const element = document.getElementById("demo");
-setInterval(function() {
-    
-    document.getElementById("nombre").innerHTML="Redirection vers projet dans "+nombre ; 
-
-    nombre -- 
- 
-
-
-
-}, 1000);
-
-
-
-</script>
-<p>
-Cher client privilégié <?php  echo   give_url() ?>,
-</p>
-
-
-<p>
-    C'est avec une grande joie que nous vous accueillons sur notre plateforme en ligne. 🌟 Nous sommes reconnaissants de votre intérêt pour nos projets et services.
-
-Préparez-vous à plonger dans l'univers captivant de BOKONZI. Chacun de nos projets est le fruit d'un dévouement total et d'une passion sans limite. Nous sommes ravis de pouvoir partager cela avec vous.
-
-Cliquez sur le <a href="../blog/pages.php/1706655864617">bouton ci-dessous</a>   pour explorer nos réalisations exceptionnelles :
-</p>
-
-
-
-<p>
-Votre soutien est notre moteur, et nous sommes impatients de vous offrir une expérience mémorable.
-
-</p>
-
-<p>
-Merci de faire partie de notre histoire !
-
-</p>
-<p>
-Bien à vous,
-
-</p>
-L'équipe de BOKONZI
-
-
-<h1 id="nombre"></h1>
-</div>
-
-
-
-
+  case "Misgroup_cms": 
+include("msg_path.php") ; 
+?>
 <meta http-equiv="Refresh" content="20; url='../blog/pages.php/1706655864617'" />
 
 <?php 
     break;
+
+    case "Misgroup_api_ffa": 
+        include("msg_path.php") ; 
+        ?>
+        <meta http-equiv="Refresh" content="20; url='../../../script_ffa_front_back/index.php'" />
+        
+        <?php 
+            break;
     default:
     echo "<h1>Vous n'êtes pas autorisé <h1/>";
 
     ?>
 <img src="https://www.creativefabrica.com/wp-content/uploads/2023/05/19/Forbidden-sign-Prohibited-symbol-Round-Graphics-70062501-1.png" alt="" srcset="">
-    <?php
+   
+   <?php
  
 
 
