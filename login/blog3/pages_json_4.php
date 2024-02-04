@@ -1,26 +1,43 @@
 
+
 <?php 
 $img ="../../redirection_dowload_img/".$liste_projet_img_x1_3[$x1_3] ; 
+if($liste_projet_img_x1_3[$x1_3]!=""){
+
  
+  ?>
+   <div class="b_black"></div>
+  <img src="<?php echo $img  ; ?> " class="float-end" alt="Paris" width="<?php echo  $width."%" ?>"  style="margin:100px;text-center"> 
+  <?php 
+}
  
+
 ?>
+    
+ 
+ <h1 title="<?php echo   $liste_projet_description1_tittle_x1_3[$x1_3] ; ?>"  id="<?php echo   "id_".$liste_projet_id_sha1_x1_3[$x1_3] ; ?>" >
+      <?php echo $liste_projet_name_x1_3[$x1_3] ; ?>
+ </h1>
 
+ 
 
-<div id="pages_json_4">
-    <div class="element_05">
-      <?php echo $liste_projet_name_x1_3[$x1_3]   ;  ?>
-    </div>
-    <div class="element_06">
-      <?php  echo $liste_projet_description1_x1_3[$x1_3] ; 
+ <p title="<?php echo   $liste_projet_description1_tittle_x1_3[$x1_3] ; ?>"  id="<?php echo   "id_p_".$liste_projet_id_sha1_x1_3[$x1_3] ; ?>"  >
 
-      ?>
-    </div>
-</div>
 <?php 
- 
 
+echo $liste_projet_description1_x1_3[$x1_3] ?>
+</p>
+
+
+
+ <?php 
+
+  
  
-/*
+ 
+ /*
+
+
 echo $liste_projet_id_x1_3[$x1_3] ;
 echo "<br/>" ; 
 
@@ -38,16 +55,18 @@ echo "<br/>" ;
 
 
 
-echo $liste_projet_img_x1_3[$x1_3] ;
+
 echo "<br/>" ; 
-*/
 
+echo $liste_projet_name_x1_3[$x1_3] ;
+echo "<br/>" ; 
 
+echo $liste_projet_description1_x1_3[$x1_3] ;
+echo "<br/>" ; 
 
+echo $liste_projet_description2_x1_3[$x1_3] ;
+echo "<br/>" ; 
 
- 
- 
-/*
 echo $liste_projet_visibilite1_x1_3[$x1_3] ;
 echo "<br/>" ; 
 
@@ -91,6 +110,8 @@ echo "<br/>" ;
 
 
 
+
+
 */
 
 
@@ -103,6 +124,10 @@ echo "<br/>" ;
 
 
 
+
+
+
+ 
 
 
 $apple_x1_4 = new Select_datas($servername,$username,$password,$dbname);
@@ -159,10 +184,10 @@ $apple_x1_4 = new Select_datas($servername,$username,$password,$dbname);
 
      
 
+ 
 
 
-
-
+ 
 
 
 if(count( $apple_x1_4->list_row) !=0){
@@ -224,18 +249,37 @@ if(count( $apple_x1_4->list_row) !=0){
      $liste_projet_name_tittle_x1_4 = $apple_x1_4->add_array_element($number_x1_4);
 
 
+ 
 
+     echo $liste_projet_description1_x1_3[$x1_3] ;
+     ?>
+      </p>
+     <?php 
+     $img ="../../redirection_dowload_img/".$liste_projet_img_x1_3[$x1_3] ; 
+     if($liste_projet_img_x1_3[$x1_3]!=""){
+     
+      
+       ?>
+       <div class="div_img_2">
+       <img src="<?php echo $img  ; ?> " alt="Paris" width="<?php echo $width."%" ?>"  style="margin:70px;text-center"> 
 
-     for($x1_4 = 0 ; $x1_4<count($liste_projet_id_sha1_x1_4) ; $x1_4 ++ ) {
-    
-          include("pages_json_5.php") ; 
-
+     </div>
+       <?php 
+     }
   
+
+     for($x1_4 = 0 ; $x1_4<count($liste_projet_id_sha1_x1_4) ; $x1_4 ++ ) {   
+            include("pages_json_5.php") ; 
      }
 
+
+     
      
 }
 
 ?>
+ 
+
+ 
 
  

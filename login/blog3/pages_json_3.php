@@ -1,22 +1,34 @@
 
 <?php 
 $img ="../../redirection_dowload_img/".$liste_projet_img_x1_2[$x1_2] ; 
+if($liste_projet_img_x1_2[$x1_2]!=""){
+
  
+  ?>
+   <div class="b_black"></div>
+
+
+   <style>
+    .div_img_2{
+     
+      padding:15px; 
+      text-align:center ; 
+    }
+   </style>
+<div class="div_img_2">
+<img src="<?php echo $img  ; ?> "  width="<?php echo  $width."%" ?>"  style="margin:100px;text-center"> 
+</div>
+
+
+  <?php 
+}
  
+
 ?>
 
-
-
-<div id="pages_json_3">
-  <div class="element_03">
-    <?php echo $liste_projet_name_x1_2[$x1_2]   ;  ?>
-  </div>
-  <div class="element_04">
-    <?php  echo $liste_projet_description1_x1_2[$x1_2] ;   ?>
-  </div>
-</div>
+<h1   title="<?php echo  $liste_projet_name_tittle_x1_2[$x1_2]; ?>"  id="<?php  echo "id_".$liste_projet_id_sha1_x1_2[$x1_2] ;?>"><?php  echo $liste_projet_name_x1_2[$x1_2] ;?></h1>
+ <p title="<?php echo  $liste_projet_description1_tittle_x1_2[$x1_2]; ?>"><?php echo $liste_projet_description1_x1_2[$x1_2] ;?></p> 
 <?php 
- 
 
  
 /*
@@ -98,7 +110,14 @@ echo "<br/>" ;
 
 
 
- 
+
+
+
+?>
+
+<?php 
+
+
 
 
 
@@ -236,5 +255,17 @@ if(count( $apple_x1_3->list_row) !=0){
 }
 
 ?>
+
+
+
+<style>
+  .b_black{
+    height:5px; 
+    width:100%;
+    margin-top:50px; 
+  }
+</style>
+ 
+
 
  

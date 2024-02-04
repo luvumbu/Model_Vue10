@@ -214,7 +214,16 @@ if(count( $apple_x1_3->list_row) !=0){
 
 ?>
 
- 
+
+<ul class="navbar-nav"  >
+                <li class="nav-item dropdown" >
+                  <a class="nav-link dropdown-toggle"   style="color:white" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <?php 
+                  echo $liste_projet_name_x1_2[$x1_2]  ; 
+                  ?>
+                  </a>
+
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="<?php echo ""?>">
 
 
 
@@ -232,10 +241,32 @@ if(count( $apple_x1_3->list_row) !=0){
      }
 
 
+     ?>
  
+   
+                  </ul>
+                </li>
+              </ul>
+
+     <?php 
      
 }
+else {
 
+
+  ?>
+<a style="color:white;padding:15px;" href="#<?php echo "id_".$liste_projet_id_sha1_x1_2[$x1_2] ?>" >
+<?php 
+
+
+echo $liste_projet_name_x1_2[$x1_2] ;
+?>
+</a>
+ 
+<?php 
+
+
+}
 
 ?>
  

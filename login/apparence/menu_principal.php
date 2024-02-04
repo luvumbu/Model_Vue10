@@ -230,9 +230,7 @@ ok.push(); // envoie l'information au code pkp
 
   }
  </script>
-    <style>
- 
-  
+<style>
   .format_toogle{
     padding:10px; 
     margin:10px;

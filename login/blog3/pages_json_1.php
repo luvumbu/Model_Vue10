@@ -195,9 +195,6 @@ echo "<br/>";
  
 */
 
-
- 
-
  
  
 
@@ -206,17 +203,6 @@ if(count($apple->list_row)!=0 && $liste_projet_visibilite1[0]=="(OO)"){
 
 
 ?>
-
-<div id="pages_json_1">
-      <div class="element_01">
-        <?php  echo $liste_projet_name[0] ;  ?>  
-    </div>
-
-
-    <div class="element_02"> 
-        <?php  echo $liste_projet_description1[0] ;  ?>  
-    </div>
-</div>
 
 
 <!DOCTYPE html>
@@ -231,28 +217,72 @@ if(count($apple->list_row)!=0 && $liste_projet_visibilite1[0]=="(OO)"){
 <body>
 
  
- 
-  
+<img src="" alt="" srcset="">
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><?php  echo $liste_projet_name[0] ; ?></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown" >
  
+          
  <?php 
 
-
 include("pages_json_2_menu.php") ; 
+
+?>
  
+          </div>
+        </div>
+      </nav>
+ 
+
+      <div class="pages_json_2 container" > 
+
+    
+        <h1 title="<?php echo  $liste_projet_name_tittle[0] ; ?>"><?php  echo $liste_projet_name[0] ; ?></h1>
+<?php 
+
 
  
 
 
+if($liste_projet_img[0]!=""){
+  $src_  ="../../redirection_dowload_img/".$liste_projet_img[0]  ; 
+  ?>
+<style>
+  .div_img{
+    width:50%; 
+   
+    padding:20px; 
+    margin:auto ; 
+  }
+  .div_img img{
+    width:100%; 
+    
+  }
+</style>
+<div class="div_img">
+  <img width="<?php echo  "100%" ?>"   src="<?php echo $src_  ?>" alt="" srcset="">
+</div>
+
+<?php 
+}
+?>
  
+
+<br/>
  
- 
+    <?php  echo $liste_projet_description1[0] ; ?>
  
        
       
      
  
- 
+  <?php
+
 
  if(count($liste_projet_id_parent)!=0){
   include("pages_json_2.php"); 
@@ -280,52 +310,21 @@ include("pages_json_2_menu.php") ;
 
 
 
-
-
-
-//echo $liste_projet_description1[0] ; 
-
-
-
 ?>
 
 
+
+
 <style>
+  .pages_json_2{
+    text-align:justify ; 
+  }
 
-.element_01,.element_02,.element_03,.element_04,.element_05,.element_06,.element_07,.element_08,.element_09,.element_10{
- 
-}
-.element_01 {
-  
-}
- 
-#pages_json_1{
-  background-color:green ; 
-}
-
-#pages_json_3{
-  background-color:pink ; 
-}
-#pages_json_4{
-  background-color:orange ; 
-}
-
-#pages_json_5{
-  background-color:red ; 
-}
-#pages_json_6{
-  background-color:yellow ; 
-}
-#pages_json_7{
-  background-color:black ; 
-}
-
-#pages_json_8{
-  background-color:violet ; 
-}
-
+  .pages_json_2 h1{
+    text-align:center ; 
+    padding:15px; 
+  }
 </style>
- 
 
 </body>
 </html>

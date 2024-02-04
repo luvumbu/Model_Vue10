@@ -97,7 +97,6 @@ toutes les focti
 }
   ?>
   </div> 
-
   </body> 
   <link rel="stylesheet" href="css.css">
   </html>
