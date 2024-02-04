@@ -54,8 +54,7 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
 
 
 
-
-
+ 
 
 
       
@@ -73,8 +72,8 @@ $total_visit = count($apple->list_row)/6 ;
  <?php 
 
 
-   
-$apple_my_ip = new Select_datas($servername,$username,$password,$dbname);
+if(count($apple->list_row)!=0){
+  $apple_my_ip = new Select_datas($servername,$username,$password,$dbname);
 
 array_push(
   $apple_my_ip->row,
@@ -98,27 +97,17 @@ array_push(
   $apple_my_ip->sql='SELECT * FROM `liste_log2` WHERE `liste_log_ip` ="'.$REMOTE_ADDR.'" AND `liste_projet_id_sha1`="'.give_url().'"';
   $apple_my_ip->execution();
   $myJSON = json_encode($apple_my_ip->list_row); 
+  $mes_visites = count($apple_my_ip->list_row)/6 ; 
+
+
+   
 
 
 
  
-
-
-
- 
- 
-
-  ?>
-
- 
-<br/>
  
 
 
-
-<?php 
-
-$mes_visites = count($apple_my_ip->list_row)/6 ; 
 //  echo $total_visit -count($apple_my_ip->list_row)/6;
 
  
@@ -161,6 +150,9 @@ $mes_visites = count($apple_my_ip->list_row)/6 ;
 </style>
 
 */
+
+
+}
 ?>
  
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">

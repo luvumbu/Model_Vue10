@@ -1,5 +1,17 @@
  <br/> 
-  
+  <?php 
+
+ 
+/*
+echo $liste_projet_text_margin_right_1_[$a] ; 
+
+liste_projet_text_margin_top_1_
+liste_projet_text_margin_left_1_
+liste_projet_text_margin_right_1_
+liste_projet_text_margin_bottom_1_
+*/
+
+?>
  
  
 <div class="class_1" id="<?php echo "parent_".$liste_projet_id_sha1[$a] ?>">
@@ -17,24 +29,24 @@
 
 <img  class="width_25_style"  width="40" height="40" src="https://img.icons8.com/external-those-icons-lineal-those-icons/25/external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7.png" alt="external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7"/>
 <label >margin total</label>
-<input type="range" class="liste_projet_text_margin_1_11_"    onchange="liste_projet_margin(this)"  id="<?php echo "liste_projet_text_margin_1_11_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"  value="0" name="volume" min="0" max="100"> <b  id="<?php echo "liste_projet_text_margin_1_11_".$liste_projet_id_sha1[$a]."_b" ?>"  >0%</b> 
+<input type="range" class="liste_projet_text_margin_1_11_"    onchange="liste_projet_margin(this)"  id="<?php echo "liste_projet_text_margin_1_11_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"  value="<?php echo $liste_projet_text_margin_all_1_[$a] ; ?>" name="volume" min="0" max="100"> <b  id="<?php echo "liste_projet_text_margin_1_11_".$liste_projet_id_sha1[$a]."_b" ?>"  ><?php echo $liste_projet_text_margin_all_1_[$a]?>%</b> 
 <br/>
 <img       title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-top.png" alt="border-top"/>
 <label >margin Top</label>
-<input class="liste_projet_text_margin_1_1_" type="range"     onchange="liste_projet_margin(this)" id="<?php echo "liste_projet_text_margin_1_1_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"   value="0" name="volume" min="0" max="100"> <b  id="<?php echo "liste_projet_text_margin_1_1_".$liste_projet_id_sha1[$a]."_b" ?>"  >0%</b> 
+<input class="liste_projet_text_margin_1_1_" type="range"     onchange="liste_projet_margin(this)" id="<?php echo "liste_projet_text_margin_1_1_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"   value="<?php echo $liste_projet_text_margin_top_1_[$a] ;?>" name="volume" min="0" max="100"> <b  id="<?php echo "liste_projet_text_margin_1_1_".$liste_projet_id_sha1[$a]."_b" ?>"  ><?php echo $liste_projet_text_margin_top_1_[$a] ;?>%</b> 
 <br/>
 <img       title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-left.png" alt="border-left"/>
 
 <label >margin left   </label>
-<input class="liste_projet_text_margin_1_2_" type="range"  onchange="liste_projet_margin(this)" id="<?php echo "liste_projet_text_margin_1_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"   value="0" name="volume" min="0" max="100"> <b  id="<?php echo "liste_projet_text_margin_1_2_".$liste_projet_id_sha1[$a]."_b" ?>"  >0%</b> 
+<input class="liste_projet_text_margin_1_2_" type="range"  onchange="liste_projet_margin(this)" id="<?php echo "liste_projet_text_margin_1_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"   value="<?php echo $liste_projet_text_margin_left_1_[$a] ?>" name="volume" min="0" max="100"> <b  id="<?php echo "liste_projet_text_margin_1_2_".$liste_projet_id_sha1[$a]."_b" ?>"  ><?php echo $liste_projet_text_margin_left_1_[$a]  ?>%</b> 
 <br/>
 <img       title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-right.png" alt="border-right"/>
 <label >margin right</label>
-<input  class="liste_projet_text_margin_1_3_" type="range"     onchange="liste_projet_margin(this)" id="<?php echo "liste_projet_text_margin_1_3_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"   value="0" name="volume" min="0" max="100"> <b  id="<?php echo "liste_projet_text_margin_1_3_".$liste_projet_id_sha1[$a]."_b" ?>"  >0%</b> 
+<input  class="liste_projet_text_margin_1_3_" type="range"     onchange="liste_projet_margin(this)" id="<?php echo "liste_projet_text_margin_1_3_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"   value="<?php  echo $liste_projet_text_margin_right_1_[$a] ?>" name="volume" min="0" max="100"> <b  id="<?php echo "liste_projet_text_margin_1_3_".$liste_projet_id_sha1[$a]."_b" ?>"  ><?php echo $liste_projet_text_margin_right_1_[$a] ; ?>%</b> 
 <br/>
 <img       title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-bottom.png" alt="border-bottom"/>
 <label >margin bottom</label>
-<input  class="liste_projet_text_margin_1_4_" type="range"     onchange="liste_projet_margin(this)" id="<?php echo "liste_projet_text_margin_1_4_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"   value="0" name="volume" min="0" max="100"> <b  id="<?php echo "liste_projet_text_margin_1_4_".$liste_projet_id_sha1[$a]."_b" ?>"  >0%</b> 
+<input  class="liste_projet_text_margin_1_4_" type="range"     onchange="liste_projet_margin(this)" id="<?php echo "liste_projet_text_margin_1_4_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"   value="<?php  echo $liste_projet_text_margin_bottom_1_[$a] ; ?>" name="volume" min="0" max="100"> <b  id="<?php echo "liste_projet_text_margin_1_4_".$liste_projet_id_sha1[$a]."_b" ?>"  ><?php echo $liste_projet_text_margin_bottom_1_[$a] ; ?>%</b> 
 <br/>
  
  
@@ -54,26 +66,32 @@
 
  <h1>Padding</h1>
 
-<img  class="width_25_style"  width="40" height="40" src="https://img.icons8.com/external-those-icons-lineal-those-icons/25/external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7.png" alt="external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7"/>
+ <img  class="width_25_style"  width="40" height="40" src="https://img.icons8.com/external-those-icons-lineal-those-icons/25/external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7.png" alt="external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7"/>
 <label >padding total</label>
-<input type="range" class="liste_projet_text_padding_1_11_"    onchange="liste_projet_padding(this)"  id="<?php echo "liste_projet_text_padding_1_11_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"  value="0" name="volume" min="0" max="100"> <b  id="<?php echo "liste_projet_text_padding_1_11_".$liste_projet_id_sha1[$a]."_b" ?>"  >0%</b> 
+<input type="range" class="liste_projet_text_padding_1_11_"    onchange="liste_projet_padding(this)"  id="<?php echo "liste_projet_text_padding_1_11_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"  value="<?php echo $liste_projet_text_padding_all_1_[$a] ; ?>" name="volume" min="0" max="100"> <b  id="<?php echo "liste_projet_text_padding_1_11_".$liste_projet_id_sha1[$a]."_b" ?>"  ><?php echo $liste_projet_text_padding_all_1_[$a]?>%</b> 
 <br/>
 <img       title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-top.png" alt="border-top"/>
 <label >padding Top</label>
-<input class="liste_projet_text_padding_1_1_" type="range"     onchange="liste_projet_padding(this)" id="<?php echo "liste_projet_text_padding_1_1_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"   value="0" name="volume" min="0" max="100"> <b  id="<?php echo "liste_projet_text_padding_1_1_".$liste_projet_id_sha1[$a]."_b" ?>"  >0%</b> 
+<input class="liste_projet_text_padding_1_1_" type="range"     onchange="liste_projet_padding(this)" id="<?php echo "liste_projet_text_padding_1_1_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"   value="<?php echo $liste_projet_text_padding_top_1_[$a] ;?>" name="volume" min="0" max="100"> <b  id="<?php echo "liste_projet_text_padding_1_1_".$liste_projet_id_sha1[$a]."_b" ?>"  ><?php echo $liste_projet_text_padding_top_1_[$a] ;?>%</b> 
 <br/>
 <img       title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-left.png" alt="border-left"/>
 
 <label >padding left   </label>
-<input class="liste_projet_text_padding_1_2_" type="range"  onchange="liste_projet_padding(this)" id="<?php echo "liste_projet_text_padding_1_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"   value="0" name="volume" min="0" max="100"> <b  id="<?php echo "liste_projet_text_padding_1_2_".$liste_projet_id_sha1[$a]."_b" ?>"  >0%</b> 
+<input class="liste_projet_text_padding_1_2_" type="range"  onchange="liste_projet_padding(this)" id="<?php echo "liste_projet_text_padding_1_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"   value="<?php echo $liste_projet_text_padding_left_1_[$a] ?>" name="volume" min="0" max="100"> <b  id="<?php echo "liste_projet_text_padding_1_2_".$liste_projet_id_sha1[$a]."_b" ?>"  ><?php echo $liste_projet_text_padding_left_1_[$a]  ?>%</b> 
 <br/>
 <img       title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-right.png" alt="border-right"/>
 <label >padding right</label>
-<input  class="liste_projet_text_padding_1_3_" type="range"     onchange="liste_projet_padding(this)" id="<?php echo "liste_projet_text_padding_1_3_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"   value="0" name="volume" min="0" max="100"> <b  id="<?php echo "liste_projet_text_padding_1_3_".$liste_projet_id_sha1[$a]."_b" ?>"  >0%</b> 
+<input  class="liste_projet_text_padding_1_3_" type="range"     onchange="liste_projet_padding(this)" id="<?php echo "liste_projet_text_padding_1_3_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"   value="<?php  echo $liste_projet_text_padding_right_1_[$a] ?>" name="volume" min="0" max="100"> <b  id="<?php echo "liste_projet_text_padding_1_3_".$liste_projet_id_sha1[$a]."_b" ?>"  ><?php echo $liste_projet_text_padding_right_1_[$a] ; ?>%</b> 
 <br/>
 <img       title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-bottom.png" alt="border-bottom"/>
 <label >padding bottom</label>
-<input  class="liste_projet_text_padding_1_4_" type="range"     onchange="liste_projet_padding(this)" id="<?php echo "liste_projet_text_padding_1_4_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"   value="0" name="volume" min="0" max="100"> <b  id="<?php echo "liste_projet_text_padding_1_4_".$liste_projet_id_sha1[$a]."_b" ?>"  >0%</b> 
+<input  class="liste_projet_text_padding_1_4_" type="range"     onchange="liste_projet_padding(this)" id="<?php echo "liste_projet_text_padding_1_4_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"   value="<?php  echo $liste_projet_text_padding_bottom_1_[$a] ; ?>" name="volume" min="0" max="100"> <b  id="<?php echo "liste_projet_text_padding_1_4_".$liste_projet_id_sha1[$a]."_b" ?>"  ><?php echo $liste_projet_text_padding_bottom_1_[$a] ; ?>%</b> 
+<br/>
+ 
+ 
+
+
+
 <br/>
  
 <?php
