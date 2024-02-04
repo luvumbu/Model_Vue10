@@ -53,7 +53,29 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     'liste_projet_description1_font_size',
     'liste_projet_background_color',
     'liste_projet_background_color_1',
-    'liste_projet_background_color_2'
+    'liste_projet_background_color_2',
+
+
+
+
+
+'liste_projet_text_margin_all_1',
+'liste_projet_text_margin_all_2',
+
+'liste_projet_text_margin_top_1',
+'liste_projet_text_margin_left_1',
+'liste_projet_text_margin_right_1',
+'liste_projet_text_margin_bottom_1', 
+
+
+
+'liste_projet_text_padding_all_1',
+'liste_projet_text_padding_all_2',
+
+'liste_projet_text_padding_top_1',
+'liste_projet_text_padding_left_1',
+'liste_projet_text_padding_right_1',
+'liste_projet_text_padding_bottom_1'
     
 
     );
@@ -132,13 +154,23 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
      $liste_projet_background_color_ = array() ; 
 
  
-      
-      
-      
+      $liste_projet_text_margin_all_1_ = array() ; 
+      $liste_projet_text_margin_all_2_ = array() ; 
+      $liste_projet_text_margin_top_1_ = array() ; 
+      $liste_projet_text_margin_left_1_ = array() ; 
+      $liste_projet_text_margin_right_1_ = array() ; 
+      $liste_projet_text_margin_bottom_1_ = array() ; 
 
-      
-      
-      
+
+
+
+
+      $liste_projet_text_padding_all_1_ = array() ; 
+      $liste_projet_text_padding_all_2_ = array() ; 
+      $liste_projet_text_padding_top_1_ = array() ; 
+      $liste_projet_text_padding_left_1_ = array() ; 
+      $liste_projet_text_padding_right_1_ = array() ; 
+      $liste_projet_text_padding_bottom_1_ = array() ; 
       
       
 
@@ -313,12 +345,63 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
      // 45
      $liste_projet_background_color_2=$apple->add_array_element($number);
      $number ++ ; 
- 
+
+
+
+          $liste_projet_text_margin_all_1_ = $apple->add_array_element($number);
+               $number ++ ; 
+
+          $liste_projet_text_margin_all_2_ = $apple->add_array_element($number);
+               $number ++ ; 
+
+          $liste_projet_text_margin_top_1_ = $apple->add_array_element($number);
+               $number ++ ; 
+
+          $liste_projet_text_margin_left_1_ = $apple->add_array_element($number);
+               $number ++ ; 
+
+          $liste_projet_text_margin_right_1_ = $apple->add_array_element($number);
+               $number ++ ; 
+
+          $liste_projet_text_margin_bottom_1_ = $apple->add_array_element($number);
+               $number ++ ; 
+
+
+
+
+
+
+               $liste_projet_text_padding_all_1_ = $apple->add_array_element($number);
+               $number ++ ; 
+
+          $liste_projet_text_padding_all_2_ = $apple->add_array_element($number);
+               $number ++ ; 
+
+          $liste_projet_text_padding_top_1_ = $apple->add_array_element($number);
+               $number ++ ; 
+
+          $liste_projet_text_padding_left_1_ = $apple->add_array_element($number);
+               $number ++ ; 
+
+          $liste_projet_text_padding_right_1_ = $apple->add_array_element($number);
+               $number ++ ; 
+
+          $liste_projet_text_padding_bottom_1_ = $apple->add_array_element($number);
+               $number ++ ; 
+
+
 
     
    
 
 /*
+
+
+ var_dump($liste_projet_text_margin_top_1_) ; 
+ var_dump($liste_projet_text_margin_left_1_) ; 
+ var_dump($liste_projet_text_margin_right_1_) ; 
+ var_dump($liste_projet_text_margin_bottom_1_) ; 
+
      var_dump($liste_projet_id) ; 
      var_dump($liste_projet_id_sha1) ; 
      var_dump($liste_projet_id_parent) ; 

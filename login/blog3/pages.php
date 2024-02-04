@@ -121,9 +121,8 @@ array_push(
 $mes_visites = count($apple_my_ip->list_row)/6 ; 
 //  echo $total_visit -count($apple_my_ip->list_row)/6;
 
-
-  ?>
-
+ 
+/*
 <!--
 <p>
     Nombre total de visite  <?php echo  $total_visit ?> <img width="20" height="20" src="https://img.icons8.com/sf-regular/20/visible.png" alt="visible"/>
@@ -137,7 +136,8 @@ $mes_visites = count($apple_my_ip->list_row)/6 ;
 </p>
 
 -->
-
+ 
+ 
 
 <div class="background_bl">
 <a href="<?php echo $replace_el  ?>" > Template  2 </a>
@@ -159,3 +159,11 @@ $mes_visites = count($apple_my_ip->list_row)/6 ;
          
     }
 </style>
+
+*/
+?>
+ 
+
+
+
+ 

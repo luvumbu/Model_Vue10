@@ -215,6 +215,7 @@ ok.push(); // envoie l'information au code pkp
     background-color:rgba(0,0,0,0.1) ; 
     border:1px solid rgba(0,0,0,0.2) ; 
     transition:1s all ; 
+    
   }
   .format_toogle:hover{
     cursor:pointer ; 
@@ -255,7 +256,7 @@ ok.push(); // envoie l'information au code pkp
   }
  
   .class_1{
-    border:1px solid rgba(0,0,0,0.1) ; 
+    border:1px solid rgba(0,0,0,0.3) ; 
  
     width:400px; 
     text-align:center ; 
@@ -265,7 +266,9 @@ ok.push(); // envoie l'information au code pkp
 padding:10px; 
   
     width:90%; 
+    background-color:white; 
   }
+ 
   .space_display{
  
  

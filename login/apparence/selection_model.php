@@ -1,6 +1,17 @@
  <br/> 
-  
+  <?php 
 
+ 
+/*
+echo $liste_projet_text_margin_right_1_[$a] ; 
+
+liste_projet_text_margin_top_1_
+liste_projet_text_margin_left_1_
+liste_projet_text_margin_right_1_
+liste_projet_text_margin_bottom_1_
+*/
+
+?>
  
  
 <div class="class_1" id="<?php echo "parent_".$liste_projet_id_sha1[$a] ?>">
@@ -12,19 +23,12 @@
 <img  class="width_25_style" onclick="liste_projet_text_align_f1(this)"  id="<?php echo "liste_projet_text_align_1_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/align-left.png" alt="align-left"/>
 <img  class="width_25_style" onclick="liste_projet_text_align_f1(this)"  id="<?php echo "liste_projet_text_align_1_3_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/align-right.png" alt="align-right"/>
 <img class="width_25_style"  onclick="liste_projet_text_align_f1(this)"  id="<?php echo "liste_projet_text_align_1_4_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"  width="40" height="40" src="https://img.icons8.com/ios/40/mix-words.png" alt="mix-words"/>
-<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_1_00_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/carbon-copy/25/border-none.png" alt="border-none"/>
+<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_1_00_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/carbon-copy/25/border-none.png" alt="border-none"/>
  
-<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_1_11_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/external-those-icons-lineal-those-icons/25/external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7.png" alt="external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7"/>
-<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_1_1_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-top.png" alt="border-top"/>
-<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_1_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-left.png" alt="border-left"/>
-<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_1_3_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-right.png" alt="border-right"/>
-<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_1_4_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-bottom.png" alt="border-bottom"/>
-<img  class="width_25_style" id="<?php echo "liste_projet_color_1_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/office/25/text-color.png" alt="text-color"/>
-<img  class="width_25_style" id="<?php echo "liste_projet_background_color_1_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/officel/25/fill-color.png" alt="fill-color"/>
+ 
 
 
  
-
  
 <?php
 if($boucle2!=""){
@@ -103,13 +107,13 @@ $src_img__="redirection_dowload_img/".$liste_projet_img[$a] ;
 <img  class="width_25_style"  onclick="liste_projet_text_align_f2(this)" id="<?php echo "liste_projet_text_align_2_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/align-left.png" alt="align-left"/>
 <img  class="width_25_style"  onclick="liste_projet_text_align_f2(this)" id="<?php echo "liste_projet_text_align_2_3_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/align-right.png" alt="align-right"/>
 <img class="width_25_style"   onclick="liste_projet_text_align_f2(this)" id="<?php echo "liste_projet_text_align_2_4_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"  width="40" height="40" src="https://img.icons8.com/ios/40/mix-words.png" alt="mix-words"/>
-<img  class="width_25_style"    id="<?php echo "liste_projet_text_margin_top_2_00_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/carbon-copy/25/border-none.png" alt="border-none"/>
+<img  class="width_25_style"    id="<?php echo "liste_projet_text_margin_2_00_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/carbon-copy/25/border-none.png" alt="border-none"/>
  
-<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_2_11_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/external-those-icons-lineal-those-icons/25/external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7.png" alt="external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7"/>
-<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_2_1_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-top.png" alt="border-top"/>
-<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_2_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-left.png" alt="border-left"/>
-<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_2_3_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-right.png" alt="border-right"/>
-<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_top_2_4_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-bottom.png" alt="border-bottom"/>
+<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_2_11_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/external-those-icons-lineal-those-icons/25/external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7.png" alt="external-Border-alignment-and-paragraph-those-icons-lineal-those-icons-7"/>
+<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_2_1_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-top.png" alt="border-top"/>
+<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_2_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-left.png" alt="border-left"/>
+<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_2_3_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-right.png" alt="border-right"/>
+<img  class="width_25_style" id="<?php echo "liste_projet_text_margin_2_4_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/border-bottom.png" alt="border-bottom"/>
 <img  class="width_25_style" id="<?php echo "liste_projet_color_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/office/25/text-color.png" alt="text-color"/>
 <img  class="width_25_style" id="<?php echo "liste_projet_background_color_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/officel/25/fill-color.png" alt="fill-color"/>
 
@@ -194,3 +198,5 @@ $src_img__="redirection_dowload_img/".$liste_projet_img[$a] ;
 <?php 
 $boucle2=true;
 ?>
+
+ 
