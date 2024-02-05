@@ -65,15 +65,7 @@ if($boucle2!=""){
             <div class="block_1_1">
             
          <!--    -->  
- 
-             
- 
-  
 
-         
-
- 
- 
             <?php
 
  

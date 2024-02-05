@@ -3,6 +3,10 @@
 
 include("../model/class/php/Select_datas.php") ;  
 include("../model/class/php/connexion.php") ;  
+
+
+$information_user_id_sha1_x1 =  $_SESSION["information_user_id_sha1"]; 
+
 $apple = new Select_datas($servername,$username,$password,$dbname);
 
   array_push(
@@ -62,12 +66,10 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
  
  
     
-    $apple->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_parent`=""';
+    $apple->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_parent`=""  AND information_user_id_sha1="'.$information_user_id_sha1_x1.'" ';
 
  
-
-
-    
+ 
 
     
     $apple->execution();

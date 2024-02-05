@@ -55,10 +55,59 @@ $execution_formulaire_php->set_action ("CREATE TABLE information_user (
   information_user_id_sha1 VARCHAR(200) NOT NULL,
   information_user_ip VARCHAR(200) NOT NULL,
   information_user_login VARCHAR(200) NOT NULL,
+
+  information_user_name VARCHAR(200) NOT NULL,
+  information_user_prenom VARCHAR(200) NOT NULL,
+  information_user_adresse VARCHAR(200) NOT NULL,
+  information_user_adresse_mail VARCHAR(200) NOT NULL,
+  information_user_code_postale VARCHAR(200) NOT NULL,
   information_user_password VARCHAR(200) NOT NULL,   
   information_user_new_file VARCHAR(200) NOT NULL, 
+  information_user_naissance DATE NOT NULL, 
+  information_user_tel VARCHAR(20) NOT NULL, 
   information_user_reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
   )");
+
+
+$execution_formulaire_php->set_action ("CREATE TABLE formation_user(
+  formation_user_id	 INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  formation_user_id_sha1 VARCHAR(200) NOT NULL,
+  formation_user_ip VARCHAR(200) NOT NULL,
+  formation_user_login VARCHAR(200) NOT NULL,
+  
+
+
+  formation_user_name VARCHAR(200) NOT NULL,
+  formation_user_adresse VARCHAR(200) NOT NULL,
+ 
+  
+ 
+  formation_user_new_file VARCHAR(200) NOT NULL, 
+  formation_user_date DATE NOT NULL,
+  formation_user_reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  )");
+
+
+$execution_formulaire_php->set_action ("CREATE TABLE experience_user(
+  experience_user_id	 INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  experience_user_id_sha1 VARCHAR(200) NOT NULL,
+  experience_user_ip VARCHAR(200) NOT NULL,
+  experience_user_login VARCHAR(200) NOT NULL,
+  
+
+
+  experience_user_name VARCHAR(200) NOT NULL,
+  experience_user_adresse VARCHAR(200) NOT NULL,
+ 
+   
+  experience_user_new_file VARCHAR(200) NOT NULL, 
+  experience_user_date DATE NOT NULL,
+  experience_user_reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  )");
+
+
+
+
 
 
 $execution_formulaire_php->set_action ("CREATE TABLE liste_projet (
@@ -116,6 +165,9 @@ $execution_formulaire_php->set_action ("CREATE TABLE liste_projet (
   liste_projet_background_color  VARCHAR(200) NOT NULL,
   liste_projet_background_color_1  VARCHAR(200) NOT NULL,
   liste_projet_background_color_2  VARCHAR(200) NOT NULL,
+
+  liste_projet_date   DATE NOT NULL,
+
   liste_projet_reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
   )");
 

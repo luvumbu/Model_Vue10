@@ -5,7 +5,7 @@
   <div class="row">
     <div class="col-sm-4" id="header_1" >    <img width="50" class="cursor_pointer" height="50" src="https://img.icons8.com/ios/50/add--v1.png" alt="add--v1"></div>
     <div class="col-sm-4" id="header_2">    <img width="50" class="cursor_pointer" height="50" src="https://img.icons8.com/ios/50/exit--v1.png" alt="exit--v1"></div>
-    <div class="col-sm-4" id="header_3"> <img width="50" class="cursor_pointer" height="50" src="https://img.icons8.com/glyph-neue/50/folder-invoices--v1.png" alt="folder-invoices--v1"></div>
+    <div class="col-sm-4" id="header_3"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/guest-male--v1.png" alt="guest-male--v1"/></div>
 
   </div>
  
@@ -113,6 +113,8 @@ function header_2_action_reload() {
 function header_3_action() {
   console.log(this.id) ; 
   console.log(this.className) ; 
+Ajax("header_action","class/php/php_select_data/person.php");
+
 
 }
 
@@ -281,7 +283,38 @@ ok.push(); // envoie l'information au code pkp
 }
  
 
+function person(){
+ 
+var information_user_name = document.getElementById("information_user_name").value ; 
+var information_user_prenom = document.getElementById("information_user_prenom").value ; 
+var information_user_adresse = document.getElementById("information_user_adresse").value ; 
+var information_user_code_postale = document.getElementById("information_user_code_postale").value ; 
+var information_user_adresse_mail = document.getElementById("information_user_adresse_mail").value ; 
+var information_user_tel = document.getElementById("information_user_tel").value ; 
+  
 
+ 
+
+var ok = new Information("class/php/php_update/person.php"); // création de la classe 
+ 
+ok.add("information_user_name", information_user_name); // ajout de l'information pour lenvoi 
+ok.add("information_user_prenom", information_user_prenom); // ajout de l'information pour lenvoi 
+ok.add("information_user_adresse", information_user_adresse); // ajout de l'information pour lenvoi 
+ok.add("information_user_code_postale", information_user_code_postale); // ajout de l'information pour lenvoi 
+ok.add("information_user_adresse_mail", information_user_adresse_mail); // ajout de l'information pour lenvoi 
+ok.add("information_user_tel", information_user_tel); // ajout de l'information pour lenvoi 
+ 
+
+
+
+
+//ok.add("password", "root"); // ajout d'une deuxieme information denvoi  
+console.log(ok.info()); // demande l'information dans le tableau
+ok.push(); // envoie l'information au code pkp 
+
+
+
+}
 </script>
 
  
@@ -353,6 +386,8 @@ var limits="";
 var limits="{0,50}";
 var general_el = [] ; 
 var x_ = 0 ; 
+
+
 
 
 

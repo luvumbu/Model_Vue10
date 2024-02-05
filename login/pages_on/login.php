@@ -76,7 +76,7 @@ if(isset($_SESSION["time"])){
         include("apparence/menu_principal_option.php"); 
          if($nombre_total_element==1){ 
             include("class/php/php_select_data/select_menu_principal_option_child.php") ; 
-    include("apparence/menu_principal_option_child.php"); 
+            include("apparence/menu_principal_option_child.php"); 
           
         }
  
@@ -87,6 +87,12 @@ if(isset($_SESSION["time"])){
         include("class/php/php_select_data/select_menu_principal.php") ; 
        
         include("apparence/menu_principal.php"); 
+      //  include("class/php/php_select_data/person.php") ; 
+  
+
+
+      
+
        /*   if($nombre_total_element==1){
         
              }
@@ -97,10 +103,13 @@ if(isset($_SESSION["time"])){
     else {
       
     //  $element_edit =true ; 
-
-        include("class/php/php_select_data/select_menu_principal.php") ; 
-       
+ 
+        include("class/php/php_select_data/select_menu_principal.php") ;   
         include("apparence/menu_principal.php"); 
+      //  include("class/php/php_select_data/person.php") ; 
+
+
+      
  
     }
 
