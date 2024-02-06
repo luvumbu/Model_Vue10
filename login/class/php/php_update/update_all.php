@@ -6,6 +6,7 @@ include("link.php") ;
  
  
 
+$my_date = date("Y/m/d") ; 
 
 
  
@@ -150,7 +151,7 @@ $apple = new Insertion_Bdd(
                 
                 );
                 $apple->set_msg_valudation("up ok") ;  
-                $apple->set_sql('UPDATE `liste_projet` SET `liste_projet_description1_tittle` = "'.$liste_projet_description1_tittle.'" WHERE  `liste_projet_id_sha1` = "'.$liste_projet_id_sha1.'"') ; 
+                $apple->set_sql('UPDATE `liste_projet` SET `liste_projet_description1_tittle` = "'.$liste_projet_description1_tittle.'" , `liste_projet_last_update`="'.$my_date.'" WHERE  `liste_projet_id_sha1` = "'.$liste_projet_id_sha1.'"') ; 
                 $apple->execution() ;    
 
  

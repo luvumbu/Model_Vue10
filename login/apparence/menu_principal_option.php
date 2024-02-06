@@ -117,7 +117,7 @@ for($a = 0 ; $a< $nombre_total_element; $a ++) {
 
 
 
- const myTimeout = setTimeout(exe_cution, 5000);
+ const myTimeout = setTimeout(exe_cution, 1000);
 
 function exe_cution() {
 
