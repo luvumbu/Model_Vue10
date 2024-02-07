@@ -6,11 +6,11 @@ $img ="../../redirection_dowload_img/".$liste_projet_img_x1_7[$x1_7] ;
 ?>
 
 
-<div id="pages_json_8">
-  <div class="element_09">
+<div class="pages_json_8">
+  <div class="element_8_1">
     <?php echo $liste_projet_name_x1_7[$x1_7]   ;  ?>
   </div>
-  <div class="element_10">
+  <div class="element_8_2">
     <?php  echo $liste_projet_description1_x1_7[$x1_7] ; ?>
   </div>
 </div>

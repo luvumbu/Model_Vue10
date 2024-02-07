@@ -8,7 +8,7 @@ include("pages_json_1.php") ;
 include("pages_json_style.php") ; 
 $replace_el = str_replace("blog","blog1", $_SERVER['PHP_SELF']);
 ?>
-
+ 
 <br/>
 
 

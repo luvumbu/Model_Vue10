@@ -1,7 +1,4 @@
-<?php
-
- 
- 
+<?php 
 function give_url(){
 
     // url == $_SERVER['PHP_SELF'] ; 

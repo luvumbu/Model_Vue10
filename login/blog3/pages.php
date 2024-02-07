@@ -13,15 +13,8 @@ $src = "../../src/img/all/qr_code/".give_url().".png" ; ?>
 </div>
 <?php 
 }
-?>
-
-
-
-
-
-
- <?php 
-
+ 
+ 
  
 $apple = new Select_datas($servername,$username,$password,$dbname);
 
@@ -34,27 +27,10 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
     'liste_projet_id_parent',
     'information_user_id_sha1',
     'liste_reg_date'
- 
-
-    
-
     );
-
-
-
-
-
     $apple->sql='SELECT * FROM `liste_log2` WHERE `liste_projet_id_sha1`="'.give_url().'"';
     $apple->execution();
     $myJSON = json_encode($apple->list_row); 
- 
-
-
-
-
-
-
-
 
 
 
@@ -65,12 +41,7 @@ $total_visit = count($apple->list_row)/6 ;
  
     //var_dump($apple->list_row) ; 
 
-
-    ?>
  
- 
-
- <?php 
 
 
    
@@ -163,7 +134,4 @@ $mes_visites = count($apple_my_ip->list_row)/6 ;
 */
 ?>
  
-
-
-
  

@@ -1,8 +1,9 @@
  
 
 <?php 
-
+ 
 /*
+ 
 echo $liste_projet_id_x1_2[$x1_2] ;
 echo "<br/>" ; 
 
@@ -22,8 +23,8 @@ echo "<br/>" ;
 
 echo $liste_projet_img_x1_2[$x1_2] ;
 echo "<br/>" ; 
-*/
-;
+ 
+ 
  
 /*
 echo $liste_projet_visibilite1_x1_2[$x1_2] ;
