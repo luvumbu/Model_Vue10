@@ -1,5 +1,7 @@
 <?php 
 $width = 40;
+
+$verification_id = false; 
 include("../../model/class/php/Insertion_Bdd.php") ;  
 include("../../model/class/php/Select_datas.php") ;  
 include("../../model/class/php/connexion.php") ;  

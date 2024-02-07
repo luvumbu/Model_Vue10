@@ -1,5 +1,6 @@
 <?php
 session_start() ; 
+$verif_id = false ; 
 include("../class/php/php_select_data/give_url.php") ; 
 include("pages_json.php") ; 
 include("pages_css.php") ;   
@@ -13,8 +14,13 @@ $src = "../../src/img/all/qr_code/".give_url().".png" ; ?>
 </div>
 <?php 
 }
- 
- 
+
+
+
+if(  $verif_id )
+{
+
+
  
 $apple = new Select_datas($servername,$username,$password,$dbname);
 
@@ -132,6 +138,21 @@ $mes_visites = count($apple_my_ip->list_row)/6 ;
 </style>
 
 */
+} 
+else {
 ?>
- 
+
+<img src="https://kfg6bckb.media.zestyio.com/yalantis-interactive-404.gif" alt="" srcset="" style='width:100%'>
+<style>
+    body
+    {
+        margin: 0;
+        padding: 0;
+        overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+</style>
+<?php 
+}
+?>
  
