@@ -1,7 +1,6 @@
 <?php 
 $width = 40;
-
-$verification_id = false; 
+$verification_id =false ; 
 include("../../model/class/php/Insertion_Bdd.php") ;  
 include("../../model/class/php/Select_datas.php") ;  
 include("../../model/class/php/connexion.php") ;  
@@ -11,7 +10,10 @@ include("pages_json_style.php") ;
 $replace_el = str_replace("blog","blog1", $_SERVER['PHP_SELF']);
 ?>
  
-<br/>
 
 
-
+<style>
+    #body,.class_qr_code{
+        display: none;
+    }
+</style>
