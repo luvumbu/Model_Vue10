@@ -13,3 +13,7 @@ $replace_el = str_replace("blog","blog1", $_SERVER['PHP_SELF']);
 
 
 
+<?php 
+
+
+

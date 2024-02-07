@@ -11,7 +11,6 @@ if (!isset($_SESSION["welcom_index"])) {
   ?>
   <!DOCTYPE html>
   <html lang="fr">
-
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,9 +49,6 @@ if (!isset($_SESSION["welcom_index"])) {
 
       include("link_page/link_on.html");
       include("pages_on/login.php");
-
-
-
       //include("index_imgs.php");
 //   Ajax("header_action","header/header_action/header_action_1.html");
       ?>
@@ -90,7 +86,6 @@ toutes les focti
     if (isset($_SESSION["information_user_id"])) {
     }
     include("class/php/php_off/verif.php");
-
 }
 ?>
   </div>

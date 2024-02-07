@@ -1,4 +1,5 @@
 <?php 
+ 
 //echo give_url() ; 
 
  
@@ -52,6 +53,12 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
  
  
  
+
+
+    // !! 
+
+
+    // !! 
 
 
 
@@ -134,6 +141,58 @@ $number = 0 ;
  
  
  
+
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// information sur lutilisateur ok 
+$apple_user = new Select_datas($servername,$username,$password,$dbname);
+
+array_push(
+  $apple_user->row,
+
+  'information_user_prenom',
+  'information_user_ip',
+  'information_user_login', 
+  'information_user_name', 
+ 
+  'information_user_adresse', 
+  'information_user_adresse_mail', 
+  'information_user_code_postale', 
+  'information_user_password', 
+  'information_user_naissance', 
+  'information_user_tel', 
+  'information_user_reg_date' 
+
+  
+
+  );
+
+
+
+
+
+  $apple_user->sql='SELECT * FROM `information_user` WHERE `information_user_id_sha1`="'.$information_user_id_sha1[0].'"';
+  $apple_user->execution();
+  $myJSON = json_encode($apple_user->list_row); 
+
+
+
+ $information_user_prenom_user_info =  $apple_user->list_row[0] ; 
+ $information_user_ip_user_info =  $apple_user->list_row[1] ; 
+ $information_user_login_user_info =  $apple_user->list_row[2] ; 
+ $information_user_name_user_info =  $apple_user->list_row[3] ; 
+ $information_user_adresse_user_info =  $apple_user->list_row[4] ; 
+ $information_user_adresse_mail_user_info =  $apple_user->list_row[5] ; 
+ $information_user_code_postale_user_info =  $apple_user->list_row[6] ; 
+ $information_user_password_user_info =  $apple_user->list_row[7] ; 
+
+
+ $information_user_naissance_user_info =  $apple_user->list_row[8] ;  
+ $information_user_tel_user_info = $apple_user->list_row[9] ;
+ $information_user_reg_date_user_info =  $apple_user->list_row[10] ;  
+
+ 
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
  
  
 

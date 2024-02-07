@@ -19,13 +19,15 @@ liste_projet_text_margin_bottom_1_
           
       <input type="text" onkeyup="update_all_php(this)"  style="text-align:<?php echo $liste_projet_text_align_1_1[$a] ?>" id="<?php echo "input_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" value="<?php echo $liste_projet_name[$a] ?>"  class="liste_projet_name_input">
       <div class="parent_width_25_style">
-  <img  class="width_25_style" onclick="liste_projet_text_align_f1(this)"  id="<?php echo "liste_projet_text_align_1_1_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/align-justify.png" alt="align-justify"/>
-<img  class="width_25_style" onclick="liste_projet_text_align_f1(this)"  id="<?php echo "liste_projet_text_align_1_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/align-left.png" alt="align-left"/>
+      <img class="width_25_style" id="liste_projet_color_2_1707196318167" title="1707196318167" width="40" height="40" src="https://img.icons8.com/office/25/text-color.png" alt="text-color">
+      <img  class="width_25_style" onclick="liste_projet_text_align_f1(this)"  id="<?php echo "liste_projet_text_align_1_1_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/align-justify.png" alt="align-justify"/>
+
+  <img  class="width_25_style" onclick="liste_projet_text_align_f1(this)"  id="<?php echo "liste_projet_text_align_1_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/align-left.png" alt="align-left"/>
 <img  class="width_25_style" onclick="liste_projet_text_align_f1(this)"  id="<?php echo "liste_projet_text_align_1_3_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/ios/25/align-right.png" alt="align-right"/>
 <img class="width_25_style"  onclick="liste_projet_text_align_f1(this)"  id="<?php echo "liste_projet_text_align_1_4_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>"  width="40" height="40" src="https://img.icons8.com/ios/40/mix-words.png" alt="mix-words"/>
 <img  class="width_25_style" id="<?php echo "liste_projet_text_margin_1_00_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/carbon-copy/25/border-none.png" alt="border-none"/>
  
- 
+<img width="40" height="40" src="https://img.icons8.com/office/49/rgb-circle-2.png" alt="rgb-circle-2"/>
 
 
  

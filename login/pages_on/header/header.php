@@ -7,30 +7,22 @@
 </div>
 <div id="header_action"></div>
 <script>
-
     document.getElementById("header_1").addEventListener("click", header_1_action);
     document.getElementById("header_2").addEventListener("click", header_2_action);
     document.getElementById("header_3").addEventListener("click", header_3_action);    
-
 function submit__(){
-  
   document.cookie = "username=";
   location.reload();
 }
-function header_1_action() {
-  
+function header_1_action() {  
   console.log(this.id) ; 
-  console.log(this.className) ; 
- 
+  console.log(this.className) ;  
   this.display="none" ; 
  document.cookie = "username=";
 Ajax("header_action","pages_on/header/header_action/header_action_1.html");
     const myTimeout = setTimeout(block_header_action_1, 100);
 }
-
-
 function block_header_action_1() {
-
   document.getElementById("add_blog").addEventListener("click", add_blog);
   document.getElementById("add_img").addEventListener("click", add_img);
   document.getElementById("add_folder").addEventListener("click", add_folder);
@@ -64,24 +56,17 @@ function add_blog() {
  this.style.display="none"; 
   const d = new Date();
  time = d.getTime();
- const x = setTimeout(oui_ok, 50);
-
- 
+ const x = setTimeout(oui_ok, 50); 
  document.cookie = "username="+time;
 var ok = new Information("class/php/php_on/header_action_add.php"); // création de la classe 
 ok.add("time", time); // ajout de l'information pour lenvoi 
 //ok.add("password", "root"); // ajout d'une deuxieme information denvoi  
 console.log(ok.info()); // demande l'information dans le tableau
 ok.push(); // envoie l'information au code pkp 
-
-
 function oui_ok() {
  window.location.replace("class/php/php_add/qr_code/index.php");
+} 
 }
- 
-}
-
-
 function add_folder() {
   console.log(this.id) ; 
   console.log(this.className) ; 
@@ -89,8 +74,7 @@ function add_folder() {
   
 }
 function black_element() { 
-  Ajax("header_action","pages_on/header/header_action/not.html");
- 
+  Ajax("header_action","pages_on/header/header_action/not.html"); 
 }
 
 function liste_projet_name_(_this){ 
@@ -104,18 +88,12 @@ console.log(ok.info()); // demande l'information dans le tableau
 ok.push(); // envoie l'information au code pkp 
 }
 
-function liste_projet_description1_(_this){
- 
- 
+function liste_projet_description1_(_this){ 
   console.log(_this.value) ; 
-
   var ok = new Information("class/php/php_on/header_action_update.php"); // création de la classe 
 ok.add("time",_this.title); // ajout de l'information pour lenvoi 
 ok.add("id", _this.id); // ajout de l'information pour lenvoi 
 ok.add("value", _this.value); // ajout de l'information pour lenvoi 
-
-
-
 //ok.add("password", "root"); // ajout d'une deuxieme information denvoi  
 console.log(ok.info()); // demande l'information dans le tableau
 ok.push(); // envoie l'information au code pkp 
@@ -123,29 +101,17 @@ ok.push(); // envoie l'information au code pkp
   
 }
 
-function input_update_all(){
-  
+function input_update_all(){  
 }
-
 
 //Ajax("header_action","pages_on/header/header_action/header_action_2.html");
 function header_action_2_(_this){
-
 /* 
-
 header_action_2_input
 textarea_action_2_input
-
 */
-
- document.getElementById("header_action_2_info").title=time ; 
- 
-
-  
-  console.log(document.getElementById("header_action_2_info").title) ; 
- 
-
-
+ document.getElementById("header_action_2_info").title=time ;   
+console.log(document.getElementById("header_action_2_info").title) ; 
 var ok = new Information("class/php/php_on/header_action_update.php"); // création de la classe 
 ok.add("time", js_cookie(document.cookie)); // ajout de l'information pour lenvoi 
 ok.add("id", _this.id); // ajout de l'information pour lenvoi 
@@ -153,12 +119,8 @@ ok.add("value", _this.value); // ajout de l'information pour lenvoi
 //ok.add("password", "root"); // ajout d'une deuxieme information denvoi  
 console.log(ok.info()); // demande l'information dans le tableau
 ok.push(); // envoie l'information au code pkp 
-
 }
- 
-
 function person(){
- 
 var information_user_name = document.getElementById("information_user_name").value ; 
 var information_user_prenom = document.getElementById("information_user_prenom").value ; 
 var information_user_adresse = document.getElementById("information_user_adresse").value ; 
@@ -175,7 +137,6 @@ ok.add("information_user_tel", information_user_tel); // ajout de l'information 
 //ok.add("password", "root"); // ajout d'une deuxieme information denvoi  
 console.log(ok.info()); // demande l'information dans le tableau
 ok.push(); // envoie l'information au code pkp 
-
 }
 </script>
 <!--
@@ -192,16 +153,9 @@ ok.push(); // envoie l'information au code pkp
  
   <button type="submit" class="btn btn-primary" style="width:100%">Submit</button>
 </div>
-
 -->
- 
- 
+  
 <script>
- 
-
-
-
-
 /*
 	get_rp_array_2	
 	get_vent_array_2	
@@ -230,7 +184,6 @@ ok.push(); // envoie l'information au code pkp
 	get_epreuve_nom_complet	
 	reg_date
 	*/
-
 var el1 ="get_epreuve_nom_complet" ; 
 var el2 ="800m - Salle | F" ; 
 el2 = "50m - Salle | F" ; 
