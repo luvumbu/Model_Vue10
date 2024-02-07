@@ -404,24 +404,27 @@ if (count($apple->list_row) != 0 && $liste_projet_visibilite1[0] == "(OO)") {
 </html>
 
 <script>
-  var  pages_json_1 = document.getElementById("pages_json_3") ; 
-  var  pages_json_3 = document.getElementById("pages_json_3") ; 
-  var  pages_json_4 = document.getElementById("pages_json_3") ; 
-  var  pages_json_5 = document.getElementById("pages_json_3") ; 
-  var  pages_json_6 = document.getElementById("pages_json_3") ; 
-  var  pages_json_7 = document.getElementById("pages_json_3") ; 
-  var  pages_json_8 = document.getElementById("pages_json_3") ; 
+
+var pages_json_1 = document.getElementsByClassName("pages_json_1") ; 
+var pages_json_2 = document.getElementsByClassName("pages_json_2") ; 
+var pages_json_3 = document.getElementsByClassName("pages_json_3") ; 
+var pages_json_4 = document.getElementsByClassName("pages_json_4") ; 
+var pages_json_5 = document.getElementsByClassName("pages_json_5") ; 
+var pages_json_6 = document.getElementsByClassName("pages_json_6") ; 
+var pages_json_7 = document.getElementsByClassName("pages_json_7") ; 
+var pages_json_8 = document.getElementsByClassName("pages_json_8") ; 
+ 
  
   
-  console.log(pages_json_1.childElementCount) ; 
-  console.log(pages_json_2.childElementCount) ; 
-  console.log(pages_json_3.childElementCount) ; 
-  console.log(pages_json_4.childElementCount) ; 
+  console.log(pages_json_1.length) ; 
+  console.log(pages_json_2.length) ; 
+  console.log(pages_json_3.length) ; 
+  console.log(pages_json_4.length) ; 
 
-  console.log(pages_json_5.childElementCount) ; 
-  console.log(pages_json_6.childElementCount) ; 
-  console.log(pages_json_7.childElementCount) ; 
-  console.log(pages_json_8.childElementCount) ; 
+  console.log(pages_json_5.length) ; 
+  console.log(pages_json_6.length) ; 
+  console.log(pages_json_7.length) ; 
+  console.log(pages_json_8.length) ; 
 
 
 </script>

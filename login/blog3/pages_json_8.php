@@ -148,21 +148,6 @@ $apple_x1_8 = new Select_datas($servername,$username,$password,$dbname);
     $myJSON = json_encode($apple_x1_8->list_row); 
 
 
-
-
-
-
-
-
-
-     
-
-
-
-
-
-
-
 if(count( $apple_x1_8->list_row) !=0){
     $number_x1_8 = 0 ; 
     $liste_projet_id_x1_8 =$apple_x1_8->add_array_element($number_x1_8);
