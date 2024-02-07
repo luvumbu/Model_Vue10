@@ -1,5 +1,7 @@
 <?php
 
+ 
+ 
 function give_url(){
 
     // url == $_SERVER['PHP_SELF'] ; 
@@ -20,20 +22,8 @@ function give_url(){
      return  $val_final ; 
 }
  
-
- 
- 
-?>
-
-<?php
- 
- 
- 
-
-$stc=$_SERVER['SERVER_NAME']."/login/blog/pages.php/".give_url() ; 
-//$stc=$_SERVER['SERVER_NAME']."/login/blog/pages.php/".give_url() ; 
-
+$stc= "/login/blog/pages.php/".give_url() ; 
 $x = give_url() ; 
-  header("Location: $x");
- 
+ header("Location: $stc"); 
+ echo $_SERVER['SERVER_NAME'] ;   
 ?>
