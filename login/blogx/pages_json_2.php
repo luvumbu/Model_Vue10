@@ -1,8 +1,5 @@
- 
-<?php 
-
+ <?php 
 $apple_x1_2 = new Select_datas($servername,$username,$password,$dbname);
-
 array_push(
   $apple_x1_2->row,
 
@@ -101,21 +98,17 @@ array_push(
    
   $number_x1_2 ++ ; 
    $liste_projet_name_tittle_x1_2 = $apple_x1_2->add_array_element($number_x1_2);
-   
  
-   
-
-
 
 if(count($liste_projet_id_sha1_x1_2)!=0){
 
       for($x1_2 = 0 ; $x1_2<count($liste_projet_id_sha1_x1_2) ;$x1_2 ++ ) {
-           include("pages_json_3_menu.php"); 
+         include("pages_json_3.php");   
       }
 }
 
+?>
+  
  
-
-    ?>
 
  

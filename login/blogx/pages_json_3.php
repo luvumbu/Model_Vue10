@@ -1,9 +1,83 @@
- 
 
 <?php 
+$img ="../../redirection_dowload_img/".$liste_projet_img_x1_2[$x1_2] ; 
+ ?>
+<div class="pages_json_3">
+  <div class="pages_json_3_1">
+    <?php echo $liste_projet_id_x1_2[$x1_2]   ;  ?>
+  </div>
+  <div class="pages_json_3_2">
+    <?php echo $liste_projet_id_sha1_x1_2[$x1_2]   ;  ?>
+  </div>
+  <div class="pages_json_3_3">
+    <?php echo $liste_projet_id_parent_x1_2[$x1_2]   ;  ?>
+  </div>
+  <div class="pages_json_3_4">
+    <?php echo $liste_projet_id_sha1_general_x1_2[$x1_2]   ;  ?>
+  </div>
+  <div class="pages_json_3_5">
+    <?php echo $liste_projet_ip_x1_2[$x1_2]   ;  ?>
+  </div>
+
+  <div class="pages_json_3_6">
+    <?php echo $liste_projet_img_x1_2[$x1_2]   ;  ?>
+  </div>
+  <div class="pages_json_3_7">
+    <?php echo $liste_projet_name_x1_2[$x1_2]   ;  ?>
+  </div>
+  <div class="pages_json_3_8">
+    <?php echo $liste_projet_description1_x1_2[$x1_2]   ;  ?>
+  </div>
+  <div class="pages_json_3_9">
+    <?php echo $liste_projet_description2_x1_2[$x1_2]   ;  ?>
+  </div>
+  <div class="pages_json_3_10">
+    <?php echo $liste_projet_visibilite1_x1_2[$x1_2]   ;  ?>
+  </div>
+
+  <div class="pages_json_3_11">
+    <?php echo $liste_projet_visibilite2_x1_2[$x1_2]   ;  ?>
+  </div>
+  <div class="pages_json_3_12">
+    <?php echo $liste_projet_type_x1_2[$x1_2]   ;  ?>
+  </div>
+  <div class="pages_json_3_13">
+    <?php echo $information_user_id_sha1_x1_2[$x1_2]   ;  ?>
+  </div>
+  <div class="pages_json_3_14">
+    <?php echo $liste_projet_new_file_x1_2[$x1_2]   ;  ?>
+  </div>
+  <div class="pages_json_3_15">
+    <?php echo $liste_projet_reg_date_x1_2[$x1_2]   ;  ?>
+  </div>
+
+  <div class="pages_json_3_16">
+    <?php echo $liste_projet_color_1_x1_2[$x1_2]   ;  ?>
+  </div>
+  <div class="pages_json_3_17">
+    <?php echo $liste_projet_color_2_x1_2[$x1_2]   ;  ?>
+  </div>
+  <div class="pages_json_3_18">
+    <?php echo $liste_projet_name_font_size_x1_2[$x1_2]   ;  ?>
+  </div>
+  <div class="pages_json_3_19">
+    <?php echo $liste_projet_description1_font_size_x1_2[$x1_2]   ;  ?>
+  </div>
+  <div class="pages_json_3_20">
+    <?php echo $liste_projet_background_color_x1_2[$x1_2]   ;  ?>
+  </div>
+  <div class="pages_json_3_21">
+    <?php echo $liste_projet_description1_tittle_x1_2[$x1_2]   ;  ?>
+  </div>
+  <div class="pages_json_3_22">
+    <?php echo $liste_projet_name_tittle_x1_2[$x1_2]   ;  ?>
+  </div> 
+</div>
+<?php 
+ 
+
  
 /*
- 
 echo $liste_projet_id_x1_2[$x1_2] ;
 echo "<br/>" ; 
 
@@ -23,7 +97,11 @@ echo "<br/>" ;
 
 echo $liste_projet_img_x1_2[$x1_2] ;
 echo "<br/>" ; 
- 
+*/
+
+
+
+
  
  
 /*
@@ -72,23 +150,6 @@ echo "<br/>" ;
 
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $apple_x1_3 = new Select_datas($servername,$username,$password,$dbname);
 
   array_push(
@@ -119,34 +180,13 @@ $apple_x1_3 = new Select_datas($servername,$username,$password,$dbname);
     'liste_projet_description1_font_size',
     'liste_projet_background_color',
     'liste_projet_description1_tittle',
-    'liste_projet_name_tittle' 
-
-    
+    'liste_projet_name_tittle'   
 
     );
-
-
-
-
 
     $apple_x1_3->sql='SELECT * FROM `liste_projet` WHERE `liste_projet_id_parent` ="'.$liste_projet_id_sha1_x1_2[$x1_2] .'"  ORDER BY liste_projet_id';
     $apple_x1_3->execution();
     $myJSON = json_encode($apple_x1_3->list_row); 
-
-
-
-
-
-
-
-
-
-     
-
-
-
-
-
 
 
 if(count( $apple_x1_3->list_row) !=0){
@@ -206,40 +246,10 @@ if(count( $apple_x1_3->list_row) !=0){
      
     $number_x1_3 ++ ; 
      $liste_projet_name_tittle_x1_3 = $apple_x1_3->add_array_element($number_x1_3);
-
-
-
-
-
-
-
-?>
-
- 
-
-
-
-
-                
-
-
-
-              <?php
-     
-
-     for($x1_3 = 0 ; $x1_3<count($liste_projet_id_sha1_x1_3) ; $x1_3 ++ ) {
-      //  echo $liste_projet_id_sha1_x1_3[$x1_3]."<br/>" ; 
-     include("pages_json_4_menu.php") ; 
-     }
-
-
- 
-     
+     for($x1_3 = 0 ; $x1_3<count($liste_projet_id_sha1_x1_3) ; $x1_3 ++ ) {    
+         include("pages_json_4.php") ;   
+     }     
 }
-
-
 ?>
- 
-
 
  

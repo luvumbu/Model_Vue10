@@ -45,7 +45,7 @@ if ($verif_id) {
 
 <style>
  #id_qr_code,#body{
-   
+   display: none;
  }
 </style>
 
@@ -79,12 +79,9 @@ if ($verif_id) {
 
 <script>
 
-    
+    /*
             var pages_json_1 = document.getElementsByClassName("pages_json_1");
-
-            var pages_json_1_8 = document.getElementsByClassName("pages_json_1_8");
-
-            
+            var pages_json_1_8 = document.getElementsByClassName("pages_json_1_8");            
             var pages_json_2 = document.getElementsByClassName("pages_json_2");
             var pages_json_3 = document.getElementsByClassName("pages_json_3");
             var pages_json_4 = document.getElementsByClassName("pages_json_4");
@@ -92,16 +89,6 @@ if ($verif_id) {
             var pages_json_6 = document.getElementsByClassName("pages_json_6");
             var pages_json_7 = document.getElementsByClassName("pages_json_7");
             var pages_json_8 = document.getElementsByClassName("pages_json_8");
-/*
-            console.log(pages_json_1.length);
-            console.log(pages_json_2.length);
-            console.log(pages_json_3.length);
-            console.log(pages_json_4.length);
-            console.log(pages_json_5.length);
-            console.log(pages_json_6.length);
-            console.log(pages_json_7.length);
-            console.log(pages_json_8.length); 
-*/
  
  
  
@@ -134,92 +121,9 @@ liste_projet_name_tittle  //22
 
 */
  
- 
-</script>
 
-<!-- 
-
-<button onclick="myFunction()">Copy</button>
-<p>Click "Copy" to copy an item from one list to another.</p>
-
-<ul id="myList1"><li>Coffee</li><li>Tea</li></ul>
-<ul id="myList2"><li>Water</li><li>Milk</li></ul>
-
-<p>If you change the <b>deep</b> parameter to false, only an empty LI element will be cloned.</p>
--->
-<script>
- 
-  /*
- var node = document.getElementById("nav_element");
- var node = pages_json_3[0];
-
+>
  
  
- const clone = node.cloneNode(true);
-  document.getElementById("myList1").appendChild(clone);
-
  
-  <a href="/" class="active color_1 header_model_1">
-                <h1>NOS SERVICES</h1>
-            </a>
-  */
-
-
-
-
-
-
-
-
-for(var x = 0 ; x < pages_json_3.length ; x ++ ) {
-    var para = document.createElement("h1");
-
-
-var info = document.getElementsByClassName("pages_json_3_7")[x].innerHTML  ; 
-para.innerHTML = "<b>"+info+"</b>";
-para.setAttribute("class","color_2") ;
-
-document.getElementById("pages_json_3").appendChild(para);
-
-
-var para = document.createElement("div");
-
-var info = document.getElementsByClassName("pages_json_3_7")[x].innerHTML  ; 
-para.innerHTML = info;
- 
-
-document.getElementById("pages_json_4").appendChild(para);
-}
-
-
-
-</script>
-
-<style>
- 
-    #body,#id_qr_code{
-       
-    }
- 
-</style>
-
-
-
-<?php 
-    include('template/section/section_1.html') ; 
-?>
-
-
-<script>
-document.getElementById("h1_section").innerHTML='<div id="h1_section" class="text-center color_3"><h1>'+pages_json_1[0].children[0].innerText +'</h1></div>';
-document.getElementById("des_section").innerHTML='<div id="h1_section" class="text-center"><h1>'+pages_json_1[0].children[7].innerText +'</h1></div>';
- 
-
- 
-</script>
-
-
-
-
-
 
