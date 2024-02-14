@@ -45,7 +45,6 @@ if ($verif_id) {
 
 <style>
  #id_qr_code,#body{
-   display: none;
  }
 </style>
 
@@ -74,12 +73,14 @@ if ($verif_id) {
 
 
 <?php 
-    include('template/header/header_1.html') ; 
+    include('html/model_complet_1.html') ; 
 ?>
 
 <script>
 
-    /*
+
+ 
+ 
             var pages_json_1 = document.getElementsByClassName("pages_json_1");
             var pages_json_1_8 = document.getElementsByClassName("pages_json_1_8");            
             var pages_json_2 = document.getElementsByClassName("pages_json_2");
@@ -91,9 +92,157 @@ if ($verif_id) {
             var pages_json_8 = document.getElementsByClassName("pages_json_8");
  
  
+
+     
+ 
+ document.getElementById("parent_").innerHTML=document.getElementsByClassName("pages_json_1_7")[0].innerHTML ; 
+ document.getElementById("pages_json_1_7_1").innerHTML=document.getElementsByClassName("pages_json_1_7")[0].innerHTML ; 
+
+ 
+
+function clonage_div(clone_div,namme_id,clonage_div,value,option_remove){
+
+//const node = document.getElementById("pages_json_3_child_clone");
+const node = document.getElementById(clone_div);
+
+
+const clone = node.cloneNode(true);
+node.setAttribute("id",namme_id) ; 
+ 
+//node.innerHTML="<a href='#"+pages_json_3[x].children[1].innerText+"'>"+value+"</a>" ; 
+
+var link = parseInt(pages_json_3[x].children[1].innerText)  ; 
+node.innerHTML="<a href='#"+link+"'>"+value+"</a>" ; 
+
+
+document.getElementById(clonage_div).appendChild(clone);
+
+if(option_remove=="oui"){
+ const element = document.getElementById(clone_div);
+ element.remove(); 
+}
+}
+
+
+
+
+
+
+ 
+
+// header copie ici 
+ 
+for(var x = 0 ; x<pages_json_3.length ; x++) {
+
+    console.log(pages_json_3[x].children[0].innerText) ; 
+var action_ ="oui"  ; 
+
+    if(x==pages_json_3.length-1 ){
+       
+
+    }
+    else {
+        action_ = "non" ;
+    }
+    clonage_div("pages_json_3_child_clone_1","","pages_json_3",pages_json_3[x].children[6].innerText,action_);
+
+
+
+
+
  
  
-document.getElementById("pages_json_1").innerHTML=pages_json_1[0].children[0].innerText  ;
+}
+
+
+ 
+
+
+for(var x = 0 ; x<pages_json_3.length ; x++) {
+ 
+
+ 
+ 
+
+ 
+const node = document.getElementById("pages_json_3_child_clone_2");
+node.setAttribute("class",node.className.replace("display_none", "")) ; 
+node.children[1].children[0].innerHTML=pages_json_3[x].children[6].innerText;
+ 
+const clone = node.cloneNode(true);
+document.getElementById("left").appendChild(clone);
+
+
+ 
+
+}
+
+
+for(var x = 0 ; x<pages_json_3.length ; x++) {
+ 
+
+ 
+    var pages_json_3_child_clone_2 = document.getElementsByClassName("pages_json_3_child_clone_2") ; 
+
+    pages_json_3_child_clone_2[x].children[1].children[0].innerHTML = pages_json_3[x].children[6].innerText;
+    pages_json_3_child_clone_2[x].children[1].children[0].id = parseInt(pages_json_3[x].children[1].innerText);
+    
+
+
+ 
+    pages_json_3_child_clone_2[x].children[1].children[0].innerHTML = pages_json_3[x].children[6].innerText;
+
+
+    pages_json_3_child_clone_2[x].children[1].children[2].innerHTML = pages_json_3[x].children[14].innerText;
+    pages_json_3_child_clone_2[x].children[1].children[3].innerHTML = pages_json_3[x].children[7].innerText;
+    pages_json_3_child_clone_2[x].children[1].children[4].innerHTML = "<a href="+pages_json_3[x].children[1].innerText+">VOIR ARTICLE</a>";
+
+
+   
+
+
+
+ 
+ if(x+1==pages_json_3.length){
+ 
+
+    var pages_json_3_child_clone_2 = document.getElementsByClassName("pages_json_3_child_clone_2")[x] ; 
+console.log(pages_json_3_child_clone_2.id) ; 
+
+
+document.getElementById("pages_json_3_child_clone_2").remove() ; 
+ 
+ 
+ }
+ else {
+    pages_json_3_child_clone_2[x].setAttribute("id","") ; 
+    pages_json_3_child_clone_2[x+1].setAttribute("id","") ; 
+
+ 
+
+ }
+ 
+  
+ 
+ }
+
+
+
+
+ 
+// fin header copie 
+ 
+/*
+document.getElementById("pages_json_1_7_1").innerHTML=pages_json_1[0].children[6].innerText  ;
+document.getElementById("pages_json_1_7_2").innerHTML=pages_json_1[0].children[6].innerText  ;
+
+
+document.getElementById("pages_json_1_8_1").innerHTML=pages_json_1[0].children[7].innerText  ;
+
+
+document.getElementById("pages_json_1_15_1").innerHTML=pages_json_1[0].children[14].innerText  ;
+
+*/
  /*
  
 bodyliste_projet_id   //1
@@ -122,8 +271,14 @@ liste_projet_name_tittle  //22
 */
  
 
->
- 
+</script>
  
  
 
+ <style>
+    a{
+        text-decoration: none;
+        color: var(--color_02);
+        padding: 35px;
+    }
+ </style>
