@@ -44,10 +44,8 @@ if ($verif_id) {
 ?>
 
 <style>
-    
-    #body,.pages_json_1 {
-        display: none;
-    }
+    #id_qr_code,
+    #body {}
 </style>
 
 
@@ -314,6 +312,7 @@ var_dump( $liste_projet_description1_2x) ;
 
 
 
+
 <script>
 
 
@@ -360,13 +359,13 @@ for(var x = 0 ; x<taille_; x ++){
  
  
  
- document.getElementsByClassName("all_article_h1")[x].innerText=document.getElementsByClassName("all_src_2")[x].innerText; 
- document.getElementsByClassName("all_article_date")[x].innerText=document.getElementsByClassName("all_src_5")[x].innerText; 
+ document.getElementsByClassName("all_article_h1")[x].innerText="1x"; 
+ document.getElementsByClassName("all_article_date")[x].innerText="2012"; 
 
 
  
- document.getElementsByClassName("all_article_p1")[x].innerText=document.getElementsByClassName("all_src_3")[x].innerText; 
- document.getElementsByClassName("all_article_btn")[x].setAttribute("href",document.getElementsByClassName("all_src_6")[x].innerText); 
+ document.getElementsByClassName("all_article_p1")[x].innerText="xxxx"; 
+ document.getElementsByClassName("all_article_btn")[x].innerText="btn_"+x; 
 
 
 
@@ -376,16 +375,6 @@ for(var x = 0 ; x<taille_; x ++){
   
 }
 
-
-
-const node = document.getElementById("id_qr_code");
-const clone = node.cloneNode(true);
-document.getElementById("id_qr_code_2").appendChild(clone);
-document.getElementsByClassName("id_qr_code")[0].remove() ; 
-document.getElementsByClassName("id_qr_code")[0].setAttribute("class",document.getElementsByClassName("id_qr_code")[0].className.replace("display_none",""))
-
  
  
 </script>
-
-
