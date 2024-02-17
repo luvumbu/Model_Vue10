@@ -15,7 +15,9 @@
         </div>
     </div>
 </div>
-
+<div id="header_2_parent">
+    <div id="header_2"></div>
+</div>
 <div>
     <h1 class="text-center" style="padding: 30px; margin-top: 100px;" id="parent_">BIENVENU</h1>
 
@@ -29,6 +31,16 @@
 </div>
 
 <style>
+
+    #header_2 div{
+        text-align: center;
+        padding: 20px;
+    }
+    #header_2 div:hover{
+cursor: pointer;
+background-color: #cb0101;
+color: white;
+    }
     :root {
         --color_01: #cb0101;
         --color_02: #4a4a49;
@@ -347,10 +359,16 @@
     .right div {
         background-color: white;
     }
-
+    #header_2_parent{
+        display: none;
+    }
 
 
     @media screen and (max-width: 1024px) {
+
+        #header_2_parent {
+            display: block;
+        }
         .space_around_3 {
             padding: 15px;
             display: block;

@@ -207,6 +207,20 @@ include('html/model_complet_1.html');
 
 
 
+                var para = document.createElement("a");
+                para.innerHTML = "<div>"+pages_json_3[x].children[6].innerText+"</div>";
+                para.href = "#"+parseInt(pages_json_3[x].children[1].innerText);
+
+
+                
+
+
+                document.getElementById("header_2").appendChild(para);
+
+
+
+
+
         if (x + 1 == pages_json_3.length) {
 
 
