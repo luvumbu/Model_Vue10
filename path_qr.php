@@ -19,7 +19,7 @@ function give_url(){
      return  $val_final ; 
 }
  
-$stc= "/login/blog/pages.php/".give_url() ; 
+$stc= "/login/blogx/pages.php/".give_url() ; 
 $x = give_url() ; 
  header("Location: $stc"); 
  echo $_SERVER['SERVER_NAME'] ;   

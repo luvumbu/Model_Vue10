@@ -4,7 +4,7 @@ session_start();
 if (!isset($_SESSION["welcom_index"])) {
   ?>
 
-  <meta http-equiv="Refresh" content="0; url='blog/index.php'" />
+  <meta http-equiv="Refresh" content="0; url='blogx/index.php'" />
   <?php
 } else {
 

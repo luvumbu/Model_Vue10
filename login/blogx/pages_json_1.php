@@ -1,9 +1,14 @@
 <div id="body">
   <?php
   include("all_script_page.php");
-  include("all_script_page2.php");
+ 
+if($verif_id){
+   include("all_script_page2.php");
 
-  ?>
+
+}
+
+?>
 </div>
 <?php
 if (count($apple->list_row) != 0) {
