@@ -11,12 +11,12 @@
     <div id="pages_json_3" class="display_flex space_around space_around">
         <div id="pages_json_3_child_clone_1" class="space_around_2 color_02 cursor_pointer"></div>
         <div class="space_around_3 cursor_pointer">
-            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/menu--v1.png" alt="menu--v1" />
+            <img width="50" onclick="header_2()" height="50" src="https://img.icons8.com/ios-filled/50/menu--v1.png" alt="menu--v1" />
         </div>
     </div>
 </div>
 <div id="header_2_parent">
-    <div id="header_2"></div>
+    <div id="header_2" title="off" class="display_none"></div>
 </div>
 <div>
     <h1 class="text-center" style="padding: 30px; margin-top: 100px;" id="parent_">BIENVENU</h1>
@@ -39,7 +39,7 @@
     #header_2 div:hover{
 cursor: pointer;
 background-color: #cb0101;
-color: white;
+color: antiquewhite;
     }
     :root {
         --color_01: #cb0101;
@@ -138,7 +138,7 @@ color: white;
                     expedita laudantium tenetur possimus a autem minus reiciendis vel harum assumenda voluptates optio
                     et.
                 </h2>
-                <button type="button" class="" style="color:white">Voir article</button>
+                <div  class="btn_color" style="color: white;">Voir article</div>
                 <div class="margin_top"></div>
             </div>
 
@@ -354,6 +354,7 @@ color: white;
         width: 30%;
         text-align: center;
         padding-left: 5%;
+      
     }
 
     .right div {
@@ -363,11 +364,18 @@ color: white;
         display: none;
     }
 
-
+.btn_color{
+   padding: 15px; 
+ 
+   background-color: #dddddd;
+   border: 1px solid rgba(0, 0, 0,0.2);
+}
     @media screen and (max-width: 1024px) {
 
         #header_2_parent {
             display: block;
+            padding: 0;
+            margin: 0;
         }
         .space_around_3 {
             padding: 15px;
@@ -402,3 +410,21 @@ color: white;
         }
     }
 </style>
+
+<script>
+    function header_2(){
+var header_2 = document.getElementById("header_2") ; 
+
+            if(header_2.title=="off"){
+
+                header_2.title="on" ;  
+                header_2.className="" ; 
+            }
+            else {
+                header_2.title="off" ;  
+                header_2.className="display_none" ; 
+
+
+            }
+    }
+</script>
