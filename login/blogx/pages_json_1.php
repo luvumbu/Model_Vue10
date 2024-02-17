@@ -4,13 +4,28 @@
  
 if($verif_id){
    include("all_script_page2.php");
+ 
 
+}
+else {
 
+ 
+?>
+
+<style>
+  body,div{
+    overflow: hidden; /* Hide scrollbars */
+    background-color: black;
+
+  }
+</style>
+<?php 
 }
 
 ?>
 </div>
 <?php
+
 if (count($apple->list_row) != 0) {
   include("add_log.php");
   $src = "../../src/img/all/qr_code/" . give_url() . ".png"; ?>
