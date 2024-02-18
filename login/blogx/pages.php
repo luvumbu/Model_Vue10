@@ -45,8 +45,13 @@ if ($verif_id) {
 
 <style>
     
-    #body,.pages_json_1 {
-        display: none;
+   .pages_json_1,#body {
+  position: absolute;
+  top:0;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  opacity: 0;
     }
 </style>
 
@@ -196,8 +201,15 @@ include('html/model_complet_1.html');
 
         pages_json_3_child_clone_2[x].children[1].children[0].innerHTML = pages_json_3[x].children[6].innerText;
 
+      
 
-        pages_json_3_child_clone_2[x].children[1].children[2].innerHTML = pages_json_3[x].children[14].innerText;
+         pages_json_3_child_clone_2[x].children[1].children[2].innerHTML = pages_json_3[x].children[14].innerText;
+ 
+
+        if(pages_json_3[x].children[5].innerText!=""){
+            pages_json_3_child_clone_2[x].children[1].children[1].src = "../../redirection_dowload_img/"+pages_json_3[x].children[5].innerText;
+
+        }
         pages_json_3_child_clone_2[x].children[1].children[3].innerHTML = pages_json_3[x].children[7].innerText;
         pages_json_3_child_clone_2[x].children[1].children[4].innerHTML = "<a href=" + pages_json_3[x].children[1].innerText + ">VOIR ARTICLE</a>";
 
@@ -383,9 +395,16 @@ for(var x = 0 ; x<taille_; x ++){
  document.getElementsByClassName("all_article_btn")[x].setAttribute("href",document.getElementsByClassName("all_src_6")[x].innerText); 
 
 
+var src_img =document.getElementsByClassName("all_src_4")[x].innerText ; 
+ 
+ 
 
+ if(src_img!=""){
+    document.getElementsByClassName("section_div_img")[0].style.backgroundImage = "url('../../redirection_dowload_img/"+src_img+"')";
+
+ }
  
- 
+
  
   
 }
