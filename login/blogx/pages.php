@@ -240,6 +240,18 @@ var last_x = 0;
 
         if(pages_json_3[x].children[5].innerText!=""){
             pages_json_3_child_clone_2[x].children[1].children[1].src = "../../redirection_dowload_img/"+pages_json_3[x].children[5].innerText;
+            pages_json_3_child_clone_2[x].children[1].children[1].className = "";
+
+        }
+        else {
+            //pages_json_3_child_clone_2[x].children[1].children[1].src = "../../redirection_dowload_img/"+pages_json_3[x].children[5].innerText;
+
+
+            console.log("test") ; 
+            console.log(pages_json_3_child_clone_2[x].children[1].children[1].src);
+            console.log(pages_json_3_child_clone_2[x].children[1].children[1].id);
+
+            console.log("test") ; 
 
         }
         pages_json_3_child_clone_2[x].children[1].children[3].innerHTML = pages_json_3[x].children[7].innerText;
@@ -421,12 +433,15 @@ for(var x = 0 ; x<taille_; x ++){
  
  document.getElementsByClassName("all_article_h1")[x].innerText=document.getElementsByClassName("all_src_2")[x].innerText; 
  document.getElementsByClassName("all_article_date")[x].innerText=document.getElementsByClassName("all_src_5")[x].innerText; 
+ document.getElementsByClassName("info_page")[x].innerText="Voir article"; 
 
+ 
 
  
  document.getElementsByClassName("all_article_p1")[x].innerText=document.getElementsByClassName("all_src_3")[x].innerText; 
+ 
 
- document.getElementsByClassName("all_article_p1")[x].style.margin
+  
  document.getElementsByClassName("all_article_btn")[x].setAttribute("href",document.getElementsByClassName("all_src_6")[x].innerText); 
 
 
