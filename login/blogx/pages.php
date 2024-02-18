@@ -1,5 +1,15 @@
 <?php
 session_start();
+
+
+?>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <?php 
 $verif_id = false;
 include("../class/php/php_select_data/give_url.php");
 include("pages_json.php");
@@ -46,13 +56,15 @@ if ($verif_id) {
 <style>
     
     #body,.pages_json_1 {
-      width: 0; 
-      padding: 0;
-      margin: 0;
-      height: 0;
-      position: absolute;
-      top: 0;
-      left: -100%;
+    
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: -99%;
+    width: 0;
+    height: 0;
+ 
     }
 </style>
 
@@ -107,6 +119,22 @@ include('html/model_complet_1.html');
 
     document.getElementById("parent_").innerHTML = document.getElementsByClassName("pages_json_1_7")[0].innerHTML;
     document.getElementById("pages_json_1_7_1").innerHTML = document.getElementsByClassName("pages_json_1_7")[0].innerHTML;
+
+    document.getElementById("p_header_1").innerHTML = document.getElementsByClassName("pages_json_1_8")[0].innerHTML;
+
+
+    document.getElementById("img_header").src = "http://localhost/Model_Vue9/login/redirection_dowload_img/uploads/76022450159a1ce0004d2d9a36c105700cac81a9/1708246576199.png";
+
+
+    var src_header_img = document.getElementsByClassName("pages_json_1_6")[0].innerText ;    
+
+    if(src_header_img!=""){
+        document.getElementById("img_header").src ="../../redirection_dowload_img/"+document.getElementsByClassName("pages_json_1_6")[0].innerText;
+
+    }
+    
+    //pages_json_1_6
+    
 
 
 

@@ -157,7 +157,7 @@ $src_img__="redirection_dowload_img/".$liste_projet_img[$a] ;
 <?php
               }
         ?>
-      <a  href="<?php echo "blog/pages.php/".$liste_projet_id_sha1[$a] ?>">
+      <a  href="<?php echo "blogx/pages.php/".$liste_projet_id_sha1[$a] ?>">
        <img class="format_toogle" title="<?php echo $liste_projet_id_sha1[$a] ?>"   width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/link--v1.png" alt="link--v1"/>
 
        </a>
