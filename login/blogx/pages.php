@@ -45,13 +45,14 @@ if ($verif_id) {
 
 <style>
     
-   .pages_json_1,#body {
-  position: absolute;
-  top:0;
-  width: 0;
-  height: 0;
-  font-size: 0;
-  opacity: 0;
+    #body,.pages_json_1 {
+      width: 0; 
+      padding: 0;
+      margin: 0;
+      height: 0;
+      position: absolute;
+      top: 0;
+      left: -100%;
     }
 </style>
 
@@ -355,7 +356,7 @@ right['0'].children[5].children['0'].children[1].innerText ;
  
  
 
- var taille_ =document.getElementsByClassName("all_article").length
+ var taille_ =document.getElementsByClassName("all_src_1").length
  
 for(var x = 0 ; x<taille_; x ++){
     
@@ -375,7 +376,7 @@ node.setAttribute("class",node.className.replace("display_none",""))
  
 
 
-
+ 
 for(var x = 0 ; x<taille_; x ++){
     
 
@@ -396,7 +397,7 @@ for(var x = 0 ; x<taille_; x ++){
 
 
 var src_img =document.getElementsByClassName("all_src_4")[x].innerText ; 
- 
+  
  
 
  if(src_img!=""){
@@ -409,7 +410,7 @@ var src_img =document.getElementsByClassName("all_src_4")[x].innerText ;
   
 }
 
-
+ 
 
 const node = document.getElementById("id_qr_code");
 const clone = node.cloneNode(true);
