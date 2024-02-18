@@ -123,7 +123,7 @@ include('html/model_complet_1.html');
     document.getElementById("p_header_1").innerHTML = document.getElementsByClassName("pages_json_1_8")[0].innerHTML;
 
 
-    document.getElementById("img_header").src = "http://localhost/Model_Vue9/login/redirection_dowload_img/uploads/76022450159a1ce0004d2d9a36c105700cac81a9/1708246576199.png";
+ 
 
 
     var src_header_img = document.getElementsByClassName("pages_json_1_6")[0].innerText ;    
@@ -131,6 +131,9 @@ include('html/model_complet_1.html');
     if(src_header_img!=""){
         document.getElementById("img_header").src ="../../redirection_dowload_img/"+document.getElementsByClassName("pages_json_1_6")[0].innerText;
 
+    }
+    else{
+        document.getElementById("img_header").remove() ; 
     }
     
     //pages_json_1_6
@@ -215,10 +218,10 @@ include('html/model_complet_1.html');
 
     }
 
-
+var last_x = 0;
     for (var x = 0; x < pages_json_3.length; x++) {
 
-
+        last_x = x ; 
 
         var pages_json_3_child_clone_2 = document.getElementsByClassName("pages_json_3_child_clone_2");
 
@@ -262,7 +265,7 @@ include('html/model_complet_1.html');
 
 
 
-        if (x + 1 == pages_json_3.length) {
+        if (x == pages_json_3.length) {
 
 
             var pages_json_3_child_clone_2 = document.getElementsByClassName("pages_json_3_child_clone_2")[x];
@@ -285,9 +288,10 @@ include('html/model_complet_1.html');
 
     }
 
+ 
 
-
-
+var pages_json_3_child_clone_2 = document.getElementsByClassName("pages_json_3_child_clone_2" ) ; 
+pages_json_3_child_clone_2[last_x+1].remove();
 
     // fin header copie 
 
