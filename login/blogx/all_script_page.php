@@ -44,7 +44,7 @@ array_push(
 
 
 
-$apple->sql = 'SELECT * FROM `liste_projet` WHERE `liste_projet_id_sha1` ="' . $liste_projet_id_sha1 . '"  ORDER BY liste_projet_id';
+$apple->sql = 'SELECT * FROM `liste_projet` WHERE `liste_projet_id_sha1` ="' . $liste_projet_id_sha1 . '" AND `liste_projet_visibilite1`="(OO)" ORDER BY liste_projet_id';
 $apple->execution();
 $myJSON = json_encode($apple->list_row);
 
