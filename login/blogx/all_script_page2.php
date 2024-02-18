@@ -163,7 +163,7 @@ if (count($apple_2x->list_row) > 0) {
             for($a = 0 ; $a<strlen($liste_projet_description1_2x[$x] ); $a ++ ) {
         
 
-              if($a==200){
+              if($a==20){
                 break;
               }
               else {

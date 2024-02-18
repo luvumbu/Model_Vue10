@@ -421,6 +421,8 @@ for(var x = 0 ; x<taille_; x ++){
 
  
  document.getElementsByClassName("all_article_p1")[x].innerText=document.getElementsByClassName("all_src_3")[x].innerText; 
+
+ document.getElementsByClassName("all_article_p1")[x].style.margin
  document.getElementsByClassName("all_article_btn")[x].setAttribute("href",document.getElementsByClassName("all_src_6")[x].innerText); 
 
 

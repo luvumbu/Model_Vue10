@@ -88,7 +88,10 @@ $mes_visites = count($apple_my_ip->list_row) / 6;
   <div class="container-fluid">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link active" href="<?php echo $replace_el ?>">Template 02</a>
+        <a class="nav-link active" onclick="template(this)" title="1" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAETElEQVR4nO2dS4sVRxiGH28RLyhkEFwoREUCAQ0YL39AhSgYDNlkmYWIKFnoRsjCXQImUQRxIerCaxRX4iZk0DEGEcUbeAHFG0YFiZcoUaNjSgpqmEpZ3X3Gac7XOu8LvZqv65zzPF3VXXWmT4OiKIqiKIqiKEozMxvoBB4BTht9YfAwsJtdp4yXkkB/D0TPcFYdQrxd9QpqYXCkDiG+y0kItTB4VocQyaBWBhJCsw4qCcFegoRgD15CsIctIdgDlhDsoUoI9iAlBHt4EoI9MAlpACQnIfZgnITYw3AN2LR0gr0ECcEevIRgD1tCsAcsIdhDlRDsQUoI9vAkBHtgEtIASE5C7ME4CbGH4RqwaekEewkSgj14CcEe9nsv5ArQBfwB3CipuwUcDf/MfBXormj3ctSu31dCSiA8B34CJmUOjjVJ7R5gWqZuAnA8czvAz8DETP0nwF31kDdl3AY+LemtW6Labyt69tmo9l9gfkntB6FGQ1YE4TEwtQLymVC7u6LOA34Rtb26ot4fBDqHJBC+SSANBpYCvwOngG0R5LQXfRXqzgH7gJVRu/8Ao5L6VcAJ4GRod62E/F/GNWBIAm1jAaS/gEFR3dSKk/ihpN0vdJVVPRykQ8oc4L+C2otJ7byKtn9J6uPeY7H1O+14k+kdqptLah8ktSPDZWyr9/X5q7e/JaQY2FNgaALtYgUw34PijAcOF9T6c0hHUj+9hdcYsD3kevJ6g1q4Dftgch7p2W95uLEyrf8h87mGAz+WDI0DVoi/goozusX9vit4vzMys+9X4WSey6LQiyQkQPBLHnHGtgjHH9nrgWEZyJ+FoTBdAVhRIOVrCekF5WfUcYb2cRg5XjCh/L6gfn/mnEIYBjVkAX9m4FzvI5wnwNzM1VRR/U3gY6P5Sb/Tjjf5YfKau9+ijXvAiKSdJyX1x5LayRLSC2dhAmf+W8Lxl7Nx7pTUdierA+MkpBfO9kzP3NlHQP43WcYkE8ayJRW/UBlnpoT0wvFzh48SQP7oXRZ+jehYkNYzx/gc2BAmgxeAA5nJ4pfROcrXbw1fSJ0HdoQhquy7lgF9DnEB6uCK93IpDEO0sPze833Iry3U++HqvoS8KWVTZhkljof7WwVcPwPfFbW5rqK+I/TAdh14/Y5r83YCWJAR43vP3jDv8LPxXK9YHL4Tidvz+0zJ1PsVgSVhSGvn53vnhLjoJH069IiTYZU3/vv9AL/n71XLH3dDXWfYz+pnC99ZIe493SQEewkSgj14CcEetoRgD1hCsIcqIdiDlBDs4UkI9sAkpAGQnITYg3ESYg/DNWDT0gn2EiQEe/ASgj1sCcEesIRgD1VCsAcpIdjDkxDsgUlIAyA5CbEH4yTEHoZrwKalE+wlSAj24CUEe9gSwgAUoocT06yHE+vx3TTr8d16wD21yHgZbpurJbOC3dzPVmijcpjqCgwVRVEURVEURVFoWl4De5sQqQPpA6sAAAAASUVORK5CYII="></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active"  onclick="template(this)" title="2"><img width="100" height="100" src="https://img.icons8.com/ultraviolet/100/css.png" alt="css"/></a>
       </li>
 
       <!--   <li class="nav-item">
@@ -154,3 +157,25 @@ $mes_visites = count($apple_my_ip->list_row) / 6;
       transition: 1s all;
     }
   </style>
+
+
+<script>
+  function template(_this){
+ 
+
+
+    switch(_this.title) {
+  case "1":
+ 
+ window.location.replace(window.location.href.replace("blog","blogx"));
+
+    break;
+  case "2":
+ 
+ window.location.replace(window.location.href.replace("blog","blog1"));
+    break;
+ 
+    // code block
+}
+  }
+</script>
