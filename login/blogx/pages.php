@@ -12,6 +12,7 @@ session_start();
   <?php 
 $verif_id = false;
 include("../class/php/php_select_data/give_url.php");
+
 include("pages_json.php");
 if ($verif_id) {
     $apple = new Select_datas($servername, $username, $password, $dbname);
@@ -472,3 +473,92 @@ document.getElementsByClassName("id_qr_code")[0].setAttribute("class",document.g
 </script>
 
 
+<?php
+
+
+$apple = new Select_datas($servername, $username, $password, $dbname);
+array_push(
+    $apple->row,
+    'liste_projet_id_sha1',
+    'liste_projet_img',
+    'information_user_id_sha1'
+
+ 
+);
+$apple->sql = 'SELECT * FROM `liste_projet` WHERE `liste_projet_img` !=""';
+$apple->execution();
+$myJSON = json_encode($apple->list_row);
+
+
+
+
+//var_dump($apple->list_row) ; 
+
+
+
+$name_file = "ok.txt";
+
+
+for($a = 0 ; $a<count($apple->list_row); $a ++) {
+
+ 
+
+  if( fmod($a,count($apple->row))==1){
+    $name_file = "../redirection_dowload_img/".$apple->list_row[$a] ; 
+ 
+
+
+
+if ( file_exists($name_file ) )
+{
+
+   
+ //    include('path.php');
+}
+else {
+  
+  
+
+    $liste_projet_id_sha1 =$apple->list_row[$a-1] ; 
+  
+  
+    $apple_2 = new Insertion_Bdd(
+        $servername,
+        $username,
+        $password,
+        $dbname
+        
+        );
+        $apple_2->set_msg_valudation("remove ".$liste_projet_id_sha1) ;  
+        $apple_2->set_sql('UPDATE `liste_projet` SET `liste_projet_img` = "" WHERE `liste_projet_id_sha1` = "'.$liste_projet_id_sha1.'"') ; 
+        $apple_2->execution() ;
+  
+    /*?>
+
+<div class="remove_name"><?php echo $apple->list_row[$a-1]; ?></div>
+  <?php 
+ */
+
+
+ ?>
+<meta http-equiv="refresh" content="0;URL=">
+
+<?php 
+}
+  }
+}
+
+
+
+?>
+
+<script>
+
+    /*
+    var remove_name = document.getElementsByClassName("remove_name") ; 
+
+    if(remove_name.length!=0){
+      console.log(remove_name.length) ; 
+    }
+    */
+</script>

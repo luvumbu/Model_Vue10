@@ -1,22 +1,18 @@
+<header>
 
- <header>
-    
-    <?php        
-        include("view/header.php");
+    <?php
+    include("view/header.php");
     ?>
 </header>
 <section>
- 
-    <?php       
-        include("view/section.php");
+
+    <?php
+    include("view/section.php");
     ?>
 </section>
 <footer>
- 
-    <?php       
-         include("view/footer.php");          
+
+    <?php
+    include("view/footer.php");
     ?>
 </footer>
-
-
- 
