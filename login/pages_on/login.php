@@ -257,7 +257,7 @@ inventore asperiores aliquid nemo.";
       ok.add("liste_projet_id_sha1", a.title); // ajout de l'information pour lenvoi 
       console.log(ok.info()); // demande l'information dans le tableau
       ok.push(); // envoie l'information au code pkp 
-        }
+    }
     function liste_projet_padding(a) {
       document.getElementById(a.className + a.title + "_b").innerHTML = a.value + "%";
       var liste_projet_text_padding_1_11_ = document.getElementById("liste_projet_text_padding_1_11_" + a.title).value;
@@ -275,10 +275,24 @@ inventore asperiores aliquid nemo.";
       console.log(ok.info()); // demande l'information dans le tableau
       ok.push(); // envoie l'information au code pkp 
     }
+
+    function css_value(_this) {
+
+ 
+      var ok = new Information("class/php/php_update/css_value.php"); // création de la classe 
+  
+      ok.add("liste_projet_id_sha1", _this.title); // ajout de l'information pour lenvoi 
+      ok.add("_this_value", _this.value); // ajout de l'information pour lenvoi 
+
+      console.log(ok.info()); // demande l'information dans le tableau
+      ok.push(); // envoie l'information au code pkp 
+ 
+    }
   </script>
   <?php
-     $_SESSION["add_liste_projet"] = "Xxxx";
+  $_SESSION["add_liste_projet"] = "Xxxx";
   ?>
 </body>
+
 </html>
 </script>

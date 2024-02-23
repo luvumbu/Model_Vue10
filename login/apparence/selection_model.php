@@ -43,13 +43,14 @@ if($boucle2!=""){
 
 ?>
  
-
-
-<select id="<?php echo "liste_projet_css_1_".$liste_projet_id_sha1[$a] ?>"  class="form-select width_25_style" aria-label="Default select example">
-  <option value="0">css1</option>
+ 
+<select onchange="css_value(this)" title="<?php echo $liste_projet_id_sha1[$a] ?>"  id="<?php echo "liste_projet_css_1_".$liste_projet_id_sha1[$a] ?>"  class="form-select width_25_style" aria-label="Default select example">
+  <option value="0" style="background-color:red">css1</option>
   <option value="1">css2</option>
   <option value="2">css3</option>
   <option value="3">css4</option>
+ 
+
 </select>
 <br/>
 <br/>

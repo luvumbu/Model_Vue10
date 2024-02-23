@@ -69,6 +69,20 @@ $execution_formulaire_php->set_action ("CREATE TABLE information_user (
   )");
 
 
+
+$execution_formulaire_php->set_action ("CREATE TABLE social_user (
+  social_user_id	 INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  social_user_id_sha1 VARCHAR(200) NOT NULL,
+  social_user_ip VARCHAR(200) NOT NULL,
+  social_user_name VARCHAR(200) NOT NULL,
+  social_img VARCHAR(200) NOT NULL, 
+  social_user_reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  )");
+
+
+
+
+
 $execution_formulaire_php->set_action ("CREATE TABLE formation_user(
   formation_user_id	 INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   formation_user_id_sha1 VARCHAR(200) NOT NULL,

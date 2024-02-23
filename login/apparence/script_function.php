@@ -359,4 +359,7 @@
     document.getElementById("textarea_" + _this.title).style.textAlign = textAlign_;
 
   }
+
+
+
 </script>
