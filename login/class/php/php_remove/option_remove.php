@@ -7,8 +7,6 @@ include("link.php") ;
 
 $liste_projet_name =  $_POST["liste_projet_name"]  ;
 $_SESSION["option_remove_name"] = $liste_projet_name ; 
- 
-
 $_SESSION["option_remove_name_x"]=array();
 
 
@@ -116,30 +114,4 @@ $apple = new Select_datas($servername,$username,$password,$dbname);
             $apple->execution() ;
  }
  
-
-
-
-
- 
-
-
-
- 
-
-
-
-
- 
- 
-
- 
-
-
-
- 
- 
  ?>
-
- 
-  
- 
