@@ -1,20 +1,5 @@
-
-
-<?php 
-
- 
- 
- 
- 
-
-$nombre_total_element = count($liste_projet_id_sha1) ;  
-
- 
-
-
- 
- 
-
+<?php
+$nombre_total_element = count($liste_projet_id_sha1);
 /*
      var_dump($liste_projet_id) ; 
      var_dump($liste_projet_id_sha1) ; 
@@ -32,18 +17,10 @@ $nombre_total_element = count($liste_projet_id_sha1) ;
      var_dump($liste_projet_new_file) ; 
      var_dump($liste_projet_reg_date) ; 
 */
+echo '<div class="space_display">';
+for ($a = 0; $a < $nombre_total_element; $a++) {
 
+     include("selection_model.php");
 
-
- echo '<div class="space_display">' ;
-
- 
-for($a = 0 ; $a< $nombre_total_element; $a ++) {
-  
- include("selection_model.php") ; 
- 
 }
-
-
- 
- ?>
+?>

@@ -26,10 +26,8 @@ array_push(
   'information_user_id_sha1',
   'liste_projet_new_file',
   'liste_projet_reg_date',
-
-  'liste_projet_color_1',
-  'liste_projet_color_2',
-
+  'liste_projet_css_1',
+  'liste_projet_css_2',
   'liste_projet_name_font_size',
   'liste_projet_description1_font_size',
   'liste_projet_background_color',
@@ -51,6 +49,12 @@ $myJSON = json_encode($apple->list_row);
 
 
 
+
+
+
+
+
+ 
 
 
 
@@ -122,7 +126,7 @@ if(count($apple->list_row)>0){
   
   $liste_projet_color_1 = $apple->add_array_element($number);
   $number++;
-  
+
   $liste_projet_color_2 = $apple->add_array_element($number);
   $number++;
   

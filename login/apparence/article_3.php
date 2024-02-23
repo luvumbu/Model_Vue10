@@ -1,6 +1,4 @@
 <div id="articles">
-
-
   <?php
 
   include("test_complet2_1.php");
