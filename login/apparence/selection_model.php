@@ -45,10 +45,14 @@ if($boucle2!=""){
  
  
 <select onchange="css_value(this)" title="<?php echo $liste_projet_id_sha1[$a] ?>"  id="<?php echo "liste_projet_css_1_".$liste_projet_id_sha1[$a] ?>"  class="form-select width_25_style" aria-label="Default select example">
-  <option value="" style="background-color:red">css1</option>
+  <option value="">css1</option>
   <option value="1">css2</option>
   <option value="2">css3</option>
   <option value="3">css4</option>
+
+  <option value="4">css4</option>
+  <option value="5">css5</option>
+  <option value="6">css6</option>
 </select>
 <br/>
 <br/>
@@ -111,10 +115,15 @@ $src_img__="redirection_dowload_img/".$liste_projet_img[$a] ;
 <img  class="width_25_style" id="<?php echo "liste_projet_background_color_2_".$liste_projet_id_sha1[$a] ?>" title="<?php echo $liste_projet_id_sha1[$a] ?>" width="40" height="40" src="https://img.icons8.com/officel/25/fill-color.png" alt="fill-color"/>
 
 <select onchange="css_value2(this)" title="<?php echo $liste_projet_id_sha1[$a] ?>"  id="<?php echo "liste_projet_css_2_".$liste_projet_id_sha1[$a] ?>"  class="form-select width_25_style" aria-label="Default select example">
-  <option value="0">css1</option>
-  <option value="1">css2</option>
-  <option value="2">css3</option>
-  <option value="3">css4</option>
+  <option value="0">css</option>
+  <option value="1">css1</option>
+  <option value="2">css2</option>
+  <option value="3">css3</option>
+
+  <option value="4">css4</option>
+  <option value="5">css5</option>
+  <option value="6">css6</option>
+
 </select>
 <br/>
 <!--
