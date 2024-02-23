@@ -288,6 +288,20 @@ inventore asperiores aliquid nemo.";
       ok.push(); // envoie l'information au code pkp 
  
     }
+
+
+    function css_value2(_this) {
+
+ 
+var ok = new Information("class/php/php_update/css_value2.php"); // création de la classe 
+
+ok.add("liste_projet_id_sha1", _this.title); // ajout de l'information pour lenvoi 
+ok.add("_this_value", _this.value); // ajout de l'information pour lenvoi 
+
+console.log(ok.info()); // demande l'information dans le tableau
+ok.push(); // envoie l'information au code pkp 
+
+}
   </script>
   <?php
   $_SESSION["add_liste_projet"] = "Xxxx";
