@@ -27,8 +27,8 @@ array_push(
   'liste_projet_new_file',
   'liste_projet_reg_date',
 
-  'liste_projet_color_1',
-  'liste_projet_color_2',
+  'liste_projet_css_1',
+  'liste_projet_css_2',
 
   'liste_projet_name_font_size',
   'liste_projet_description1_font_size',
@@ -50,7 +50,7 @@ $myJSON = json_encode($apple_2x->list_row);
 
 
 
-
+ 
 
 
 
