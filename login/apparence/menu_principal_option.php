@@ -343,6 +343,10 @@ for ($a = 0; $a < $nombre_total_element; $a++) {
         var textAlign_ = "center";
 
         break;
+        case el0:
+        var textAlign_ = "";
+
+        break;
 
     }
 
