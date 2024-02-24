@@ -1,8 +1,8 @@
- <div class="container mt-5 text-center" >
+ <div class="" style="text-align:center;width:80%;margin:auto;padding:20px">
   <div class="row">
     <div class="col-sm-4" id="header_1" >    <img width="50" class="cursor_pointer" height="50" src="https://img.icons8.com/ios/50/add--v1.png" alt="add--v1"></div>
     <div class="col-sm-4" id="header_2">    <img width="50" class="cursor_pointer" height="50" src="https://img.icons8.com/ios/50/exit--v1.png" alt="exit--v1"></div>
-    <div class="col-sm-4" id="header_3"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/guest-male--v1.png" alt="guest-male--v1"/></div>
+    <div class="col-sm-4" id="header_3"><img width="50"  class="cursor_pointer"  height="50" src="https://img.icons8.com/ios-filled/50/guest-male--v1.png" alt="guest-male--v1"/></div>
   </div> 
 </div>
 <div id="header_action"></div>
