@@ -180,7 +180,7 @@ $execution_formulaire_php->set_action ("CREATE TABLE liste_projet (
   liste_projet_background_color_1  VARCHAR(200) NOT NULL,
   liste_projet_background_color_2  VARCHAR(200) NOT NULL,
 
-  liste_projet_date   DATETIME NOT NULL,
+  liste_projet_date   DATE NOT NULL,
   liste_projet_last_update   DATE NOT NULL,
 
 
